@@ -31,4 +31,4 @@ I created my first open-source Symfony bundle: [PlaceholderBundle](https://githu
 I will write a follow-up on how to begin with developing a third-pary bundle, as I think the resources for it are rather limited. A general tip is to checkout existing bundles on how to do it.
 
 
-[:]
+

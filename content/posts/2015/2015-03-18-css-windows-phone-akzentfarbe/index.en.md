@@ -7,7 +7,7 @@ link: http://genieblog.ch/css-windows-phone-akzentfarbe/
 slug: css-windows-phone-akzentfarbe
 title: 'CSS: Windows Phone Akzentfarbe'
 wordpress_id: 150
-category: Allgemein
+category: Any
 draft: false
 template: post
 description: false

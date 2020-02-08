@@ -7,7 +7,7 @@ link: http://genieblog.ch/gesamter-localstorage-auslesen/
 slug: gesamter-localstorage-auslesen
 title: 'Geistesblitz: gesamter localStorage auslesen'
 wordpress_id: 160
-category: Allgemein
+category: Any
 draft: false
 template: post
 description: false

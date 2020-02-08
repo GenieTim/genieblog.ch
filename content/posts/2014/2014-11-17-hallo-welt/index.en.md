@@ -7,7 +7,7 @@ link: http://genieblog.ch/hallo-welt/
 slug: hallo-welt
 title: Hallo Welt!
 wordpress_id: 1
-category: Allgemein
+category: Any
 tags:
 - Bernhard
 - Hallo

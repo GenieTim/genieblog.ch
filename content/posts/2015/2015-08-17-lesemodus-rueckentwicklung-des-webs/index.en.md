@@ -7,7 +7,7 @@ link: http://genieblog.ch/lesemodus-rueckentwicklung-des-webs/
 slug: lesemodus-rueckentwicklung-des-webs
 title: Lesemodus - Rückentwicklung des Webs?
 wordpress_id: 205
-category: Allgemein
+category: Any
 draft: false
 template: post
 description: false

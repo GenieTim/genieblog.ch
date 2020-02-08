@@ -7,7 +7,7 @@ link: http://genieblog.ch/moskau-vs-petersburg/
 slug: moskau-vs-petersburg
 title: Moskau vs. Petersburg
 wordpress_id: 280
-category: Sprachaufenthalt
+category: Language Exchange
 draft: false
 template: post
 description: false

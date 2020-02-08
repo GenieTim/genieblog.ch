@@ -8,7 +8,7 @@ slug: vaccination-controversy-introduced-by-pharma-industry-because-they-dont-ea
 title: Vaccination controversy introduced by pharma industry because they don't earn
   enough by vaccination
 wordpress_id: 318
-category: Allgemein
+category: Any
 tags:
 - conspiracy
 - hope

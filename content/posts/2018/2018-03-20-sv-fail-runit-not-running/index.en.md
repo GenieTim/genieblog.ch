@@ -7,7 +7,7 @@ link: http://genieblog.ch/sv-fail-runit-not-running/
 slug: sv-fail-runit-not-running
 title: 'sv: fail: runit not running'
 wordpress_id: 349
-category: Allgemein
+category: Any
 draft: false
 template: post
 description: false

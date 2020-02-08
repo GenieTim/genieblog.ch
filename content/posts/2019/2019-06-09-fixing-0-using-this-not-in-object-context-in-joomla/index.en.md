@@ -7,7 +7,7 @@ link: http://genieblog.ch/fixing-0-using-this-not-in-object-context-in-joomla/
 slug: fixing-0-using-this-not-in-object-context-in-joomla
 title: My fix to`0 - Using $this not in object context` in Joomla!
 wordpress_id: 445
-category: Allgemein
+category: Any
 draft: false
 template: post
 description: false

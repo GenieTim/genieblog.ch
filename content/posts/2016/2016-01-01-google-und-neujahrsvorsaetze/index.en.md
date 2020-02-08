@@ -18,7 +18,7 @@ link: http://genieblog.ch/google-und-neujahrsvorsaetze/
 slug: google-und-neujahrsvorsaetze
 title: Google und Neujahrsvorsätze
 wordpress_id: 53
-category: Allgemein
+category: Any
 draft: false
 template: post
 description: false

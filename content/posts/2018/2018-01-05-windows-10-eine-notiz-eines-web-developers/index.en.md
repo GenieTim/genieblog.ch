@@ -7,7 +7,7 @@ link: http://genieblog.ch/windows-10-eine-notiz-eines-web-developers/
 slug: windows-10-eine-notiz-eines-web-developers
 title: Windows 10 - eine Notiz eines Web-Developers
 wordpress_id: 220
-category: Allgemein
+category: Any
 draft: false
 template: post
 description: false

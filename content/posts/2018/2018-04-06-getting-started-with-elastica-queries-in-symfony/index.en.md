@@ -7,7 +7,7 @@ link: http://genieblog.ch/getting-started-with-elastica-queries-in-symfony/
 slug: getting-started-with-elastica-queries-in-symfony
 title: Getting started with elastica queries in Symfony
 wordpress_id: 355
-category: Allgemein
+category: Any
 - PHP
 tags:
 - Elastica

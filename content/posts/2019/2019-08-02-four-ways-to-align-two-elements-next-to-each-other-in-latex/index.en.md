@@ -7,7 +7,7 @@ link: http://genieblog.ch/four-ways-to-align-two-elements-next-to-each-other-in-
 slug: four-ways-to-align-two-elements-next-to-each-other-in-latex
 title: Four ways to align two elements next to each other in LaTeX
 wordpress_id: 451
-category: Allgemein
+category: Any
 draft: false
 template: post
 description: false

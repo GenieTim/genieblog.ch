@@ -7,7 +7,7 @@ link: http://genieblog.ch/ueber-essen/
 slug: ueber-essen
 title: Über Essen
 wordpress_id: 271
-category: Sprachaufenthalt
+category: Language Exchange
 draft: false
 template: post
 description: false

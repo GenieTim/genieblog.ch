@@ -7,7 +7,7 @@ link: http://genieblog.ch/estimating-electricity-composition-for-valuability-of-
 slug: estimating-electricity-composition-for-valuability-of-electric-cars
 title: Estimating Electricity Cleanliness for Valuability of Electric Cars
 wordpress_id: 462
-category: Allgemein
+category: Any
 draft: false
 template: post
 description: false

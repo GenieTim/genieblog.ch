@@ -7,7 +7,7 @@ link: http://genieblog.ch/james-bonds-salad-dressing/
 slug: james-bonds-salad-dressing
 title: James Bond's Salad Dressing
 wordpress_id: 202
-category: Allgemein
+category: Any
 post_format:
 - Quote
 draft: false

@@ -7,7 +7,7 @@ link: http://genieblog.ch/erkenntnisse-fuers-leben/
 slug: erkenntnisse-fuers-leben
 title: Erkenntnisse fürs Leben
 wordpress_id: 299
-category: Sprachaufenthalt
+category: Language Exchange
 draft: false
 template: post
 description: false
