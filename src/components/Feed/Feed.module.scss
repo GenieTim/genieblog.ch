@@ -16,11 +16,10 @@
       @include margin-bottom(.5);
 
       &-link {
-        color: $color-base;
+        color: $typographic-base-font-color;
 
         &:hover,
         &:focus {
-          color: $color-base;
           border-bottom: 1px solid $color-base;
         }
 

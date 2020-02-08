@@ -9,6 +9,7 @@ body {
   margin: 0 0 0 calc(100vw - 100%);
   font-family: $typographic-font-family;
   color: $typographic-base-font-color;
+  background-color: invert($color: $typographic-base-font-color);
   line-height: $typographic-base-line-height;
   font-size: $typographic-base-font-size;
   -ms-text-size-adjust: 100%;
@@ -26,6 +27,7 @@ h5,
 h6 {
   font-family: $typographic-font-family;
   font-weight: 600;
+  color: $typographic-base-font-color;
 }
 
 h1 {
