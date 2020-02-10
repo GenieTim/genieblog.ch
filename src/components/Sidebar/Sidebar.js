@@ -6,12 +6,14 @@ import Copyright from './Copyright';
 import Menu from './Menu';
 import styles from './Sidebar.module.scss';
 import { useSiteMetadata } from '../../hooks';
+import SelectLanguage from './SelectLanguage';
 
 type Props = {
   isIndex?: boolean,
+  langs?: [],
 };
 
-const Sidebar = ({ isIndex }: Props) => {
+const Sidebar = ({ isIndex, langs }: Props) => {
   const { author, copyright, menu } = useSiteMetadata();
 
   return (
@@ -21,6 +23,7 @@ const Sidebar = ({ isIndex }: Props) => {
         <Menu menu={menu} />
         <Contacts contacts={author.contacts} />
         <Copyright copyright={copyright} />
+        <SelectLanguage langs={langs} />
       </div>
     </div>
   );

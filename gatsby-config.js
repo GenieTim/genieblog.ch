@@ -1,6 +1,7 @@
 'use strict';
 
 const siteConfig = require('./config.js');
+const languages = require('./src/data/languages.js');
 const postCssPlugins = require('./postcss-config.js');
 
 module.exports = {
@@ -20,13 +21,6 @@ module.exports = {
       options: {
         path: `${__dirname}/content`,
         name: 'pages'
-      }
-    },
-    {
-      resolve: 'gatsby-plugin-i18n',
-      options: {
-        langKeyDefault: 'en',
-        useLangKeyLayout: false
       }
     },
     {
@@ -194,12 +188,21 @@ module.exports = {
         background_color: '#FFF',
         theme_color: '#F7A046',
         display: 'standalone',
-        icon: 'static/photo.jpg'
+        icon: 'static/icon.png'
       },
     },
     'gatsby-plugin-offline',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-react-helmet',
+    {
+      resolve: 'gatsby-plugin-i18n',
+      options: {
+        langKeyForNull: 'any',
+        langKeyDefault: languages.defaultLangKey,
+        useLangKeyLayout: true,
+        prefixDefault: false,
+      }
+    },
     {
       resolve: 'gatsby-plugin-sass',
       options: {

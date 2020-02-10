@@ -7,8 +7,7 @@ link: http://genieblog.ch/formatierter-source-code-in-indesign-und-co-einbinden/
 slug: formatierter-source-code-in-indesign-und-co-einbinden
 title: Formatierter Source Code in Indesign und Co. einbinden
 wordpress_id: 103
-category: Allgemein
-- Office
+category: Office
 tags:
 - Code
 - Format

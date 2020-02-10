@@ -8,7 +8,6 @@ slug: sprache-sprechen
 title: Über Sprache sprechen
 wordpress_id: 255
 category: Moskau
-- Language Exchange
 draft: false
 template: post
 description: false

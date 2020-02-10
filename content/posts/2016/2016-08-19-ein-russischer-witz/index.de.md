@@ -8,7 +8,6 @@ slug: ein-russischer-witz
 title: Ein russischer Witz
 wordpress_id: 297
 category: Moskau
-- Sprachaufenthalt
 post_format:
 - Quote
 draft: false

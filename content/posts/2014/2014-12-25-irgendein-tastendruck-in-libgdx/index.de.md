@@ -12,11 +12,12 @@ slug: irgendein-tastendruck-in-libgdx
 title: Irgendein Tastendruck in libGDX
 wordpress_id: 40
 category: Java
-- libGDX
 draft: false
 template: post
 description: false
 tags: 
+- Java
+- LibGDX
 socialImage: /media/socialImage.jpg
 ---
 

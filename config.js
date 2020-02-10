@@ -1,14 +1,14 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
+  url: 'https://genieblog.ch',
   pathPrefix: '/',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+  title: 'genieblog.ch',
+  subtitle: 'Tim Bernhard\'s blog',
   copyright: '© All rights reserved.',
   disqusShortname: '',
   postsPerPage: 4,
-  googleAnalyticsId: 'UA-73379983-2',
+  googleAnalyticsId: 'UA-55658858-3',
   useKatex: false,
   menu: [
     {
@@ -20,30 +20,30 @@ module.exports = {
       path: '/pages/about'
     },
     {
-      label: 'Contact me',
-      path: '/pages/contacts'
+      label: 'Imprint',
+      path: '/pages/impressum'
     }
   ],
   author: {
-    name: 'John Doe',
-    photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    name: 'Tim Bernhard',
+    photo: '/portrait.png',
+    bio: '',
     contacts: {
-      email: '',
-      facebook: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
-      rss: '',
-      vkontakte: '',
-      linkedin: '#',
-      instagram: '#',
-      line: '',
-      gitlab: '',
-      weibo: '',
-      codepen: '',
-      youtube: '',
-      soundcloud: '',
+      email: 'tim@genieblog.ch',
+      facebook: 'tim.genie.bernhard',
+      // telegram: '#',
+      twitter: 'genie_tim',
+      github: 'GenieTim',
+      // rss: '',
+      // vkontakte: '',
+      linkedin: 'timgeniebernhard',
+      // instagram: '#',
+      // line: '',
+      // gitlab: '',
+      // weibo: '',
+      // codepen: '',
+      // youtube: '',
+      // soundcloud: '',
     }
   }
 };
