@@ -2,44 +2,6 @@
 
 use Illuminate\Support\Str;
 
-function scanAllDir($dir)
-{
-    $result = [];
-    foreach (scandir($dir) as $filename) {
-        if ($filename[0] === '.') continue;
-        $filePath = $dir . '/' . $filename;
-        if (is_dir($filePath)) {
-            foreach (scanAllDir($filePath) as $childFilename) {
-                $result[] = $filename . '/' . $childFilename;
-            }
-        } else {
-            $result[] = $filename;
-        }
-    }
-    return $result;
-}
-
-/**
- * Collect all documents containing ".$lang." from a dir
- *
- * @param string $lang the language to filter for
- * @param string $dir the directory to search in
- * @return array
- */
-function languageFilter(string $lang, string $dir)
-{
-    $posts = [];
-    $files = scanAllDir($dir);
-    foreach ($files as $fileKey => $file) {
-        if (preg_match('/\.(en|de)\./', $file, $matches) === 1) {
-            if ($matches[1] == $lang) {
-                $posts[] = file_get_contents($dir . "/" . $file);
-            }
-        }
-    }
-    return $posts;
-}
-
 /**
  * Get all collections in the desired languages
  *
@@ -50,18 +12,12 @@ function getMultilangCollections()
     $collections = [];
     $langs = ["en", "de"];
     foreach ($langs as $langKey => $lang) {
-        var_dump("Setting posts_" . $lang);
         // posts
         $collections['posts_' . $lang] = [
             'author' => 'Tim Bernhard', // Default author, if not provided in a post
             'sort' => '-date',
-            'path' => 'blog/' . $lang . '/{filename}',
-            'posts' => [
-                'items' => languageFilter($lang, './source/_posts'),
-                'filter' => function ($item) {
-                    return !$item->draft;
-                }
-            ]
+            'type' => 'blog',
+            'path' => 'blog/' . $lang . '/{date|Y}/{slug}'
         ];
         // categories
         $collections['categories_' . $lang] = [
@@ -80,8 +36,7 @@ function getMultilangCollections()
         $collections['pages_' . $lang] = [
             'author' => 'Tim Bernhard',
             'sort' => 'name',
-            'path' => $lang . '/{filename}',
-            'items' => languageFilter($lang, './source/_pages')
+            'path' => $lang . 'static/{slug}'
         ];
 
         // tags
@@ -97,13 +52,12 @@ function getMultilangCollections()
             },
         ];
     }
-    $collections['posts'] = $collections['posts_en'];
-    // var_dump($collections);
+    // $collections['posts'] = $collections['posts_en'];
     return $collections;
 }
 
 return [
-    'baseUrl' => '',
+    'baseUrl' => 'file:///Users/timbernhard/Privat/Programming/OpenSource-Contributions/genieblog.ch/build_local/',
     'production' => false,
     'siteName' => 'genieblog.ch',
     'siteDescription' => 'A genius for a genius',

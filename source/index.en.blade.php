@@ -32,8 +32,6 @@
 @endif
 @endforeach
 
-
-
 @foreach ($posts_en->where('featured', false)->take(6)->chunk(2) as $row)
 <div class="flex flex-col md:flex-row md:-mx-6">
     @foreach ($row as $post)
