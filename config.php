@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Str;
 
+const LANGUAGES = ["en", "de"];
+
 /**
  * Get all collections in the desired languages
  *
@@ -10,18 +12,19 @@ use Illuminate\Support\Str;
 function getMultilangCollections()
 {
     $collections = [];
-    $langs = ["en", "de"];
-    foreach ($langs as $langKey => $lang) {
+    foreach (LANGUAGES as $langKey => $lang) {
         // posts
         $collections['posts_' . $lang] = [
             'author' => 'Tim Bernhard', // Default author, if not provided in a post
             'sort' => '-date',
+            'language' => $lang,
             'extends' => '_layout.post',
-            'path' => 'posts/' . $lang . '/{date|Y}/{slug}'
+            'path' => 'blog/' . $lang . '/{date|Y}/{slug}'
         ];
         // categories
         $collections['categories_' . $lang] = [
-            'path' => 'posts/' . $lang . '/categories/{_filename}',
+            'path' => 'blog/' . $lang . '/categories/{_filename}',
+            'language' => $lang,
             'posts' => function ($page, $allPosts) use ($lang) {
                 if (!$allPosts) {
                     echo "AllPosts = " + $allPosts;
@@ -39,6 +42,7 @@ function getMultilangCollections()
         // pages
         $collections['pages_' . $lang] = [
             'author' => 'Tim Bernhard',
+            'language' => $lang,
             'sort' => '-filename',
             'extends' => '_layout.page',
             'path' => 'pages/' . $lang . '/{slug}'
@@ -55,11 +59,21 @@ return [
     'siteName' => 'genieblog.ch',
     'siteDescription' => 'A genius for a genius',
     'siteAuthor' => 'Tim Bernhard',
+    'languages' => LANGUAGES,
 
     // collections
     'collections' => getMultilangCollections(),
 
     // helpers
+    'translateUrl' => function ($page, $targetLanguage) {
+        $url = $page->getUrl();
+        for ($i = 0; $i < count(LANGUAGES); ++$i) {
+            $tryLanguage = LANGUAGES[$i];
+            if (strpos($url, "/$tryLanguage/") !== false) {
+                return str_replace("/$tryLanguage/", "/$targetLanguage/", $url);
+            }
+        }
+    },
     'getDate' => function ($page) {
         return Datetime::createFromFormat('U', $page->date);
     },

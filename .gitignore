@@ -3,3 +3,5 @@
 /vendor/
 .DS_Store
 .cache
+
+source/assets/build/*

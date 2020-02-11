@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ $page->language }}">
 
 <head>
     <meta charset="utf-8">
@@ -61,6 +61,24 @@
     <footer class="bg-white text-center text-sm mt-12 py-4" role="contentinfo">
         <ul class="flex flex-col md:flex-row justify-center list-none">
             <li class="md:mr-2">
+                <a href="" title="Read the imprint/impressum">Imprint</a>
+            </li>
+
+            <li class="md:mr-2">
+                Read in language:
+                @foreach ($page->languages as $lang)
+                <a href="{{ $page->translateUrl($lang) }}" title="Read this in {{$lang}}">{{$lang}}</a>
+                @if(!$loop->last) , @endif
+                @endforeach
+            </li>
+
+            <li>
+                Help fix typos & translation or checkout the source on <a
+                    href="https://github.com/GenieTim/genieblog.ch" title="Source of genieblog.ch">GitHub</a>.
+            </li>
+        </ul>
+        <ul class="flex flex-col md:flex-row justify-center list-none">
+            <li class="md:mr-2">
                 &copy; Tim Bernhard. All Rights Reserved.
             </li>
 
@@ -71,8 +89,8 @@
             </li>
 
             <li>
-                Help fix typos or checkout the source on <a href="https://github.com/GenieTim/genieblog.ch"
-                    title="Source of genieblog.ch">GitHub</a>.
+                Help fix typos & translation or checkout the source on <a
+                    href="https://github.com/GenieTim/genieblog.ch" title="Source of genieblog.ch">GitHub</a>.
             </li>
         </ul>
     </footer>

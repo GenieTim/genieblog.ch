@@ -4,7 +4,7 @@ comments: true
 date: 2014-11-17 19:14:13+00:00
 layout: page
 link: http://genieblog.ch/ueber-mich/
-slug: about-me
+slug: about
 title: About me
 wordpress_id: 8
 template: page

@@ -4,7 +4,7 @@ comments: true
 date: 2015-01-07 16:31:21+00:00
 layout: page
 link: http://genieblog.ch/impressum/
-slug: impressum
+slug: imprint
 title: Impressum
 wordpress_id: 65
 template: page

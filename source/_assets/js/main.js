@@ -2,8 +2,8 @@ window.axios = require('axios');
 window.fuse = require('fuse.js');
 window.Vue = require('vue');
 
-import Search from './components/Search.vue';
 import hljs from 'highlight.js/lib/highlight';
+import Search from './components/Search.vue';
 
 // Syntax highlighting
 hljs.registerLanguage('bash', require('highlight.js/lib/languages/bash'));
@@ -27,4 +27,25 @@ new Vue({
         Search,
     },
 }).$mount('#vue-search');
+
+/**
+ * Service Worker setup for offline support
+ */
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+            .then(reg => {
+                console.log('Registration succeeded. Scope is ' + reg.scope);
+            })
+            .catch(registrationError => {
+                console.log('SW registration failed: ', registrationError);
+            });
+    });
+}
+
+// image lazy loading
+// TODO: do.
+// first, force compilation of images so webpack gets to know them
+require.context("./../../assets/images/", true, /^\.\/.*\.(jpe?g|png)/);
+
 
