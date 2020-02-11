@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Str;
 
-const LANGUAGES = ["en", "de"];
+const LANGUAGES = ["de", "en"];
 
 /**
  * Get all collections in the desired languages
@@ -60,6 +60,7 @@ return [
     'siteDescription' => 'A genius for a genius',
     'siteAuthor' => 'Tim Bernhard',
     'languages' => LANGUAGES,
+    'language' => 'en', // default language, if undefined for some reason
 
     // collections
     'collections' => getMultilangCollections(),

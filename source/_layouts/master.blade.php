@@ -61,14 +61,14 @@
     <footer class="bg-white text-center text-sm mt-12 py-4" role="contentinfo">
         <ul class="flex flex-col md:flex-row justify-center list-none">
             <li class="md:mr-2">
-                <a href="" title="Read the imprint/impressum">Imprint</a>
+                <a href="" title="Read the imprint/impressum">Imprint</a>.
             </li>
 
             <li class="md:mr-2">
                 Read in language:
                 @foreach ($page->languages as $lang)
-                <a href="{{ $page->translateUrl($lang) }}" title="Read this in {{$lang}}">{{$lang}}</a>
-                @if(!$loop->last) , @endif
+                <a href="{{ $page->translateUrl($lang) }}"
+                    title="Read this in {{$lang}}">{{$lang}}</a>@if(!$loop->last), @endif
                 @endforeach
             </li>
 
@@ -82,15 +82,10 @@
                 &copy; Tim Bernhard. All Rights Reserved.
             </li>
 
-            <li class="md:mr-2">
+            <li>
                 Built with ❤️, <a href="http://jigsaw.tighten.co" title="Jigsaw by Tighten">Jigsaw</a>
                 and <a href="https://tailwindcss.com" title="Tailwind CSS, a utility-first CSS framework">Tailwind
                     CSS</a>.
-            </li>
-
-            <li>
-                Help fix typos & translation or checkout the source on <a
-                    href="https://github.com/GenieTim/genieblog.ch" title="Source of genieblog.ch">GitHub</a>.
             </li>
         </ul>
     </footer>
