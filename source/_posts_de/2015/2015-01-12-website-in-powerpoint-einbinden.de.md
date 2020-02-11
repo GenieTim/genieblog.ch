@@ -1,5 +1,5 @@
 ---
-author: adminTim
+author: Tim Bernhard
 comments: true
 date: 2015-01-12 11:00:30+00:00
 excerpt: 'Wenn Sie eine Microsoft PowerPoint Präsentation vorzeigen, so haben Sie

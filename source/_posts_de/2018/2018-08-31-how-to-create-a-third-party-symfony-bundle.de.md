@@ -1,5 +1,5 @@
 ---
-author: adminTim
+author: Tim Bernhard
 comments: true
 date: 2018-08-31 12:40:39+00:00
 layout: post

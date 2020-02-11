@@ -1,15 +1,20 @@
 ---
-author: adminTim
+author: Tim Bernhard
 comments: true
 date: 2015-01-07 16:31:21+00:00
 layout: page
 link: http://genieblog.ch/impressum/
-slug: impressum
+slug: imprint
 title: Impressum
 wordpress_id: 65
 tags:
 template: page
 socialImage: /media/socialImage.jpg
+description: false
+draft: false
+extends: _layouts.page
+language: en
+cover_image: false
 ---
 
 

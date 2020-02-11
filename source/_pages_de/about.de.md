@@ -1,5 +1,5 @@
 ---
-author: adminTim
+author: Tim Bernhard
 comments: true
 date: 2014-11-17 19:14:13+00:00
 layout: page
@@ -9,6 +9,11 @@ title: About me
 wordpress_id: 8
 template: page
 socialImage: /media/socialImage.jpg
+description: false
+draft: false
+extends: _layouts.page
+language: de
+cover_image: false
 ---
 
 Mein Name ist Tim Bernhard, geboren bin ich am 2. August 1996.

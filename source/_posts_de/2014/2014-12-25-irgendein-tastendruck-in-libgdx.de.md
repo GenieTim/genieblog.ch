@@ -1,5 +1,5 @@
 ---
-author: adminTim
+author: Tim Bernhard
 comments: true
 date: 2014-12-25 09:37:10+00:00
 excerpt: "Wie man mit dem Java-Framework libGDX das Drücken irgendeiner Taste abfängt.\

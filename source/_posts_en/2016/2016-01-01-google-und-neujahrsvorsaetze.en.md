@@ -1,5 +1,5 @@
 ---
-author: adminTim
+author: Tim Bernhard
 comments: true
 date: 2016-01-01 07:00:31+00:00
 excerpt: '<p>Wer im Web sucht, verrät etwas über sich - zumindest wenn er sich nicht

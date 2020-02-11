@@ -1,5 +1,5 @@
 ---
-author: adminTim
+author: Tim Bernhard
 comments: true
 date: 2015-01-07 13:00:28+00:00
 excerpt: Nach dem aufsetzen von <a title="Lubuntu als Standardbetriebssystem auf dem

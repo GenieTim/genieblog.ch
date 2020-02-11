@@ -1,5 +1,5 @@
 ---
-author: adminTim
+author: Tim Bernhard
 comments: true
 date: 2015-03-30 02:33:06+00:00
 excerpt: Bei der Programmierung einer Windows Phone Applikation mit JavaScript kann

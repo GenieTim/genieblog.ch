@@ -1,5 +1,5 @@
 ---
-author: adminTim
+author: Tim Bernhard
 comments: true
 date: 2016-08-17 18:10:28+00:00
 excerpt: Mit dem Anniversary Update von Windows 10 ist es endlich soweit - der Sprachassistent

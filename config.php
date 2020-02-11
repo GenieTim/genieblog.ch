@@ -16,13 +16,16 @@ function getMultilangCollections()
         $collections['posts_' . $lang] = [
             'author' => 'Tim Bernhard', // Default author, if not provided in a post
             'sort' => '-date',
-            'type' => 'blog',
-            'path' => 'blog/' . $lang . '/{date|Y}/{slug}'
+            'extends' => '_layout.post',
+            'path' => 'posts/' . $lang . '/{date|Y}/{slug}'
         ];
         // categories
-        $collections['categories_' . $lang] = [
-            'path' => 'blog/' . $lang . '/categories/{filename}',
+        $collections['categories'] = [
+            'path' => 'posts/' . $lang . '/categories/{filename}',
             'posts' => function ($page, $allPosts) use ($lang) {
+                var_dump($allPosts);
+                var_dump($page);
+                die();
                 return $allPosts->filter(function ($post) use ($page, $lang) {
                     if ($post->categories) {
                         return in_array($page->getFilename(), $post->categories, true) && $post->language === $lang;
@@ -35,22 +38,24 @@ function getMultilangCollections()
         // pages
         $collections['pages_' . $lang] = [
             'author' => 'Tim Bernhard',
-            'sort' => 'name',
-            'path' => $lang . 'static/{slug}'
+            'sort' => '-filename',
+            'extends' => '_layout.page',
+            'path' => 'pages/' . $lang . '/{slug}'
+            // 'path' => 'attempt/' . $lang . '/{filename}'
         ];
 
         // tags
-        $collections['tags_' . $lang] = [
-            'path' => 'blog/' . $lang . '/tags/{filename}',
-            'posts' => function ($page, $allPosts) use ($lang) {
-                return $allPosts->filter(function ($post) use ($page, $lang) {
-                    if ($post->tags) {
-                        return in_array($page->getFilename(), $post->tags, true) && $post->language === $lang;
-                    }
-                    return false;
-                });
-            },
-        ];
+        // $collections['tags_' . $lang] = [
+        //     'path' => 'posts/' . $lang . '/tags/{filename}',
+        //     'posts' => function ($page, $allPosts) use ($lang) {
+        //         return $allPosts->filter(function ($post) use ($page, $lang) {
+        //             if ($post->tags) {
+        //                 return in_array($page->getFilename(), $post->tags, true) && $post->language === $lang;
+        //             }
+        //             return false;
+        //         });
+        //     },
+        // ];
     }
     // $collections['posts'] = $collections['posts_en'];
     return $collections;

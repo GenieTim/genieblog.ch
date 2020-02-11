@@ -1,14 +1,19 @@
 ---
-author: adminTim
+author: Tim Bernhard
 comments: true
 date: 2014-11-17 19:14:13+00:00
 layout: page
 link: http://genieblog.ch/ueber-mich/
-slug: ueber-mich
+slug: about-me
 title: About me
 wordpress_id: 8
 template: page
 socialImage: /media/socialImage.jpg
+description: false
+draft: false
+extends: _layouts.page
+language: en
+cover_image: false
 ---
 
 My name is Tim Bernhard, I was born on 2 August 1996.
