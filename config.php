@@ -20,12 +20,13 @@ function getMultilangCollections()
             'path' => 'posts/' . $lang . '/{date|Y}/{slug}'
         ];
         // categories
-        $collections['categories'] = [
-            'path' => 'posts/' . $lang . '/categories/{filename}',
+        $collections['categories_' . $lang] = [
+            'path' => 'posts/' . $lang . '/categories/{_filename}',
             'posts' => function ($page, $allPosts) use ($lang) {
-                var_dump($allPosts);
-                var_dump($page);
-                die();
+                if (!$allPosts) {
+                    echo "AllPosts = " + $allPosts;
+                    return [];
+                }
                 return $allPosts->filter(function ($post) use ($page, $lang) {
                     if ($post->categories) {
                         return in_array($page->getFilename(), $post->categories, true) && $post->language === $lang;

@@ -11,7 +11,7 @@ const YAML = require("yaml");
 glob(__dirname + "/../source/**/*.md", {}, function (er, files) {
 
   for (let i = 0; i < files.length; ++i) {
-    console.info("Checking for categories in file: " + files[i]);
+    // console.info("Checking for categories in file: " + files[i]);
     let fileContent = fs.readFileSync(files[i], { encoding: "utf8" });
     let fieldsRegex = new RegExp("^\\-\\-\\-$([\\s\\S]*)^\\-\\-\\-$", "m");
     let fieldsM = fileContent.match(fieldsRegex);
