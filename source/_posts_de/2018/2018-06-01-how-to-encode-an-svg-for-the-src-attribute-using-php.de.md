@@ -9,11 +9,9 @@ title: How to Encode an SVG for the `src`-Attribute using PHP
 wordpress_id: 412
 categories:
   - PHP
-tags:
-  -HowTo
-  -image
-  -SVG
-  -PHP
+  - Tutorial 
+  - image 
+  - SVG
 draft: false
 template: post
 description: false

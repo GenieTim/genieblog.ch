@@ -8,7 +8,7 @@ slug: lesemodus-rueckentwicklung-des-webs
 title: Lesemodus - Rückentwicklung des Webs?
 wordpress_id: 205
 categories:
-  - Any
+  
 draft: false
 template: post
 description: false

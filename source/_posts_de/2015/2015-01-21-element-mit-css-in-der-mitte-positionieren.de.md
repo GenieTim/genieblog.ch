@@ -9,13 +9,10 @@ title: Element mit CSS in der Mitte positionieren
 wordpress_id: 78
 categories:
   - CSS
-tags:
-  -Browser
-  -CSS
-  -HTML5
-  -Programmierung
-  -Website
-  -Websites
+  - Website
+  - Browser 
+  - HTML5
+  - Programmierung
 draft: false
 template: post
 description: false
@@ -30,7 +27,7 @@ Um ein Element in der Mitte eines anderen Elements mit CSS zu positionieren muss
 Für die horizontale Mitte ist es keine Schwierigkeiten. Folgendermassen mache ich es jeweils:
 
     
-    <code class="prettyprint">.container {
+    .container {
       display: block;
       text-align: center;
       width: 100%;
@@ -49,7 +46,7 @@ Wenn das Layout aus Tabellen besteht, so reicht `vertical-align : middle;`. Leid
 Diese könnte man per CSS mit 
 
     
-    <code class="prettyprint">.container {display: table;}
+    .container {display: table;}
     
     .child {
         display: table-cell;
@@ -64,7 +61,7 @@ Wenn bloss eine einzelne Zeile Text zentriert werden soll, so kann man dies mit 
 Für block Elemente, die man nicht zu einer Tabelle machen möchte, gibt es noch die Möglichkeit von negativem margin und absoluter positionierung. Das sähe zum Beispiel folgendermassen aus:
 
     
-    <code class="prettyprint">.container {
+    .container {
       position: relative;
     }
     

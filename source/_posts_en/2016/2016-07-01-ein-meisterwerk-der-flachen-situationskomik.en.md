@@ -8,9 +8,8 @@ slug: ein-meisterwerk-der-flachen-situationskomik
 title: Ein Meisterwerk der flachen Situationskomik
 wordpress_id: 266
 categories:
-  - Moskau
-post_format:
-  -Quote
+  - Moscow
+post_format: -Quote
 draft: false
 template: post
 description: false

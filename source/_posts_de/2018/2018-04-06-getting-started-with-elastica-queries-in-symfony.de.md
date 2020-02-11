@@ -9,11 +9,9 @@ title: Getting started with elastica queries in Symfony
 wordpress_id: 355
 categories:
   - PHP
-tags:
-  -Elastica
-  -Elasticsearch
-  -PHP
-  -Symfony
+  - Elastica
+  - Elasticsearch
+  - Symfony
 draft: false
 template: post
 description: false

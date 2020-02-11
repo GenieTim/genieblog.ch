@@ -2,10 +2,10 @@
 author: Tim Bernhard
 comments: true
 date: 2014-12-25 09:37:10+00:00
-excerpt: "Wie man mit dem Java-Framework libGDX das Drücken irgendeiner Taste abfängt.\
-  \ \nlibGDX ist ein Framework, optimal für die Programmierung von Games und Spielen,\
-  \ und zwar plattformunabhängig. Die Projekte lassen sich für iOs, Android, PCs und\
-  \ Macs und sogar fürs Web exportieren!"
+excerpt: >-
+  Wie man mit dem Java-Framework libGDX das Drücken irgendeiner Taste abfängt. 
+
+  libGDX ist ein Framework, optimal für die Programmierung von Games und Spielen, und zwar plattformunabhängig. Die Projekte lassen sich für iOs, Android, PCs und Macs und sogar fürs Web exportieren!
 layout: post
 link: http://genieblog.ch/irgendein-tastendruck-in-libgdx/
 slug: irgendein-tastendruck-in-libgdx
@@ -13,12 +13,11 @@ title: Irgendein Tastendruck in libGDX
 wordpress_id: 40
 categories:
   - Java
+  - Java
+  - libGDX
 draft: false
 template: post
 description: false
-tags: 
-  - Java
-  - libGDX
 socialImage: /media/socialImage.jpg
 extends: _layouts.post
 language: en

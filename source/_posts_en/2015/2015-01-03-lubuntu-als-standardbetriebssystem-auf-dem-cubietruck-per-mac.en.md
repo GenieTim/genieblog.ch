@@ -9,12 +9,11 @@ title: Lubuntu als Standardbetriebssystem auf dem Cubietruck - per Mac
 wordpress_id: 55
 categories:
   - Cubietruck
-tags:
-  -Betriebssystem
-  -Computer
-  -Cubietruck
-  -Lubuntu
-  -NAND
+  - OS 
+  - Computer 
+  - Cubietruck 
+  - Lubuntu 
+  - NAND
 draft: false
 template: post
 description: false

@@ -8,7 +8,7 @@ slug: sprache-sprechen
 title: Über Sprache sprechen
 wordpress_id: 255
 categories:
-  - Moskau
+  - Moscow
 draft: false
 template: post
 description: false

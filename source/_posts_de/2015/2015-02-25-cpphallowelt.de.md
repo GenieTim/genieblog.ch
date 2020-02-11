@@ -8,9 +8,8 @@ slug: cpphallowelt
 title: C++
 wordpress_id: 130
 categories:
-  - Weitere Programmiersprachen
-post_format:
-  -Quote
+  
+post_format: -Quote
 draft: false
 template: post
 description: false
@@ -20,7 +19,7 @@ language: de
 cover_image: false
 ---
 
-<code class="prettyprint">// HalloWelt.cpp
+// HalloWelt.cpp
     
     #include <iostream>                                     
     int main(){

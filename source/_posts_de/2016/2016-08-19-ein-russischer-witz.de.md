@@ -9,8 +9,7 @@ title: Ein russischer Witz
 wordpress_id: 297
 categories:
   - Moskau
-post_format:
-  -Quote
+post_format: -Quote
 draft: false
 template: post
 description: false

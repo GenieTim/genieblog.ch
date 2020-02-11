@@ -8,14 +8,13 @@ slug: logarithmen-von-hand-ziehen
 title: Logarithmen von Hand ziehen
 wordpress_id: 14
 categories:
-    - HTML5
-    - JavaScript
-tags:
-    - Computer
-    - JavaScript
-    - Logarithmus
-    - Mathematik
-    - Taschenrechner
+  - HTML5
+  - JavaScript
+  - Computer
+  - JavaScript
+  - Logarithmus
+  - Mathematics
+  - Taschenrechner
 draft: false
 template: post
 description: false
@@ -101,7 +100,7 @@ Kommen wir nun also zur Funktion log(), dem Herzstück unseres Kunstwerks, die d
 
 
     
-    <code class="prettyprint">function log(wert, basis) {
+    function log(wert, basis) {
     var zahl = wert;
     var gesucht = "";
     /* eigentliche Rechnung. Gibt den Logarithmus mit 15 Stellen aus */
@@ -129,7 +128,7 @@ Und für was steht power()? Das ist unser Ersatz für `Math.pow()`. Ja, zugegebe
 
 
     
-    <code class="prettyprint">function power(basis, exponent) {
+    function power(basis, exponent) {
     /* damit Potenzgesetze eingehalten werden */
     if (exponent === 0) {
     return 1;

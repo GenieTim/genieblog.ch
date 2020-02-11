@@ -8,7 +8,7 @@ slug: apple-superdrive-mit-windows-verwenden
 title: Use Apple Superdrive with Windows
 wordpress_id: 173
 categories:
-  - Any
+  
 draft: false
 template: post
 description: false

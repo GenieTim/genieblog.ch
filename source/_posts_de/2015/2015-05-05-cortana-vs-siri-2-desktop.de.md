@@ -5,11 +5,10 @@ date: 2015-05-05 12:30:38+00:00
 layout: post
 link: http://genieblog.ch/cortana-vs-siri-2-desktop/
 slug: cortana-vs-siri-2-desktop
-title: 'Cortana vs. Siri #2: Desktop'
+title: "Cortana vs. Siri #2: Desktop"
 wordpress_id: 182
 categories:
   - Cortana vs. Siri
-tags:
   - Cortana
   - iOs
   - Siri

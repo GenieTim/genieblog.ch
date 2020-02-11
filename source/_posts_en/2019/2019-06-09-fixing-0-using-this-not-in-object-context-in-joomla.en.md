@@ -8,7 +8,7 @@ slug: fixing-0-using-this-not-in-object-context-in-joomla
 title: My fix to`0 - Using $this not in object context` in Joomla!
 wordpress_id: 445
 categories:
-  - Any
+  
 draft: false
 template: post
 description: false

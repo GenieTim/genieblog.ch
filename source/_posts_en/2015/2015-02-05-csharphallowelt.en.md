@@ -8,13 +8,10 @@ slug: csharphallowelt
 title: C#
 wordpress_id: 110
 categories:
-  - Weitere Programmiersprachen
-post_format:
-  -Quote
-tags:
-  -C#
-  -Hallo
-  -Welt
+  
+  - C# 
+  - Hallo Welt
+post_format: -Quote
 draft: false
 template: post
 description: false
@@ -24,7 +21,7 @@ language: en
 cover_image: false
 ---
 
-<code class="prettyprint">
+
     // HalloWelt.cs
     
     public class HalloWelt

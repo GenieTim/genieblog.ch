@@ -2,23 +2,21 @@
 author: Tim Bernhard
 comments: true
 date: 2015-03-30 02:33:06+00:00
-excerpt: Bei der Programmierung einer Windows Phone Applikation mit JavaScript kann
-  der "zurück"-Button unten links am Smartphone natürlich auch abgefangen werden,
-  um eine alternative Tätigkeit als zum Beispiel das Beenden der Applikation herbeizuführen.
-  Im folgenden möchte ich die Vorgehensweise erklären.
+excerpt: Bei der Programmierung einer Windows Phone Applikation mit JavaScript kann der
+  "zurück"-Button unten links am Smartphone natürlich auch abgefangen werden, um
+  eine alternative Tätigkeit als zum Beispiel das Beenden der Applikation
+  herbeizuführen. Im folgenden möchte ich die Vorgehensweise erklären.
 layout: post
 link: http://genieblog.ch/javascript-windows-phone-hardware-backbutton-abfangen/
 slug: javascript-windows-phone-hardware-backbutton-abfangen
-title: 'JavaScript: Windows Phone Hardware Backbutton abfangen'
+title: "JavaScript: Windows Phone Hardware Backbutton abfangen"
 wordpress_id: 155
 categories:
   - JavaScript
-tags:
-  -App
-  -HTML5
-  -JavaScript
-  -Programmierung
-  -Windows Phone
+  - App 
+  - HTML5 
+  - Programmierung 
+  - Windows Phone
 draft: false
 template: post
 description: false

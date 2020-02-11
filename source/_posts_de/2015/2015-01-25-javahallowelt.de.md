@@ -9,12 +9,8 @@ title: Java
 wordpress_id: 94
 categories:
   - Java
-post_format:
-  -Quote
-tags:
-  -Hallo
-  -Java
-  -Welt
+  - Hallo Welt
+post_format: -Quote
 draft: false
 template: post
 description: false
@@ -24,7 +20,7 @@ language: de
 cover_image: false
 ---
 
-<code class="prettyprint">
+
     // halloWelt.java
     package ch.genieblog.halloWelt;
     

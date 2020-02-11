@@ -7,7 +7,6 @@ link: http://genieblog.ch/impressum/
 slug: impressum
 title: Impressum
 wordpress_id: 65
-tags:
 template: page
 socialImage: /media/socialImage.jpg
 description: false
@@ -15,6 +14,7 @@ draft: false
 extends: _layouts.page
 language: de
 cover_image: false
+categories: null
 ---
 
 

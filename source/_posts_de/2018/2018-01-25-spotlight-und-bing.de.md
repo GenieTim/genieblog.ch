@@ -9,12 +9,10 @@ title: Spotlight and Bing
 wordpress_id: 187
 categories:
   - Cortana vs. Siri
-post_format:
-  -Quote
-tags:
-  -Bing
-  -Cortana
-  -Spotlight
+  - Bing 
+  - Cortana 
+  - Spotlight
+post_format: -Quote
 draft: false
 template: post
 description: false

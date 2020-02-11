@@ -9,9 +9,7 @@ title: My first third-party Symfony Bundle
 wordpress_id: 416
 categories:
   - PHP
-tags:
-  -PHP
-  -Symfony
+  - Symfony
 draft: false
 template: post
 description: false

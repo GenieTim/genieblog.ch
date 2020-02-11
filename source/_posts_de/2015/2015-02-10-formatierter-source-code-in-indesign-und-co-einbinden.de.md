@@ -9,10 +9,9 @@ title: Formatierter Source Code in Indesign und Co. einbinden
 wordpress_id: 103
 categories:
   - Office
-tags:
-  -Code
-  -Format
-  -Indesign
+  - Code 
+  - Format 
+  - Indesign
 draft: false
 template: post
 description: false

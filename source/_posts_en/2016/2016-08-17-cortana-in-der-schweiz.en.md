@@ -2,9 +2,9 @@
 author: Tim Bernhard
 comments: true
 date: 2016-08-17 18:10:28+00:00
-excerpt: Mit dem Anniversary Update von Windows 10 ist es endlich soweit - der Sprachassistent
-  von Microsoft ist endlich auch in der Schweiz verfügbar. Zwar versteht Cortana nur
-  Hochdeutsch, doch das ist verständlich.
+excerpt: Mit dem Anniversary Update von Windows 10 ist es endlich soweit - der
+  Sprachassistent von Microsoft ist endlich auch in der Schweiz verfügbar. Zwar
+  versteht Cortana nur Hochdeutsch, doch das ist verständlich.
 layout: post
 link: http://genieblog.ch/cortana-in-der-schweiz/
 slug: cortana-in-der-schweiz

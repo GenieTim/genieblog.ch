@@ -8,9 +8,8 @@ slug: ein-russischer-witz
 title: Ein russischer Witz
 wordpress_id: 297
 categories:
-  - Moskau
-post_format:
-  -Quote
+  - Moscow
+post_format: -Quote
 draft: false
 template: post
 description: false

@@ -5,8 +5,8 @@ date: 2015-09-07 13:15:36+00:00
 layout: post
 link: http://genieblog.ch/plymouthd-ply-terminal-c611-ply_terminal_open-assertion-terminal-void-0-failed/
 slug: plymouthd-ply-terminal-c611-ply_terminal_open-assertion-terminal-void-0-failed
-title: 'plymouthd: ply-terminal.c:611: ply_terminal_open: Assertion ''terminal !=
-  ((void *)0)'' failed'
+title: "plymouthd: ply-terminal.c:611: ply_terminal_open: Assertion 'terminal !=
+  ((void *)0)' failed"
 wordpress_id: 214
 categories:
   - Cubietruck

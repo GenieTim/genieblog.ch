@@ -8,7 +8,7 @@ slug: und-das-wetter-war-wie
 title: Und das Wetter war wie?
 wordpress_id: 254
 categories:
-  - Moskau
+  - Moscow
 draft: false
 template: post
 description: false

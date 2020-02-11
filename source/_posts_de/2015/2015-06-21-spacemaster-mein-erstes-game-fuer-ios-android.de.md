@@ -9,11 +9,10 @@ title: spaceMaster - mein erstes Game für iOs & Android
 wordpress_id: 194
 categories:
   - Java
-tags:
-  -Android
-  -Game
-  -iOs
-  -Programmierung
+  - Android 
+  - Game 
+  - iOs 
+  - Programmierung
 draft: false
 template: post
 description: false

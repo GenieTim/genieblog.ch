@@ -9,11 +9,9 @@ title: Vaccination controversy introduced by pharma industry because they don't 
   enough by vaccination
 wordpress_id: 318
 categories:
-  - Allgemein
-tags:
-  -conspiracy
-  -hope
-  -idea
+  - Conspiracy 
+  - Hope 
+  - Idea
 draft: false
 template: post
 description: false

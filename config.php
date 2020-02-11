@@ -43,19 +43,6 @@ function getMultilangCollections()
             'path' => 'pages/' . $lang . '/{slug}'
             // 'path' => 'attempt/' . $lang . '/{filename}'
         ];
-
-        // tags
-        // $collections['tags_' . $lang] = [
-        //     'path' => 'posts/' . $lang . '/tags/{filename}',
-        //     'posts' => function ($page, $allPosts) use ($lang) {
-        //         return $allPosts->filter(function ($post) use ($page, $lang) {
-        //             if ($post->tags) {
-        //                 return in_array($page->getFilename(), $post->tags, true) && $post->language === $lang;
-        //             }
-        //             return false;
-        //         });
-        //     },
-        // ];
     }
     // $collections['posts'] = $collections['posts_en'];
     return $collections;

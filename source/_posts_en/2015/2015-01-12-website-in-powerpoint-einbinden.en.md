@@ -2,18 +2,16 @@
 author: Tim Bernhard
 comments: true
 date: 2015-01-12 11:00:30+00:00
-excerpt: 'Wenn Sie eine Microsoft PowerPoint Präsentation vorzeigen, so haben Sie
-  bestimmt auch schon die Vorteile der Referenztools genossen. Ob die Notizen, der
-  Laserpointer oder die Stoppuhr - auch ich bevorzuge diese Ansicht zum präsentieren.
-  PowerPoint wechselt dabei, wenn man den Computer an einen Beamer angeschlossen hat,
-  von "Die Anzeige duplizieren" auf "Die Anzeige erweitern", so dass der Beamer als
-  zweite Anzeige, eben für die Präsentation, dient.
+excerpt: >-
+  Wenn Sie eine Microsoft PowerPoint Präsentation vorzeigen, so haben Sie
+  bestimmt auch schon die Vorteile der Referenztools genossen. Ob die Notizen,
+  der Laserpointer oder die Stoppuhr - auch ich bevorzuge diese Ansicht zum
+  präsentieren. PowerPoint wechselt dabei, wenn man den Computer an einen Beamer
+  angeschlossen hat, von "Die Anzeige duplizieren" auf "Die Anzeige erweitern",
+  so dass der Beamer als zweite Anzeige, eben für die Präsentation, dient.
 
 
-  Durch diesen automatischen Wechsel kann man anschliessend nicht einfach so ein anderes
-  Programm wie z. B. einen Browser öffnen und es auf dem Beamer anzeigen. Das verschwert
-  bedauerlicherweise das anzeigen von Websites während einer Präsentation. Es gibt
-  zum Glück einige Lösungen.'
+  Durch diesen automatischen Wechsel kann man anschliessend nicht einfach so ein anderes Programm wie z. B. einen Browser öffnen und es auf dem Beamer anzeigen. Das verschwert bedauerlicherweise das anzeigen von Websites während einer Präsentation. Es gibt zum Glück einige Lösungen.
 layout: post
 link: http://genieblog.ch/website-in-powerpoint-einbinden/
 slug: website-in-powerpoint-einbinden
@@ -21,14 +19,13 @@ title: Website in PowerPoint einbinden
 wordpress_id: 76
 categories:
   - Office
-tags:
-  -Browser
-  -Computer
-  -Office
-  -PowerPoint
-  -Präsentation
-  -Tutorial
-  -Website
+  - Browser 
+  - Computer 
+  - Office 
+  - PowerPoint 
+  - Presentation 
+  - Tutorial 
+  - Website
 draft: false
 template: post
 description: false

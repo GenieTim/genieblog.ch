@@ -9,8 +9,7 @@ title: Ein Meisterwerk der flachen Situationskomik
 wordpress_id: 266
 categories:
   - Moskau
-post_format:
-  -Quote
+post_format: -Quote
 draft: false
 template: post
 description: false

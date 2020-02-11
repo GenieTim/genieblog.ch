@@ -8,13 +8,12 @@ slug: hallo-welt
 title: Hallo Welt!
 wordpress_id: 1
 categories:
-  - Allgemein
-tags:
-  -Bernhard
-  -Hallo
-  -Tim
-  -Webstudio
-  -Willkommen
+  
+  - Bernhard 
+  
+  - Tim 
+  - Webstudio 
+  - Willkommen
 draft: false
 template: post
 description: false

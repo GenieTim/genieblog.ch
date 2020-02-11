@@ -8,7 +8,7 @@ slug: ueber-verkehr
 title: Über Verkehr
 wordpress_id: 231
 categories:
-  - Moskau
+  - Moscow
 draft: false
 template: post
 description: false
