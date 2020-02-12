@@ -5,9 +5,10 @@ date: 2016-07-01 16:04:37+00:00
 layout: post
 link: http://genieblog.ch/ein-meisterwerk-der-flachen-situationskomik/
 slug: ein-meisterwerk-der-flachen-situationskomik
-title: Ein Meisterwerk der flachen Situationskomik
+title: A masterpiece of flat situation comedy
 wordpress_id: 266
 categories:
+  - Language Exchange
   - Moscow
 post_format: -Quote
 draft: false
@@ -23,4 +24,4 @@ cover_image: false
 
 
 
-Liebesgrüsse aus Moskau ;)
+From Moscow with love ;)

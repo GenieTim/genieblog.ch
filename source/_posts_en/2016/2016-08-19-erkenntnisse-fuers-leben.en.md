@@ -18,49 +18,46 @@ language: en
 cover_image: false
 ---
 
-Bei meinem Abenteuer in Moskau und Sankt Petersburg habe ich einiges gelernt. Vieles davon hatte ich eigentlich schon gewusst, doch nicht zu Herzen genommen. Dazu gehört:
+I learned a lot during my adventure in Moscow and St. Petersburg. I actually knew a lot of it, but I didn't take it to heart. This includes:
 
 
 
 
-  * Bezahlen in einem anderen Land ist trotz Bearbeitungsgebühr günstiger mit einer Kreditkarte als mit der Maestro, während das Abheben von Geld besser mit der Maestro ausgeführt werden sollte
+  * Paying in another country is cheaper with a credit card than with the Maestro, despite the processing fee, while withdrawing money should be done better with the Maestro
 
 
-  * Wäschewaschen geht im Notfall problemlos mit Shampoo oder Duschgel, sofern das Produkt nicht zu viel Schaum produziert
+  * In an emergency, washing clothes is easy with shampoo or shower gel, provided the product does not produce too much foam
 
 
-  * Eine kleine Geschirrspülmaschine mit Handspülmittel zu füttern kann jedoch zu einer Schaumparty in der Küche führen
+  * However, feeding a small dishwasher with hand dishwashing liquid can lead to a foam party in the kitchen
 
 
-  * Dieser Punkt würde die Moral etlicher Disney-Filme wiederholen, weshalb ich ihn durch diesen Text ersetzt habe
-
-
-
-Passend noch einige Fun Facts, die mich mehr oder weniger überrascht haben:
-
-
-  * Laut Gerüchten als Trotzreaktion auf Sanktionen hat Russland die Adoption russischer Kinder für Amerikaner verboten. Das ist jedoch leicht problematisch für die russischen Kinder, da die Amerikaner insbesondere für Kinder mit Erbkrankheiten oder Trisomie-21 die Hauptabnehmer waren.
-
-
-  * Moskau liegt genau in der Mitte des weissen und des schwarzen Meeres.
-
-
-  * Trotz Verbot homosexueller Propaganda gibt es in St. Petersburg zwei LGBT-Clubs.
-
-
-  * Das Überqueren einer Strasse zu Fuss bei rot oder ohne Fussgängerstreifen kann mit einer Busse bestraft werden.
-
-
-  * Vorne in die Metro wagen es - zumindest in Moskau - weniger Leute einzusteigen, aus Angst vor einem terroristischen Anschlag.
-
-
-  * Unter der Hermitage gibt es das so genannte 'Territorium der Katzen'. Dort leben, wahrlich im Keller der Hermitage, eine grosse Anzahl Katzen, deren Aufgabe die Rattenjagd ist. Sponsoren spenden Geld und Katzenfutter für die Haltung dieser Katzen.
-
-
-  * In gewissen Metrostationen unterscheiden sich die Geschwindigkeit des Handlaufs und der Rolltreppe. Das ist ziemlich beirrend, wenn man alle paar Meter neu greifen muss!
-
-
-  * Die Menge des All-In-One Dusch-Shampoo-Gels, die Akkulaufzeit meines Rasierers sowie die Menge der Zahnpaste hat die 9-Wochen Probe erfolgreich, wenn auch knapp, bestanden und gehalten.
+  * This point would repeat the morale of several Disney films, which is why I have replaced it with this text
 
 
 
+Fitting fun facts that more or less surprised me:
+
+
+  * Rumor has it that defiance of sanctions has banned Russia from adopting Russian children for Americans. However, this is slightly problematic for Russian children, as Americans were the main customers, especially for children with inherited disorders or trisomy-21.
+
+
+  * Moscow is right in the middle of the white and black seas.
+
+
+  * Despite the ban on homosexual propaganda, there are two LGBT clubs in St. Petersburg.
+
+
+  * Crossing a street on foot with red or no pedestrian crossing can be punished with a bus.
+
+
+  * Fewer people - at least in Moscow - dare to get on the metro for fear of a terrorist attack.
+
+
+  * Under the Hermitage there is the so-called 'Territory of the Cats'. A large number of cats live there, truly in the basement of the Hermitage, whose task is to hunt rats. Sponsors donate money and cat food to keep these cats.
+
+
+  * The speed of the handrail and escalator differ in certain metro stations. This is pretty daunting when you have to grab every few meters!
+
+
+  * The amount of the all-in-one shower shampoo gel, the battery life of my razor and the amount of toothpaste passed the test for 9 weeks successfully, even if it was scarce.

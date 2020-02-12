@@ -19,6 +19,7 @@ description: false
 socialImage: /media/socialImage.jpg
 extends: _layouts.post
 language: de
+translations: false
 cover_image: false
 ---
 

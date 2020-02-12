@@ -26,24 +26,24 @@ language: en
 cover_image: false
 ---
 
-Bei der Programmierung einer Windows Phone Applikation mit JavaScript kann der "zurück"-Button unten links am Smartphone natürlich auch abgefangen werden, um eine alternative Tätigkeit als zum Beispiel das Beenden der Applikation herbeizuführen. Im folgenden möchte ich die Vorgehensweise erklären.
+When programming a Windows Phone application with JavaScript, the "back" button at the bottom left of the smartphone can of course also be intercepted in order to carry out an alternative activity, for example, ending the application. In the following I would like to explain the procedure.
 
-In der entscheidenden HTML-Seite muss ein _WinJS Application Control_ Element mit den Parameter `onbackclick : meineFunktion` erstellt werden, wobei _meineFunktion_ der Funktion entspricht, die aufgerufen wird, wenn der Backbutton angeklickt wird. Dies sollte ungefähr folgendermassen aussehen:
+In the crucial HTML page, a _WinJS Application Control_ element must be created with the parameter `onbackclick: myFunction`, where _myFunction_ corresponds to the function that is called when the back button is clicked. This should look something like this:
 
     
     <div data-win-control="WinJS.Application." data-win-options="{onbackclick : meineFunktion}" />
 
 
-Anschliessed kann der EventHandler "backclick" verwendet werden. Zum Beispiel so:
+The EventHandler "backclick" can then be used. For example like this:
 
     
-    <code data-caption="" data-start-line="1" class="prettyprint lang-javascript" data-visibility="visible" data-highlight="">document.addEventListener("backclick", meineFunktion);
+    document.addEventListener("backclick", meineFunktion);
 
 
-Um jedoch das Standardverhalten, das Beenden der Applikation, zu unterdrücken, muss `true` zurückgegeben werden. Eine empfehlenswerte Verwendung ist folgende, in der Datei `default.js`:
+However, to suppress the default behavior, the termination of the application, `true` must be returned. A recommended use is in the file `default.js`:
 
     
-    <code data-caption="" data-start-line="1" class="prettyprint lang-javascript" data-visibility="visible" data-highlight=""><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start"></span><code class="language-javascript">app.onbackclick = function (evt) {
+    app.onbackclick = function (evt) {
        meineFunktion();
        return true;
     }

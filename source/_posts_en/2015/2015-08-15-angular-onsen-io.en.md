@@ -18,5 +18,5 @@ language: en
 cover_image: false
 ---
 
-Nahezu drei Tage brachte ich es einfach nicht hin, dass meine Angular Applikation mit onsen.io macht, was sie sollte. `ng-repeat` waren im DOM-Baum auskommentiert, `ng-click` reagierten nicht. 
-Nun endlich ist mir das Problem aufgefallen und bewusst geworden. Die `ng-controller` dürfen nicht auf einem `` angewendet werden, sondern dürfen frühestens bei der `` als Attribut gesetzt werden. Ich hoffe ich kann mit dieser Beobachtung anderen solch schweres Kopfzerbrechen verhindern.
+For almost three days I simply couldn't get my Angular application to do what it should with onsen.io. `ng-repeat` were commented out in the DOM tree, `ng-click` did not respond.
+Now I finally noticed and became aware of the problem. The `ng-controller` must not be used on a `<ons-template> </ons-template>`, but may only be set as an attribute on the `<ons-page> </ons-page>` at the earliest. I hope with this observation I can prevent others from having such a serious headache.

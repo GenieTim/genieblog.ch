@@ -3,9 +3,9 @@ author: Tim Bernhard
 comments: true
 date: 2014-12-25 09:37:10+00:00
 excerpt: >-
-  Wie man mit dem Java-Framework libGDX das Drücken irgendeiner Taste abfängt. 
+  How to intercept pressing any key with the libGDX Java framework.
 
-  libGDX ist ein Framework, optimal für die Programmierung von Games und Spielen, und zwar plattformunabhängig. Die Projekte lassen sich für iOs, Android, PCs und Macs und sogar fürs Web exportieren!
+   libGDX is a framework, ideal for programming games and games, and that is platform-independent. The projects can be exported for iOs, Android, PCs and Macs and even for the web!
 layout: post
 link: http://genieblog.ch/irgendein-tastendruck-in-libgdx/
 slug: irgendein-tastendruck-in-libgdx
@@ -24,47 +24,42 @@ language: en
 cover_image: logo-libgdx.png
 ---
 
-Bei einem aktuellen Projekt eines Games in der Programmiersprache Java, das ich mithilfe des Frameworks libGDX erstelle, wollte ich an einem Punkt den Nutzer fragen, ob er bereit ist, weiterzuspielen. Dem Spielerlebnis zuliebe sollte dies auf keinen Fall über einen Ja/Nein Dialog geschehen.
+In a current project for a game in the Java programming language, which I create using the libGDX framework, I wanted to ask the user at one point whether he is ready to continue playing. For the sake of the gaming experience, this should never be done via a yes / no dialog.
 
 
 
 
 
-Da mit libGDX das Spiel sowohl für Desktop-PCs wie auch für Android und iOs Mobilgeräte konzipiert sein würde, ist ein einfacher Klick auf den Bildschirm zwar für die Mobilgeräte angenehm, nicht jedoch für den Desktop-Nutzer, da dieser die Maus für die eigentliche Steuerung des Spiels nicht benötigt.
+Since with libGDX the game would be designed for desktop PCs as well as for Android and iOs mobile devices, a simple click on the screen is pleasant for the mobile devices, but not for the desktop user, because he uses the mouse for the actual control of the game not needed.
 
 
 
 
 
-Es liegt also eine zweispurige Lösung nahe: für die Mobilgeräte sollte es reichen, wenn sie auf den Bildschirm tippen, der PC-Nutzer dagegen sollte eine Taste drücken, um das Spiel zu beginnen. Doch welche?
-
-
-
+So there is a two-lane solution: it should be enough for the mobile devices to tap the screen, while the PC user should press a button to start the game. But which ones?
 
 
 ## Tastatureingabe in libGDX
 
 
 
-
-Generell kann eine Tastatureingabe in libGDX  auf zwei Arten entgegengenommen werden: Einerseits kann ich immer wieder fragen "Hey, Tastatur, wurde gerade _Enter_ gedrückt?". Oder ich sage der Tastatur: "Hey, Junge, melde Dich doch wenn _Enter_ gedrückt wurde!". Ich bevorzuge die erste Lösung, da die _render()_-Funktion sowieso immer wieder aufgerufen wird, und dieser Weg in den meisten Beispielprojekten gewählt wird.
-
+In general, keyboard input in libGDX can be received in two ways: On the one hand, I can always ask "Hey, keyboard, was _Enter_ just pressed?". Or I say to the keyboard: "Hey, boy, get in touch when _Enter_ has been pressed!". I prefer the first solution because the _render () _ function is called again and again anyway, and this way is chosen in most example projects.
 
 
-
-Wie funktioniert denn nun dieser Weg? Die Tastatureingabe wird bereitgestellt durch die Methode com.badlogic.gdx.Gdx.input.isKeyPressed(int key). Geprüft wird dann zum Beispiel folgendermassen:
-
-
-`// import com.badlogic.gdx.Gdx;
-// import com.badlogic.gdx.Gdx;
-// import com.badlogic.gdx.Input;
-// import com.badlogic.gdx.Input.Keys;
-if (Gdx.input.isKeyPressed(Input.Keys.ENTER)) {
-			// tu was du willst - Enter wurde gedrückt
-		}`
+How does this way work now? The keyboard input is provided by the method com.badlogic.gdx.Gdx.input.isKeyPressed (int key). The following is then checked, for example:
 
 
-Damit sind wir schon ziemlich nah am Ziel - wir müssen nur Input.Keys.??? anpassen, so dass die Tastatur nach der von uns gewählte Taste gefragt wird. Eine Liste mit den verschiedenen Input.Keys.* findest Du hier: [http://libgdx.badlogicgames.com/nightlies/docs/api/com/badlogic/gdx/Input.Keys.html](http://libgdx.badlogicgames.com/nightlies/docs/api/com/badlogic/gdx/Input.Keys.html)
+		// import com.badlogic.gdx.Gdx;
+		// import com.badlogic.gdx.Gdx;
+		// import com.badlogic.gdx.Input;
+		// import com.badlogic.gdx.Input.Keys;
+		if (Gdx.input.isKeyPressed(Input.Keys.ENTER)) {
+					// do what you want – enter was pressed
+		}
+
+
+So we are pretty close to the goal - we just need Input.Keys.??? adjust so that the keyboard asks for the key we selected. 
+A list with the different Input.Keys.* can be found here: [http://libgdx.badlogicgames.com/nightlies/docs/api/com/badlogic/gdx/Input.Keys.html](http://libgdx.badlogicgames.com/nightlies/docs/api/com/badlogic/gdx/Input.Keys.html)
 
 
 
@@ -75,24 +70,22 @@ Damit sind wir schon ziemlich nah am Ziel - wir müssen nur Input.Keys.??? anpas
 
 
 
-Doch nur welche Taste wollen wir denn nun verwenden? Genau, alle! Es soll nicht darauf ankommen, welche Taste der Nutzer drückt, er will doch einfach das Spiel starten. Da wir bestimmt keinen ewig langen Schalter à la `if (rechts oder links oder bla oder bla...)` haben möchten, gibt es zum Glück den **Any Key**! ;)
+But which key do we want to use now? Exactly, everyone! It doesn't matter which key the user presses, they just want to start the game. Luckily, since we definitely don't want to have an eternally long switch à la `if (right or left or bla or bla ...)`, there is the **Any Key**! ;)
 
 
 
-
-Dieser sieht folgendermassen aus, und löst unser Problem ausserordentlich elegant:
+This looks as follows and solves our problem extremely elegantly:
 
 
 `if (Gdx.input.isKeyPressed(Input.Keys.ANY_KEY)) {
-			// YAY, eine Taste wurde gedrückt
-		}`
+			// YAY, a key was pressed
+}`
 
 
 
-Und entsprechend mit der Abfrage nach Eingabe von Mobilgeräten:
-
+And accordingly with the query for input of mobile devices:
 
 
 `if (Gdx.input.justTouched() || Gdx.input.isKeyPressed(Input.Keys.ANY_KEY)) {
-			// Wohoo, das Spiel kann starten!
-		}`
+			// Wohoo, start the game!
+}`

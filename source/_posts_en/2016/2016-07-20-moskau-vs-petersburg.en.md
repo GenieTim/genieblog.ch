@@ -9,6 +9,8 @@ title: Moskau vs. Petersburg
 wordpress_id: 280
 categories:
   - Language Exchange
+  - Moscow
+  - St. Petersburg
 draft: false
 template: post
 description: false
@@ -18,10 +20,10 @@ language: en
 cover_image: false
 ---
 
-Ein fortlaufend aktualisierter Beitrag mit den Unterschieden, die mir in diesen beiden Grossstädten aufgefallen sind.
+A continuously updated article with the differences that I noticed in these two big cities.
 
-**Die Metro**
-Nach meiner Zugreise von Moskau nach St. Petersburg war eine Fahrt in der Metro samt Gepäck nötig. Dabei hat mich vieles überrascht, weil es das in Moskau schlichtweg nicht gab. Zum Beispiel Werbung: Moskaus Metro wirkt durch und durch sauber und rein. Es liegt kein Abfall rum, die eleganten Bögen und Stützen wirken geputzt, und Werbung ist nirgends zu sehen. Das ist in St. Petersburg ziemlich anders: Die Gänge sind praktisch nur durch Leuchtreklame erhellt. Ein Eindruck von edlen Stationen, wie ich ihn in Moskau hatte, gibt es hier nicht. Des weiteren sind bei einigen Stationen hier in St. Petersburg die Geleise durch Türen vom Perron getrennt, die sich automatisch bei haltendem Zug öffnen. Eine derartige Präzision seitens der Lockführer war in Moskau nicht notwendig.
+**The subway**
+After my train journey from Moscow to St. Petersburg, I had to take the metro and luggage. I was surprised a lot because there was simply no such thing in Moscow. For example, advertising: Moscow's metro looks thoroughly clean and pure. There is no rubbish lying around, the elegant arches and supports look polished, and advertising is nowhere to be seen. It is quite different in St. Petersburg: the corridors are lit up practically only by neon signs. There is no impression of noble stations like I had in Moscow. Furthermore, at some stations here in St. Petersburg, the tracks are separated from the platform by doors that open automatically when the train stops. Such precision on the part of the lure leaders was not necessary in Moscow.
 
-**Die Sprache**
-Ein riesiges Land, eine Sprache: Russisch. Doch wie in so vielen anderen Ländern auch gibt es in Russland scheinbar Dialekte. Im Fall von Moskau und Sankt Petersburg ist es der Buchstabe ч der in gewissem Kontext in Moskau gebunden als "sch" ausgesprochen wird, während er in St. Petersburg die eigentliche Ausspache "tsch" beibehält. Vermutlich gibt es noch einige andere Unterschiede, doch wenigstens dieser ist auch mir aufgefallen.
+**The language**
+A huge country, a language: Russian. But like in so many other countries, there seem to be dialects in Russia. In the case of Moscow and St. Petersburg, it is the letter ч which, in a certain context, is pronounced "sh" in Moscow, while in St. Petersburg it retains the actual pronunciation "ch". There are probably some other differences, but at least I noticed this too.

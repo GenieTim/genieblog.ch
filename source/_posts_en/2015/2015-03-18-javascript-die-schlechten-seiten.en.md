@@ -15,35 +15,32 @@ description: false
 socialImage: /media/socialImage.jpg
 extends: _layouts.post
 language: en
-cover_image: false
+cover_image: 2015/20170523_135327664_iOS.jpg
 ---
 
-Haben Sie mal versucht, in JavaScript 1 + 2 mit 3 zu vergleichen? Oder `undefined` einen Wert zuzuordnen?
-Versuchen Sie es jetzt. Sind die Ergebnisse befriedigend?
+Have you ever tried to compare 1 + 2 with 3 in JavaScript? Or assign an undefined value?
+Now try it. Are the results satisfactory?
 
-JavaScript ist eine sehr kontroverse Programmiersprache. Sie bietet zwar Ansätze einer Objektorientierten Programmiersprache, ist schlussendlich aber bloss prototypenbasiert.
+JavaScript is a very controversial programming language. Although it offers approaches to an object-oriented programming language, it is ultimately only prototype-based.
 
-Das Problem von JavaScript sind wohl die vielen Köche, die den Brei verderben, um es metaphorisch auszudrücken.
+The problem with JavaScript is probably the many cooks who spoil the broth to put it metaphorically.
 
-Im folgenden möchte ich nicht JavaScript bashen oder so - Ihre Meinung dürfen Sie sich selber bilden. Ich möchte Ihnen jedoch einige weitere Beispiele von meiner Meinung nach abnormalen Möglichkeiten nennen.
-
-
+In the following I don't want to base JavaScript or anything - you can form your own opinion. However, I would like to give you some more examples of what I think are abnormal possibilities.
 
 
-
-  * Zählen Sie "4" und 4 zusammen.
-
-
-  * Ziehen Sie 4 von "4" ab.
+  * Add up "4" and 4.
 
 
-  * Vergleichen Sie parseInt("06") mit parseInt("09")
+  * Subtract 4 from "4".
 
 
-  * Kontrollieren Sie 0 == "", false == "0", und Varationen
+  * Compare parseInt ("06") with parseInt ("09")
 
 
-Ich wünsche Ihnen viel Spass damit - wenn Ihnen weitere Beispiele einfallen, die Ihrer Meinung nach Wert sind, in diese Liste aufgenommen zu werden, so schreiben Sie sie in die Kommentare!
+  * Check 0 == "", false == "0", and variations
 
-Update:
-Weitere unterhaltende Beispiele finden sich auch in folgenden Video: [https://www.youtube.com/watch?v=2pL28CcEijU](https://www.youtube.com/watch?v=2pL28CcEijU) (wobei ich nicht jedes WTF als solches bezeichnen würde)
+
+I hope you enjoy it - if you can think of other examples that you think should be included in this list, please write them in the comments!
+
+update:
+More entertaining examples can also be found in the following video: [https://www.youtube.com/watch?v=2pL28CcEijU[(https://www.youtube.com/watch?v=2pL28CcEijU) (although I do not use any WTF would describe as such)

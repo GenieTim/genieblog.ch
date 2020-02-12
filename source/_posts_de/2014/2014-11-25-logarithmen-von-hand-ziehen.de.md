@@ -148,4 +148,4 @@ Und für was steht power()? Das ist unser Ersatz für `Math.pow()`. Ja, zugegebe
 Damit ist unser Code komplett. Wenn Unser Code nicht einleuchtend ist, so schreib Deine Frage in die Kommentare.
 
 Teste den Code hier aus:
-
+<iframe src="http://jsfiddle.net/BernhardWebstudio/vx7m21nd/16/embedded/result,js,html" allowfullscreen="allowfullscreen" width="100%" height="300" frameborder="0"></iframe>

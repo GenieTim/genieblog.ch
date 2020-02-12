@@ -8,9 +8,8 @@ slug: csharphallowelt
 title: C#
 wordpress_id: 110
 categories:
-  
   - C# 
-  - Hallo Welt
+  - Hello World
 post_format: -Quote
 draft: false
 template: post

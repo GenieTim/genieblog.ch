@@ -15,13 +15,13 @@ description: false
 socialImage: /media/socialImage.jpg
 extends: _layouts.post
 language: en
-cover_image: false
+cover_image: 2015/cortana_emotions.gif
 ---
 
-Auch wenn _Microsoft_s Sprachassistent noch immer in der Beta-phase ist, hat _Cortana_ bereits jetzt viele Features, die bei der älteren Schwester _Siri_ von _Apple_ nicht zu finden sind. 
+Even though _Microsoft_'s voice assistant is still in the beta phase, _Cortana_ already has many features that cannot be found with the older sister _Siri_ of _Apple_.
 
-Das Feature, mit dem ich heute mit diesem Artikel beginnen möchte, sind die Emotionen. Siri könnte man als violett leuchtendes Mikrofon bezeichnen. Sie beantwortet die Fragen unter Umständen tatsächlich mit einem emotionalen Inhalt (fragen Sie Siri mal, ob sie Sie heiraten möge); eine optische oder akustische Veränderung tritt jedoch nicht auf. Das Mikrofon bleibt violett und Siri spricht noch immer so monoton wie anhin.
+The feature that I want to start with this article today is the emotions. Siri could be described as a violet microphone. She may actually answer the questions with emotional content (ask Siri if she should marry you); however, there is no optical or acoustic change. The microphone remains purple and Siri is still speaking as monotonously as before.
 
-Bei Cortana ist das anders. Gerüchte sprechen von 6 verschiedenen Tonlagen für ihre Stimme: rücksichtsvoll, einfühlsam, erfüllt (aufgeregt), beschämt (peinlich), nachdenklich, und entschuldigend. Bei der optischen Rückmeldung sind es bereits jetzt 18: ruhig, opimistisch 1 & 2, erinnern, "tile flip", empfindlich V1 & V2, beschämt, Alarm, springend, mehr verlangend, zurückhaltend, erfüllt, nachdenklich, Musik erkennend, zuhörend, sprechend und denkend. Vergleichen Sie dazu obiges animiertes gif, um die verschiedenen Zustände zu sehen.
+It's different with Cortana. Rumors speak of 6 different pitches for your voice: considerate, sensitive, fulfilled (excited), ashamed (embarrassed), thoughtful, and apologetic. When it comes to visual feedback, there are already 18: calm, opimistic 1 & 2, remember, "tile flip", sensitive V1 & V2, ashamed, alarm, jumping, more demanding, reserved, fulfilled, thoughtful, music recognizing, listening, speaking and thinking. Compare the animated gif above to see the different states.
 
-Was halten Sie von diesen Emotionen? Sind sie bloss eine kleine Spielerei oder wird derartiges Cortana zum Durchbruch verhelfen? Schreiben Sie Ihre Meinung in die Kommentare!
+What do you think of these emotions? Are they just a little gimmick or will such Cortana help to break through? Write your opinion in the comments!

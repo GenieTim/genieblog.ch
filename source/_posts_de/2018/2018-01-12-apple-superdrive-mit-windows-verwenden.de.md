@@ -5,10 +5,11 @@ date: 2018-01-12 13:00:49+00:00
 layout: post
 link: http://genieblog.ch/apple-superdrive-mit-windows-verwenden/
 slug: apple-superdrive-mit-windows-verwenden
-title: Use Apple Superdrive with Windows
+title: Apple Superdrive mit Windows verwenden
 wordpress_id: 173
 categories:
-  
+  - Windows
+  - Apple
 draft: false
 template: post
 description: false

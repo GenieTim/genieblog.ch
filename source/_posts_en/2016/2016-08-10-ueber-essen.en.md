@@ -5,9 +5,10 @@ date: 2016-08-10 17:32:23+00:00
 layout: post
 link: http://genieblog.ch/ueber-essen/
 slug: ueber-essen
-title: Über Essen
+title: On food
 wordpress_id: 271
 categories:
+  - Language Exchange
   - Language Exchange
 draft: false
 template: post
@@ -18,9 +19,9 @@ language: en
 cover_image: false
 ---
 
-Die russische Küche hat einen ganz eigenen Charme. Ganz generell wage ich zu urteilen, dass milde bis leicht säuerliche Geschmäcke überwiegen. Im Vergleich zu Schweizer Küche gibt es definitiv mehr Suppe und weniger Käse. Insbesondere hartem Käse bin ich nicht begegnet. Betreffend Suppe ist insbesondere Borsch zu erwähnen, die als typisch gilt, obschon es sich dabei um eine Ukrainische Suppe handelt. Die Variationen von Suppen sind sehr gross, selten jedoch sind sie cremig wie man es sich aus der Schweiz gewohnt ist. Stattdessen erinnern sie ab und zu eher an einen gemischten Salat, der unter Wasser gesetzt wurde. Die Suppe geniessen die Russen gerne mit Smetana, also Sauerrahm. Dieser findet jedoch nicht nur in der Suppe Verwendung, sondern dient auch als Salatsosse, Milchersatz oder kommt zusammen mit Konfitüre auf ein Stück Brot. Die Beliebtheit von Sauerrahm erkennt man auch beim Besuch eines Ladens; in jedem, den ich bisher war, gab es eine grössere Auswahl als an Joghurt. Gewürze, wie bei uns getrocknete Kräuter, finden praktisch keine Verwendung. Dafür ist frisches Grünzeug wie Dill, Schnittlauch oder Lauchzwiebeln sehr beliebt.
+Russian cuisine has its own charm. In general, I dare to judge that mild to slightly sour flavors predominate. Compared to Swiss cuisine, there is definitely more soup and less cheese. I didn't come across hard cheese in particular. Concerning soup, Borsch should be mentioned in particular, which is considered typical, although it is a Ukrainian soup. The variations of soups are very large, but they are rarely creamy as you are used to from Switzerland. Instead, they sometimes remind you of a mixed salad that has been put under water. The Russians like to enjoy the soup with smetana, i.e. sour cream. However, this is not only used in the soup, but also serves as a salad dressing, milk substitute or comes with a jam on a piece of bread. The popularity of sour cream can also be seen when visiting a shop; everyone I've been to had a wider choice than yogurt. Spices, like herbs dried by us, are practically not used. Fresh greens such as dill, chives or spring onions are very popular for this.
 
-Aufgrund der Sanktionen sind die meisten Produkte in Russland oder einem Land des nahen Ostens. Ausserdem empfinden Russen ihr Essen, das sie in Supermärkten kaufen, als künstlich. Bei einer Stichprobe habe ich tatsächlich keinen Saft gefunden, der weniger als ein halbes Jahr haltbar war. Und die Aufschnitts-Würste, die in Russland scheinbar ebenfalls eine leicht grössere Beliebtheit haben als in der Schweiz, enthalten einen sehr bescheidenen Anteil an echtem Fleisch. 
+Due to the sanctions, most of the products are in Russia or a country in the Middle East. Russians also find the food they buy in supermarkets to be artificial. In a random sample, I actually did not find any juice that was stable for less than half a year. And the cold cuts sausages, which also seem to be slightly more popular in Russia than in Switzerland, contain a very modest proportion of real meat.
 
-Als sozialer Anlass gilt vor allem die Tee-Pause, die ich zeitlich noch nicht an einen bestimmten Punkt einordnen kann. Tee und Kaffee scheint neben der Suppe die Haupt-Flüssigkeitszufuhr zu sein. Auch hier gilt die Präferenz von saurem; Gerüchten zufolge gibt es auch eine Zahl Leute, die ihren Kaffee mit Zitrone trinken. 
-Was mir hier im Unterschied zur Schweiz nie begegnete, sind Menschen, die unterwegs essen. Sowohl auf der Strasse, wie auch in Metro und Bus ist mir nicht ein einziges mal jemand begegnet, der etwas gegessen oder getrunken hat. Bis auf der Konsum von Alkohol wäre dies gesetzlich nicht verboten, doch offensichtlich in dieser Gesellschaft nicht üblich.
+The social break is primarily the tea break, which I cannot yet categorize at a certain point. Tea and coffee seem to be the main hydration alongside the soup. Here too the preference of acidic applies; Rumor has it that there are also a number of people who drink their coffee with lemon.
+In contrast to Switzerland, what I never met here are people who eat on the go. On the street, as well as in the metro and bus, I never once met someone who ate or drank something. Except for the consumption of alcohol, this would not be prohibited by law, but is obviously not common in this society.

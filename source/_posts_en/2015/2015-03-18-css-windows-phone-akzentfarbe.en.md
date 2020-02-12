@@ -8,7 +8,8 @@ slug: css-windows-phone-akzentfarbe
 title: "CSS: Windows Phone Akzentfarbe"
 wordpress_id: 150
 categories:
-  
+  - Windows Phone
+  - CSS
 draft: false
 template: post
 description: false
@@ -18,8 +19,8 @@ language: en
 cover_image: false
 ---
 
-Mit Windows (Phone) 8 gab Microsoft den Entwicklern die Möglichkeit, ihre Apps für Windows & Windows Phone mit HTML, CSS und JavaScript zu entwickeln. So ist es besonders für Webentwickler wie mich verlockend, die Web App auf jene Geräte zu portieren. 
+With Windows (Phone) 8, Microsoft gave developers the opportunity to develop their apps for Windows & Windows Phone with HTML, CSS and JavaScript. So it is particularly tempting for web developers like me to port the web app to those devices.
 
-Gerade Windows Phone brilliert mit einer grossen Personalisierbarkeit; neben der Flexibilität des Sperrbildschirms, dem Hintergrundbild das den Startbildschirm vervollständigt ist auch die Akzentfarbe ein oft genanntes Argument, weshalb Windows Phone besser personalisierbar ist.
+Windows Phone in particular shines with great personalizability; In addition to the flexibility of the lock screen, the background image that completes the start screen, the accent color is also an often cited argument, which is why Windows Phone is more customizable.
 
-Doch wie ist es nun möglich, wenn man die App mit HTML und CSS entwickelt, auf die Akzentfarbe zuzugreifen? Die Antwort ist simpel, wenn man sie einmal gefunden hat: über die Farbe mit dem Namen `Highlight`. Die passende Textfarbe kann man, sehr naheliegend, mit `HighlightText` anwenden.
+But how is it possible, if you develop the app with HTML and CSS, to access the accent color? The answer is simple once you have found it: via the color with the name `Highlight`. The right text color can be used with `HighlightText`.

@@ -5,7 +5,7 @@ date: 2015-08-17 11:19:45+00:00
 layout: post
 link: http://genieblog.ch/lesemodus-rueckentwicklung-des-webs/
 slug: lesemodus-rueckentwicklung-des-webs
-title: Lesemodus - Rückentwicklung des Webs?
+title: Reading mode - destruction of the currently known web?
 wordpress_id: 205
 categories:
   
@@ -18,6 +18,6 @@ language: en
 cover_image: false
 ---
 
-Immer mehr Geräte mit Internetzugang bieten im Browser die Möglichkeit, die Website ohne Style bloss als Text mit den Bildern anzuzeigen. Je nach Browser heisst diese Funktion zum Beispiel "Reader View" bzw. "Lesemodus". Das meiner Meinung erstaunliche daran ist, dass das meiner Beobachtungen zufolge quasi ein Rückschritt auf dem Weg der Webentwicklung bedeutet. Im Lesemodus werden die Seiten, wie ganz zu Beginn des Internets, nur mit den elementarsten HTML Tags dargestellt: Nur die verschiedenen Headings, Links und Paragraphen werden angewandt. Dieser Modus macht das Lesen vielfach tatsächlich einfacher und bietet somit viel Potential. Dennoch sehe ich noch einige Schwachstellen. Einerseits werden die Webseiten dennoch ganz geladen und verbrauchen somit ebenso viel Internetleistung. Andererseits entspricht der Style des Lesemodus aus unerfindlichen Gründen nicht dem Standardstyle des Browsers - wenn also ein Developer denkt er könne es sich einfach machen und den Style einfach weg lassen, weil seine Seite einfach nur gelesen werden muss, hat sich leider getäuscht. Das Standardlayout ist noch immer voll 90er Jahre und dass der Nutzer deshalb die Reader View einschaltet ist nicht zu erwarten. Stattdessen sucht er eine andere Website auf, die ihm besser gefällt...
+More and more devices with Internet access are offering the option in the browser to simply display the website as text with the pictures without style. Depending on the browser, this function is called "Reader View" or "Read mode", for example. The amazing thing about this is that, according to my observations, it means a step backwards on the path of web development. In reading mode, as at the very beginning of the Internet, the pages are only displayed with the most basic HTML tags: only the different headings, links and paragraphs are used. This mode actually makes reading much easier and therefore offers a lot of potential. However, I still see some weaknesses. On the one hand, the web pages are still fully loaded and therefore consume just as much internet performance. On the other hand, the style of the reading mode does not correspond to the standard style of the browser for some unknown reason - so if a developer thinks he can make it easy and simply leave the style out because his page just has to be read, he was unfortunately wrong. The standard layout is still full 90s and it is not to be expected that the user will switch on the Reader View. Instead, he goes to another website he likes better ...
 
-Haben Sie diesen Artikel im Lesemodus angeschaut? Ist Ihnen meine Meinung zu weit hergeholt? Schreiben Sie Ihre Antwort in die Kommentare!
+Have you looked at this article in reading mode? Is my opinion too far-fetched for you? Write your answer in the comments!

@@ -8,7 +8,7 @@ slug: cpphallowelt
 title: C++
 wordpress_id: 130
 categories:
-  
+  - Hello World
 post_format: -Quote
 draft: false
 template: post
@@ -19,7 +19,7 @@ language: en
 cover_image: false
 ---
 
-// HalloWelt.cpp
+    // HelloWorld.cpp
     
     #include <iostream>                                     
     int main(){

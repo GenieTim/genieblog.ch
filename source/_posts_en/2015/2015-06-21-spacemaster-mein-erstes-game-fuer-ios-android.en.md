@@ -22,16 +22,16 @@ language: en
 cover_image: false
 ---
 
-Das Spiel, das von mir ursprünglich als Projekt im EF Informatik entwickelt wurde, ist jetzt für Android und iOs verfügbar.
+The game, which I originally developed as a project in EF Informatik, is now available for Android and iOs.
 
-Im Spiel geht es darum, dass Sie mit Ihrer Rakete durch das All fliegen und die Goldmünzen einsammeln, die Sie auf Ihrem Weg finden. Doch Vorsicht: Das All ist voll mit gefährlichen Meteoriten und feindlichen Ufos, die Ihre Münzen klauen und Sie vernichten wollen! Weichen Sie ihnen aus, um den Highscore zu knacken.
+The game is all about flying your rocket through space and collecting the gold coins you will find along the way. But be careful: the universe is full of dangerous meteorites and enemy ufos that steal your coins and want to destroy you! Dodge them to crack the high score.
 
-Das Spiel ist sehr einfach aufgebaut und erinnert, hauptsächlich aufgrund der Schwierigkeitsstufe, ein wenig an Flappy Bird. Auch wenn hohe Highscores auf den ersten paar Versuchen unmöglich scheinen, ist das Spiel für die eine oder andere Gelegenheit sehr zu empfehlen! Ausgetauscht werden die Highscores auf iOs mit dem GameCenter und auf Android mit Swarm.
+The game is very simple and reminds a little of Flappy Bird, mainly because of the difficulty level. Even if high high scores on the first few attempts seem impossible, the game is highly recommended for one or the other occasion! The high scores on iOs are exchanged with the GameCenter and on Android with Swarm.
 
-Leider ist das Anbieten von Apps im iTunes Store nicht kostenlos, so dass ich das Spiel auch nicht gratis anbieten kann. Der Preis von CHF 1.- ist jedoch vergleichsweise sehr tief, so dass diese Kosten Sie hoffentlich nicht daran hindern, die App herunterzuladen.
+Unfortunately, offering apps in the iTunes Store is not free, so I cannot offer the game for free. However, the price of CHF 1.- is comparatively very low, so hopefully these costs won't prevent you from downloading the app.
 
-Wie viele Punkte haben Sie erreicht? Schreiben Sie die Antwort in die Kommentare!
+How many points did you get?
 
 			[](https://geo.itunes.apple.com/ch/app/pixelspacemaster/id993483077?mt=8&uo=6)[](https://play.google.com/store/apps/details?id=ch.genieblog.android)
 
-Weitere Infos zum Spiel: [http://bernhard-webstudio.ch/spacemaster](http://bernhard-webstudio.ch/spacemaster)
+More Infos around the game: [http://bernhard-webstudio.ch/spacemaster](http://bernhard-webstudio.ch/spacemaster)

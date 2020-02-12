@@ -37,13 +37,13 @@ In der entscheidenden HTML-Seite muss ein _WinJS Application Control_ Element mi
 Anschliessed kann der EventHandler "backclick" verwendet werden. Zum Beispiel so:
 
     
-    <code data-caption="" data-start-line="1" class="prettyprint lang-javascript" data-visibility="visible" data-highlight="">document.addEventListener("backclick", meineFunktion);
+    document.addEventListener("backclick", meineFunktion);
 
 
 Um jedoch das Standardverhalten, das Beenden der Applikation, zu unterdrücken, muss `true` zurückgegeben werden. Eine empfehlenswerte Verwendung ist folgende, in der Datei `default.js`:
 
     
-    <code data-caption="" data-start-line="1" class="prettyprint lang-javascript" data-visibility="visible" data-highlight=""><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start"></span><code class="language-javascript">app.onbackclick = function (evt) {
+    app.onbackclick = function (evt) {
        meineFunktion();
        return true;
     }

@@ -5,10 +5,10 @@ date: 2015-04-12 11:00:34+00:00
 layout: post
 link: http://genieblog.ch/gesamter-localstorage-auslesen/
 slug: gesamter-localstorage-auslesen
-title: "Geistesblitz: gesamter localStorage auslesen"
+title: "Brainstorm: read the whole localStorage"
 wordpress_id: 160
 categories:
-  
+  - idea
 draft: false
 template: post
 description: false
@@ -18,15 +18,15 @@ language: en
 cover_image: false
 ---
 
-Für eine HTML5 Applikation hatte ich die Idee, einige Elemente im localStorage anstatt zu löschen bloss umzubenennen. Da dies mehrfach geschiehen würde, musste die Umbenennung eindeutig erfolgen, damit die anderen Elemente nicht überschrieben werden. Und was eignet sich für die eindeutige Identifikation besser als die aktuelle Uhrzeit mit Datum, Millisekunden und allem?
+For an HTML5 application, I had the idea of ​​just renaming some elements in localStorage instead of deleting them. Since this would happen several times, the renaming had to be done clearly so that the other elements are not overwritten. And what is more suitable for unambiguous identification than the current time with date, milliseconds and everything?
 
-Nun gut; die Idee mag zwar gut klingen, aber wie kriegt man das Element eines Tages wieder aus dem Speicher raus? Wie kann ich ein Element mit nahezu zufälligem Schlüssel aufrufen?
+Well; the idea may sound good, but how can you get the element out of memory one day? How can I call an element with an almost random key?
 
-Ja, lieber Leser, genau diese Frage habe ich mir gestellt. Bestimmt haben Sie schon nach dem Titel gedacht "Pah, das weiss ich...". Und damit haben Sie natürlich Recht, doch da nach einer kurzen Internetrecherche meinerseits keine Lösungen auffindbar waren, möchte ich hier zwei vorstellen.
+Yes, dear reader, that's exactly the question I asked myself. You probably already thought of the title "Pah, I know that ...". And of course you are right, but since no solutions could be found on my part after a short internet search, I would like to introduce two of them here.
 
-Die eine Lösung ist wohl die elegantere: jedes mal wenn man ein neues "Zufallselement" in den Storage schreibt, den entsprechenden Schlüssel in ein Array schreiben, das ebenfalls in den localStorage geschrieben wird. 
+One solution is probably the more elegant one: every time you write a new "random element" in the storage, write the corresponding key in an array, which is also written in the localStorage.
 
-Die andere Lösung ist jene, die zum Titel "Geistesblitz" geführt hat. Obwohl die Idee sehr naheliegend ist und ich früher hätte auf die Idee kommen sollen, ist sie mir halt eben als Geistesblitz gekommen. Der entscheidende Gedanke ist dieser: `localStorage` ist ein Objekt wie jedes andere. Also kann man es mit einer einfachen `for`-Schlaufe durchlaufen. Das geht zum Beispiel so, wenn alle Elemente untereinander aufgelistet werden sollen:
+The other solution is the one that led to the title "Brainstorm". Although the idea is very obvious and I should have thought of it earlier, it just came to me as a flash of inspiration. The key thought is this: `localStorage` is an object like any other. So you can go through it with a simple `for` loop. For example, you can do this if you want to list all of the items below each other:
 
     
     <code class="language-javascript">function listItems () {

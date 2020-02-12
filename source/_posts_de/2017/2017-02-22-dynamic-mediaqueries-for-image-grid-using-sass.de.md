@@ -5,7 +5,7 @@ date: 2017-02-22 17:29:16+00:00
 layout: post
 link: http://genieblog.ch/dynamic-mediaqueries-for-image-grid-using-sass/
 slug: dynamic-mediaqueries-for-image-grid-using-sass
-title: Dynamic grid from breakpoints
+title: Dynamischer grid generiert aus breakpoints
 wordpress_id: 316
 categories:
   - CSS
@@ -18,7 +18,7 @@ language: de
 cover_image: false
 ---
 
-Ich konnte [ MediaQueries ](https://wiki.selfhtml.org/wiki/CSS/Media_Queries) dynamisch aus [Zurb Foundations](http://foundation.zurb.com/sites/docs/media-queries.html)-Breakpoints für ein Raster mit folgendem [Sass](http://sass-lang.com)-Code genierieren:
+Ich konnte [MediaQueries](https://wiki.selfhtml.org/wiki/CSS/Media_Queries) dynamisch aus [Zurb Foundations](http://foundation.zurb.com/sites/docs/media-queries.html)-Breakpoints für ein Raster mit folgendem [Sass](http://sass-lang.com)-Code genierieren:
 
 
     

@@ -8,7 +8,7 @@ slug: james-bonds-salad-dressing
 title: James Bond's Salad Dressing
 wordpress_id: 202
 categories:
-  
+  - Quote
 post_format: -Quote
 draft: false
 template: post

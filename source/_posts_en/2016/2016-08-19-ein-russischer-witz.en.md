@@ -5,9 +5,10 @@ date: 2016-08-19 16:00:49+00:00
 layout: post
 link: http://genieblog.ch/ein-russischer-witz/
 slug: ein-russischer-witz
-title: Ein russischer Witz
+title: A russian joke
 wordpress_id: 297
 categories:
+  - Language Exchange
   - Moscow
 post_format: -Quote
 draft: false
@@ -19,4 +20,4 @@ language: en
 cover_image: false
 ---
 
-<blockquote>Welches ist der höchste Ort in Moskau? Der Keller von Lubjanka, von dort sieht man bis nach Sibirien...</blockquote>
+<blockquote>What is the highest place in Moscow? The Lubjanka cellar, from there you can see as far as Siberia ...</blockquote>

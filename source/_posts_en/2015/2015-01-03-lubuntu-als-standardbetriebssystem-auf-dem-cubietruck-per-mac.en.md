@@ -5,7 +5,7 @@ date: 2015-01-03 12:32:26+00:00
 layout: post
 link: http://genieblog.ch/lubuntu-als-standardbetriebssystem-auf-dem-cubietruck-per-mac/
 slug: lubuntu-als-standardbetriebssystem-auf-dem-cubietruck-per-mac
-title: Lubuntu als Standardbetriebssystem auf dem Cubietruck - per Mac
+title: Lubuntu as default OS on the Cubietruck - using a Mac
 wordpress_id: 55
 categories:
   - Cubietruck
@@ -20,64 +20,63 @@ description: false
 socialImage: /media/socialImage.jpg
 extends: _layouts.post
 language: en
-cover_image: false
+cover_image: 2015/cubietruck.jpg
 ---
 
 
-Beim ersten Anschliessen vom Cubietruck (v/o Cubieboard 3) startet automatisch das Betriebsystem Android. Da dieses nicht das gesamte Potential des Cubies ausschöpft, kann man es zum Glück auf ganz einfache Weise durch Lubuntu austauschen. Das geht zum Beispiel folgendermassen:
+When you first connect the Cubietruck (v / o Cubieboard 3), the Android operating system starts automatically. Fortunately, since this does not exhaust the full potential of the Cubies, it can be easily replaced by Lubuntu. This can be done, for example, as follows:
 
 
 
 
 
-## Vorbereitungen
+Preparations
 
 
 
 
 
-Folgende Dinge sollten Sie bereitgelegt haben:
+You should have the following things ready:
 
 
 
 
-  * Cubietruck mit zugehörigen Kabeln
+  * Cubietruck with associated cables
 
 
-  * den Mac
+  * the Mac
 
 
-  * das Programm [Live Suit](http://linux-sunxi.org/LiveSuit)
+  * the program [Live Suit] (http://linux-sunxi.org/LiveSuit)
 
 
-  * ein Image des Betriebssystems ([Lubuntu](http://dl.cubieboard.org/software/a20-cubietruck/lubuntu/ct-lubuntu-nand-v1.02/))
+  * an image of the operating system ([Lubuntu] (http://dl.cubieboard.org/software/a20-cubietruck/lubuntu/ct-lubuntu-nand-v1.02/))
 
 
-Hinweis: Wenn Sie nicht wissen welche Lubuntu Version Sie wählen sollten, achten Sie auf den Namen der Datei. Wenn Sie Ihren Cubietruck per Hdmi an den Bildschirm anschliessen benötigen Sie die Datei auf -hdmi, entsprechend bei -vga wenn Ihr Bildschirm per VGA angeschlossen ist. 
-
-
-
-
-
-## Haupthandlungen
+Note: If you do not know which Lubuntu version you should choose, pay attention to the name of the file. If you connect your Cubietruck via Hdmi to the screen, you need the file on -hdmi, correspondingly with -vga if your screen is connected via VGA.
 
 
 
 
 
-Starten Sie das Programm Live Suit und wählen Sie indem Sie oben links auf "Image" klicken die heruntergeladene *.img Datei aus. Falls in Ihrem Download-Ordner noch immer die *.gz Datei vorhanden ist, müssen Sie diese zuerst entpacken. Dies sollte durch einen Doppelklick auf die Datei automatisch passieren.
+## main actions
 
 
 
 
 
-
-Wenn Sie das nicht bereits gemacht haben, versorgen Sie Ihren Cubietruck mit Strom und hängen Ihn an Ihren Bildschirm. Wenn irgendwelche Lämpchen am Cubie angehen, so drücken Sie ein Weilchen auf den "Power on" Schalter, bis die Lämpchen abgehen und der Cubie ausgeschaltet ist. Verbinden Sie nun das MiniUSB-Kabel mit dem Mac (aber noch nicht mit dem Cubietruck). Drücken Sie den mit "FEL" beschrifteten Schalter auf dem Cubie. Nach ca. 10 Sekunden gedrückt halten stecken Sie das MiniUSB-Kabel in den Cubie. Halten Sie den "FEL"-Schalter dabei immer noch gedrückt. Nach wenigen Sekunden sollte nun Live Suit eine Frage stellen. Ist das der Fall, können Sie "FEL" loslassen. Beantworten Sie die Frage von Live Suit mit "YES". Damit wäre der Zauber schon vorbei - nach wenigen Minuten wird die Imagedatei auf dem NAND vom Cubie installiert sein und starten!
+Start the Live Suit program and select the downloaded * .img file by clicking on "Image" in the top left corner. If the * .gz file is still available in your download folder, you must unzip it first. This should happen automatically by double clicking on the file.
 
 
 
 
 
 
-Ich wünsche viel Erfolg beim Nachmachen!
+If you have not already done so, power up your Cubietruck and hang it on your screen. If any of the lights on the Cubie come on, press the "Power on" button for a while until the lights go out and the Cubie is switched off. Now connect the MiniUSB cable to the Mac (but not yet to the Cubietruck). Press the switch labeled "FEL" on the Cubie. After holding it down for approx. 10 seconds, plug the MiniUSB cable into the Cubie. Keep the "FEL" switch pressed. After a few seconds, Live Suit should ask a question. If so, you can let go of "FEL". Answer the question from Live Suit with "YES". The magic would then be over - after a few minutes the image file will be installed on the Cuband NAND and start!
 
+
+
+
+
+
+I wish you much success in copying!

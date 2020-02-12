@@ -16,7 +16,7 @@ description: false
 socialImage: /media/socialImage.jpg
 extends: _layouts.post
 language: en
-cover_image: false
+cover_image: 2015/cubietruck.jpg
 ---
 
 
@@ -25,8 +25,8 @@ cover_image: false
 
 
 
-An error message that practically stops the Cubietruck. Fooling around on the keyboard does not help anymore. But there is another solution: ` Ctrl + Alt + F1 `
+An error message that practically stops the Cubietruck. Fooling around on the keyboard does not help anymore. But there is another solution: `Ctrl + Alt + F1`
 
 The only problem is that the Lubuntu user interface could not be started. With the magic keyboard command you get to the original Ubuntu command line. From here you can now search for possible causes and fix them.
 
-In my case, an incomplete installation of Java prevented starting the UI. I was able to complete the installation with ` sudo apt-get -f install ` after I created a little more space on the hard disk. Then you can either start the user interface by command, or restart the computer with ` sudo reboot `, so that the user interface is activated as usual at startup.
+In my case, an incomplete installation of Java prevented starting the UI. I was able to complete the installation with `sudo apt-get -f install` after I created a little more space on the hard disk. Then you can either start the user interface by command, or restart the computer with `sudo reboot`, so that the user interface is activated as usual at startup.

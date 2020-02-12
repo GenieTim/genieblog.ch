@@ -15,7 +15,7 @@ description: false
 socialImage: /media/socialImage.jpg
 extends: _layouts.post
 language: en
-cover_image: false
+cover_image: 2015/Unbenannt-1.png
 ---
 
-Lange hat es gedauert, doch nun scheint dieser Punkt auch an Cortana zu gehen: Seit nicht allzu langer Zeit ist einerseits Cortana auf Windows 10 Geräten auch in der Schweiz standardmässig verfügbar, ohne dass man gross tricksen muss, und andererseits Siri verfügbar auf Desktop-Geräten und Laptops, die mit dem neusten MacOS ausgerüstet sind. Aber den wharen Punkt gibt es, da insbesondere Cortana bald auch auf iOs- und Adroid-Geräten verfügbar, was von Siri umgekehrt wohl nie behauptet werden kann.
+It took a long time, but now this point also seems to go to Cortana: For not too long, Cortana has been available on Windows 10 devices as standard in Switzerland without having to be tricky, and Siri is also available on desktop devices and laptops equipped with the latest MacOS. But there is the wharen point, because Cortana in particular will soon also be available on iOS and Android devices, which, conversely, can never be said by Siri.

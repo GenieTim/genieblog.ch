@@ -15,25 +15,24 @@ description: false
 socialImage: /media/socialImage.jpg
 extends: _layouts.post
 language: en
-cover_image: false
+cover_image: 2014/logo-libgdx.png
 ---
 
-Ein weiteres Game-Projekt im Java-Framework libGDX. Ein weiteres Problem, das einen kurzen Blogbeitrag wert ist: die Änderung der Fenstergrösse.
+Another game project in the Java framework libGDX. Another problem that is worth a short blog post: changing the window size.
+
+Whenever I program something, I am infinitely glad that it doesn't have to be perfect from the start. Since I'm unfortunately not a Mozart of computer science, I make mistakes - I'm only human. 
+In order to find these errors, it is advantageous if you can try the program every now and then to test the changes. In logGDX this is logically also possible. 
+Since the build process for the Android or iOs application takes a long time, and the respective virtual machine is very resource-intensive, I test my small changes as a desktop application. 
+The _game-feeling_ is identical except for the elements dependent on gyro sensors. But: you can change the size of the window by default! 
+This is not possible on mobile devices, which is why this function is rather annoying if, for example, you imitate a wiping motion of your finger with the mouse and accidentally change the window size. 
+The graphics shift and distort, you can no longer test ... So what to do about it?
 
 
+To prevent the window size from being changed in the desktop application, it is only necessary to edit the _DesktopLauncher.java_ file in the desktop project. 
+To define config, the Boolean variable resizable must be set to false, and the window size can no longer be changed!
 
 
-Wann auch immer ich etwas programmiere, bin ich unendlich froh über den Umstand dass es nicht von Anfang an perfekt sein muss. Da ich leider kein Mozart der Informatik bin, mache ich Fehler - ich bin ja auch nur ein Mensch. Um diese Fehler zu finden, ist es von Vorteil, wenn man das Programm ab und zu ausprobieren kann, um die Änderungen zu testen. In libGDX geht das logischerweise auch. Da der build-Prozess für die Android bzw. iOs Applikation einigermassen lange dauert, und die jeweilige virtuelle Maschine sehr Ressourcenlastig ist, teste ich meine kleinen Änderungen als Desktopapplikation. Das _Spiel-feeling_ ist bis auf die von Gyro-sensoren abhängigen Elementen identisch. Doch: man kann vom Standard her die Grösse des Fensters ändern! Sowas ist auf Mobilgeräten nicht möglich, weshalb diese Funktion doch eher störend ist, wenn man zum Beispiel mit der Maus eine Wischbewegung des Fingers imitiert und so aus Versehen die Fenstergrösse ändert. Die Grafiken verschieben und verzerren sich, man kann nicht weiter testen... Was also dagegen tun?
-
-
-
-
-Um in der Desktopapplikation die Änderung der Fenstergrösse zu verhindern, ist es bloss nötig, dass man im Desktopprojekt die Datei _DesktopLauncher.java_ bearbeitet. Zur Definition von config muss die boolessche Variable resizable auf false gesetzt werden, und schon lässt sich die Fenstergrösse nicht mehr ändern!
-
-
-
-
-Der Code von DesktopLauncher.java sähe dann etwa folgendermassen aus:
+The code from DesktopLauncher.java would then look something like this:
 
 
 `package ch.genieblog.yourpackage;

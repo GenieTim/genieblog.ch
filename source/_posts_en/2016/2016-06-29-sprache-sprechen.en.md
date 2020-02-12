@@ -8,6 +8,7 @@ slug: sprache-sprechen
 title: Über Sprache sprechen
 wordpress_id: 255
 categories:
+  - Language Exchange
   - Moscow
 draft: false
 template: post
@@ -15,14 +16,14 @@ description: false
 socialImage: /media/socialImage.jpg
 extends: _layouts.post
 language: en
-cover_image: false
+cover_image: 2016/kommunikationsfail.jpg
 ---
 
-Die Motivation für einen Language Exchange? Sprache lernen, klar. In meinem Fall Russisch. Eine spannende Sprache: Einflüsse von Wikingern, Mongolen, Griechen und vielen mehr entwickelten sich zu einer eigenen, komplexen Sprache, die sich insbesondere durch eine viel zu grosse Anzahl an Wörtern auszeichnet. Eine weitere Eigenart ist die kyrillischen Schrift, die aus einer Hand- und einer Blockschrift besteht, die beide grosse Ähnlichkeiten zur lateinischen Schrift vorweisen. Allerdings nur optisch: der kyrillische Buchstaben für den Laut des lateinischen d sieht in der Handschrift aus wie jenes vom g, das r wie ein p, das t wie ein m. Und das ist nur eine Auswahl der kleineren Schwierigkeiten.
+The motivation for a language exchange? Learn language, of course. In my case Russian. An exciting language: Influences of Vikings, Mongols, Greeks and many more developed into their own complex language, which is characterized in particular by a far too large number of words. Another peculiarity is the Cyrillic script, which consists of a handwriting and a block script, both of which have great similarities to the Latin script. But only visually: the Cyrillic letter for the sound of the Latin d in the handwriting looks like that of the g, the r like a p, the t like an m. And that's just a selection of the minor difficulties.
 
-Die Frage, wie viel ich schon verstehe, und ob ich grosse Fortschritte mache, wird oft gestellt. Ich fühle mich nicht kompetent, eine vernünftige Antwort zu geben. Im geschlossenen Umfeld der Russischlektionen wird das Gesprächsthema auf mein Kenntnisstand abgestimmt. Die verwendeten Wörter und Formen kenne ich, beziehungsweise: sollte ich kennen. Die Geschwindigkeit ist ebenso auf mein Tempo abgestimmt und ist nicht vergleichbar mit der eines realen Gespräches. Und alles Neue wird erklärt. Insgesamt geht es dort hervorragend vorwärts, Neues gibt es portionsweise und mein Verständnis für die Unterrichtssprache steigt stetig.
+The question of how much I understand and whether I am making great progress is often asked. I don't feel competent to give a reasonable answer. In the closed environment of the Russian lessons, the topic of conversation is tailored to my level of knowledge. I know the words and forms used, or: I should know. The speed is also matched to my pace and is not comparable to that of a real conversation. And everything new is explained. Overall, things are going really well there, there is something new in portions and my understanding of the language of instruction is steadily increasing.
 
-Auf der Strasse aber. Oder im Restaurant, im Supermarkt: sobald ich angesprochen werde, stehe ich zuerst verdutzt zwei Sekunden stumm da, wie ein Reh vor dem heranrasenden Auto. Dann die ungelenke Bitte um die Wiederholung des Gesagten. Meist ist es die Geschwindigkeit, die mich daran hindert, den ganzen Satz zu erfassen. In den meisten Fällen gelang es mir anschliessend, ein oder zwei Stichwort herausfiltern, mit denen ich durch eine Wiederholung ein wenig Zeit gewinnen konnte. Bisher haben diese Konfrontationen in Restaurant und Supermarkt zwei nennenswerte Ausgänge: entweder ich krieg am Schluss durch die Wiederholung eines Stichwortes sowie einem zufälligen "Ja", "Nein" oder "Entschuldigung" was ich will. Oder ich krieg was anderes. Beide Fälle haben jedoch das eine gemeinsam: was genau der Gesprächsinhalt war, fällt mir erst eine halbe Stunde später ein. Und von grossem Fortschritt kann man da bisher definitiv nicht sprechen.
+But on the street. Or in the restaurant, in the supermarket: as soon as I am spoken to, I stand there, puzzled, for two seconds, like a deer in front of the car. Then the awkward request to repeat what was said. It is usually the speed that prevents me from grasping the whole sentence. In most cases, I was then able to filter out a keyword or two that would save me a little time by repeating. So far, these confrontations in the restaurant and supermarket have two notable outcomes: either I get what I want at the end by repeating a keyword and a random "yes", "no" or "sorry". Or I'll get something else. However, both cases have one thing in common: I only remember what exactly the content of the conversation was half an hour later. And there is definitely no great progress to speak of.
 
-Kleine Nebenbemerkung: in dieser Situation bekommt die Challenge "Fast Food Bestellung ohne Rückfrage" einen ganz neuen Wert.
-Weitere kleine Nebenbemerkung: gewisse Situationen oder Sachbezüge könnten ein wenig überspitzt oder verändert dargestellt sein, als sie tatsächlich vorgekommen sind. Sprache ist schliesslich auch zum Spielen da.
+Small side note: in this situation, the challenge "Fast Food Order Without Consultation" gets a whole new value.
+Another small side note: certain situations or factual references could be a little exaggerated or changed than they actually occurred. After all, language is also there for playing.

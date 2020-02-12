@@ -9,7 +9,6 @@ title: Hallo Welt!
 wordpress_id: 1
 categories:
   - Bernhard 
-  
   - Tim 
   - Webstudio 
   - Welcome
@@ -19,9 +18,9 @@ description: false
 socialImage: /media/socialImage.jpg
 extends: _layouts.post
 language: en
-cover_image: false
+cover_image: 2014/DSC_5126.jpg
 ---
 
-Willkommen beim Blog von Tim Bernhard! Ich bin der Gründer von _[Bernhard Webstudio](http://bernhard-webstudio.ch)_ und ein leidenschaftlicher Programmierer!
+Welcome to Tim Bernhard's blog! I am the founder of _[Bernhard Webstudio](http://bernhard-webstudio.ch)_ and a passionate programmer!
 
-In Zukunft werden Sie hier Tipps und Tricks zu aktuellen Programmierproblemen finden können. Haben Sie noch ein wenig Geduld!
+In the future, you will be able to find tips and tricks on current programming problems here. Have a little patience!
