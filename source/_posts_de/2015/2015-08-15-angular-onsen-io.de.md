@@ -19,4 +19,4 @@ cover_image: false
 ---
 
 Nahezu drei Tage brachte ich es einfach nicht hin, dass meine Angular Applikation mit onsen.io macht, was sie sollte. `ng-repeat` waren im DOM-Baum auskommentiert, `ng-click` reagierten nicht. 
-Nun endlich ist mir das Problem aufgefallen und bewusst geworden. Die `ng-controller` dürfen nicht auf einem `` angewendet werden, sondern dürfen frühestens bei der `` als Attribut gesetzt werden. Ich hoffe ich kann mit dieser Beobachtung anderen solch schweres Kopfzerbrechen verhindern.
+Nun endlich ist mir das Problem aufgefallen und bewusst geworden. Die `ng-controller` dürfen nicht auf einem `<ons-template></ons-template>` angewendet werden, sondern dürfen frühestens bei der `<ons-page></ons-page>` als Attribut gesetzt werden. Ich hoffe ich kann mit dieser Beobachtung anderen solch schweres Kopfzerbrechen verhindern.

@@ -8,9 +8,7 @@ slug: hallo-welt
 title: Hallo Welt!
 wordpress_id: 1
 categories:
-  
   - Bernhard 
-  
   - Tim 
   - Webstudio 
   - Willkommen
@@ -20,7 +18,7 @@ description: false
 socialImage: /media/socialImage.jpg
 extends: _layouts.post
 language: de
-cover_image: false
+cover_image: 2014/DSC_5126.jpg
 ---
 
 Willkommen beim Blog von Tim Bernhard! Ich bin der Gründer von _[Bernhard Webstudio](http://bernhard-webstudio.ch)_ und ein leidenschaftlicher Programmierer!

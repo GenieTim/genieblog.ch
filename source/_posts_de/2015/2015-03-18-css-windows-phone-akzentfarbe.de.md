@@ -8,7 +8,8 @@ slug: css-windows-phone-akzentfarbe
 title: "CSS: Windows Phone Akzentfarbe"
 wordpress_id: 150
 categories:
-  
+  - CSS
+  - Windows Phone
 draft: false
 template: post
 description: false

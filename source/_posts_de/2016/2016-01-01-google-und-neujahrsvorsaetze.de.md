@@ -3,17 +3,14 @@ author: Tim Bernhard
 comments: true
 date: 2016-01-01 07:00:31+00:00
 excerpt: >-
-  <p>Wer im Web sucht, verrät etwas über sich - zumindest wenn er sich nicht
+  Wer im Web sucht, verrät etwas über sich - zumindest wenn er sich nicht
   dagegen schützt. So zeichnen Google, Bing und Co. jede Suchanfrage auf,
   zusammen mit Datum, Ort und welche Daten auch immer sie noch kriegen können.
   Zu unserem Glück bieten sie immer wieder einen Einblick in ihre Daten und
   zeigen Trends und Highlights, so zum Beispiel auf <a
   href="http://www.google.com/trends/?hl=de" title="Google
-  Trends">google.com/trends</a>.</p>
-
-  <p>
-
-  Diese Daten können wichtige Erkenntnisse liefern oder einfach faszinieren. Und sie repräsentieren die Gedanken und Sorgen unserer Gesellschaft.</p>
+  Trends">google.com/trends</a>.
+  Diese Daten können wichtige Erkenntnisse liefern oder einfach faszinieren. Und sie repräsentieren die Gedanken und Sorgen unserer Gesellschaft.
 layout: post
 link: http://genieblog.ch/google-und-neujahrsvorsaetze/
 slug: google-und-neujahrsvorsaetze

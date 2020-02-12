@@ -21,7 +21,7 @@ description: false
 socialImage: /media/socialImage.jpg
 extends: _layouts.post
 language: de
-cover_image: false
+cover_image: 2014/logo-libgdx.png
 ---
 
 Bei einem aktuellen Projekt eines Games in der Programmiersprache Java, das ich mithilfe des Frameworks libGDX erstelle, wollte ich an einem Punkt den Nutzer fragen, ob er bereit ist, weiterzuspielen. Dem Spielerlebnis zuliebe sollte dies auf keinen Fall über einen Ja/Nein Dialog geschehen.

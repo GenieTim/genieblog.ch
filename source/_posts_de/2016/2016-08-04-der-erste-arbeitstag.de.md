@@ -8,6 +8,7 @@ slug: der-erste-arbeitstag
 title: Der erste Arbeitstag
 wordpress_id: 288
 categories:
+  - Sprachaufenthalt
   - St. Petersburg
 draft: false
 template: post
@@ -15,7 +16,7 @@ description: false
 socialImage: /media/socialImage.jpg
 extends: _layouts.post
 language: de
-cover_image: false
+cover_image: 2016/hermitage.jpg
 ---
 
 Nach einigen organisatorischen Schwierigkeiten, habe ich nun doch eine Praktikumsstelle antreten können. Noch dazu an einem sehr tollen Arbeitsplatz: am staatlichen Hermitage-Museum. Dieses ist riesig und beherbergt unzählige wertvolle und berühmte Kunstschätze, darunter Bilder von Picasso, Matisse, Monet und vielen mehr. Dabei beschränkt sich die Sammlung des Museums nicht bloss auf Bilder: von Waffensammlungen über ägyptische Mumien bis altgriechische Vasen ist alles vertreten. Ich habe in diesem Museum zuvor bereits als regulär zahlender Besucher verirrt. Nun kann ich während der Arbeitszeit einen Badge nutzen, der mir den Zugang zum Museum, aber auch zu den Bereichen, die mit "Staff only" beschriftet sind, öffnet. Damit bieten sich für mich viel mehr Möglichkeiten, mich zu verirren!

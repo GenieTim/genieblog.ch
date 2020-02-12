@@ -19,7 +19,7 @@ description: false
 socialImage: /media/socialImage.jpg
 extends: _layouts.post
 language: de
-cover_image: false
+cover_image: 2015/spaceMasterIcon.png
 ---
 
 Das Spiel, das von mir ursprünglich als Projekt im EF Informatik entwickelt wurde, ist jetzt für Android und iOs verfügbar.

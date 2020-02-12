@@ -9,6 +9,7 @@ title: Über Essen
 wordpress_id: 271
 categories:
   - Sprachaufenthalt
+  - Sprachaufenthalt
 draft: false
 template: post
 description: false

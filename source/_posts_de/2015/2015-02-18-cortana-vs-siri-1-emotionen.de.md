@@ -15,7 +15,7 @@ description: false
 socialImage: /media/socialImage.jpg
 extends: _layouts.post
 language: de
-cover_image: false
+cover_image: 2015/cortana_emotions.gif
 ---
 
 Auch wenn _Microsoft_s Sprachassistent noch immer in der Beta-phase ist, hat _Cortana_ bereits jetzt viele Features, die bei der älteren Schwester _Siri_ von _Apple_ nicht zu finden sind. 

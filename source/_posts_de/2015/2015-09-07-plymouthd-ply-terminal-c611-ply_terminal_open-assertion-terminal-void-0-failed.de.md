@@ -16,7 +16,7 @@ description: false
 socialImage: /media/socialImage.jpg
 extends: _layouts.post
 language: de
-cover_image: false
+cover_image: 2015/cubietruck.jpg
 ---
 
 `plymouthd: ply-terminal.c:611: ply_terminal_open: Assertion 'terminal != ((void *)0)' failed`

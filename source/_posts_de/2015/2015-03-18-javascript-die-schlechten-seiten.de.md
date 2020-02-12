@@ -15,7 +15,7 @@ description: false
 socialImage: /media/socialImage.jpg
 extends: _layouts.post
 language: de
-cover_image: false
+cover_image: 2015/20170523_135327664_iOS.jpg
 ---
 
 Haben Sie mal versucht, in JavaScript 1 + 2 mit 3 zu vergleichen? Oder `undefined` einen Wert zuzuordnen?

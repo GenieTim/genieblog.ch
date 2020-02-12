@@ -20,7 +20,7 @@ description: false
 socialImage: /media/socialImage.jpg
 extends: _layouts.post
 language: de
-cover_image: false
+cover_image: 2015/cubietruck.jpg
 ---
 
 

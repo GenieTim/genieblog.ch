@@ -21,73 +21,69 @@ language: de
 cover_image: false
 ---
 
-When integrating [Elasticsearch](https://www.elastic.co) with [Symfony](http://symfony.com), there can be a few troubles for newcomers.
+Bei der Integration von [Elasticsearch](https://www.elastic.co) mit [Symfony](http://symfony.com) kann es für Neulinge einige Probleme geben.
 
-The easiest way to achieve integration is by following the setup instructions of the [FOSElasticaBundle](https://github.com/FriendsOfSymfony/FOSElasticaBundle/blob/master/doc/index.md), in case you have a running Elasticsearch instance already at least. Symfony 3.1 or higher is required for this bundle. When following the setup instructions, there are a few caveats, which differed from what I expected. In the following post, I try to sketch some of the problems respectively solutions.
-
-
+Der einfachste Weg, um eine Integration zu erreichen, besteht darin, den Installationsanweisungen des [FOSElasticaBundle](https://github.com/FriendsOfSymfony/FOSElasticaBundle/blob/master/doc/index.md) zu folgen, falls Sie bereits eine Elasticsearch-Instanz ausführen mindestens. Für dieses Bundle ist Symfony 3.1 oder höher erforderlich. Wenn Sie die Installationsanweisungen befolgen, gibt es ein paar Einschränkungen, die sich von meinen Erwartungen unterscheiden. Im folgenden Beitrag versuche ich, einige der Probleme bzw. Lösungen zu skizzieren.
 
 
-  * FOSElasticaBundle will not automatically recognize properties of an objectf, even when the serializer and the persistence model is defined. The properties you want to be mapped have to be listed in the configuration file.
+  * FOSElasticaBundle erkennt die Eigenschaften eines Objekts nicht automatisch, auch wenn der Serializer und das Persistenzmodell definiert sind. Die Eigenschaften, die zugeordnet werden sollen, müssen in der Konfigurationsdatei aufgeführt sein.
 
 
-  * To map relations such as ManyToOne, ManyToMany or OneToOne, the property gets a subkey "type" with value "nested", after which the a new "properties" key is necessary followed by the properties of the related Entity
+  * Um Relationen wie ManyToOne, ManyToMany oder OneToOne zuzuordnen, erhält die Eigenschaft einen Unterschlüssel "type" mit dem Wert "nested". Anschließend wird ein neuer Schlüssel "properties" gefolgt von den Eigenschaften der zugehörigen Entität benötigt
 
 
-  * To create a development environment separat from the production index, simply set the index_name attribute of the relevant index to a environment-dependent value, such as "app_%kernel.environment%"
+  * Um eine Entwicklungsumgebung unabhängig vom Produktionsindex zu erstellen, setzen Sie einfach das Attribut index_name des entsprechenden Index auf einen umgebungsabhängigen Wert, z. B. "app_% kernel.environment%".
 
 
-When you finally have the configuration set up, you have to run `./bin/console-dev fos:elastica:populate`. This will show you errors in the configuration, if you have some, respectively sync your database with the elasticsearch instance.
-The next step you will want to take is to use Elasticsearch to search, duh. This can get tricky at first if you are used to SQL search queries, especially as the relevant query classes are not yet as good [documented](http://elastica.io/api/latest/) as expected. The best way for me was to combine the knowledge of which classes exist with the [elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) itself.
+Wenn Sie die Konfiguration abgeschlossen haben, müssen Sie `./bin/console-dev fos: elastica: populate` ausführen. Dies zeigt Ihnen Fehler in der Konfiguration an, falls Sie welche haben, bzw. synchronisieren Sie Ihre Datenbank mit der elasticsearch-Instanz.
+Der nächste Schritt, den Sie unternehmen möchten, besteht darin, mit Elasticsearch zu suchen. Dies kann zunächst schwierig werden, wenn Sie an SQL-Suchabfragen gewöhnt sind, zumal die relevanten Abfrageklassen noch nicht so gut [dokumentiert](http://elastica.io/api/latest/) sind wie erwartet. Der beste Weg für mich war, das Wissen darüber, welche Klassen existieren, mit der [elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) selbst zu kombinieren.
 
-To translate from an SQL query to an Elastica-Query, keep the following in mind:
-
-
+Beachten Sie beim Übersetzen von einer SQL-Abfrage in eine Elastica-Abfrage Folgendes:
 
 
-  * should means OR
+  * should bedeutet OR
 
 
-  * must means AND
+  * must bedeutet AND
 
 
-  * mustNot means XOR
+  * mustNot bedeutet XOR
 
 
-  * to wrap these conditions together, use the `ElasticaQueryBoolQuery`
+  * Um diese Bedingungen zusammenzufassen, verwenden Sie die `ElasticaQueryBoolQuery`
 
 
-  * joins can be simulated with the `ElasticaQueryNested`
+  * Joins können mit dem `ElasticaQueryNested` simuliert werden
 
 
-  * to make comparsions with dates or numbers, use `ElasticaQueryRange`
+  * Verwenden Sie "ElasticaQueryRange", um Vergleiche mit Datumsangaben oder Zahlen anzustellen
 
 
-With this knowledge, a query such as `(...) WHERE (post.title LIKE %$search% OR creator.firstName LIKE %$search% OR creator.lastName LIKE %$search%) AND post.start < $date` translates to (for example, in a custom search repository class, extends `FOSElasticaBundleRepository`) :
+Mit diesem Wissen eine Abfrage wie `(...) WHERE (post.title LIKE %$search% OR creator.firstName LIKE %$search% OR creator.lastName LIKE %$search%) AND post.stte` übersetzt in (erweitert beispielsweise in einer benutzerdefinierten Such-Repository-Klasse `FOSElasticaBundleRepository`):
 
     
-    setQuery($search)->setFields('firstName', 'lastName');
-                    $creatorQuery->setPath('creator')->setQuery($nameQuery);
-              $textQuery->addShould($creatorQuery);
-                    $titleQuery = new Match('title', $search);
-              $textQuery->addShould($titleQuery);
-    $overallQuery->addMust($textQuery);
-              $dateQuery = new Range('start', array('lt' => $date->format(ELASTICA_DATE_FORMAT)));
-    $overallQuery->addMust($dateQuery);
+    setQuery ($search)->setFields ('firstName', 'lastName');
+                    $creatorQuery->setPath ('creator')->setQuery ($ nameQuery);
+              $textQuery->addShould ($creatorQuery);
+                    $titleQuery = new Match ('title', $search);
+              $textQuery->addShould ($titleQuery);
+    $overallQuery->addMust ($textQuery);
+              $dateQuery = new Range ('start', array ('lt' => $date->format (ELASTICA_DATE_FORMAT));
+    $overallQuery->addMust ($dateQuery);
     
-    /** ... **/
+    / ** ... ** /
     
 
 
-This query can be executed like it is on the finder/repository yielding results. But. It will not work with a Paginator and a default number of 10 results will be returned instead. To successfully get the PaginatorAdabter, the whole BoolQuery has to be wrapped in an `ElasticaQuery` Object.
-This could be achieved e.g.:
+Diese Abfrage kann wie im Finder / Repository ausgeführt werden und liefert Ergebnisse. Aber. Es funktioniert nicht mit einem Paginator und stattdessen wird eine Standardanzahl von 10 Ergebnissen zurückgegeben. Um den PaginatorAdabter erfolgreich zu erhalten, muss die gesamte BoolQuery in ein "ElasticaQuery" -Objekt eingeschlossen werden.
+Dies könnte z.B. folgendermassen gehen:
 
     
     $query = new Query();
-    // code from above
-    $query->setQuery($overallQuery);
+    // Code von oben
+    $query->setQuery ($overallQuery);
 
 
-And to get the Pagination working:
+Und um die Paginierung zum Laufen zu bringen:
 
 `$elasticaFinder->createPaginatorAdapter($query);`

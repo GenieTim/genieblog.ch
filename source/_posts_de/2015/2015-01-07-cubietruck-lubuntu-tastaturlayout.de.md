@@ -15,13 +15,14 @@ title: "Cubietruck mit Lubuntu: Tastaturlayout anpassen"
 wordpress_id: 60
 categories:
   - Cubietruck
+  - Lubuntu
 draft: false
 template: post
 description: false
 socialImage: /media/socialImage.jpg
 extends: _layouts.post
 language: de
-cover_image: false
+cover_image: 2015/cubietruck.jpg
 ---
 
 Nach dem Aufsetzen von [Lubuntu auf dem Cubietruck](http://genieblog.ch/lubuntu-als-standardbetriebssystem-auf-dem-cubietruck-per-mac/) fällt auf, dass man nie nach dem Tastaturlayout gefragt wurde. Da es mühsam ist, immer die passenden Tasten zu suchen, ist es naheliegend, dass man das Tastaturlayout wechseln möchte. Nur wie?

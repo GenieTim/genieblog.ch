@@ -9,6 +9,8 @@ title: Moskau vs. Petersburg
 wordpress_id: 280
 categories:
   - Sprachaufenthalt
+  - Moskau
+  - St. Petersburg
 draft: false
 template: post
 description: false

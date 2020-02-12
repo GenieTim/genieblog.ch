@@ -19,7 +19,7 @@ description: false
 socialImage: /media/socialImage.jpg
 extends: _layouts.post
 language: de
-cover_image: false
+cover_image: 2015/Unbenannt-1.png
 ---
 
 Seit Siri das erste Mal vorgestellt wurde, sind schon einige Jahre ins Land gezogen. Mit ihnen kamen viele Gerüchte - wird Siri auch auf OS X verfügbar sein? Und nach all diesen Jahren ist die ernüchternde Antwort noch immer: "vermutlich eines Tages, aber bisher ist noch nichts definitiv!"

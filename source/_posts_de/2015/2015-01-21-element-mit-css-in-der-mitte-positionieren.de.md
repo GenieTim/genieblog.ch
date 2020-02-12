@@ -76,4 +76,10 @@ Für block Elemente, die man nicht zu einer Tabelle machen möchte, gibt es noch
 
 
 
-Diese Lösungen funktionieren in den meisten Browsern, jedoch leider nicht mit allen HTML Tags. Es gibt ausserdem noch weitere Lösungen, mit denen ich jedoch noch keine Erfahrungen gemacht habe. Was haben Sie für Erfahrungen gemacht? Welche Lösung bevorzugen Sie? Schreiben Sie Ihre Antwort in die Kommentare oder senden Sie sie mir per e-Mail.
+Diese Lösungen funktionieren in den meisten Browsern, jedoch leider nicht mit allen HTML Tags. 
+Es gibt ausserdem noch weitere Lösungen, mit denen ich jedoch noch keine Erfahrungen gemacht habe. 
+Was haben Sie für Erfahrungen gemacht? Welche Lösung bevorzugen Sie? 
+Schreiben Sie Ihre Antwort in die Kommentare oder senden Sie sie mir per e-Mail.
+
+Aktualisierung in etwas neueren Jahren: 
+Der [Komplette Guide von CSS-Tricks](https://css-tricks.com/centering-css-complete-guide/) ist eine zu empfehlende aktualisierte Version der Antwort auf dieselbe Frage.

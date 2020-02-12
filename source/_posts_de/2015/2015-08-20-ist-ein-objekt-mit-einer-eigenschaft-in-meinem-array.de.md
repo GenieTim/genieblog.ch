@@ -19,13 +19,11 @@ cover_image: false
 ---
 
 Mit folgendem Code können Sie testen, ob ein Objekt in einem Array 'array' eine Eigenschaft 'property' mit dem Wert 'value' hat.
-
-
     
-    <code class="language-javascript">// test if a object located in 'arrray' has a 'property' which equals 'value'
+    // test if a object located in 'arrray' has a 'property' which equals 'value'
     var isInArray = function (array, property, value) {
            for (var i=0; i < array.length; i++) {
                     if (array[i][property] === value) return true; 
                 }
                 return false;
-    };</pre
+    };

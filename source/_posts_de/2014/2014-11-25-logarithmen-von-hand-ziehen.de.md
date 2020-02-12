@@ -21,7 +21,7 @@ description: false
 socialImage: /media/socialImage.jpg
 extends: _layouts.post
 language: de
-cover_image: false
+cover_image: 2014/log.png
 ---
 
 Wie zieht ein Taschenrechner den Logarithmus? Dieser Frage möchte ich in diesem Beitrag nachgehen und mit HTML und JavaScript den ersten Schritt eines entsprechenden Logarithmus-Zieher programmieren.
@@ -44,7 +44,7 @@ Das könnte folgendermassen aussehen:
 
 
     
-    <code class="language-markup"><form> 
+    <form> 
     <-- Ein Input Feld fur die Zahl, --> 
     <input type="text" id="zahl" size="40" placeholder="Zehnerlogarithmus von..." /> 
     <-- ein Button um die Berechnung zu starten (der losHandler() wird gestartet) da wir das Programm ohne jQuery schreiben, ist es vertretbar, dass wir ein wenig Script im HTML Code verstecken (onclick) und die Trennung von Model, View und Controller missachten --> 
@@ -60,38 +60,38 @@ So kann man das lösen:
 
 
     
-    <code class="language-javascript">function ausweg(eingabe) {
-    /* Wenn der Nutzer eine Zahl kleine als 1 eintippt, sind wir machtlos mit unserer Methode */
-    return Math.log(eingabe) / Math.LN10;
+    function ausweg(eingabe) {
+        /* Wenn der Nutzer eine Zahl kleine als 1 eintippt, sind wir machtlos mit unserer Methode */
+        return Math.log(eingabe) / Math.LN10;
     }
     function losHandler() {
-    /* für mögliche spätere Versionen die Basis variabel halten */
-    var basis = 10;
-    /* die Eingabe auslesen */
-    var eingabe = document.getElementById("zahl");
-    /* den Output Paragraphen vorbereiten */
-    var ergebnis = document.getElementById("ergebnis");
-    ergebnis.innerHTML = "";
-    eingabe = parseFloat(eingabe.value);
-    /* Eingaben valieren */
-    if (eingabe === null) {
-    alert("Keine Eingabe erhalten!");
-    }
-    /* für verschiedene Browser... (und zur bestimmten Absicherung) */
-    else if (eingabe === "") {
-    alert("Keine Eingabe erhalten!");
-    } else if (eingabe === undefined) {
-    alert("Keine Eingabe erhalten!");
-    } else if (isNaN(parseInt(eingabe))) {
-    alert("Bitte geben Sie nur Zahlen ein!");
-    } else if (eingabe < 0) {
-    alert("Bitte geben Sie nur Zahlen grösser als Null ein!");
-    /* und sonst Resultat ausgeben */
-    } else if (eingabe < 1) {
-    ergebnis.innerHTML = "log<sub>" + basis + "</sub>" + eingabe + " = " + ausweg(eingabe);
-    } else {
-    ergebnis.innerHTML = "log<sub>" + basis + "</sub>" + eingabe + " = " + log(eingabe, basis);
-    }
+        /* für mögliche spätere Versionen die Basis variabel halten */
+        var basis = 10;
+        /* die Eingabe auslesen */
+        var eingabe = document.getElementById("zahl");
+        /* den Output Paragraphen vorbereiten */
+        var ergebnis = document.getElementById("ergebnis");
+        ergebnis.innerHTML = "";
+        eingabe = parseFloat(eingabe.value);
+        /* Eingaben valieren */
+        if (eingabe === null) {
+            alert("Keine Eingabe erhalten!");
+        }
+        /* für verschiedene Browser... (und zur bestimmten Absicherung) */
+        else if (eingabe === "") {
+            alert("Keine Eingabe erhalten!");
+        } else if (eingabe === undefined) {
+            alert("Keine Eingabe erhalten!");
+        } else if (isNaN(parseInt(eingabe))) {
+            alert("Bitte geben Sie nur Zahlen ein!");
+        } else if (eingabe < 0) {
+            alert("Bitte geben Sie nur Zahlen grösser als Null ein!");
+        /* und sonst Resultat ausgeben */
+        } else if (eingabe < 1) {
+            ergebnis.innerHTML = "log<sub>" + basis + "</sub>" + eingabe + " = " + ausweg(eingabe);
+        } else {
+            ergebnis.innerHTML = "log<sub>" + basis + "</sub>" + eingabe + " = " + log(eingabe, basis);
+        }
     }
 
 
@@ -101,23 +101,23 @@ Kommen wir nun also zur Funktion log(), dem Herzstück unseres Kunstwerks, die d
 
     
     function log(wert, basis) {
-    var zahl = wert;
-    var gesucht = "";
-    /* eigentliche Rechnung. Gibt den Logarithmus mit 15 Stellen aus */
-    for (var i = 0; i < 15; i++) {
-    var a; c = 0;
-    for (a = 0; zahl >= power(basis, a); a++) {
-    c++;
-    }
-    c = c - 1;
-    zahl = zahl / (power(basis, c));
-    zahl = power(zahl, basis);
-    gesucht += c;
-    if (i === 0) {
-    gesucht += ".";
-    }
-    }
-    return gesucht.replace("0000000000", "0");
+        var zahl = wert;
+        var gesucht = "";
+        /* eigentliche Rechnung. Gibt den Logarithmus mit 15 Stellen aus */
+        for (var i = 0; i < 15; i++) {
+            var a; c = 0;
+            for (a = 0; zahl >= power(basis, a); a++) {
+                c++;
+            }
+            c = c - 1;
+            zahl = zahl / (power(basis, c));
+            zahl = power(zahl, basis);
+            gesucht += c;
+            if (i === 0) {
+                gesucht += ".";
+            }
+        }
+        return gesucht.replace("0000000000", "0");
     }
 
 
@@ -129,18 +129,18 @@ Und für was steht power()? Das ist unser Ersatz für `Math.pow()`. Ja, zugegebe
 
     
     function power(basis, exponent) {
-    /* damit Potenzgesetze eingehalten werden */
-    if (exponent === 0) {
-    return 1;
-    }
-    /* Potenzfunktion */
-    else {
-    var k = basis;
-    for (var u = 1; u < exponent; u++) {
-    k = k * basis;
-    }
-    return k;
-    }
+        /* damit Potenzgesetze eingehalten werden */
+        if (exponent === 0) {
+            return 1;
+        }
+        /* Potenzfunktion */
+        else {
+            var k = basis;
+            for (var u = 1; u < exponent; u++) {
+                k = k * basis;
+            }
+            return k;
+        }
     }
 
 

@@ -8,6 +8,7 @@ slug: sprache-sprechen
 title: Über Sprache sprechen
 wordpress_id: 255
 categories:
+  - Sprachaufenthalt
   - Moskau
 draft: false
 template: post
@@ -15,7 +16,7 @@ description: false
 socialImage: /media/socialImage.jpg
 extends: _layouts.post
 language: de
-cover_image: false
+cover_image: 2016/kommunikationsfail.jpg
 ---
 
 Die Motivation für einen Sprachaufenthalt? Sprache lernen, klar. In meinem Fall Russisch. Eine spannende Sprache: Einflüsse von Wikingern, Mongolen, Griechen und vielen mehr entwickelten sich zu einer eigenen, komplexen Sprache, die sich insbesondere durch eine viel zu grosse Anzahl an Wörtern auszeichnet. Eine weitere Eigenart ist die kyrillischen Schrift, die aus einer Hand- und einer Blockschrift besteht, die beide grosse Ähnlichkeiten zur lateinischen Schrift vorweisen. Allerdings nur optisch: der kyrillische Buchstaben für den Laut des lateinischen d sieht in der Handschrift aus wie jenes vom g, das r wie ein p, das t wie ein m. Und das ist nur eine Auswahl der kleineren Schwierigkeiten.

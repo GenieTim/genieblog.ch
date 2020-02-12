@@ -9,7 +9,7 @@
 
 @section('body')
 @if ($page->cover_image)
-<img src="{{ $page->cover_image }}" alt="{{ $page->title }} cover image" class="mb-2">
+@include('_components.img', ['alt' => $page->title . 'cover image', 'src' => $page->cover_image ])
 @endif
 
 <h1 class="leading-none mb-2">{{ $page->title }}</h1>

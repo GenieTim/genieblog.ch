@@ -8,6 +8,7 @@ slug: und-das-wetter-war-wie
 title: Und das Wetter war wie?
 wordpress_id: 254
 categories:
+  - Sprachaufenthalt
   - Moskau
 draft: false
 template: post
@@ -15,7 +16,7 @@ description: false
 socialImage: /media/socialImage.jpg
 extends: _layouts.post
 language: de
-cover_image: false
+cover_image: 2016/moscow_summer.jpg
 ---
 
 Ich achte auf angemessene Alliterationen am Anfang eines etwas eingeschränkt-exzellenten Eintrages. 

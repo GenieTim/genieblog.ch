@@ -18,7 +18,7 @@ language: de
 cover_image: false
 ---
 
-Für eine HTML5 Applikation hatte ich die Idee, einige Elemente im localStorage anstatt zu löschen bloss umzubenennen. Da dies mehrfach geschiehen würde, musste die Umbenennung eindeutig erfolgen, damit die anderen Elemente nicht überschrieben werden. Und was eignet sich für die eindeutige Identifikation besser als die aktuelle Uhrzeit mit Datum, Millisekunden und allem?
+Für eine HTML5 Applikation hatte ich die Idee, einige Elemente im localStorage anstatt zu löschen bloss umzubenennen. Da dies mehrfach geschehen würde, musste die Umbenennung eindeutig erfolgen, damit die anderen Elemente nicht überschrieben werden. Und was eignet sich für die eindeutige Identifikation besser als die aktuelle Uhrzeit mit Datum, Millisekunden und allem?
 
 Nun gut; die Idee mag zwar gut klingen, aber wie kriegt man das Element eines Tages wieder aus dem Speicher raus? Wie kann ich ein Element mit nahezu zufälligem Schlüssel aufrufen?
 

@@ -22,7 +22,6 @@ Bei meinem Abenteuer in Moskau und Sankt Petersburg habe ich einiges gelernt. Vi
 
 
 
-
   * Bezahlen in einem anderen Land ist trotz Bearbeitungsgebühr günstiger mit einer Kreditkarte als mit der Maestro, während das Abheben von Geld besser mit der Maestro ausgeführt werden sollte
 
 
@@ -35,12 +34,9 @@ Bei meinem Abenteuer in Moskau und Sankt Petersburg habe ich einiges gelernt. Vi
   * Dieser Punkt würde die Moral etlicher Disney-Filme wiederholen, weshalb ich ihn durch diesen Text ersetzt habe
 
 
-
 Passend noch einige Fun Facts, die mich mehr oder weniger überrascht haben:
 
-
-  * Laut Gerüchten als Trotzreaktion auf Sanktionen hat Russland die Adoption russischer Kinder für Amerikaner verboten. Das ist jedoch leicht problematisch für die russischen Kinder, da die Amerikaner insbesondere für Kinder mit Erbkrankheiten oder Trisomie-21 die Hauptabnehmer waren.
-
+  * Laut Gerüchten als Trotzreaktion auf Sanktionen hat Russland die Adoption russischer Kinder für Amerikaner verboten. Das ist jedoch leicht problematisch für die russischen Kinder, da die Amerikaner insbesondere für Kinder mit Erbkrankheiten oder Trisomie-21 die "Hauptabnehmer" waren.
 
   * Moskau liegt genau in der Mitte des weissen und des schwarzen Meeres.
 
@@ -61,6 +57,4 @@ Passend noch einige Fun Facts, die mich mehr oder weniger überrascht haben:
 
 
   * Die Menge des All-In-One Dusch-Shampoo-Gels, die Akkulaufzeit meines Rasierers sowie die Menge der Zahnpaste hat die 9-Wochen Probe erfolgreich, wenn auch knapp, bestanden und gehalten.
-
-
 
