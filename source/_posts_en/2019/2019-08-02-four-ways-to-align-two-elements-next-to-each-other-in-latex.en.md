@@ -8,7 +8,7 @@ slug: four-ways-to-align-two-elements-next-to-each-other-in-latex
 title: Four ways to align two elements next to each other in LaTeX
 wordpress_id: 451
 categories:
-  
+  - LaTeX
 draft: false
 template: post
 description: false
