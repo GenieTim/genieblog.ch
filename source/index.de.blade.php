@@ -1,4 +1,7 @@
-@extends('_layouts.master')
+---
+extends: _layouts.master
+language: de
+---
 
 @section('body')
 @foreach ($posts_de->where('featured', true) as $featuredPost)
@@ -50,4 +53,8 @@
 <hr class="w-full border-b mt-2 mb-6">
 @endif
 @endforeach
+<p>
+    Alle Beiträge finden sich im <a title="{{ $page->siteName }} Blog"
+        href="{{$page->baseUrl}}/blog/{{$page->language}}/index.{{$page->language}}">Blog</a>!
+</p>
 @stop

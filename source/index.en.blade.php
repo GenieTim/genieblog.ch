@@ -1,4 +1,7 @@
-@extends('_layouts.master')
+---
+extends: _layouts.master
+language: en
+---
 
 @section('body')
 
@@ -49,4 +52,10 @@
 <hr class="w-full border-b mt-2 mb-6">
 @endif
 @endforeach
+
+<p>
+    All posts can be found in the <a title="{{ $page->siteName }} Blog"
+    href="{{$page->baseUrl}}/blog/{{$page->language}}/index.{{$page->language}}">blog</a>!
+</p>
+
 @stop

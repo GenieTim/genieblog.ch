@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Str;
+use Illuminate\Filesystem\Filesystem;
+use Illuminate\Translation\FileLoader;
+use Illuminate\Translation\Translator;
 
 const LANGUAGES = ["de", "en"];
 
@@ -25,9 +28,10 @@ function getMultilangCollections()
         $collections['categories_' . $lang] = [
             'path' => 'blog/' . $lang . '/categories/{_filename}',
             'language' => $lang,
+            'translations' => false, // by default, we do not translate categories
             'posts' => function ($page, $allPosts) use ($lang) {
                 if (!$allPosts) {
-                    echo "AllPosts = " + $allPosts;
+                    // echo "AllPosts = " + $allPosts;
                     return [];
                 }
                 return $allPosts->filter(function ($post) use ($page, $lang) {
@@ -61,6 +65,9 @@ return [
     'siteAuthor' => 'Tim Bernhard',
     'languages' => LANGUAGES,
     'language' => 'en', // default language, if undefined for some reason
+    // might be bool or array: if array, have keys the languages, as values the path to the other language
+    // TODO: don't rely on URL/path, as it might be different for different environments
+    'translations' => true,
 
     // collections
     'collections' => getMultilangCollections(),
@@ -68,12 +75,41 @@ return [
     // helpers
     'translateUrl' => function ($page, $targetLanguage) {
         $url = $page->getUrl();
+        if ($page->language === $targetLanguage) {
+            return $url;
+        }
+        if (is_array($page->translations)) {
+            return $page->basUrl . $page->tranlations[$targetLanguage];
+        }
         for ($i = 0; $i < count(LANGUAGES); ++$i) {
             $tryLanguage = LANGUAGES[$i];
             if (strpos($url, "/$tryLanguage/") !== false) {
-                return str_replace("/$tryLanguage/", "/$targetLanguage/", $url);
+                // replace all possible occurences of the language in the file name/path
+                $rep1 = str_replace("/$tryLanguage/", "/$targetLanguage/", $url);
+                $rep2 = str_replace(".$tryLanguage.", ".$targetLanguage.", $rep1);
+                return str_replace(".$tryLanguage/", ".$targetLanguage/", $$rep2);
             }
         }
+    },
+    'hasTranslation' => function ($page, $targetLanguage) {
+        if ($page->translations === false) {
+            return false;
+        }
+        if (is_array($page->translations)) {
+            return array_key_exists($targetLanguage, $page->translations);
+        }
+        return true;
+    },
+    'translate' => function ($page, $key, $locale = null) {
+        if (is_null($locale)) {
+            $locale = $page->language;
+        }
+        // Prepare the FileLoader
+        $loader = new FileLoader(new Filesystem(), './source/assets/translations');
+
+        // Register the Translator
+        $translator = new Translator($loader, $locale);
+        return $translator->get($key);
     },
     'getDate' => function ($page) {
         return Datetime::createFromFormat('U', $page->date);

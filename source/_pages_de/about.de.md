@@ -21,5 +21,5 @@ Ich besuchte die Kantonsschule in Wiedikon und schloss diese im Frühling 2015 a
 
 Wer mich kontaktieren möchte: nur nicht zögern!
 
-[mail_crypt mail="tim@bernhard-webstudio.ch" text="e-Mail"]
+[E-Mail](mailto:tim@bernhard-webstudio.ch)
 [0763655579](tel:+41763655579)

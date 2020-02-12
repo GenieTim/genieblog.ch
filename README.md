@@ -1,18 +1,19 @@
-# Jigsaw Blog Starter Template
+# genieblog.ch
 
-This is a starter template for creating a beautiful, customizable blog in Jigsaw with minimal effort. You’ll only have to change a few settings and you’re ready to go.
+This is my personal blog. Just because I can. And because the domain was available, you know.
 
-[View a preview of the blog template.](http://jigsaw-blog-staging.tighten.co/)
+[View this blog on its homepage.](https://genieblog.ch/)
 
 ## Installation
 
-After installing Jigsaw, run the following command from your project directory:
+After downloading/cloning this repository, run the following commands from your project directory:
 
 ```bash
-./vendor/bin/jigsaw init blog
+composer install
+yarn
 ```
 
-This starter template includes samples of common page types, and comes pre-configured with:
+This blog is based on the Jigsaw starter template and comes therefore with:
 
   -A fully responsive navigation bar
   -[Tailwind CSS](https://tailwindcss.com/), a utility CSS framework that allows you to customize your design without touching a line of CSS
@@ -24,36 +25,14 @@ This starter template includes samples of common page types, and comes pre-confi
   -A sample contact form
   -A search bar powered by [Fuse.js](http://fusejs.io/) and [Vue.js](https://vuejs.org/), which indexes your content automatically and requires zero configuration
 
----
-
-![Blog starter template screenshot](https://user-images.githubusercontent.com/357312/50345466-355c7700-04fd-11e9-83dd-f4e13ecdc97c.png)
-
----
-
-### Configuring your new site
-
-As with all Jigsaw sites, configuration settings can be found in `config.php`; you can update the variables in that file with settings specific to your site. You can also add new configuration variables there to use across your site; take a look at the [Jigsaw documentation](http://jigsaw.tighten.co/docs/site-variables/) to learn more.
-
-```php
-// config.php
-return [
-    'baseUrl' => 'https://my-awesome-jigsaw-site.com/',
-    'production' => false,
-    'siteName' => 'My Site',
-    'siteDescription' => 'Give your blog a boost with Jigsaw.',
-    ...
-];
-```
-
-> Tip: This configuration file is also where you’ll define any "collections" (for example, a collection of the contributors to your site, or a collection of blog posts organized by topic). Check out the official [Jigsaw documentation](https://jigsaw.tighten.co/docs/collections/) to learn more.
-
----
 
 ### Adding Content
 
-You can write your content using a [variety of file types](http://jigsaw.tighten.co/docs/content-other-file-types/). By default, this starter template expects your content to be located in the `source/_posts/` folder.
+You can write your content using a [variety of file types](http://jigsaw.tighten.co/docs/content-other-file-types/). By default, genieblog.ch expects new posts to be located in the `source/_posts_lan/` folder, where lan is the language shortcut. Currently, I support this blog in german (de) as well as english (en).
 
 The top of each content page contains a YAML header that specifies how it should be rendered. The `title` attribute is used to dynamically generate HTML `title` and OpenGraph tags for each page. The `extends` attribute defines which parent Blade layout this content file will render with (e.g. `_layouts.post` will render with `source/_layouts/post.blade.php`), and the `section` attribute defines the Blade "section" that expects this content to be placed into it.
+
+Example:
 
 ```yaml
 ---
@@ -67,8 +46,6 @@ featured: true
 ---
 ```
 
----
-
 ### Adding Assets
 
 Any assets that need to be compiled (such as JavaScript, Less, or Sass files) can be added to the `source/_assets/` directory, and Laravel Mix will process them when running `npm run local` or `npm run production`. The processed assets will be stored in `/source/assets/build/` (note there is no underscore on this second `assets` directory).
@@ -79,7 +56,6 @@ Files that don't require processing (such as images and fonts) can be added dire
 
 [Read more about compiling assets in Jigsaw using Laravel Mix.](http://jigsaw.tighten.co/docs/compiling-assets/)
 
----
 
 ## Building Your Site
 

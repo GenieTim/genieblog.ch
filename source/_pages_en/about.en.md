@@ -21,6 +21,6 @@ I attended the Cantonal School in Wiedikon and graduated in spring 2015. As a hi
 
 Who wants to contact me: just do not hesitate!
 
-[mail_crypt mail="tim@bernhard-webstudio.ch" text="e-Mail"]
+[E-Mail](mailto:tim@bernhard-webstudio.ch)
 
 [0763655579](tel:+41763655579)

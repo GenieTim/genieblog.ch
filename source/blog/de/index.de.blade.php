@@ -2,9 +2,9 @@
 title: Blog posts
 pagination:
   collection: posts_de
-  perPage: 4
+  perPage: 6
+extends: _layouts.master
 ---
-@extends('_layouts.master')
 
 @push('meta')
 <meta property="og:title" content="{{ $page->siteName }} Blog" />
@@ -26,20 +26,20 @@ pagination:
 @endif
 @endforeach
 
-@if ($pagination->pages->count() > 1)
+@if ($pagination->pages && $pagination->pages->count() > 1)
 <nav class="flex text-base my-8">
     @if ($previous = $pagination->previous)
-    <a href="{{ $previous }}" title="Previous Page"
+    <a href="{{ $page->baseUrl }}{{ $previous }}" title="Letzte Seite"
         class="bg-gray-200 hover:bg-gray-400 rounded mr-3 px-5 py-3">&LeftArrow;</a>
     @endif
 
     @foreach ($pagination->pages as $pageNumber => $path)
-    <a href="{{ $path }}" title="Go to Page {{ $pageNumber }}"
+    <a href="{{ $page->baseUrl }}{{ $path }}" title="Zu Seite {{ $pageNumber }}"
         class="bg-gray-200 hover:bg-gray-400 text-blue-700 rounded mr-3 px-5 py-3 {{ $pagination->currentPage == $pageNumber ? 'text-blue-600' : '' }}">{{ $pageNumber }}</a>
     @endforeach
 
     @if ($next = $pagination->next)
-    <a href="{{ $next }}" title="Next Page"
+    <a href="{{ $page->baseUrl }}{{ $next }}" title="Nächste Seite"
         class="bg-gray-200 hover:bg-gray-400 rounded mr-3 px-5 py-3">&RightArrow;</a>
     @endif
 </nav>

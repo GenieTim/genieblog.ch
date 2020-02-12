@@ -3,7 +3,7 @@
 @push('scripts')
 <script>
   function getUrl(lan) {
-    return "{{$page->baseUrl}}/index_" + lan;
+    return "{{$page->baseUrl}}/index." + lan;
   }
 
   var language = window.navigator.userLanguage || window.navigator.language;

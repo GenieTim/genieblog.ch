@@ -35,7 +35,8 @@
         <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
             <div class="flex items-center">
                 <a href="{{$page->baseUrl}}/" title="{{ $page->siteName }} home" class="inline-flex items-center">
-                    <img class="h-8 md:h-10 mr-3" src="/assets/img/logo.svg" alt="{{ $page->siteName }} logo" />
+                    <img class="h-8 md:h-10 mr-3" src="{{ $page->baseUrl }}/assets/img/logo.svg"
+                        alt="{{ $page->siteName }} logo" />
 
                     <h1 class="text-lg md:text-2xl text-blue-800 font-semibold hover:text-blue-600 my-0">
                         {{ $page->siteName }}</h1>
@@ -61,30 +62,34 @@
     <footer class="bg-white text-center text-sm mt-12 py-4" role="contentinfo">
         <ul class="flex flex-col md:flex-row justify-center list-none">
             <li class="md:mr-2">
-                <a href="" title="Read the imprint/impressum">Imprint</a>.
+                <a href="" title="Read the imprint/impressum">{{ $page->translate('master.copyright.imprint') }}</a>.
             </li>
 
             <li class="md:mr-2">
-                Read in language:
+                {{ $page->translate('master.language.choose') }}
                 @foreach ($page->languages as $lang)
+                @if ($page->hasTranslation($lang))
                 <a href="{{ $page->translateUrl($lang) }}"
                     title="Read this in {{$lang}}">{{$lang}}</a>@if(!$loop->last), @endif
+                @endif
                 @endforeach
             </li>
 
             <li>
-                Help fix typos & translation or checkout the source on <a
-                    href="https://github.com/GenieTim/genieblog.ch" title="Source of genieblog.ch">GitHub</a>.
+                {{ $page->translate('master.checkout.github') }} <a href="https://github.com/GenieTim/genieblog.ch"
+                    title="Source of genieblog.ch">GitHub</a>.
             </li>
         </ul>
         <ul class="flex flex-col md:flex-row justify-center list-none">
             <li class="md:mr-2">
-                &copy; Tim Bernhard. All Rights Reserved.
+                &copy; Tim Bernhard. {{ $page->translate('master.copyright.rights') }}
             </li>
 
             <li>
-                Built with ❤️, <a href="http://jigsaw.tighten.co" title="Jigsaw by Tighten">Jigsaw</a>
-                and <a href="https://tailwindcss.com" title="Tailwind CSS, a utility-first CSS framework">Tailwind
+                {{ $page->translate('master.build.with') }} ❤️, <a href="http://jigsaw.tighten.co"
+                    title="Jigsaw by Tighten">Jigsaw</a>
+                {{ $page->translate('master.and') }} <a href="https://tailwindcss.com"
+                    title="Tailwind CSS, a utility-first CSS framework">Tailwind
                     CSS</a>.
             </li>
         </ul>

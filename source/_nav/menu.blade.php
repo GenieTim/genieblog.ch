@@ -7,13 +7,14 @@
     </a>
     @endforeach --}}
 
-    <a title="{{ $page->siteName }} Blog" href="{{$page->baseUrl}}/blog/index_{{$page->language}}"
+    <a title="{{ $page->siteName }} Blog" href="{{$page->baseUrl}}/blog/{{$page->language}}/index.{{$page->language}}"
         class="ml-6 text-gray-700 hover:text-blue-600 {{ $page->isActive('/blog/index_' . $page->language) ? 'active text-blue-600' : '' }}">
         Blog
     </a>
 
-    <a title="{{ $page->siteName }} About" href="{{$page->baseUrl}}/pages/{{$page->language}}/about"
+    <a title="{{ $page->siteName }} {{ $page->translate('menu.about') }}"
+        href="{{$page->baseUrl}}/pages/{{$page->language}}/about"
         class="ml-6 text-gray-700 hover:text-blue-600 {{ $page->isActive('/about') ? 'active text-blue-600' : '' }}">
-        About
+        {{ $page->translate('menu.about') }}
     </a>
 </nav>
