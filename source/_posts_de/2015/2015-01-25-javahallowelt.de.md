@@ -20,7 +20,7 @@ language: de
 cover_image: false
 ---
 
-
+```java
     // halloWelt.java
     package ch.genieblog.halloWelt;
     
@@ -30,4 +30,4 @@ cover_image: false
     		System.out.println("Hallo Welt!");
     	}
     }
-    
+```    

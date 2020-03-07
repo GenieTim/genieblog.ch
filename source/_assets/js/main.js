@@ -45,7 +45,4 @@ if ('serviceWorker' in navigator) {
 
 // image lazy loading
 // TODO: do.
-// first, force compilation of images so webpack gets to know them
-require.context("./../../assets/images/", true, /^\.\/.*\.(jpe?g|png)/);
-
 
