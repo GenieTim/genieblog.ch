@@ -5,3 +5,7 @@
 .cache
 
 source/assets/build/*
+
+source/service-worker.js
+source/workbox-*.js
+source/*.js.map
