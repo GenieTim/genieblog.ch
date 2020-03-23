@@ -87,7 +87,7 @@ return [
                 // replace all possible occurences of the language in the file name/path
                 $rep1 = str_replace("/$tryLanguage/", "/$targetLanguage/", $url);
                 $rep2 = str_replace(".$tryLanguage.", ".$targetLanguage.", $rep1);
-                return str_replace(".$tryLanguage/", ".$targetLanguage/", $$rep2);
+                return str_replace(".$tryLanguage/", ".$targetLanguage/", $rep2);
             }
         }
     },
@@ -105,7 +105,7 @@ return [
             $locale = $page->language;
         }
         // Prepare the FileLoader
-        $loader = new FileLoader(new Filesystem(), './source/assets/translations');
+        $loader = new FileLoader(new Filesystem(), './source/_assets/translations');
 
         // Register the Translator
         $translator = new Translator($loader, $locale);

@@ -2,7 +2,7 @@
 title: Blog posts
 pagination:
   collection: posts_en
-  perPage: 6
+  perPage: 16
 extends: _layouts.master
 ---
 
@@ -34,13 +34,13 @@ extends: _layouts.master
     @endif
 
     @foreach ($pagination->pages as $pageNumber => $path)
-    <a href="{{ $page->baseUrl }}{{ $path }}" title="Go to Page {{ $pageNumber }}"
-        class="bg-gray-200 hover:bg-gray-400 text-blue-700 rounded mr-3 px-5 py-3 {{ $pagination->currentPage == $pageNumber ? 'text-blue-600' : '' }}">{{ $pageNumber }}</a>
+    <a href="{{ $page->baseUrl }}{{ $path }}" title="Zu Seite {{ $pageNumber }}"
+        class="bg-gray-700 hover:bg-gray-900 text-blue-100 rounded mr-3 px-5 py-3 {{ $pagination->currentPage == $pageNumber ? 'text-blue-400' : '' }}">{{ $pageNumber }}</a>
     @endforeach
 
     @if ($next = $pagination->next)
-    <a href="{{ $page->baseUrl }}{{ $next }}" title="Next Page"
-        class="bg-gray-200 hover:bg-gray-400 rounded mr-3 px-5 py-3">&RightArrow;</a>
+    <a href="{{ $page->baseUrl }}{{ $next }}" title="Nächste Seite"
+        class="bg-gray-700 hover:bg-gray-900 rounded mr-3 px-5 py-3">&RightArrow;</a>
     @endif
 </nav>
 @endif

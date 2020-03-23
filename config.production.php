@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'baseUrl' => 'https://genieblog.ch',
+    'baseUrl' => 'https://www.genieblog.ch',
     'production' => true,
 ];

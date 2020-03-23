@@ -5,10 +5,11 @@ body {
 a {
     @apply .font-semibold;
     @apply .no-underline;
-    @apply .text-blue-600;
+    @apply .text-blue-200;
+    transition: color .35s, opacity .35s;
 
     &:hover {
-        @apply .text-blue-800;
+        @apply .text-blue-400;
     }
 }
 
@@ -19,12 +20,13 @@ blockquote {
     @apply .italic;
     @apply .my-8;
     @apply .pl-6;
-    @apply .text-gray-800;
-    @apply .text-lg;
+    @apply .text-white;
+    @apply .text-xl;
 }
 
 code {
-    @apply .bg-gray-300;
+    @apply .bg-gray-700;
+    @apply .text-white;
     @apply .px-2;
     @apply .py-px;
     @apply .rounded;
@@ -52,7 +54,7 @@ h6 {
     @apply .leading-tight;
     @apply .mb-4;
     @apply .mt-8;
-    @apply .text-gray-900;
+    @apply .text-gray-100;
 
     &:first-child {
         @apply .mt-0;
@@ -125,7 +127,7 @@ p {
 }
 
 pre {
-    @apply .bg-gray-200;
+    @apply .bg-gray-700;
     @apply .leading-loose;
     @apply .my-6;
     @apply .overflow-x-auto;
@@ -142,6 +144,6 @@ pre {
 }
 
 ::selection {
-    @apply .bg-blue-500;
-    @apply .text-white;
+    @apply .bg-blue-400;
+    @apply .text-black;
 }
