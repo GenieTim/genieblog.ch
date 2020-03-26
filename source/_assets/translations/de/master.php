@@ -7,5 +7,5 @@ return [
   'checkout.github' => 'Helfen Sie mit, Fehler zu korrigieren auf',
   'copyright.imprint' => 'Impressum',
   'copyright.rights' => 'Alle Rechte vorbehalten.',
-  'language.choose' => 'Verfügbar in folgenden Sprachen:',
+  'language.choose' => 'Diese Seite ist verfügbar in folgenden Sprachen:',
 ];

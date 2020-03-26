@@ -19,8 +19,12 @@ cover_image: false
 My name is Tim Bernhard, I was born on 2 August 1996.
 I attended the Cantonal School in Wiedikon and graduated in spring 2015. As a high school graduate I have connected my passion for programming projects with hopes for the future and founded the company [_Bernhard Webstudio_](http://bernhard-webstudio.ch).
 
-Who wants to contact me: just do not hesitate!
+Since then, I finished a Bachelor in Chemical Engineering at ETH Zurich 
+and am currently pursuing further degrees in Computational Science 
+and Engineering at ETH Zurich too.
 
-[E-Mail](mailto:tim@bernhard-webstudio.ch)
+Do not hesitate to contact me, in case of questions, job opportunities 
+or just some funny thing you found on the internet:
 
-[0763655579](tel:+41763655579)
+- [E-Mail](mailto:tim@bernhard-webstudio.ch)
+- [0763655579](tel:+41763655579)

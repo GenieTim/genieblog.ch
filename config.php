@@ -58,7 +58,7 @@ function getMultilangCollections()
 }
 
 return [
-    'baseUrl' => 'file:///Users/timbernhard/Privat/Programming/OpenSource-Contributions/genieblog.ch/build_local/',
+    'baseUrl' => '',
     'production' => false,
     'siteName' => 'genieblog.ch',
     'siteDescription' => 'A genius for a genius',

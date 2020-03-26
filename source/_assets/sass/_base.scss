@@ -5,16 +5,16 @@ body {
 a {
     @apply .font-semibold;
     @apply .no-underline;
-    @apply .text-blue-200;
+    @apply .text-teal-400;
     transition: color .35s, opacity .35s;
 
     &:hover {
-        @apply .text-blue-400;
+        @apply .text-teal-200;
     }
 }
 
 blockquote {
-    @apply .border-blue-400;
+    @apply .border-teal-400;
     @apply .border-l-4;
     @apply .font-normal;
     @apply .italic;
@@ -93,7 +93,7 @@ h6 {
 
 hr {
     @apply .border-b;
-    @apply .border-blue-200;
+    @apply .border-teal-400;
     @apply .my-12;
     @apply .rounded-full;
 }
@@ -107,7 +107,8 @@ li {
 
 ol,
 ul {
-    @apply .my-4;
+    @apply .my-6;
+    @apply .list-inside;
 }
 
 ol {
@@ -127,7 +128,8 @@ p {
 }
 
 pre {
-    @apply .bg-gray-700;
+    @apply .bg-gray-200;
+    @apply .text-black;
     @apply .leading-loose;
     @apply .my-6;
     @apply .overflow-x-auto;
@@ -137,13 +139,14 @@ pre {
     @apply .text-base;
 
     code {
-        @apply .bg-transparent;
+        @apply .bg-gray-700;
+        // @apply .bg-transparent;
         @apply .block;
         @apply .p-0;
     }
 }
 
 ::selection {
-    @apply .bg-blue-400;
+    @apply .bg-teal-400;
     @apply .text-black;
 }

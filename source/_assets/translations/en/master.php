@@ -5,7 +5,7 @@ return [
   'and' => 'and',
   'built.with' => 'Built with',
   'checkout.github' => 'Help fix typos & translation or checkout the source on',
-  'copyright.imprint' => 'imprint',
+  'copyright.imprint' => 'Imprint',
   'copyright.rights' => 'All rights reserved.',
-  'language.choose' => 'Read in language:',
+  'language.choose' => 'Read this page in language:',
 ];

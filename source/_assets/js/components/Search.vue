@@ -5,25 +5,25 @@
             <label for="search" class="hidden">Search</label>
 
             <input id="search" v-model="query" ref="search"
-                class="transition-fast relative block h-10 w-full lg:w-1/2 lg:focus:w-3/4 bg-gray-100 border border-gray-500 focus:border-blue-400 outline-none cursor-pointer text-gray-700 px-4 pb-0 pt-px"
+                class="transition-fast relative block h-10 w-full max-w-4xl lg:w-1/4 lg:focus:w-full bg-gray-900 border border-gray-500 focus:border-teal-400 outline-none cursor-pointer text-gray-100 px-4 pb-0 pt-px"
                 :class="{ 'transition-border': query }" autocomplete="off" name="search" placeholder="Search"
                 type="text" @keyup.esc="reset" @blur="reset">
 
             <button v-if="query || searching"
-                class="absolute top-0 right-0 leading-snug font-400 text-3xl text-blue-500 hover:text-blue-600 bg-white focus:outline-none pr-7 md:pr-3"
-                @click="reset">&times;</button>
+                class="absolute top-0 right-0 leading-snug font-400 text-3xl text-teal-400 hover:text-teal-200 bg-transparent focus:outline-none pr-7 md:pr-3"
+                @click="reset" aria-label="Reset Search">&times;</button>
 
             <transition name="fade">
-                <div v-if="query" class="absolute left-0 right-0 md:inset-auto w-full lg:w-3/4 text-left mb-4 md:mt-10">
+                <div v-if="query" class="absolute left-0 right-0 md:inset-auto w-full max-w-4xl text-left mb-4 md:mt-10 max-h-screen overflow-scroll border-b border-teal-400">
                     <div
-                        class="flex flex-col bg-white border border-b-0 border-t-0 border-blue-400 rounded-b-lg shadow-lg mx-4 md:mx-0">
+                        class="flex flex-col bg-black text-white border border-b-0 border-t-0 border-teal-400 rounded-b-lg shadow-lg mx-4 md:mx-0">
                         <a v-for="(result, index) in results"
-                            class="bg-white hover:bg-blue-100 border-b border-blue-400 text-xl cursor-pointer p-4"
+                            class="bg-black hover:bg-teal-900 border-b border-teal-400 text-xl cursor-pointer p-4"
                             :class="{ 'rounded-b-lg' : (index === results.length - 1) }" :href="result.link"
                             :title="result.title" :key="result.link" @mousedown.prevent>
                             {{ result.title }}
 
-                            <span class="block font-normal text-gray-700 text-sm my-1" v-html="result.snippet"></span>
+                            <span class="block font-normal text-sm text-white my-1" v-html="result.snippet"></span>
                         </a>
 
                         <div v-if="! results.length"
@@ -75,7 +75,7 @@
             const lang = html.getAttribute("lang");
             // then, base url to load from
             const base = document.querySelector("head base");
-            const baseUrl = baes.getAttribute("href");
+            const baseUrl = base.getAttribute("href");
 
             axios(baseUrl + '/index_' + lang + '.json').then(response => {
                 this.fuse = new fuse(response.data, {
