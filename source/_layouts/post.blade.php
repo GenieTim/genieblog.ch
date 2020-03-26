@@ -14,16 +14,16 @@
 
 <h1 class="leading-none mb-2">{{ $page->title }}</h1>
 
-<p class="text-gray-400 text-xl md:mt-0">{{ $page->author }} • {{ date('F j, Y', $page->date) }}</p>
+<p class="text-orange-200 font-thin text-xl md:mt-0">{{ $page->author }} • {{ date('F j, Y', $page->date) }}</p>
 
 @if ($page->categories)
 @foreach ($page->categories as $i => $category)
 <a href="{{ '/blog/categories/' . $page->language . '/' . $category }}" title="View posts in {{ $category }}"
-    class="inline-block bg-gray-100 hover:bg-teal-600 leading-loose tracking-wide text-teal-800 hover:text-white uppercase text-xs font-semibold rounded mr-4 px-3 pt-px">{{ $category }}</a>
+    class="inline-block bg-white hover:bg-orange-600 leading-loose tracking-wide text-genieblog-grey hover:text-white uppercase text-xs font-semibold rounded mr-2 px-3 pt-px">{{ $category }}</a>
 @endforeach
 @endif
 
-<div class="border-b border-blue-200 mb-10 pb-4" v-pre>
+<div class="border-b border-blue-200 mb-10 pb-4 text-base" v-pre>
     @yield('content')
 </div>
 

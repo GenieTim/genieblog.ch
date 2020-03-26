@@ -20,7 +20,7 @@ module.exports = {
                 // sooo... this might be called "hacky", but let's not care too much.
                 const imageSourceDir = __dirname + "/../source/assets/images";
                 const imageDestDir = __dirname + "/../source/assets/build/images";
-                let sizes = [150, 350, 500, 700, 900, 1200];
+                let sizes = [150, 300, 600, 900, 1200];
                 let promises = [];
                 glob(imageSourceDir + "/**/*@(jpeg|jpg|png)", {}, function (er, files) {
                     // loop all image files

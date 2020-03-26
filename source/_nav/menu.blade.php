@@ -8,13 +8,13 @@
     @endforeach --}}
 
     <a title="{{ $page->siteName }} Blog" href="{{$page->baseUrl}}/blog/{{$page->language}}/index.{{$page->language}}"
-        class="ml-6 text-white hover:text-teal {{ $page->isActive('/blog/index_' . $page->language) ? 'active text-teal-400' : '' }}">
+        class="ml-6 text-white hover:text-orange {{ $page->isActive('/blog/index_' . $page->language) ? 'active text-orange-400' : '' }}">
         Blog
     </a>
 
     <a title="{{ $page->siteName }} {{ $page->translate('menu.about') }}"
         href="{{$page->baseUrl}}/pages/{{$page->language}}/about"
-        class="ml-6 text-white hover:text-teal {{ $page->isActive('/about') ? 'active text-teal-400' : '' }}">
+        class="ml-6 text-white hover:text-orange {{ $page->isActive('/about') ? 'active text-orange-400' : '' }}">
         {{ $page->translate('menu.about') }}
     </a>
 </nav>

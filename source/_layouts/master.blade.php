@@ -40,7 +40,7 @@
                     <img class="h-8 md:h-10 mr-3" src="{{ $page->baseUrl }}/assets/img/logo-light.svg"
                         alt="{{ $page->siteName }} logo" />
 
-                    <h1 class="text-lg md:text-2xl text-white font-semibold hover:text-teal-400 my-0">
+                    <h1 class="text-lg md:text-2xl text-white font-semibold hover:text-orange-400 my-0">
                         {{ $page->siteName }}</h1>
                 </a>
             </div>
@@ -71,7 +71,9 @@
                 {{ $page->translate('master.language.choose') }}
                 @foreach ($page->languages as $lang)
                 @if ($page->hasTranslation($lang))
-                    <a href="{{ $page->translateUrl($lang) }}" title="Read this in {{$lang}}">{{$lang}}</a>@if (!$loop->last), @endif
+                <a href="{{ $page->translateUrl($lang) }}" title="Read this in {{$lang}}">
+                    {{$lang}}
+                </a>@if (!$loop->last), @endif
                 @endif
                 @endforeach
                 .

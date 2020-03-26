@@ -5,16 +5,16 @@ body {
 a {
     @apply .font-semibold;
     @apply .no-underline;
-    @apply .text-teal-400;
+    @apply .text-orange-400;
     transition: color .35s, opacity .35s;
 
     &:hover {
-        @apply .text-teal-200;
+        @apply .text-orange-200;
     }
 }
 
 blockquote {
-    @apply .border-teal-400;
+    @apply .border-orange-400;
     @apply .border-l-4;
     @apply .font-normal;
     @apply .italic;
@@ -93,7 +93,7 @@ h6 {
 
 hr {
     @apply .border-b;
-    @apply .border-teal-400;
+    @apply .border-orange-400;
     @apply .my-12;
     @apply .rounded-full;
 }
@@ -147,6 +147,6 @@ pre {
 }
 
 ::selection {
-    @apply .bg-teal-400;
+    @apply .bg-orange-400;
     @apply .text-black;
 }

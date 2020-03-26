@@ -26,7 +26,7 @@ module.exports = {
         'lg': '0 -1px 27px 0 rgba(0, 0, 0, 0.04), 0 4px 15px 0 rgba(0, 0, 0, 0.08)',
       },
       colors: {
-        'genieblog-grey': '#051412'
+        'genieblog-grey': '#140A02'
       },
     },
     fontSize: {
