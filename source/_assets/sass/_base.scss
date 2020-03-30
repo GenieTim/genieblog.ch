@@ -5,22 +5,21 @@ body {
 a {
     @apply .font-semibold;
     @apply .no-underline;
-    @apply .text-orange-400;
+    @apply .text-primary;
     transition: color .35s, opacity .35s;
 
     &:hover {
-        @apply .text-orange-200;
+        @apply .text-secondary;
     }
 }
 
 blockquote {
-    @apply .border-orange-400;
+    @apply .border-primary;
     @apply .border-l-4;
     @apply .font-normal;
     @apply .italic;
     @apply .my-8;
     @apply .pl-6;
-    @apply .text-white;
     @apply .text-xl;
 }
 
@@ -54,7 +53,6 @@ h6 {
     @apply .leading-tight;
     @apply .mb-4;
     @apply .mt-8;
-    @apply .text-gray-100;
 
     &:first-child {
         @apply .mt-0;
@@ -93,7 +91,7 @@ h6 {
 
 hr {
     @apply .border-b;
-    @apply .border-orange-400;
+    @apply .border-primary;
     @apply .my-12;
     @apply .rounded-full;
 }
@@ -139,7 +137,8 @@ pre {
     @apply .text-base;
 
     code {
-        @apply .bg-gray-700;
+        // @apply .bg-gray-700;
+        // @apply .text-white;
         // @apply .bg-transparent;
         @apply .block;
         @apply .p-0;
@@ -147,6 +146,6 @@ pre {
 }
 
 ::selection {
-    @apply .bg-orange-400;
-    @apply .text-black;
+    @apply .bg-primary;
+    @apply .text-primary-complement;
 }

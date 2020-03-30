@@ -10,13 +10,13 @@ language: de
     <img src="{{ $featuredPost->cover_image }}" alt="{{ $featuredPost->title }} cover image" class="mb-6">
     @endif
 
-    <p class="text-gray-400 font-medium my-2">
+    <p class="text-gray-500 font-medium my-2">
         {{ $featuredPost->getDate()->format('F j, Y') }}
     </p>
 
     <h2 class="text-3xl mt-0">
         <a href="{{ $featuredPost->getUrl() }}" title="Read {{ $featuredPost->title }}"
-            class="text-gray-200 font-extrabold">
+            class="font-extrabold">
             {{ $featuredPost->title }}
         </a>
     </h2>

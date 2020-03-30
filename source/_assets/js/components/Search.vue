@@ -10,7 +10,7 @@
         id="search"
         v-model="query"
         ref="search"
-        class="transition-fast relative block h-10 w-full max-w-4xl lg:w-1/4 lg:focus:w-full bg-gray-900 border border-gray-500 focus:border-orange-400 outline-none cursor-pointer text-gray-100 px-4 pb-0 pt-px"
+        class="transition-fast relative block h-10 w-full max-w-4xl lg:w-1/4 lg:focus:w-full bg-primary-complement border border-primary-shade focus:border-primary outline-none cursor-pointer text-primary-shade px-4 pb-0 pt-px"
         :class="{ 'transition-border': query }"
         autocomplete="off"
         name="search"
@@ -22,7 +22,7 @@
 
       <button
         v-if="query || searching"
-        class="absolute top-0 right-0 leading-snug font-400 text-3xl text-orange-400 hover:text-orange-200 bg-transparent focus:outline-none pr-7 md:pr-3"
+        class="absolute top-0 right-0 leading-snug font-400 text-3xl text-primary hover:text-secondary bg-transparent focus:outline-none pr-7 md:pr-3"
         @click="reset"
         aria-label="Reset Search"
       >&times;</button>
@@ -30,14 +30,14 @@
       <transition name="fade">
         <div
           v-if="query"
-          class="absolute left-0 right-0 md:inset-auto w-full max-w-4xl text-left mb-4 md:mt-10 max-h-screen overflow-scroll border-b border-orange-400"
+          class="absolute left-0 right-0 md:inset-auto w-full max-w-4xl text-left mb-4 md:mt-10 max-h-screen overflow-scroll border-b border-primary"
         >
           <div
-            class="flex flex-col bg-black text-white border border-b-0 border-t-0 border-orange-400 rounded-b-lg shadow-lg mx-4 md:mx-0"
+            class="flex flex-col bg-primary-complement text-primary-shade border border-b-0 border-t-0 border-primary rounded-b-lg shadow-lg mx-4 md:mx-0"
           >
             <a
               v-for="(result, index) in results"
-              class="bg-black hover:bg-orange-900 border-b border-orange-400 text-xl cursor-pointer p-4"
+              class="bg-primary-complement hover:text-primary border-b border-primary text-xl cursor-pointer p-4"
               :class="{ 'rounded-b-lg' : (index === results.length - 1) }"
               :href="result.link"
               :title="result.title"
@@ -46,14 +46,14 @@
             >
               {{ result.title }}
               <span
-                class="block font-normal text-sm text-white my-1"
+                class="block font-normal text-sm text-primary-shade my-1"
                 v-html="result.snippet"
               ></span>
             </a>
 
             <div
               v-if="! results.length"
-              class="bg-white w-full hover:bg-blue-100 border-b border-blue-400 rounded-b-lg shadow cursor-pointer p-4"
+              class="bg-white w-full hover:bg-secondary-complement hover:text-secondary border-b border-primary rounded-b-lg shadow cursor-pointer p-4"
             >
               <p class="my-0">
                 No results for
@@ -68,7 +68,7 @@
     <button
       title="Start searching"
       type="button"
-      class="flex md:hidden bg-gray-100 hover:bg-blue-100 justify-center items-center border border-gray-500 rounded-full focus:outline-none h-10 px-3"
+      class="flex md:hidden bg-primary-complement hover:bg-secondary justify-center items-center border border-gray-500 rounded-full focus:outline-none h-10 w-10 px-3"
       @click.prevent="showInput"
     >
       <img src="/assets/img/magnifying-glass.svg" alt="search icon" class="h-4 w-4 max-w-none" />

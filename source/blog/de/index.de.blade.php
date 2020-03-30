@@ -30,17 +30,17 @@ extends: _layouts.master
 <nav class="flex text-base my-8">
     @if ($previous = $pagination->previous)
     <a href="{{ $page->baseUrl }}{{ $previous }}" title="Letzte Seite"
-        class="bg-gray-200 hover:bg-gray-400 rounded mr-3 px-5 py-3">&LeftArrow;</a>
+        class="bg-gray-800 hover:bg-gray-900 rounded mr-3 px-5 py-3">&LeftArrow;</a>
     @endif
 
     @foreach ($pagination->pages as $pageNumber => $path)
     <a href="{{ $page->baseUrl }}{{ $path }}" title="Zu Seite {{ $pageNumber }}"
-        class="bg-gray-700 hover:bg-gray-900 text-blue-100 rounded mr-3 px-5 py-3 {{ $pagination->currentPage == $pageNumber ? 'text-blue-400' : '' }}">{{ $pageNumber }}</a>
+        class="bg-gray-800 hover:bg-gray-900 text-primary rounded mr-3 px-5 py-3 {{ $pagination->currentPage == $pageNumber ? 'text-secondary' : '' }}">{{ $pageNumber }}</a>
     @endforeach
 
     @if ($next = $pagination->next)
     <a href="{{ $page->baseUrl }}{{ $next }}" title="Nächste Seite"
-        class="bg-gray-700 hover:bg-gray-900 rounded mr-3 px-5 py-3">&RightArrow;</a>
+        class="bg-gray-800 hover:bg-gray-900 rounded mr-3 px-5 py-3">&RightArrow;</a>
     @endif
 </nav>
 @endif

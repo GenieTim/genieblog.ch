@@ -141,6 +141,20 @@ return [
             ? preg_replace('/\s+?(\S+)?$/', '', $truncated) . '...'
             : $cleaned;
     },
+    'getShortTitle' => function ($page, $limit = 32, $break = " ", $pad = "...") {
+        $string = $page->title;
+        // return with no change if string is shorter than $limit
+        if (strlen($string) <= $limit) {
+            return $string;
+        }
+
+        $string = substr($string, 0, $limit);
+        if (false !== ($breakpoint = strrpos($string, $break))) {
+            $string = substr($string, 0, $breakpoint);
+        }
+
+        return $string . $pad;
+    },
     'isActive' => function ($page, $path) {
         return Str::endsWith(trimPath($page->getPath()), trimPath($path));
     },

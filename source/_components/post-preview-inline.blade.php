@@ -7,7 +7,7 @@
         <a
             href="{{ $post->getUrl() }}"
             title="Read more - {{ $post->title }}"
-            class="text-white font-extrabold"
+            class="text-primary-shade font-extrabold"
         >{{ $post->title }}</a>
     </h2>
 

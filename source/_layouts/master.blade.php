@@ -32,36 +32,70 @@
     <link rel="stylesheet" href="{{$page->baseUrl}}{{ mix('css/main.css', 'assets/build') }}">
 </head>
 
-<body class="flex flex-col justify-between min-h-screen bg-genieblog-grey text-white leading-normal font-sans">
-    <header class="flex items-center shadow bg-black border-b h-24 py-4" role="banner">
+<body
+    class="flex flex-col justify-between min-h-screen bg-primary-complement text-primary-shade leading-normal font-sans">
+    <header class="flex items-center shadow bg-primary-complement-shade border-b border-primary-shade h-24 py-4"
+        role="banner">
         <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
             <div class="flex items-center">
                 <a href="{{$page->baseUrl}}/" title="{{ $page->siteName }} home" class="inline-flex items-center">
                     <img class="h-8 md:h-10 mr-3" src="{{ $page->baseUrl }}/assets/img/logo-light.svg"
                         alt="{{ $page->siteName }} logo" />
 
-                    <h1 class="text-lg md:text-2xl text-white font-semibold hover:text-orange-400 my-0">
+                    <h1 class="text-lg md:text-2xl text-primary font-semibold hover:text-primary-shade my-0">
                         {{ $page->siteName }}</h1>
                 </a>
             </div>
 
             <div id="vue-search" class="flex flex-1 justify-end items-center">
                 <search></search>
-
-                @include('_nav.menu')
-
-                @include('_nav.menu-toggle')
             </div>
+
+            <button
+                class="flex justify-center items-center bg-primary border border-primary h-10 w-10 p-3 rounded-full lg:hidden focus:outline-none"
+                onclick="navMenu.toggle()" id="menu-toggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+
+            @push('scripts')
+            <script>
+                const navMenu = {
+                        toggle() {
+                            const menu = document.getElementById('main-nav-menu');
+                            menu.classList.toggle('hidden');
+                            menu.classList.toggle('lg:block');
+                            const btn = document.getElementById('menu-toggle');
+                            btn.classList.toggle('clicked');
+                        },
+                    }
+            </script>
+            @endpush
+
+            <nav class="hidden lg:flex items-center justify-end text-lg nav-menu" id="main-nav-menu">
+
+                <a title="{{ $page->siteName }} Blog"
+                    href="{{$page->baseUrl}}/blog/{{$page->language}}/index.{{$page->language}}"
+                    class="nav-menu__item ml-6 text-primary-shade hover:text-secondary {{ $page->isActive('/blog/index_' . $page->language) ? 'active text-primary' : '' }}">
+                    Blog
+                </a>
+
+                <a title="{{ $page->siteName }} {{ $page->translate('menu.about') }}"
+                    href="{{$page->baseUrl}}/pages/{{$page->language}}/about"
+                    class="nav-menu__item ml-6 text-primary-shade hover:text-secondary {{ $page->isActive('/about') ? 'active text-primary' : '' }}">
+                    {{ $page->translate('menu.about') }}
+                </a>
+            </nav>
         </div>
     </header>
 
-    @include('_nav.menu-responsive')
 
     <main role="main" class="flex-auto w-full container max-w-4xl mx-auto py-16 px-6">
         @yield('body')
     </main>
 
-    <footer class="text-center shadow bg-black border-t text-sm mt-12 py-4" role="contentinfo">
+    <footer class="text-center shadow bg-primary-complement border-t text-sm mt-12 py-4" role="contentinfo">
         <ul class="flex flex-col md:flex-row justify-center list-none">
             <li class="md:mr-2">
                 <a href="" title="Read the imprint/impressum">{{ $page->translate('master.copyright.imprint') }}</a>.
