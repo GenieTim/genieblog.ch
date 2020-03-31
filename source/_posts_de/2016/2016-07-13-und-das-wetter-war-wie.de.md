@@ -17,6 +17,7 @@ socialImage: /media/socialImage.jpg
 extends: _layouts.post
 language: de
 cover_image: 2016/moscow_summer.jpg
+findable: false
 ---
 
 Ich achte auf angemessene Alliterationen am Anfang eines etwas eingeschränkt-exzellenten Eintrages. 

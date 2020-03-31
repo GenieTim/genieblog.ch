@@ -9,7 +9,6 @@ title: On food
 wordpress_id: 271
 categories:
   - Language Exchange
-  - Language Exchange
 draft: false
 template: post
 description: false
@@ -17,6 +16,7 @@ socialImage: /media/socialImage.jpg
 extends: _layouts.post
 language: en
 cover_image: false
+findable: false
 ---
 
 Russian cuisine has its own charm. In general, I dare to judge that mild to slightly sour flavors predominate. Compared to Swiss cuisine, there is definitely more soup and less cheese. I didn't come across hard cheese in particular. Concerning soup, Borsch should be mentioned in particular, which is considered typical, although it is a Ukrainian soup. The variations of soups are very large, but they are rarely creamy as you are used to from Switzerland. Instead, they sometimes remind you of a mixed salad that has been put under water. The Russians like to enjoy the soup with smetana, i.e. sour cream. However, this is not only used in the soup, but also serves as a salad dressing, milk substitute or comes with a jam on a piece of bread. The popularity of sour cream can also be seen when visiting a shop; everyone I've been to had a wider choice than yogurt. Spices, like herbs dried by us, are practically not used. Fresh greens such as dill, chives or spring onions are very popular for this.

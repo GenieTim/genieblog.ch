@@ -18,6 +18,7 @@ socialImage: /media/socialImage.jpg
 extends: _layouts.post
 language: de
 cover_image: false
+findable: false
 ---
 
 <blockquote>Welches ist der höchste Ort in Moskau? Der Keller von Lubjanka, von dort sieht man bis nach Sibirien...</blockquote>

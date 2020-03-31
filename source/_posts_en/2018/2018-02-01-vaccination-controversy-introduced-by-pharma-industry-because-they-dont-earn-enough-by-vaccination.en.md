@@ -20,6 +20,7 @@ socialImage: /media/socialImage.jpg
 extends: _layouts.post
 language: en
 cover_image: false
+findable: false
 ---
 
 Well, at least I would like this kind of controversy/conspiracy as it would lead to the opposite effect of what the vaccination-conspiracy is leading to today. Also, this theory would be a lot more supportable by evidence, numbers and logic than the dangerous conspiracy which is spread today. 

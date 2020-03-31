@@ -17,6 +17,7 @@ socialImage: /media/socialImage.jpg
 extends: _layouts.post
 language: en
 cover_image: false
+findable: false
 ---
 
 I pay attention to appropriate alliterations at the beginning of a somewhat limited-excellent entry.

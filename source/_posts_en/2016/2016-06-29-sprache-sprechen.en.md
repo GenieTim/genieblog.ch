@@ -5,7 +5,7 @@ date: 2016-06-29 14:00:20+00:00
 layout: post
 link: http://genieblog.ch/sprache-sprechen/
 slug: sprache-sprechen
-title: Über Sprache sprechen
+title: On speaking languages
 wordpress_id: 255
 categories:
   - Language Exchange
@@ -17,6 +17,7 @@ socialImage: /media/socialImage.jpg
 extends: _layouts.post
 language: en
 cover_image: 2016/kommunikationsfail.jpg
+findable: false
 ---
 
 The motivation for a language exchange? Learn language, of course. In my case Russian. An exciting language: Influences of Vikings, Mongols, Greeks and many more developed into their own complex language, which is characterized in particular by a far too large number of words. Another peculiarity is the Cyrillic script, which consists of a handwriting and a block script, both of which have great similarities to the Latin script. But only visually: the Cyrillic letter for the sound of the Latin d in the handwriting looks like that of the g, the r like a p, the t like an m. And that's just a selection of the minor difficulties.

@@ -17,6 +17,7 @@ socialImage: /media/socialImage.jpg
 extends: _layouts.post
 language: de
 cover_image: false
+findable: false
 ---
 
 Die russische Küche hat einen ganz eigenen Charme. Ganz generell wage ich zu urteilen, dass milde bis leicht säuerliche Geschmäcke überwiegen. Im Vergleich zu Schweizer Küche gibt es definitiv mehr Suppe und weniger Käse. Insbesondere hartem Käse bin ich nicht begegnet. Betreffend Suppe ist insbesondere Borsch zu erwähnen, die als typisch gilt, obschon es sich dabei um eine Ukrainische Suppe handelt. Die Variationen von Suppen sind sehr gross, selten jedoch sind sie cremig wie man es sich aus der Schweiz gewohnt ist. Stattdessen erinnern sie ab und zu eher an einen gemischten Salat, der unter Wasser gesetzt wurde. Die Suppe geniessen die Russen gerne mit Smetana, also Sauerrahm. Dieser findet jedoch nicht nur in der Suppe Verwendung, sondern dient auch als Salatsosse, Milchersatz oder kommt zusammen mit Konfitüre auf ein Stück Brot. Die Beliebtheit von Sauerrahm erkennt man auch beim Besuch eines Ladens; in jedem, den ich bisher war, gab es eine grössere Auswahl als an Joghurt. Gewürze, wie bei uns getrocknete Kräuter, finden praktisch keine Verwendung. Dafür ist frisches Grünzeug wie Dill, Schnittlauch oder Lauchzwiebeln sehr beliebt.

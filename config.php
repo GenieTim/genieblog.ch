@@ -22,8 +22,9 @@ function getMultilangCollections()
             'sort' => '-date',
             'language' => $lang,
             'extends' => '_layout.post',
-            'path' => 'blog/' . $lang . '/{date|Y}/{slug}'
+            'path' => 'blog/' . $lang . '/{date|Y}/{slug}',
         ];
+
         // categories
         $collections['categories_' . $lang] = [
             'path' => 'blog/' . $lang . '/categories/{_filename}',
@@ -68,6 +69,9 @@ return [
     // might be bool or array: if array, have keys the languages, as values the path to the other language
     // TODO: don't rely on URL/path, as it might be different for different environments
     'translations' => true,
+    // a pseudo-mechanism to hide certain posts from search & sitemap.
+    // currently, they are still listed in the blog pagination though
+    'findable' => true,
 
     // collections
     'collections' => getMultilangCollections(),

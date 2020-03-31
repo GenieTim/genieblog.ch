@@ -18,6 +18,7 @@ socialImage: /media/socialImage.jpg
 extends: _layouts.post
 language: en
 cover_image: false
+findable: false
 ---
 
 <blockquote>💋😍😘❤💕💓💘💌</blockquote>

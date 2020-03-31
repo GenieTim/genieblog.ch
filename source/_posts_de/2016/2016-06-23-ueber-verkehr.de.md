@@ -17,6 +17,7 @@ socialImage: /media/socialImage.jpg
 extends: _layouts.post
 language: de
 cover_image: 2016/counting.gif
+findable: false
 ---
 
 Der Begriff "Verkehr" ist glücklicherweise weitläufig. Die erste Begegnung mit dem Verkehr machte ich also am Flughafen. Mit einer Verspätung von etwas mehr als 30 Minuten landete mein Flugzeug angenehm sanft am Moskauer Flughafen. Anstatt am 10 Meter nebenan liegenden Terminalschlauch anzudocken, mussten alle Passagiere das Flugzeug durch die Hecktüren verlassen. Zwei Transportbusse standen in zwei verschiedene Richtungen gewandt bereit, um uns Passagiere zur Passkontrolle sowie zu den Anschlussflügen zu bringen. Weshalb die beiden Busse in andere Richtungen standen, und welchen man besteigen sollte, ist mir bis jetzt unklar. Der von mir gewählte Bus führte mich jedenfalls nach einem Umweg, der in einem weitläufigen Kreis herumführte, zur Passkontrolle, wie es sich gehört.

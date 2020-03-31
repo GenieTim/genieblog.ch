@@ -10,6 +10,10 @@ class GenerateSitemap
 {
     protected $exclude = [
         '/assets/*',
+        'service-worker.js',
+        'service-worker.js.map',
+        'workbox-*.js',
+        'workbox-*.js.map',
         '*/favicon.ico',
         '*/404*'
     ];
@@ -26,12 +30,12 @@ class GenerateSitemap
 
         $sitemap = new Sitemap($jigsaw->getDestinationPath() . '/sitemap.xml');
 
-        collect($jigsaw->getOutputPaths())
-            ->reject(function ($path) {
-                return $this->isExcluded($path);
-            })->each(function ($path) use ($baseUrl, $sitemap) {
+        $pages = $jigsaw->getPages();
+        foreach ($pages as $path => $page) {
+            if ($page->findable && !$this->isExcluded($path)) {
                 $sitemap->addItem(rtrim($baseUrl, '/') . $path, time(), Sitemap::DAILY);
-            });
+            }
+        }
 
         $sitemap->write();
     }

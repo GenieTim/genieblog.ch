@@ -1,9 +1,9 @@
 {
     "require": {
-        "tightenco/jigsaw": "^v1.3.17",
+        "tightenco/jigsaw": "^v1.3.20",
         "tightenco/jigsaw-blog-template": "^v1.0.14",
         "samdark/sitemap": "^2.2.1",
-        "illuminate/translation": "^v6.15.0"
+        "illuminate/translation": "^v6.18.3"
     },
     "autoload": {
         "psr-4": {

@@ -18,6 +18,7 @@ socialImage: /media/socialImage.jpg
 extends: _layouts.post
 language: en
 cover_image: false
+findable: false
 ---
 
 <blockquote>What is the highest place in Moscow? The Lubjanka cellar, from there you can see as far as Siberia ...</blockquote>

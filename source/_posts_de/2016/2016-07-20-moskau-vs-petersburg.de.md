@@ -18,6 +18,7 @@ socialImage: /media/socialImage.jpg
 extends: _layouts.post
 language: de
 cover_image: false
+findable: false
 ---
 
 Ein fortlaufend aktualisierter Beitrag mit den Unterschieden, die mir in diesen beiden Grossstädten aufgefallen sind.

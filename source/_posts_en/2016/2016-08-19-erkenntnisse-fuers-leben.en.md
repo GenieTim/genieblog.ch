@@ -5,7 +5,7 @@ date: 2016-08-19 10:00:52+00:00
 layout: post
 link: http://genieblog.ch/erkenntnisse-fuers-leben/
 slug: erkenntnisse-fuers-leben
-title: Erkenntnisse fürs Leben
+title: Learning for life
 wordpress_id: 299
 categories:
   - Language Exchange
@@ -16,6 +16,7 @@ socialImage: /media/socialImage.jpg
 extends: _layouts.post
 language: en
 cover_image: false
+findable: false
 ---
 
 I learned a lot during my adventure in Moscow and St. Petersburg. I actually knew a lot of it, but I didn't take it to heart. This includes:

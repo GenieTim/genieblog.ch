@@ -16,6 +16,7 @@ socialImage: /media/socialImage.jpg
 extends: _layouts.post
 language: de
 cover_image: false
+findable: false
 ---
 
 Bei meinem Abenteuer in Moskau und Sankt Petersburg habe ich einiges gelernt. Vieles davon hatte ich eigentlich schon gewusst, doch nicht zu Herzen genommen. Dazu gehört:

@@ -17,7 +17,21 @@
     <title>{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}</title>
 
     <link rel="home" href="{{ $page->baseUrl }}">
-    <link rel="icon" href="/favicon.ico">
+
+    <!-- favicons generated with realfavicongenerator.net -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{$page->baseUrl}}/assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/svg+xml" sizes="any" href="{{$page->baseUrl}}/assets/images/favicon/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{{$page->baseUrl}}/assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{$page->baseUrl}}/assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="{{$page->baseUrl}}/assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="{{$page->baseUrl}}/assets/images/favicon/safari-pinned-tab.svg" color="#dd6b20">
+    <link rel="shortcut icon" href="{{$page->baseUrl}}/assets/images/favicon/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Genieblog">
+    <meta name="application-name" content="Genieblog">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="{{$page->baseUrl}}/assets/images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#140a02">
+
     <link href="{{$page->baseUrl}}/blog/feed.atom" type="application/atom+xml" rel="alternate"
         title="{{ $page->siteName }} Atom Feed">
 
@@ -39,8 +53,11 @@
         <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
             <div class="flex items-center">
                 <a href="{{$page->baseUrl}}/" title="{{ $page->siteName }} home" class="inline-flex items-center">
-                    <img class="h-8 md:h-10 mr-3" src="{{ $page->baseUrl }}/assets/img/logo-light.svg"
+                    <img class="h-8 md:h-10 mr-3 darkmode-only" src="{{ $page->baseUrl }}/assets/img/logo-light.svg"
                         alt="{{ $page->siteName }} logo" />
+
+                    <img class="h-8 md:h-10 mr-3 lightmode-only" src="{{ $page->baseUrl }}/assets/img/logo-dark.svg"
+                    alt="{{ $page->siteName }} logo" />
 
                     <h1 class="text-lg md:text-2xl text-primary font-semibold hover:text-primary-shade my-0">
                         {{ $page->siteName }}</h1>

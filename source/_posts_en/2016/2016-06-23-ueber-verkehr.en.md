@@ -5,7 +5,7 @@ date: 2016-06-23 14:40:44+00:00
 layout: post
 link: http://genieblog.ch/ueber-verkehr/
 slug: ueber-verkehr
-title: Über Verkehr
+title: On traffic
 wordpress_id: 231
 categories:
   - Language Exchange
@@ -17,6 +17,7 @@ socialImage: /media/socialImage.jpg
 extends: _layouts.post
 language: en
 cover_image: 2016/counting.gif
+findable: false
 ---
 
 Fortunately, the term "traffic" is widespread. So my first encounter with traffic was at the airport. With a delay of just over 30 minutes, my plane landed comfortably and gently at Moscow airport. Instead of docking onto the terminal hose 10 meters next door, all passengers had to leave the aircraft through the tailgate. Two transport buses were waiting in two different directions to take us to passport control and connecting flights. Why the two buses stood in different directions and which one should be boarded is still unclear to me. In any case, the bus I chose took me after a detour that led around in a wide circle to passport control as it should be.
