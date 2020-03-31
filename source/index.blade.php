@@ -1,6 +1,6 @@
 @extends('_layouts.master')
 
-@push('scripts')
+@section('body')
 <script>
   function getUrl(lan) {
     return "{{$page->baseUrl}}/index." + lan;
@@ -20,14 +20,11 @@
     // language is not a supported one – use the default:
     window.location.replace(getUrl("{{$page->language}}"));
 </script>
-@endpush
 
-@section('body')
-
-<p>Wenn Sie nicht weitergeleitet werden, klicken Sie auf den folgenden Link:</p>
+<p>Wenn Sie nicht automatisch weitergeleitet werden, wählen Sie hier Ihre Sprache:</p>
 <ul>
-  <li><a href="{{$page->baseUrl}}/index.de">DE</a></li>
-  <li><a href="{{$page->baseUrl}}/index.en">EN</a></li>
+  <li><a href="{{$page->baseUrl}}/index.de">DE: Deutsch/German</a></li>
+  <li><a href="{{$page->baseUrl}}/index.en">EN: English/Englisch</a></li>
 </ul>
 
 @stop

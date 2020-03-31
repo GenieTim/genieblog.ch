@@ -22,7 +22,7 @@
 
       <button
         v-if="query || searching"
-        class="absolute top-0 right-0 leading-snug font-400 text-3xl text-primary hover:text-secondary bg-transparent focus:outline-none pr-7 md:pr-1 pt-1"
+        class="absolute top-0 right-0 leading-snug font-400 text-3xl text-primary hover:text-secondary bg-transparent focus:outline-none pr-5 md:pr-1 pt-1"
         style="writing-mode: vertical-rl; text-orientation: mixed"
         @click="reset"
         aria-label="Reset Search"
@@ -31,7 +31,7 @@
       <transition name="fade">
         <div
           v-if="query"
-          class="absolute left-0 right-0 md:inset-auto w-full max-w-4xl text-left mb-4 md:mt-10 max-h-screen overflow-scroll border-b border-primary"
+          class="absolute left-0 right-0 md:inset-auto w-full max-w-4xl text-left mb-4 md:mt-10 max-h-screen overflow-scroll border-b border-primary rounded-b-lg"
         >
           <div
             class="flex flex-col bg-primary-complement border border-b-0 border-t-0 border-primary rounded-b-lg shadow-lg mx-4 md:mx-0"
@@ -54,7 +54,7 @@
 
             <div
               v-if="! results.length"
-              class="bg-white w-full border-b border-primary rounded-b-lg shadow cursor-pointer p-4"
+              class="bg-primary-complement text-primary-shade w-full border-b border-primary rounded-b-lg shadow cursor-pointer p-4"
             >
               <p class="my-0">
                 No results for

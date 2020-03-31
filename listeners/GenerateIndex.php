@@ -18,12 +18,12 @@ class GenerateIndex
                         'snippet' => $page->getExcerpt(),
                     ];
                 }
-            })->values());
+            })->filter()->values());
 
             file_put_contents(
                 $jigsaw->getDestinationPath() . '/index_' . $lang . '.json',
                 json_encode(
-                    $data->filter()
+                    $data
                 )
             );
         }
