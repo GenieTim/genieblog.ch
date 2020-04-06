@@ -118,11 +118,19 @@ export default {
 
     axios(baseUrl + "/index_" + lang + ".json")
       .then(response => {
-        this.fuse = new Fuse(response.data, {
+        const configuration = {
           minMatchCharLength: 3,
           shouldSort: true,
           keys: ["title", "snippet", "categories"]
-        });
+        };
+
+        const Fuse = require("fuse.js");
+        console.log(Fuse);
+        try {
+          this.fuse = new Fuse(response.data, configuration);
+        } catch (error) {
+          this.fuse = new Fuse.default(response.data, configuration);
+        }
       })
       .catch(e => {
         console.error(e);

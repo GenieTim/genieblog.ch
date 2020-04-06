@@ -4,8 +4,7 @@
 .DS_Store
 .cache
 
-source/assets/build/*
-
-source/service-worker.js
-source/workbox-*.js
-source/*.js.map
+/source/assets/build/*
+/source/service-worker.js
+/source/workbox-*.js
+/source/*.js.map

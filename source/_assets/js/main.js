@@ -1,5 +1,4 @@
 window.axios = require('axios');
-window.Fuse = require('fuse.js');
 window.Vue = require('vue');
 
 import hljs from 'highlight.js/lib/highlight';
