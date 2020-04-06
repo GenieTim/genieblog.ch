@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+@spaceless
 <html lang="{{ $page->language }}">
 
 <head>
@@ -41,8 +42,6 @@
     <!-- Insert analytics code here -->
     @endif
 
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i"
-        rel="stylesheet">
     <link rel="stylesheet" href="{{$page->baseUrl}}{{ mix('css/main.css', 'assets/build') }}">
 </head>
 
@@ -57,7 +56,7 @@
                         alt="{{ $page->siteName }} logo" />
 
                     <img class="h-8 md:h-10 mr-3 lightmode-only" src="{{ $page->baseUrl }}/assets/img/logo-dark.svg"
-                    alt="{{ $page->siteName }} logo" />
+                        alt="{{ $page->siteName }} logo" />
 
                     <h1 class="text-lg md:text-2xl text-primary-shade hover:text-primary font-semibold my-0">
                         {{ $page->siteName }}</h1>
@@ -70,7 +69,7 @@
 
             <button
                 class="flex justify-center items-center bg-primary border border-primary h-10 w-10 p-3 rounded-full lg:hidden focus:outline-none"
-                onclick="navMenu.toggle()" id="menu-toggle">
+                onclick="navMenu.toggle()" id="menu-toggle" aria-label="Toggle Mobile Menu">
                 <div></div>
                 <div></div>
                 <div></div>
@@ -106,7 +105,6 @@
             </nav>
         </div>
     </header>
-
 
     <main role="main" class="flex-auto w-full container max-w-4xl mx-auto py-16 px-6">
         @yield('body')
@@ -156,3 +154,4 @@
 </body>
 
 </html>
+@endspaceless

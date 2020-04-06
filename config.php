@@ -87,7 +87,7 @@ return [
         }
         for ($i = 0; $i < count(LANGUAGES); ++$i) {
             $tryLanguage = LANGUAGES[$i];
-            if (strpos($url, "/$tryLanguage/") !== false) {
+            if (strpos($url, "$tryLanguage") !== false) {
                 // replace all possible occurences of the language in the file name/path
                 $rep1 = str_replace("/$tryLanguage/", "/$targetLanguage/", $url);
                 $rep2 = str_replace(".$tryLanguage.", ".$targetLanguage.", $rep1);
@@ -96,6 +96,10 @@ return [
         }
     },
     'hasTranslation' => function ($page, $targetLanguage) {
+        // check whether a certain translation is existing/available/accessible
+        if ($page->language == $targetLanguage) {
+            return true;
+        }
         if ($page->translations === false) {
             return false;
         }
