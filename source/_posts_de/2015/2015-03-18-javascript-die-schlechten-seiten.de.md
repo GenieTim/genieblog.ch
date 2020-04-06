@@ -27,21 +27,13 @@ Das Problem von JavaScript sind wohl die vielen Köche, die den Brei verderben, 
 
 Im folgenden möchte ich nicht JavaScript bashen oder so - Ihre Meinung dürfen Sie sich selber bilden. Ich möchte Ihnen jedoch einige weitere Beispiele von meiner Meinung nach abnormalen Möglichkeiten nennen.
 
-
-
-
-
   * Zählen Sie "4" und 4 zusammen.
-
 
   * Ziehen Sie 4 von "4" ab.
 
-
   * Vergleichen Sie parseInt("06") mit parseInt("09")
 
-
   * Kontrollieren Sie 0 == "", false == "0", und Varationen
-
 
 Ich wünsche Ihnen viel Spass damit - wenn Ihnen weitere Beispiele einfallen, die Ihrer Meinung nach Wert sind, in diese Liste aufgenommen zu werden, so schreiben Sie sie in die Kommentare!
 

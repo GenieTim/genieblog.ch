@@ -23,6 +23,4 @@ findable: false
 
 <blockquote>💋😍😘❤💕💓💘💌</blockquote>
 
-
-
 From Moscow with love ;)

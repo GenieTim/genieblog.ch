@@ -20,8 +20,7 @@ cover_image: false
 
 The following code can be used to test whether an object in an 'array' array has a 'property' property with the value 'value':
 
-
-    
+```javascript
     // test if a object located in 'arrray' has a 'property' which equals 'value'
     var isInArray = function (array, property, value) {
            for (var i=0; i < array.length; i++) {
@@ -29,3 +28,4 @@ The following code can be used to test whether an object in an 'array' array has
                 }
                 return false;
     };
+```

@@ -23,7 +23,6 @@ Haben Sie eine großartige Bibliothek, die Sie in Ihre Anwendung [Symfony](https
 Zu Beginn benötigen Sie eine Instanz von [Composer](https://getcomposer.org) und eine Instanz von [git](https://git-scm.com) (sofern Sie die allgemeine Vorgehensweise zum Veröffentlichen Ihres Bundles auf befolgen ein git-basiertes zentrales Repository wie [GitHub](https://github.com/bernhardWebstudio/) oder [GitLab](https://gitlab.com)) ausgeführt wird. Alles, was ein Symfony-Bundle von Drittanbietern sein muss, ist ein Composer-Paket. Alles andere ist Bonus. Um aus Ihrem Projekt ein Composer-Paket zu machen, fügen Sie die Datei "composer.json" hinzu, sofern Sie dies nicht bereits getan haben. Darin geben Sie den Namen, die Eigenschaften und die Abhängigkeiten Ihres Bundles an. Der Vergleich mit anderen Bundles hilft dabei, einen Eindruck davon zu bekommen, was dort abgelegt werden soll.
 Grundsätzlich könnte es für mein [PlaceholderBundle](https://github.com/BernhardWebstudio/PlaceholderBundle/blob/master/composer.json) so aussehen:
 
-
     
     {
         "name" : "bernhard-webstudio/placeholder-bundle",
@@ -42,14 +41,9 @@ Grundsätzlich könnte es für mein [PlaceholderBundle](https://github.com/Bernh
             }
         ],
 
-
 Nachdem Sie die Boni hinzugefügt haben, möchten Sie Ihr Bundle veröffentlichen, damit andere Personen von Ihrem Bundle profitieren können. Es gibt bereits verschiedene Tutorials für [dies](https://blog.jgrossi.com/2013/creating-your-first-composer-packagist-package/), sodass ich nicht weiter schreiben werde. 
 
-
-
 ## Boni
-
-
 
 Um Ihrem Paket den Symfony-Charakter zu verleihen, möchten Sie z. [Dependency Injection](https://symfony.com/doc/current/components/dependency_injection.html), machen Sie eine Klasse als Service verfügbar, oder verwenden Sie die allgemeine Symfony-Konfiguration (https://symfony.com/doc/current) /components/config/definition.html) für Ihre Dienste. Dies kann leicht erreicht werden, indem die relevanten Symfony-Komponenten als Abhängigkeiten über Composer hinzugefügt werden, z. benutze den Befehl `composer require symfony / dependency-injection`. Anschließend können Sie sie genauso verwenden, wie Sie sie in Ihrer Symfony-Anwendung verwenden. Achten Sie darauf, die Abhängigkeitsversionen nicht zu stark einzuschränken, da Sie anderenfalls einen Benutzer daran hindern können, Symfony zu aktualisieren.
 

@@ -26,22 +26,17 @@ cover_image: 2014/log.png
 
 Wie zieht ein Taschenrechner den Logarithmus? Dieser Frage möchte ich in diesem Beitrag nachgehen und mit HTML und JavaScript den ersten Schritt eines entsprechenden Logarithmus-Zieher programmieren.
 
-
 ## Von logb() zu lg()
-
 
 Zuerst lohnt es sich, die Umrechnungsformel zum Zehnerlogarithmus anzusehen: logb(x) = loga(x) / loga(b)
 Somit gilt logb(x) = log10(x) / log10(b) und den einzigen Logarithmus, der noch zu ziehen ist, ist der dekadische, auch geschrieben als lg().
 
 Was soll das denn bringen? Den Logarithmus von 10 zu ziehen ist um Welten einfacher, als von den meisten anderen Zahlen. Ausserdem muss man so nur eine Weise einprogrammieren, wie der Logarithmus gezogen werden soll, und nicht für jeden anderen Logarithmus wieder einen eigenen Weg.
 
-
 ## Den Logarithmus von 10 ziehen
-
 
 Soweit so gut. Damit können wir uns ganz darauf konzentrieren, den Logarithmus von 10 zu ziehen. Beginnen wir zuerst mit dem einfachen Teil: wir erstellen ein Formular, in das der Nutzer seine Zahl eingibt, von der er den 10. Logarithmus gezogen haben will. Da wir nicht auf `Math.log()` oder ähnliches zurückgreifen möchten, werden wir auch auf `Math.pow()` und jQuery verzichten. Dass der Code dadurch nicht mehr so elegant wirkt ist Nebensache - er muss bloss den Zweck erfüllen.
 Das könnte folgendermassen aussehen:
-
 
     
     <form> 
@@ -53,11 +48,8 @@ Das könnte folgendermassen aussehen:
     <-- und ein Output Paragraph fur das Ergebnis. --> 
     <p id="ergebnis"></p>
 
-
-
 Danach schreiben wir den losHandler(). Dieser soll die Nutzereingaben lesen und verwerten können, sowie die wahre Logarithmusfunktion starten.
 So kann man das lösen:
-
 
     
     function ausweg(eingabe) {
@@ -94,10 +86,8 @@ So kann man das lösen:
         }
     }
 
-
 Der Ausweg ist nötig, da die von uns geschrieben werdende Funktion nicht imstande sein wird, Eingaben kleiner als 1 zu verarbeiten.
 Kommen wir nun also zur Funktion log(), dem Herzstück unseres Kunstwerks, die den Logarithmus zur Basis zehn berechnet:
-
 
     
     function log(wert, basis) {
@@ -120,12 +110,9 @@ Kommen wir nun also zur Funktion log(), dem Herzstück unseres Kunstwerks, die d
         return gesucht.replace("0000000000", "0");
     }
 
-
-
 Wir beschränken uns immer nur auf eine Ziffer, genauer: auf die _i-_te Ziffer. Wir zählen dann die temporäre Zahl c in Einerschritten rauf, bis sie grösser ist oder entspricht dem eingegebenen Wert beim ersten Mal, die anderen Male die Eingabe ohne die vordersten_ i_ Ziffern. Die hinteren Ziffern werden jeweils mit `zahl = power(zahl, basis)` nach vorne geschoben.
 
 Und für was steht power()? Das ist unser Ersatz für `Math.pow()`. Ja, zugegeben, diese Namenswahl ist nicht sehr einfallsreich. Dafür zwecksmässig. Die Funktion power() ist nicht sehr schwer und ziemlich selbsterklärend:
-
 
     
     function power(basis, exponent) {
@@ -142,8 +129,6 @@ Und für was steht power()? Das ist unser Ersatz für `Math.pow()`. Ja, zugegebe
             return k;
         }
     }
-
-
 
 Damit ist unser Code komplett. Wenn Unser Code nicht einleuchtend ist, so schreib Deine Frage in die Kommentare.
 

@@ -56,7 +56,6 @@ The code to convert all html files in a directory (the export dir) could look li
 
 Finally, the following RegExs are a few deletions & replacements (notice the `=>`) I found I needed to further improve the output:
 
-
     \\textenglish\[variant=[a-z]*\]\{\{\}\}\{~\}
     \\textenglish\[variant=[a-z]*\]\{\}\{~\}
     \\textenglish\[variant=[a-z]*\]\{\{([\S ]*[\n]*[\S ]*)\}\}\{~\} => \n$1

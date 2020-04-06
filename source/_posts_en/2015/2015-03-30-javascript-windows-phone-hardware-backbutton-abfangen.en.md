@@ -30,19 +30,14 @@ When programming a Windows Phone application with JavaScript, the "back" button 
 
 In the crucial HTML page, a _WinJS Application Control_ element must be created with the parameter `onbackclick: myFunction`, where _myFunction_ corresponds to the function that is called when the back button is clicked. This should look something like this:
 
-    
     <div data-win-control="WinJS.Application." data-win-options="{onbackclick : meineFunktion}" />
 
-
 The EventHandler "backclick" can then be used. For example like this:
-
     
     document.addEventListener("backclick", meineFunktion);
 
-
 However, to suppress the default behavior, the termination of the application, `true` must be returned. A recommended use is in the file `default.js`:
 
-    
     app.onbackclick = function (evt) {
        meineFunktion();
        return true;

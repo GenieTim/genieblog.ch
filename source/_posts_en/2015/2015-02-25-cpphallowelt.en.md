@@ -19,6 +19,7 @@ language: en
 cover_image: false
 ---
 
+```cpp
     // HelloWorld.cpp
     
     #include <iostream>                                     
@@ -26,3 +27,4 @@ cover_image: false
         std::cout << "Hallo Welt!" << std::endl;
         return 0;
     }
+```

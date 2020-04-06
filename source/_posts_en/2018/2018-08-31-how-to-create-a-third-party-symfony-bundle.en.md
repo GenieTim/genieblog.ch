@@ -23,7 +23,6 @@ Have an awesome library you want to integrate in your [Symfony](https://symfony.
 To get started, you want to have a [Composer](https://getcomposer.org) & a [git](https://git-scm.com) instance (if you follow the general practice to publish your bundle on a git-based central repository, such as [GitHub](https://github.com/bernhardWebstudio/) or [GitLab](https://gitlab.com)) running. All a Symfony third-party bundle has to be is a composer package. Everything else is bonus. To make your project a composer package, you add the `composer.json` file if you did not already. In it, you specify the name, properties and dependencies of your bundle. Comparsion with other bundles helps to get an impression of what to put in there.
 Basically, it could look like mine for my [PlaceholderBundle](https://github.com/BernhardWebstudio/PlaceholderBundle/blob/master/composer.json):
 
-
     
     {
         "name" : "bernhard-webstudio/placeholder-bundle",
@@ -42,15 +41,9 @@ Basically, it could look like mine for my [PlaceholderBundle](https://github.com
             }
         ],
 
-
-
 After adding the boni, you will want to publish your bundle so other people can benefit from your bundle. There are various tutorials for [this](https://blog.jgrossi.com/2013/creating-your-first-composer-packagist-package/) already so I will not write on. 
 
-
-
 ## Boni
-
-
 
 To give the Symfony character to your package, you will want to integrate e.g. [dependency injection](https://symfony.com/doc/current/components/dependency_injection.html), expose a class as a service or use the general Symfony [configuration](https://symfony.com/doc/current/components/config/definition.html) for your services. This can easily be achieved by adding the relevant Symfony components as dependencies via composer, e.g. use command `composer require symfony/dependency-injection`. Afterwards, you can use them the same way you are using them in your Symfony application. Pay attention not to limit the dependency versions too much, otherwise you may prevent a user from upgrading Symfony.
 

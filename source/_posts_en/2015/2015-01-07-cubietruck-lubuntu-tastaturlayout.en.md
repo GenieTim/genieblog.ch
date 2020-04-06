@@ -39,15 +39,11 @@ Install `$ sudo apt-get install language-pack-de language-pack-gnome-de`, where 
 
 After installing the language packs, you can customize the keyboard layout in two different ways.
 
-
 ## Adjust the keyboard layout for the current session
-
 
 If you only want to change the keyboard layout for the current session, use `$ setxkbmap -layout ch` where `ch` is the country code. Replace it e.g. B. by `de` for Germany.
 
-
 ## Customize the default keyboard layout
-
 
 To change the default keyboard layout, use the following commands:
 `$ sudo nano /etc/default/keyboard`

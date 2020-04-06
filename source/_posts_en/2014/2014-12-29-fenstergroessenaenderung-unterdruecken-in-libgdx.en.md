@@ -27,13 +27,10 @@ The _game-feeling_ is identical except for the elements dependent on gyro sensor
 This is not possible on mobile devices, which is why this function is rather annoying if, for example, you imitate a wiping motion of your finger with the mouse and accidentally change the window size. 
 The graphics shift and distort, you can no longer test ... So what to do about it?
 
-
 To prevent the window size from being changed in the desktop application, it is only necessary to edit the _DesktopLauncher.java_ file in the desktop project. 
 To define config, the Boolean variable resizable must be set to false, and the window size can no longer be changed!
 
-
 The code from DesktopLauncher.java would then look something like this:
-
 
 `package ch.genieblog.yourpackage;
 

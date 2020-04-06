@@ -10,7 +10,6 @@ excerpt: >-
    from "Duplicate the Ad" to "Extend the Ad",
    so that the beamer serves as a second display, just for the presentation.
 
-
    Due to this automatic change, you cannot simply switch to another program such as B. open a browser and display it on the projector. Unfortunately, this makes it difficult to display websites during a presentation. Fortunately, there are some solutions.
 layout: post
 link: http://genieblog.ch/website-in-powerpoint-einbinden/
@@ -39,24 +38,15 @@ When you present a Microsoft PowerPoint presentation, you have probably already 
 
 Due to this automatic change, you cannot simply switch to another program such as B. open a browser and display it on the projector. Unfortunately, this makes it difficult to display websites during a presentation. Fortunately, there are some solutions.
 
-
-
 ## Solution # 1
-
 
 Screenshots: let a program such as B. _Softmatic Weblayers_ (or the default tools provided by your OS or Browser) take a screenshot of a website and include it in the presentation like another picture.
 
-
-
 ## Solution # 2
-
 
 If you can access your website via https, you can search for "Web Viewer" and install it under _Insert_ -> _ Apps_ -> _ Store_. The insertion works very intuitively as with any other element.
 
-
-
 ## Solution # 3
-
 
 Activate the _Developer Tools_ under the _Options_ -> _ Adjust Ribbon_. After saving the settings, open this new area and click on _Other controls_. Select the element _Microsoft Web Browser_ and place it according to your needs. Double-click the item to open the Code Editor. Replace the code with the following lines:
 `Private Sub WebBrowser1_DocumentComplete (ByVal pDisp As Object, URL As Variant)

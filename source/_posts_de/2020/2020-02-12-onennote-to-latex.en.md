@@ -56,7 +56,6 @@ Der Code zum Konvertieren aller HTML-Dateien in einem Verzeichnis (das Exportver
 
 Schließlich sind die folgenden RegExs ein paar Lösch- und Ersetzungsschritte (beachten Sie das `=>`), die ich gefunden habe, um die Ausgabe weiter zu verbessern:
 
-
     \\textenglish\[variant=[a-z]*\]\{\{\}\}\{~\}
     \\textenglish\[variant=[a-z]*\]\{\}\{~\}
     \\textenglish\[variant=[a-z]*\]\{\{([\S ]*[\n]*[\S ]*)\}\}\{~\} => \n$1

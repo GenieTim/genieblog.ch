@@ -39,15 +39,11 @@ $ sudo apt-get install language-pack-de language-pack-gnome-de` installieren, wo
 
 Nach der Installation der Sprachpakete können Sie das Tastaturlayout auf zwei verschiedene Arten anpassen.
 
-
 ## Anpassen des Tastaturlayouts für die momentane Session
-
 
 Wenn Sie das Tastaturlayout nur für die Momentane Session ändern möchten, verwenden Sie `$ setxkbmap -layout ch` wobei `ch` der Ländercode ist. Ersetzen Sie ihn z. B. durch `de` für Deutschland.
 
-
 ## Anpassen des Standardtastaturlayouts
-
 
 Um das Standardtastaturlayout zu ändern, verwenden Sie folgende Befehle:
 `$ sudo nano /etc/default/keyboard`

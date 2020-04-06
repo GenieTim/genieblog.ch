@@ -19,11 +19,8 @@ language: en
 cover_image: 2015/cubietruck.jpg
 ---
 
-
     
     plymouthd: ply-terminal.c:611: ply_terminal_open: Assertion 'terminal != ((void *)0)' failed
-
-
 
 An error message that practically stops the Cubietruck. Fooling around on the keyboard does not help anymore. But there is another solution: `Ctrl + Alt + F1`
 

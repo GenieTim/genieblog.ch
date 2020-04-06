@@ -22,12 +22,6 @@ language: en
 cover_image: false
 ---
 
-
-
 <blockquote>Spotlight on Mac works with Bing, like Cortana!</blockquote>
-
-
-
-
 
 Well, not really, unfortunately. This funny trivia fact is not true anymore since [ 25.9.2017 ](http://www.maclife.de/news/apple-wirft-bing-siri-spotlight-10096137.html).

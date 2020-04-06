@@ -28,13 +28,13 @@ One solution is probably the more elegant one: every time you write a new "rando
 
 The other solution is the one that led to the title "Brainstorm". Although the idea is very obvious and I should have thought of it earlier, it just came to me as a flash of inspiration. The key thought is this: `localStorage` is an object like any other. So you can go through it with a simple `for` loop. For example, you can do this if you want to list all of the items below each other:
 
-    
-    <code class="language-javascript">function listItems () {
-    	var string = "";
-    	for (var key in localStorage) {
-    		string += key + ": " + localStorage.getItem(key);
-    		string += "<br />";
-    	}
-    	document.getElementById("target").innerHTML = string;
-    }
-    
+```javascript
+function listItems () {
+		var string = "";
+		for (var key in localStorage) {
+			string += key + ": " + localStorage.getItem(key);
+			string += "<br />";
+		}
+		document.getElementById("target").innerHTML = string;
+}
+```    

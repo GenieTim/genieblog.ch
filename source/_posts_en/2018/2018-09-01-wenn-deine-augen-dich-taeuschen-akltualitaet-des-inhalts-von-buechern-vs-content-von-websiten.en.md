@@ -20,10 +20,6 @@ language: en
 cover_image: false
 ---
 
-
-
 <blockquote>Unlike books and newspapers, old websites can be updated in design so that content looks up to date again without it being!</blockquote>
-
-
 
 Contact [Bernhard Webstudio](https://bernhard-webstudio.ch) to get a new look for your content!

@@ -20,8 +20,6 @@ cover_image: false
 
 To fix this error, all I had to do is install `runit-systemd`. This error appeared after the upgrade from Debian wheezy over jezzie to stretch when trying to get the status respectively start or stop, or just do anything with the command `sv`. The installation may happen e.g. with _apt_: 
 
-
     
     sudo apt-get install runit-systemd
-
 

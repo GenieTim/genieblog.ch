@@ -28,13 +28,13 @@ Die eine Lösung ist wohl die elegantere: jedes mal wenn man ein neues "Zufallse
 
 Die andere Lösung ist jene, die zum Titel "Geistesblitz" geführt hat. Obwohl die Idee sehr naheliegend ist und ich früher hätte auf die Idee kommen sollen, ist sie mir halt eben als Geistesblitz gekommen. Der entscheidende Gedanke ist dieser: `localStorage` ist ein Objekt wie jedes andere. Also kann man es mit einer einfachen `for`-Schlaufe durchlaufen. Das geht zum Beispiel so, wenn alle Elemente untereinander aufgelistet werden sollen:
 
-    
-    <code class="language-javascript">function listItems () {
-    	var string = "";
-    	for (var key in localStorage) {
-    		string += key + ": " + localStorage.getItem(key);
-    		string += "<br />";
-    	}
-    	document.getElementById("target").innerHTML = string;
-    }
-    
+```javascript
+function listItems () {
+		var string = "";
+		for (var key in localStorage) {
+			string += key + ": " + localStorage.getItem(key);
+			string += "<br />";
+		}
+		document.getElementById("target").innerHTML = string;
+}
+```

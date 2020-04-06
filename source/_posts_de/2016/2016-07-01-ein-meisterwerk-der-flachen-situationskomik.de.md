@@ -21,6 +21,4 @@ cover_image: false
 
 <blockquote>💋😍😘❤💕💓💘💌</blockquote>
 
-
-
 Liebesgrüsse aus Moskau ;)

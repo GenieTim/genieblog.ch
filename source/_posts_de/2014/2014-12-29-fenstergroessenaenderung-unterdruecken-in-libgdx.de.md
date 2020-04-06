@@ -26,7 +26,6 @@ Um in der Desktopapplikation die Änderung der Fenstergrösse zu verhindern, ist
 
 Der Code von DesktopLauncher.java sähe dann etwa folgendermassen aus:
 
-
 		package ch.genieblog.yourpackage;
 
 		import com.badlogic.gdx.backends.lwjgl.LwjglApplication;

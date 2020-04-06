@@ -27,18 +27,13 @@ The problem with JavaScript is probably the many cooks who spoil the broth to pu
 
 In the following I don't want to base JavaScript or anything - you can form your own opinion. However, I would like to give you some more examples of what I think are abnormal possibilities.
 
-
   * Add up "4" and 4.
-
 
   * Subtract 4 from "4".
 
-
   * Compare parseInt ("06") with parseInt ("09")
 
-
   * Check 0 == "", false == "0", and variations
-
 
 I hope you enjoy it - if you can think of other examples that you think should be included in this list, please write them in the comments!
 

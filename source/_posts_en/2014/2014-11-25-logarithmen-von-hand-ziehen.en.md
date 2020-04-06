@@ -26,22 +26,17 @@ cover_image: 2014/log.png
 
 How does a calculator draw the logarithm? I would like to investigate this question in this article and use HTML and JavaScript to program the first step of a corresponding logarithmic puller.
 
-
 ## From logb () to lg ()
-
 
 First, it is worth looking at the conversion formula for the log of ten: logb (x) = loga (x) / loga (b)
 Thus logb (x) = log10 (x) / log10 (b) and the only logarithm that still has to be drawn is the decadic one, also written as lg ().
 
 What is that supposed to achieve? The logarithm of 10 is worlds easier than most other numbers. In addition, you only have to program a way in which the logarithm should be drawn, and not a separate path for every other logarithm.
 
-
 ## Draw the logarithm of 10
-
 
 So far so good. This allows us to concentrate entirely on taking the logarithm of 10. Let's start with the simple part: we create a form in which the user enters the number from which he wants to have taken the 10th logarithm. Since we do not want to use `Math.log ()` or similar, we will also do without `Math.pow ()` and jQuery. The fact that the code no longer looks so elegant is irrelevant - it just has to serve the purpose.
 It could look like this:
-
 
     
     <code class="language-markup"><form> 
@@ -52,7 +47,6 @@ It could look like this:
     </form>
     <-- and an output paragraph for the result. --> 
     <p id="ergebnis"></p>
-
 
 Then we write the `losHandler()`. This should be able to read and use the user input and start the true logarithm function.
 This is how you can solve it:
@@ -92,10 +86,8 @@ This is how you can solve it:
     }
     }
 
-
 Der Ausweg ist nötig, da die von uns geschrieben werdende Funktion nicht imstande sein wird, Eingaben kleiner als 1 zu verarbeiten.
 Kommen wir nun also zur Funktion log(), dem Herzstück unseres Kunstwerks, die den Logarithmus zur Basis zehn berechnet:
-
 
     
     function log(wert, basis) {
@@ -118,12 +110,9 @@ Kommen wir nun also zur Funktion log(), dem Herzstück unseres Kunstwerks, die d
         return gesucht.replace("0000000000", "0");
     }
 
-
-
 We always limit ourselves to one digit, more precisely: to the _i-_th digit. We then count up the temporary number c in steps of one until it is greater or corresponds to the value entered the first time, the other times the entry without the first_i_ digits. The rear digits are moved to the front with `number = power (number, base)`.
 
 And what does `power ()` stand for? This is our replacement for `Math.pow ()`. Yes, admittedly, this choice of name is not very imaginative. For this purpose. The function `power ()` is not very difficult and quite self-explanatory:
-
 
     
     function power(basis, exponent) {
@@ -140,7 +129,6 @@ And what does `power ()` stand for? This is our replacement for `Math.pow ()`. Y
             return k;
         }
     }
-
 
 This completes our code. If our code is not obvious, write your question in the comments.
 
