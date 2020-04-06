@@ -37,3 +37,17 @@
     display: block;
   }
 }
+
+
+.alert {
+  @apply bg-primary;
+  @apply my-4;
+  @apply p-3;
+  @apply rounded;
+  @apply text-primary-complement-shade;
+
+  a {
+    @apply text-primary-complement;
+    @apply underline;
+  }
+}

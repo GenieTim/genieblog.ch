@@ -40,15 +40,15 @@
               v-for="(result, index) in results"
               class="bg-primary-complement text-primary hover:text-secondary hover:bg-primary-complement-shade border-b border-primary text-xl cursor-pointer p-4"
               :class="{ 'rounded-b-lg' : (index === results.length - 1) }"
-              :href="result.link"
-              :title="result.title"
-              :key="result.link"
+              :href="result.item.link"
+              :title="result.item.title"
+              :key="result.item.link"
               @mousedown.prevent
             >
-              {{ result.title }}
+              {{ result.item.title }}
               <span
                 class="block font-normal text-sm text-primary-shade my-1"
-                v-html="result.snippet"
+                v-html="result.item.snippet"
               ></span>
             </a>
 
@@ -88,7 +88,9 @@ export default {
   },
   computed: {
     results() {
-      return this.query ? this.fuse.search(this.query) : [];
+      let res = this.query ? this.fuse.search(this.query) : [];
+      // console.log(res);
+      return res;
     }
   },
   methods: {
@@ -116,8 +118,9 @@ export default {
 
     axios(baseUrl + "/index_" + lang + ".json")
       .then(response => {
-        this.fuse = new fuse(response.data, {
-          minMatchCharLength: 6,
+        this.fuse = new Fuse(response.data, {
+          minMatchCharLength: 3,
+          shouldSort: true,
           keys: ["title", "snippet", "categories"]
         });
       })

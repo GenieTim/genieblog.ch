@@ -24,23 +24,38 @@ blockquote {
 }
 
 code {
-    @apply .bg-gray-700;
+    @apply .bg-gray-800;
     @apply .text-white;
-    @apply .px-2;
     @apply .py-px;
     @apply .rounded;
     @apply .text-sm;
 }
 
 code.hljs {
-    @apply .bg-transparent;
-    @apply .p-0;
-
     .hljs-comment,
     .hljs-keyword,
     .hljs-meta {
         @apply .font-normal;
         @apply .not-italic;
+    }
+}
+
+pre {
+    @apply .bg-gray-700;
+    @apply .text-white;
+    @apply .leading-loose;
+    @apply .my-6;
+    @apply .overflow-x-auto;
+    @apply .rounded;
+    @apply .shadow;
+    @apply .text-base;
+
+    code {
+        // @apply .bg-gray-700;
+        // @apply .text-white;
+        // @apply .bg-transparent;
+        @apply .block;
+        @apply .p-4;
     }
 }
 
@@ -122,26 +137,6 @@ p {
 
     @screen md {
         @apply .my-6;
-    }
-}
-
-pre {
-    @apply .bg-gray-200;
-    @apply .text-black;
-    @apply .leading-loose;
-    @apply .my-6;
-    @apply .overflow-x-auto;
-    @apply .p-4;
-    @apply .rounded;
-    @apply .shadow;
-    @apply .text-base;
-
-    code {
-        // @apply .bg-gray-700;
-        // @apply .text-white;
-        // @apply .bg-transparent;
-        @apply .block;
-        @apply .p-0;
     }
 }
 

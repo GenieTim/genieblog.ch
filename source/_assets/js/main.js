@@ -1,5 +1,5 @@
 window.axios = require('axios');
-window.fuse = require('fuse.js');
+window.Fuse = require('fuse.js');
 window.Vue = require('vue');
 
 import hljs from 'highlight.js/lib/highlight';
@@ -15,6 +15,10 @@ hljs.registerLanguage('markdown', require('highlight.js/lib/languages/markdown')
 hljs.registerLanguage('php', require('highlight.js/lib/languages/php'));
 hljs.registerLanguage('scss', require('highlight.js/lib/languages/scss'));
 hljs.registerLanguage('yaml', require('highlight.js/lib/languages/yaml'));
+hljs.registerLanguage('cpp', require('highlight.js/lib/languages/cpp'));
+hljs.registerLanguage('latex', require('highlight.js/lib/languages/tex'));
+hljs.registerLanguage('java', require('highlight.js/lib/languages/java'));
+hljs.registerLanguage('csharp', require('highlight.js/lib/languages/cs')); //require('highlight.js/lib/languages/csharp'));
 
 document.querySelectorAll('pre code').forEach((block) => {
     hljs.highlightBlock(block);
