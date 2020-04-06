@@ -1,4 +1,4 @@
-/* a11y-light theme */
+/* a11y-dark theme */
 
 /* Based on the Tomorrow Night Eighties theme: https://github.com/isagalaev/highlight.js/blob/master/src/styles/tomorrow-night-eighties.css */
 
@@ -8,7 +8,7 @@
 
 .hljs-comment,
 .hljs-quote {
-  color: #696969;
+  color: #d4d0ab;
 }
 
 /* Red */
@@ -21,7 +21,7 @@
 .hljs-selector-class,
 .hljs-regexp,
 .hljs-deletion {
-  color: #d91e18;
+  color: #ffa07a;
 }
 
 /* Orange */
@@ -34,13 +34,13 @@
 .hljs-params,
 .hljs-meta,
 .hljs-link {
-  color: #aa5d00;
+  color: #f5ab35;
 }
 
 /* Yellow */
 
 .hljs-attribute {
-  color: #aa5d00;
+  color: #ffd700;
 }
 
 /* Green */
@@ -49,28 +49,28 @@
 .hljs-symbol,
 .hljs-bullet,
 .hljs-addition {
-  color: #008000;
+  color: #abe338;
 }
 
 /* Blue */
 
 .hljs-title,
 .hljs-section {
-  color: #007faa;
+  color: #00e0e0;
 }
 
 /* Purple */
 
 .hljs-keyword,
 .hljs-selector-tag {
-  color: #7928a1;
+  color: #dcc6e0;
 }
 
 .hljs {
   display: block;
   overflow-x: auto;
-  background: #fefefe;
-  color: #545454;
+  background: #2b2b2b;
+  color: #f8f8f2;
   padding: 0.5em;
 }
 
@@ -758,19 +758,12 @@ blockquote {
 }
 
 code {
-  background-color: #4a5568;
+  background-color: #2d3748;
   color: #fefefe;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
   padding-top: 1px;
   padding-bottom: 1px;
   border-radius: 0.25rem;
   font-size: 0.875rem;
-}
-
-code.hljs {
-  background-color: transparent;
-  padding: 0;
 }
 
 code.hljs .hljs-comment,
@@ -778,6 +771,23 @@ code.hljs .hljs-keyword,
 code.hljs .hljs-meta {
   font-weight: 400;
   font-style: normal;
+}
+
+pre {
+  background-color: #4a5568;
+  color: #fefefe;
+  line-height: 1.75;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  overflow-x: auto;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  font-size: 1rem;
+}
+
+pre code {
+  display: block;
+  padding: 1rem;
 }
 
 h1,
@@ -871,24 +881,6 @@ p {
   }
 }
 
-pre {
-  background-color: #edf2f7;
-  color: #010101;
-  line-height: 1.75;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  overflow-x: auto;
-  padding: 1rem;
-  border-radius: 0.25rem;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  font-size: 1rem;
-}
-
-pre code {
-  display: block;
-  padding: 0;
-}
-
 ::-moz-selection {
   background-color: var(--color-primary);
   color: var(--color-primary-complement);
@@ -935,37 +927,38 @@ button#menu-toggle {
 }
 
 button#menu-toggle div {
-  height: 0px;
+  border-radius: 0.25rem;
+  background: var(--color-primary-complement);
   border: 2px solid var(--color-primary-complement);
-  width: 1.4285714286rem;
-  margin-top: 0.1785714286rem;
   display: block;
+  height: 0px;
+  margin-top: 0.1785714286rem;
   position: absolute;
   transition: all 300ms cubic-bezier(0.61, 0.01, 0.42, 1);
-  background: var(--color-primary-complement);
+  width: 1.4285714286rem;
 }
 
 button#menu-toggle div:nth-child(1) {
-  top: 0.2777777778rem;
+  margin-top: calc(-1rem + 1px);
 }
 
 button#menu-toggle div:nth-child(1)::before {
-  opacity: 0;
   -webkit-animation: ball 1.5s linear infinite;
           animation: ball 1.5s linear infinite;
-  content: "";
   border: 2px solid var(--color-primary-complement);
+  content: "";
   display: block;
+  opacity: 0;
   position: relative;
   top: 1px;
 }
 
 button#menu-toggle div:nth-child(2) {
-  top: 0.8333333333rem;
+  margin-top: 1px;
 }
 
 button#menu-toggle div:nth-child(3) {
-  top: 1.3888888889rem;
+  margin-top: calc(1rem + 1px);
 }
 
 button#menu-toggle.clicked {
@@ -974,14 +967,14 @@ button#menu-toggle.clicked {
 }
 
 button#menu-toggle.clicked div {
-  border: 2px solid var(--color-primary-complement);
-  height: 0.8333333333rem;
-  border-radius: 50%;
+  margin-top: initial;
   -webkit-animation: atom 350ms linear 1;
           animation: atom 350ms linear 1;
-  width: 1.6666666667rem;
-  top: 0.625rem;
   background: transparent;
+  border-radius: 50%;
+  border: 2px solid var(--color-primary-complement);
+  height: 0.8333333333rem;
+  width: 1.6666666667rem;
 }
 
 button#menu-toggle.clicked div:nth-child(1) {
@@ -989,12 +982,12 @@ button#menu-toggle.clicked div:nth-child(1) {
 }
 
 button#menu-toggle.clicked div:nth-child(1)::before {
-  width: 2px;
-  height: 2px;
-  border-radius: 50%;
   background: transparent;
+  border-radius: 50%;
+  height: 2px;
   opacity: 1;
   transition: opacity 600ms cubic-bezier(0.61, 0.01, 0.42, 1);
+  width: 2px;
 }
 
 button#menu-toggle.clicked div:nth-child(2) {
@@ -1006,13 +999,13 @@ button#menu-toggle.clicked div:nth-child(3) {
 }
 
 button#menu-toggle:active div {
-  border: 1.5px solid var(--color-primary-complement);
-  height: 0px;
-  border-radius: 0%;
   -webkit-animation: division 300ms linear 1;
           animation: division 300ms linear 1;
-  width: 2.0833333333rem;
+  border-radius: 0%;
+  border: 1.5px solid var(--color-primary-complement);
+  height: 0px;
   top: 0px;
+  width: 2.0833333333rem;
 }
 
 button#menu-toggle:active div:nth-child(1) {
@@ -1278,6 +1271,20 @@ button#menu-toggle:active div:nth-child(3) {
   .lightmode-only {
     display: block;
   }
+}
+
+.alert {
+  background-color: var(--color-primary);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  color: var(--color-primary-complement-shade);
+}
+
+.alert a {
+  color: var(--color-primary-complement);
+  text-decoration: underline;
 }
 
 .sr-only{

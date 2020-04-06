@@ -54,7 +54,6 @@ With my setup though, the images are preprocessed too: they are scaled and compr
 
 [Read more about compiling assets in Jigsaw using Laravel Mix.](http://jigsaw.tighten.co/docs/compiling-assets/)
 
-
 ## Building Your Site
 
 Now that you’ve edited your configuration variables and know how to customize your styles and content, let’s build the site.

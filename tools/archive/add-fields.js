@@ -3,7 +3,6 @@ const path = require("path");
 const fs = require("fs");
 const fse = require("fs-extra");
 
-
 glob("**/*.md", {}, function (er, files) {
 
   for (let i = 0; i < files.length; ++i) {

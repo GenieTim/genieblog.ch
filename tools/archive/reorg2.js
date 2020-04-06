@@ -3,7 +3,6 @@ const path = require("path")
 const fs = require("fs")
 const fse = require("fs-extra")
 
-
 glob("**/*.md", {}, function (er, files) {
   // files is an array of filenames.
   // If the `nonull` option is set, and nothing

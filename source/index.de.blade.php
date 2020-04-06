@@ -15,8 +15,7 @@ language: de
     </p>
 
     <h2 class="text-3xl mt-0">
-        <a href="{{ $featuredPost->getUrl() }}" title="Read {{ $featuredPost->title }}"
-            class="font-extrabold">
+        <a href="{{ $featuredPost->getUrl() }}" title="Read {{ $featuredPost->title }}" class="font-extrabold">
             {{ $featuredPost->title }}
         </a>
     </h2>
@@ -33,8 +32,6 @@ language: de
 <hr class="border-b my-6">
 @endif
 @endforeach
-
-
 
 @foreach ($posts_de->where('featured', false)->take(6)->chunk(2) as $row)
 <div class="flex flex-col md:flex-row md:-mx-6">
