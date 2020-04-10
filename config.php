@@ -23,6 +23,9 @@ function getMultilangCollections()
             'language' => $lang,
             'extends' => '_layout.post',
             'path' => 'blog/' . $lang . '/{date|Y}/{slug}',
+            'filter' => function ($item) {
+                return !$item->draft;
+            }
         ];
 
         // categories

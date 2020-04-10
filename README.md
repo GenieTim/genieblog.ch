@@ -39,6 +39,10 @@ featured: true
 ---
 ```
 
+Additional features of the content include mathemathics (powered by [MathJax](http://docs.mathjax.org/en/latest/index.html)), 
+which is injected upon finding `<math>` or `<inline-math>`. 
+Note that inside these tags, you should use LaTeX.
+
 ### Adding Assets
 
 Any assets that need to be compiled (such as JavaScript, Less, or Sass files) can be added to the `source/_assets/` directory, 

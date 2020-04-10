@@ -11,6 +11,14 @@
   --color-secondary-complement: theme('colors.white');
 }
 
+/* Display-P3 color, when supported. */
+@supports (color: color(display-p3 1 1 1)) {
+  :root {
+    --color-primary: color(display-p3 0.995 0.686 0.289);
+    --color-secondary: color(display-p3 1 0.598 0.085);
+  }
+}
+
 .darkmode-only {
   display: block;
 }
@@ -29,25 +37,40 @@
     --color-secondary-shade: theme('colors.white');
     --color-secondary-complement: #140A02;
   }
+
   .darkmode-only {
     display: none;
   }
-  
+
   .lightmode-only {
     display: block;
+  }
+
+  /* Display-P3 color, when supported. */
+  @supports (color: color(display-p3 1 1 1)) {
+    :root {
+      --color-primary: color(display-p3 1 0.598 0.085);
+      --color-secondary: color(display-p3 0.995 0.686 0.289);
+    }
   }
 }
 
 
 .alert {
-  @apply bg-primary;
-  @apply my-4;
-  @apply p-3;
-  @apply rounded;
-  @apply text-primary-complement-shade;
+  @apply .bg-primary;
+  @apply .my-4;
+  @apply .p-3;
+  @apply .rounded;
+  @apply .text-primary-complement-shade;
+
+  &::before {
+    content: "Note: ";
+    @apply .font-bold;
+    @apply .capitalize;
+  }
 
   a {
-    @apply text-primary-complement;
-    @apply underline;
+    @apply .text-primary-complement;
+    @apply .underline;
   }
 }

@@ -116,12 +116,20 @@ li {
     ol {
         @apply .my-0;
     }
+
+    > p {
+        @apply .p-0;
+        @apply .m-0;
+        @apply .inline;
+        @apply .mb-5;
+    }
 }
 
 ol,
 ul {
-    @apply .my-6;
-    @apply .list-inside;
+    @apply .my-5;
+    @apply .list-outside;
+    @apply .ml-5;
 }
 
 ol {
@@ -136,7 +144,7 @@ p {
     @apply .my-3;
 
     @screen md {
-        @apply .my-6;
+        @apply .my-5;
     }
 }
 

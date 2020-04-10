@@ -125,7 +125,7 @@ export default {
         };
 
         const Fuse = require("fuse.js");
-        console.log(Fuse);
+        // console.log(Fuse);
         try {
           this.fuse = new Fuse(response.data, configuration);
         } catch (error) {

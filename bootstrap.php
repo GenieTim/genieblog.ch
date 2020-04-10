@@ -17,8 +17,9 @@
 $events->afterBuild(App\Listeners\GenerateSitemap::class);
 $events->afterBuild(App\Listeners\GenerateIndex::class);
 $events->afterBuild(App\Listeners\GenerateHtaccess::class);
+$events->afterBuild(App\Listeners\MathHandler::class);
 
-use TightenCo\Jigsaw\Jigsaw;
+// use TightenCo\Jigsaw\Jigsaw;
 
 /** @var $container \Illuminate\Container\Container */
 /** @var $events \TightenCo\Jigsaw\Events\EventBus */

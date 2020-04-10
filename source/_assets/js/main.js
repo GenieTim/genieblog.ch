@@ -1,6 +1,6 @@
-window.axios = require('axios');
-window.Vue = require('vue');
-
+/**
+ * Syntax highlighting
+ */
 import hljs from 'highlight.js/lib/highlight';
 import Search from './components/Search.vue';
 
@@ -22,6 +22,12 @@ hljs.registerLanguage('csharp', require('highlight.js/lib/languages/cs')); //req
 document.querySelectorAll('pre code').forEach((block) => {
     hljs.highlightBlock(block);
 });
+
+/**
+ * Search functionality
+ */
+window.axios = require('axios');
+window.Vue = require('vue');
 
 Vue.config.productionTip = false;
 
@@ -46,6 +52,17 @@ if ('serviceWorker' in navigator) {
     });
 }
 
-// image lazy loading
-// TODO: do.
+/**
+ * Instant click for perceived performance improvement
+ */
+const InstantClick = require('instantclick');
+InstantClick.init();
 
+/**
+ * Math. Possibly better to do serverside?
+ */
+require('./mathjax-config');
+// const MathJax = require('mathjax/es5/tex-svg')
+// InstantClick.on('change', () => {
+//     MathJax.typeset()
+// })

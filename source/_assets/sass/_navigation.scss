@@ -24,6 +24,11 @@
   }
 }
 
+.turbolinks-progress-bar,
+#instantclick-bar {
+  @apply .bg-primary;
+}
+
 // Hamburger menu button
 button#menu-toggle {
   $size: 2.5rem; // theme('spacing.10'); //  
@@ -34,21 +39,24 @@ button#menu-toggle {
   position: relative;
   transition: all 300ms cubic-bezier(.61, .01, .42, 1);
   cursor: pointer;
+  flex-direction: column;
 
   div {
-    @apply rounded;
-    background: var(--color-primary-complement);
+    @apply .rounded;
+    @apply .bg-primary-complement;
     border: $border_size solid var(--color-primary-complement);
     display: block;
     height: 0px;
-    margin-top: $margin / 2;
-    position: absolute;
+    position: relative;
+    margin-bottom: .15rem;
+    margin-top: .15rem;
     transition: all 300ms cubic-bezier(.61, .01, .42, 1);
     width: (4/7) * $size;
 
     &:nth-child(1) {
       // we move this one from center (with no top value) up
-      margin-top: calc(-1rem + #{$border_size/2});
+      // pixel-perfect on one device - welp.
+      top: 1px;
 
       &::before {
         animation: ball 1.5s linear infinite;
@@ -63,12 +71,10 @@ button#menu-toggle {
 
     &:nth-child(2) {
       // we center this one with no top value
-      margin-top: $border_size/2;
     }
 
     &:nth-child(3) {
       // we move this one from center (with no top value) down
-      margin-top: calc(1rem + #{$border_size/2});
     }
   }
 
@@ -78,6 +84,9 @@ button#menu-toggle {
 
     div {
       margin-top: initial;
+      margin-bottom: initial;
+      position: absolute;
+      top: initial;
 
       &:nth-child(1) {
         transform: rotate(-33deg);
@@ -113,7 +122,7 @@ button#menu-toggle {
     div {
       animation: division 300ms linear 1;
       border-radius: 0%;
-      border: 1.5px solid var(--color-primary-complement);
+      border: $border_size solid var(--color-primary-complement);
       height: 0px;
       top: 0px;
       width: (25/30)*$size;

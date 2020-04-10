@@ -19,6 +19,9 @@
 
     <link rel="home" href="{{ $page->baseUrl }}">
 
+    <!-- defered scripts: first in HTML to start loading, last to be actually loaded -->
+    <script src="{{$page->baseUrl}}{{ mix('js/main.js', 'assets/build') }}" defer></script>
+
     <!-- favicons generated with realfavicongenerator.net -->
     <link rel="apple-touch-icon" sizes="180x180" href="{{$page->baseUrl}}/assets/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/svg+xml" sizes="any" href="{{$page->baseUrl}}/assets/images/favicon/favicon.svg" />
@@ -51,7 +54,7 @@
         role="banner">
         <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
             <div class="flex items-center">
-                <a href="{{$page->baseUrl}}/" title="{{ $page->siteName }} home" class="inline-flex items-center">
+                <a href="{{$page->baseUrl}}/index.{{$page->language}}" title="{{ $page->siteName }} home" class="inline-flex items-center">
                     <img class="h-8 md:h-10 mr-3 darkmode-only" src="{{ $page->baseUrl }}/assets/img/logo-light.svg"
                         alt="{{ $page->siteName }} logo" />
 
@@ -147,8 +150,6 @@
             </li>
         </ul>
     </footer>
-
-    <script src="{{$page->baseUrl}}{{ mix('js/main.js', 'assets/build') }}"></script>
 
     @stack('scripts')
 </body>
