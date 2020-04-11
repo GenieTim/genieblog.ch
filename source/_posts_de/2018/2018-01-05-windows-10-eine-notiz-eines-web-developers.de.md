@@ -10,7 +10,7 @@ wordpress_id: 220
 categories:
   - Windows
   - Browser
-draft: false
+draft: true
 template: post
 description: false
 socialImage: /media/socialImage.jpg
