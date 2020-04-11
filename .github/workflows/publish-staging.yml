@@ -1,0 +1,34 @@
+name: Publish Staging
+
+on: 
+  push:
+    branches:
+      - master
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install yarn dependencies
+        uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: install # will run `yarn install` command
+      - name: Install composer dependencies
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+          tools: composer
+        run: composer install --prefer-dist
+      - name: Run build
+        uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: build staging # will run `yarn build staging` command
+      - name: Upload build
+        uses: SamKirkland/FTP-Deploy-Action@3.0.0
+        with:
+          ftp-server: ftp://lx3.hoststar.hosting/test.genieblog.ch/public_html/genieblog/
+          ftp-username: ${{ secrets.FTP_USER }}
+          ftp-password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./build_staging/

@@ -12,12 +12,12 @@
 }
 
 /* Display-P3 color, when supported. */
-@supports (color: color(display-p3 1 1 1)) {
-  :root {
-    --color-primary: color(display-p3 0.995 0.686 0.289);
-    --color-secondary: color(display-p3 1 0.598 0.085);
-  }
-}
+// @supports (color: color(display-p3 1 1 1)) {
+//   :root {
+//     --color-primary: color(display-p3 0.995 0.686 0.289);
+//     --color-secondary: color(display-p3 1 0.598 0.085);
+//   }
+// }
 
 .darkmode-only {
   display: block;
@@ -46,13 +46,13 @@
     display: block;
   }
 
-  /* Display-P3 color, when supported. */
-  @supports (color: color(display-p3 1 1 1)) {
-    :root {
-      --color-primary: color(display-p3 1 0.598 0.085);
-      --color-secondary: color(display-p3 0.995 0.686 0.289);
-    }
-  }
+  // /* Display-P3 color, when supported. */
+  // @supports (color: color(display-p3 1 1 1)) {
+  //   :root {
+  //     --color-primary: color(display-p3 1 0.598 0.085);
+  //     --color-secondary: color(display-p3 0.995 0.686 0.289);
+  //   }
+  // }
 }
 
 

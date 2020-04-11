@@ -56,7 +56,7 @@ button#menu-toggle {
     &:nth-child(1) {
       // we move this one from center (with no top value) up
       // pixel-perfect on one device - welp.
-      top: 1px;
+      // top: 1px; // better not.
 
       &::before {
         animation: ball 1.5s linear infinite;
