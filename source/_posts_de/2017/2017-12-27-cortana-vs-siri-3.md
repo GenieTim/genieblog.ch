@@ -5,7 +5,7 @@ date: 2017-12-27 18:10:28+00:00
 layout: post
 link: http://genieblog.ch/cortana-in-der-schweiz/
 slug: cortana-in-der-schweiz
-title: "Cortana vs. Siri \#3: Uhr"
+title: "Cortana vs. Siri #3: Uhr"
 wordpress_id: 184
 categories:
   - Cortana vs. Siri
