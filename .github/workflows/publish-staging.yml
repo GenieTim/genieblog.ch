@@ -9,21 +9,54 @@ jobs:
   build-deploy:
     runs-on: ubuntu-latest
 
-    name: Publish Staging Version
+    name: Publish Website to Staging Server
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-      - name: Install yarn dependencies
-        run: yarn install
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+
       - name: Install PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: "7.4"
           tools: composer
+
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - name: Cache yarn dependencies
+        uses: actions/cache@v1
+        id: yarn-cache
+        with:
+          path: ${{ steps.yarn-cache-dir.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: ${{ runner.os }}-yarn-
+
+      - name: Install yarn dependencies
+        if: steps.yarn-cache.outputs.cache-hit != 'true'
+        run: yarn install
+
+      - name: Get composer cache directory
+        id: composer-cache
+        run: echo "::set-output name=dir::$(composer config cache-files-dir)"
+
+      - name: Cache composer dependencies
+        uses: actions/cache@v1
+        id: composer-cache
+        with:
+          path: ${{ steps.composer-cache.outputs.dir }}
+          key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
+          restore-keys: ${{ runner.os }}-composer-
+
       - name: Install Composer dependencies
+        if: steps.composer-cache.outputs.cache-hit != 'true'
         run: composer install --prefer-dist --no-progress
+
       - name: Run build
-        run: yarn run staging # will run `yarn run staging` command
+        run: yarn run staging
+
       - name: Upload build
         uses: SamKirkland/FTP-Deploy-Action@3.0.0
         with:
