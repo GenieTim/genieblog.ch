@@ -15,11 +15,12 @@ jobs:
         uses: borales/actions-yarn@v2.0.0
         with:
           cmd: install # will run `yarn install` command
-      - name: Install composer dependencies
+      - name: Install PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: '7.4'
           tools: composer
+      - name: Install Composer dependencies
         run: composer install --prefer-dist
       - name: Run build
         uses: borales/actions-yarn@v2.0.0
