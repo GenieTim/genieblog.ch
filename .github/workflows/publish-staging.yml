@@ -1,6 +1,6 @@
 name: Publish Staging
 
-on: 
+on:
   push:
     branches:
       - master
@@ -9,23 +9,21 @@ jobs:
   build-deploy:
     runs-on: ubuntu-latest
 
+    name: Publish Staging Version
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
       - name: Install yarn dependencies
-        uses: borales/actions-yarn@v2.0.0
-        with:
-          cmd: install # will run `yarn install` command
+        run: yarn install
       - name: Install PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '7.4'
+          php-version: "7.4"
           tools: composer
       - name: Install Composer dependencies
-        run: composer install --prefer-dist
+        run: composer install --prefer-dist --no-progress
       - name: Run build
-        uses: borales/actions-yarn@v2.0.0
-        with:
-          cmd: run staging # will run `yarn run staging` command
+        run: yarn run staging # will run `yarn run staging` command
       - name: Upload build
         uses: SamKirkland/FTP-Deploy-Action@3.0.0
         with:
