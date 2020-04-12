@@ -61,7 +61,7 @@ jobs:
       - name: Upload posts
         uses: genietim/ftp-action@master
         with:
-          host: ftp://lx3.hoststar.hosting/
+          host: lx3.hoststar.hosting
           user: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
           localDir: ./build_production/blog/
