@@ -30,6 +30,11 @@ module.exports = {
                         promises.push(new Promise(async (resolve, reject) => {
                             const image = await Jimp.read(files[i]);
                             for (const size of sizes) {
+                                // do not scale up, only down...
+                                if (image.bitmap.height < size || image.bitmap.width < size) {
+                                    continue;
+                                }
+
                                 let sizedImage = image;
                                 let targetFileName = fileName.name + "-" + size + fileName.ext;
                                 const targetFile = path.join(imageDestDir, relativeFilePath, targetFileName);

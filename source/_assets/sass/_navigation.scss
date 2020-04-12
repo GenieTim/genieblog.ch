@@ -29,6 +29,10 @@
   @apply .bg-primary;
 }
 
+.sr-only {
+
+}
+
 // Hamburger menu button
 button#menu-toggle {
   $size: 2.5rem; // theme('spacing.10'); //  

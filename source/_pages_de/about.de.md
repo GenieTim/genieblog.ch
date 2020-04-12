@@ -29,3 +29,9 @@ oder einfach nur eine lustige Sache, die Sie im Internet gefunden haben:
 
 - [E-Mail](mailto:tim@bernhard-webstudio.ch)
 - [0763655579](tel:+41763655579)
+
+Ich bin auch in sozialen Netzwerken zu finden:
+
+- [Facebook](https://facebook.com/tim.genie.bernhard)
+- [Twitter](https://twitter.com/genie_tim)
+- [GitHub](https://github.com/genietim)

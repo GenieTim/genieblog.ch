@@ -36,6 +36,12 @@
     <meta name="msapplication-config" content="{{$page->baseUrl}}/assets/images/favicon/browserconfig.xml">
     <meta name="theme-color" content="#140a02">
 
+    <!-- social -->
+    <link href="https://facebook.com/tim.genie.bernhard" rel="me">
+    <link href="https://github.com/genietim" rel="me">
+    <link href="https://twitter.com/genie_tim" rel="me">
+    <link rel="webmention" href="https://webmention.io/genieblog.ch/webmention" />
+    <link rel="pingback" href="https://webmention.io/genieblog.ch/xmlrpc" />
     <link href="{{$page->baseUrl}}/blog/feed.atom" type="application/atom+xml" rel="alternate"
         title="{{ $page->siteName }} Atom Feed">
 
@@ -50,11 +56,15 @@
 
 <body
     class="flex flex-col justify-between min-h-screen bg-primary-complement text-primary-shade leading-normal font-sans">
+    <a class="sr-only rounded-br focus:bg-indigo-800 text-white" href="#skip-content-target" aria-hidden="true">
+        Skip to content ↓
+    </a>
     <header class="flex items-center shadow bg-primary-complement-shade border-b border-primary-shade h-24 py-4"
         role="banner">
         <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
             <div class="flex items-center">
-                <a href="{{$page->baseUrl}}/index.{{$page->language}}" title="{{ $page->siteName }} home" class="inline-flex items-center">
+                <a href="{{$page->baseUrl}}/index.{{$page->language}}" title="{{ $page->siteName }} home"
+                    class="inline-flex items-center">
                     <img class="h-8 md:h-10 mr-3 darkmode-only" src="{{ $page->baseUrl }}/assets/img/logo-light.svg"
                         alt="{{ $page->siteName }} logo" />
 
@@ -108,6 +118,8 @@
             </nav>
         </div>
     </header>
+
+    <div id="skip-content-target" class="hidden" tabindex="-1"></div>
 
     <main role="main" class="flex-auto w-full container max-w-4xl mx-auto py-16 px-6">
         @yield('body')
