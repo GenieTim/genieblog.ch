@@ -61,5 +61,5 @@ jobs:
         run: |
           sudo apt-get install ncftp
           cd "./build_staging/"
-          ncftpput -m -R -z -u "${{ secrets.FTP_USER }}" -p "${{ secrets.FTP_PASSWORD }}" "lx3.hoststar.hosting" "test.genieblog.ch/public_html/" "."
+          ncftpput -m -R -z -u "${{ secrets.FTP_USER }}" -p "${{ secrets.FTP_PASSWORD }}" "genieblog.ch" "test.genieblog.ch/public_html/" "."
           cd ".."

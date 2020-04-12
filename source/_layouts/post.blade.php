@@ -23,12 +23,12 @@
 @endforeach
 @endif
 
-<div class="border-b border-secondary mb-10 pb-4 text-base" v-pre>
+<div class="border-b border-secondary text-base" v-pre>
     @yield('content')
 </div>
 
-<div class="border-b border-secondary mb-10 pb-4 text-base">
-    <details class="mt-8">
+<div class="border-b border-secondary mb-10 pb-4 pt-4 text-base">
+    <details class="">
         <summary class="font-semibold">Webmentions</summary>
         <div class="flex flex-col">
             @if (empty($page->webmentions($page)))
