@@ -2,8 +2,8 @@
 @tailwind components;
 
 // Code syntax highlighting,
-// powered by https://highlightjs.org
-@import '~highlight.js/styles/a11y-dark.css';
+// powered by https://highlightjs.org resp. https://github.com/scrivo/highlight.php
+@import './../../../vendor/scrivo/highlight.php/styles/a11y-dark.css';
 
 @import 'base';
 @import 'navigation';

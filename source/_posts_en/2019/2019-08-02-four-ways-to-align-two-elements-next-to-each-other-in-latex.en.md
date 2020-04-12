@@ -31,7 +31,7 @@ Note that all code is stripped in order to reduce the length of this post.
 
 [Flowfram](https://ctan.org/pkg/flowfram?lang=en) is a package which has to be included and configured. In the following, I will only list the way how to align two simple image elements next to each other, even though this package provides much more possibilities. Please refer to the [documentation](http://mirrors.ctan.org/macros/latex/contrib/flowfram/flowfram.pdf) for more informations.
 
-```latex
+```tex
 % ...
 \usepackage{flowfram}
 
@@ -63,7 +63,7 @@ Good old Table is a method of aligning items too! Note that it is not the intend
 
 In the following example, I `\usepackage{[tabularx](https://ctan.org/pkg/tabularx?lang=en)}` in order to get both items the same horizontal space.
 
-```latex
+```tex
 \begin{table}[!h]
     \centering
     \begin{tabularx}{textwidth}{XX}
@@ -81,7 +81,7 @@ In the following example, I `\usepackage{[tabularx](https://ctan.org/pkg/tabular
 Columns are the way to go for longer parts of the document, or if you even want the whole document splitted into two elements next to each other. You may use the [multicol](https://ctan.org/pkg/multicol?lang=en) package for a simple solution:
 
     
-```latex
+```tex
 \usepackage{multicol}
     
 \begin{document}
@@ -95,7 +95,7 @@ Columns are the way to go for longer parts of the document, or if you even want 
 [Minipage](http://www.sascha-frank.com/latex-minipage.html) is not a package and should be provided automatically by your LaTeX distribution. A minipage is what its name says: a new float environment, a new page, but mini. You can wrap nearly anything inside a minipage and size it the way you want. To align two minipages next to each other, you could do so:
 
 
-```latex
+```tex
 \begin{figure}[htbp]
     % minipage with text
     \begin{minipage}{0.45textwidth} 

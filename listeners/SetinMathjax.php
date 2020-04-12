@@ -4,7 +4,7 @@ namespace App\Listeners;
 
 use TightenCo\Jigsaw\Jigsaw;
 
-class MathHandler
+class SetinMathjax
 {
   public function handle(Jigsaw $jigsaw)
   {

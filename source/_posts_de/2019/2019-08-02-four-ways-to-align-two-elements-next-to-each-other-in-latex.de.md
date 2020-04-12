@@ -31,7 +31,7 @@ Beachten Sie, dass der gesamte Code auf das wesentliche reduziert wurde, um die 
 
 [Flowfram](https://ctan.org/pkg/flowfram?lang=en) ist ein package, das geladen und konfiguriert werden muss. Im Folgenden werde ich nur die Art und Weise auflisten, wie zwei einfache Bildelemente nebeneinander ausgerichtet werden, obwohl dieses Paket viel mehr Möglichkeiten bietet. Weitere Informationen finden Sie in der [Dokumentation](http://mirrors.ctan.org/macros/latex/contrib/flowfram/flowfram.pdf).
 
-```latex
+```tex
 % ...
 \usepackage{flowfram}
 
@@ -64,7 +64,7 @@ Die gute alte Tabelle ist auch eine Methode, Elemente nebeneinander zu positioni
 Im folgenden Beispiel verwende ich `usepackage{[tabularx](https://ctan.org/pkg/tabularx?lang=de)}`, um beiden Elementen den gleichen horizontalen Raum zu geben.
 
     
-```latex
+```tex
 \begin{table}[!h]
     \centering
     \begin{tabularx}{textwidth}{XX}
@@ -82,7 +82,7 @@ Im folgenden Beispiel verwende ich `usepackage{[tabularx](https://ctan.org/pkg/t
 Spalten sind der Weg, um längere Teile des Dokuments zu bearbeiten, oder um das gesamte Dokument in zwei Elemente nebeneinander aufzuteilen. Sie können das [multicol](https://ctan.org/pkg/multicol?lang=de)-Paket für eine einfache Lösung verwenden:
 
     
-```latex
+```tex
 \usepackage{multicol}
     
 \begin{document}
@@ -96,7 +96,7 @@ Spalten sind der Weg, um längere Teile des Dokuments zu bearbeiten, oder um das
 [Minipage](http://www.sascha-frank.com/latex-minipage.html) ist kein separates Paket und sollte automatisch von Ihrer LaTeX-Distribution bereitgestellt sein. Eine minipage ist das, was der Name sagt: eine neue Float-Umgebung, eine neue Seite, aber Mini. Sie können fast alles in eine Miniseite packen und die Größe so anpassen, wie Sie möchten. Folgendermassen richten Sie zwei Miniseiten nebeneinander aus:
 
     
-```latex
+```tex
 \begin{figure}[htbp]
     % minipage with text
     \begin{minipage}{0.45textwidth} 
