@@ -21,7 +21,7 @@ Es dauerte ein paar Versuche und Schritte, aber es gelang mir schließlich, eini
 Ich habe sie in OneNote auf meinem Surface-Gerät aufgenommen, da dies der einfachste und schnellste Weg ist, die Notizen zu "prototypisieren". Aufgrund meiner Erfahrung und aller Verknüpfungsmöglichkeiten schreibe ich die Gleichungen schneller als
 schreiben sie tatsächlich von Hand aus.
 Um meine Notizen anderen Personen zur Bearbeitung zur Verfügung zu stellen, kann ich die bereitgestellten Exportoptionen verwenden
-in der OneNote-Windows-App: docx, pdf oder erneut onnenote. Die ersten beiden bieten keinen sinnvollen Export, da sie auch nicht das Editieren von Gleichungen ermöglichen, wie es möglich sein sollte.
+in der OneNote-Windows-App: docx, pdf oder erneut OneNote. Die ersten beiden bieten keinen sinnvollen Export, da sie auch nicht das Editieren von Gleichungen ermöglichen, wie es möglich sein sollte.
 
 Jetzt wollte ich sie nach LaTeX exportieren, da laTeX fantastische Gleichungs- und Rechenfunktionen bietet.
 Leider ist diese Option nicht standardmäßig verfügbar.
@@ -30,8 +30,8 @@ Ich habe keine Möglichkeit gefunden, die aktuelle OneNote-Datei zu dekomprimier
 
 Bei einem anderen Projekt habe ich bereits mit der OneNote-API gearbeitet, also habe ich versucht, sie mit dieser zu exportieren.
 Kein Glück, da die Gleichungen einfach nicht drin sind.
-Eine Möglichkeit, programmgesteuert auf die OneNote-Gleichungen zuzugreifen, ist die Verwendung von [OneNote online] (https://onenote.com): Dort finden Sie die Gleichungen als MathML in der HTML-Quelle.
-Um den Code von der OneNote-Webseite zu extrahieren, habe ich ein kleines Skript um [puppeteer] (https://pptr.dev/) geschrieben: [check it out] (https://github.com/GenieTim/OneNoteExporter)!
+Eine Möglichkeit, programmgesteuert auf die OneNote-Gleichungen zuzugreifen, ist die Verwendung von [OneNote online](https://onenote.com): Dort finden Sie die Gleichungen als MathML in der HTML-Quelle.
+Um den Code von der OneNote-Webseite zu extrahieren, habe ich ein kleines Skript um [puppeteer](https://pptr.dev/) geschrieben: [check it out](https://github.com/GenieTim/OneNoteExporter)!
 
 Dieser HTML-Code könnte dann mithilfe von [pandoc] (https://github.com/jgm/pandoc), das tatsächlich MathML unterstützt, in LaTeX konvertiert werden.
 Das Problem ist, dass der exportierte Code schrecklich aussieht.
@@ -56,6 +56,7 @@ Der Code zum Konvertieren aller HTML-Dateien in einem Verzeichnis (das Exportver
 
 Schließlich sind die folgenden RegExs ein paar Lösch- und Ersetzungsschritte (beachten Sie das `=>`), die ich gefunden habe, um die Ausgabe weiter zu verbessern:
 
+```tex
     \\textenglish\[variant=[a-z]*\]\{\{\}\}\{~\}
     \\textenglish\[variant=[a-z]*\]\{\}\{~\}
     \\textenglish\[variant=[a-z]*\]\{\{([\S ]*[\n]*[\S ]*)\}\}\{~\} => \n$1
@@ -74,3 +75,4 @@ Schließlich sind die folgenden RegExs ein paar Lösch- und Ersetzungsschritte (
     ^\n\n*$ => \n
     \\protect\\hypertarget\{MathJax-Element-[0-9]*-Frame\}\{\}\{\n\\protect\\hypertarget\{[\S]*\n\}
       \\protect\\hypertarget\{MathJax-Element-[0-9]*-Frame\}\{\}\{\n  \\protect\\hypertarget\{[\S ]*\n  \}
+```

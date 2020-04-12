@@ -7,19 +7,6 @@ use TightenCo\Jigsaw\Jigsaw;
 
 class HighlightCodeSyntax
 {
-  private $highlighter;
-
-  public function __construct()
-  {
-    $this->highlighter = new Highlighter();
-    $this->highlighter->setAutodetectLanguages([
-      'html',
-      'php',
-      'css',
-      'js',
-      'shell'
-    ]);
-  }
 
   public function handle(Jigsaw $jigsaw)
   {
@@ -45,16 +32,25 @@ class HighlightCodeSyntax
   {
     // TODO: patternmatch for added classes
     // match classless code
-    $pattern = "/<pre><code(?: class=[\"']language-([A-Za-z]*)[\"'])[^>]*>(.*)(?=<\/code><\/pre>)/Uis";
+    $pattern = "/<pre><code(?: class=[\"']language-([A-Za-z]*)[\"'])?[^>]*>(.*)(?=<\/code><\/pre>)/Uis";
 
-    $highlighter = $this->highlighter;
-    return preg_replace_callback($pattern, function ($match) use ($highlighter) {
+    return preg_replace_callback($pattern, function ($match) {
       // $match has the following structure:
       // 0: full match; 1: programming language (group 1, if matched); 2: the code
       //
-      $input = htmlspecialchars_decode($match[2]);
+      $input = $match[2]; // htmlspecialchars_decode($match[2]);
 
-      if (!empty(trim($match[1]))) {
+      $highlighter = new Highlighter();
+      $highlighter->setAutodetectLanguages([
+        'html',
+        'php',
+        'css',
+        'js',
+        'shell',
+        'tex'
+      ]);
+
+      if (trim($match[1]) !== "") {
         return $highlighter->highlight($match[1], $input)->value;
       } else {
         return $highlighter->highlightAuto($input)->value;
