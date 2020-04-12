@@ -59,7 +59,7 @@ jobs:
         run: yarn run production
 
       - name: Upload posts
-        uses: sebastianpopp/ftp-action@releases/v2
+        uses: genietim/ftp-action@v3
         with:
           host: ftp://lx3.hoststar.hosting/
           user: ${{ secrets.FTP_USER }}

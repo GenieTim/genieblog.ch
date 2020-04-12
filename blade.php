@@ -1,7 +1,5 @@
 <?php
 
-use TightenCo\Jigsaw\Collection\CollectionItem;
-
 return [
   'spaceless' => function () {
     return '<?php ob_start() ?>';
