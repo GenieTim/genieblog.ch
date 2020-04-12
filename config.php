@@ -23,8 +23,18 @@ function getMultilangCollections()
             'language' => $lang,
             'extends' => '_layout.post',
             'path' => 'blog/' . $lang . '/{date|Y}/{slug}',
-            'filter' => function ($item) {
-                return !$item->draft;
+            'filter' => function ($post) {
+                return !$post->draft;
+            },
+            'webmentions' => function ($post) {
+                $path = $post->getUrl();
+                $path = str_replace(['https://', 'www.genieblog.ch', 'index.html'], "", $path);
+                $path = trim($path, '/');
+                $commentsFile = __DIR__ . '/source/data/webmentions/' . $path . '.json';
+                if (file_exists($commentsFile)) {
+                    return json_decode(file_get_contents($commentsFile));
+                }
+                return [];
             }
         ];
 

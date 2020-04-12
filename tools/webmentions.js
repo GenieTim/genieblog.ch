@@ -9,8 +9,8 @@ fetchWebmentions().then(webmentions => {
   webmentions.forEach(webmention => {
     const slug = webmention["wm-target"]
       .replace("https://genieblog.ch/", "")
-      .replace(/\/$/, "")
-      .replace("/", "--");
+      .replace("index.html", "")
+      .replace(/\/$/, "");
 
     const filename = `${__dirname}/../source/data/webmentions/${slug}.json`;
 

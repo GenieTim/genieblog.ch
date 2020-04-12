@@ -1,0 +1,68 @@
+name: Publish Posts
+
+on:
+  create:
+    tags:
+  repository_dispatch:
+    types: [post-change-event]
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    name: Publish Website to Staging Server
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+
+      - name: Install PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "7.4"
+          tools: composer
+
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - name: Cache yarn dependencies
+        uses: actions/cache@v1
+        id: yarn-cache
+        with:
+          path: ${{ steps.yarn-cache-dir.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: ${{ runner.os }}-yarn-
+
+      - name: Install yarn dependencies
+        if: steps.yarn-cache.outputs.cache-hit != 'true'
+        run: yarn install
+
+      - name: Get composer cache directory
+        id: composer-cache-dir
+        run: echo "::set-output name=dir::$(composer config cache-files-dir)"
+
+      - name: Cache composer dependencies
+        uses: actions/cache@v1
+        id: composer-cache
+        with:
+          path: ${{ steps.composer-cache-dir.outputs.dir }}
+          key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
+          restore-keys: ${{ runner.os }}-composer-
+
+      - name: Install Composer dependencies
+        if: steps.composer-cache.outputs.cache-hit != 'true'
+        run: composer install --prefer-dist --no-progress
+
+      - name: Run build
+        run: yarn run production
+
+      - name: Upload posts
+        uses: sebastianpopp/ftp-action@releases/v2
+        with:
+          host: ftp://lx3.hoststar.hosting/
+          user: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          localDir: ./build_production/blog/
+          remoteDir: "genieblog.ch/public_html/blog/"

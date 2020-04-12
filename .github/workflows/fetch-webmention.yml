@@ -21,16 +21,32 @@ jobs:
           WEBMENTIONS_TOKEN: ${{ secrets.WEBMENTIONS_TOKEN }}
         run: node ./tools/webmentions.js
 
-      - name: Commit to repository
+      - name: Setup git
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          COMMIT_MSG: |
-            Fetch webmentions
-            skip-checks: true
         run: |
           git config user.email "tim@genieblog.ch"
           git config user.name "Tim Bernhard"
           git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/genietim/genieblog.ch.git
           git checkout master
           git add .
-          git diff --quiet && git diff --staged --quiet || (git commit -m "${COMMIT_MSG}"; git push origin master)
+
+      - name: Check for changes
+        id: changes-check
+        run: echo "::set-output name=has-changes::$(git diff --quiet && git diff --staged --quiet)"
+
+      - name: Commit to repository
+        env:
+          COMMIT_MSG: |
+            Fetch webmentions
+            skip-checks: true
+        run: |
+          ${{ steps.changes-check.has-changes.dir }} || (git commit -m "${COMMIT_MSG}"; git push origin master)
+
+      - name: Start post update
+        uses: peter-evans/repository-dispatch@v1
+        if: ${{ !steps.changes-check.has-changes.dir }}
+        with:
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+          repository: genietim/genieblog.ch
+          event-type: post-change-event

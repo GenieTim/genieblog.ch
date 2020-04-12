@@ -27,6 +27,28 @@
     @yield('content')
 </div>
 
+<div class="border-b border-secondary mb-10 pb-4 text-base">
+    <details class="mt-8">
+        <summary class="font-semibold">Webmentions</summary>
+        <div class="flex flex-col">
+            @if (empty($page->webmentions($page)))
+            <p>{{ $page->translate("page.no_comments") }}</p>
+            @endif
+            @foreach ($page->webmentions($page) as $i => $comment)
+            <div class="comment">
+                <div class="comment-author">
+                    {{ $comment->author->name }}
+                </div>
+                <div class="comment-content">
+                    {{ $comment->content->html }}
+                    <a href="' . $comment['url'] . '">Link</a>
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </details>
+</div>
+
 <nav class="flex justify-between text-sm md:text-base">
     <div>
         @if ($next = $page->getNext())
