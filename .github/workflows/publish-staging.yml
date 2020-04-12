@@ -60,15 +60,15 @@ jobs:
       - name: Upload build
         run: |
           sudo apt-get install lftp
-          lftp -d -c "
+          lftp -e "
             set net:timeout 5;
             set net:max-retries 3;
             set net:reconnect-interval-multiplier 1;
             set net:reconnect-interval-base 5;
             set ftp:ssl-force false; 
             set ssl:verify-certificate false; 
-            open "sftp://lx3.hoststar.hosting"
-            user ${{ secrets.FTP_USER }} ${{ secrets.FTP_PASSWORD }} 
-            mirror --reverse --continue --dereference --verbose=3 -P ./build_staging/ /test.genieblog.ch/public_html/genieblog/; 
+            open ftp://lx3.hoststar.hosting
+            user github.genieblog.ch tmScmmNuJ88XfW6mGrqy7socX4MnW. 
+            mirror -v -P 5 -R ./build_staging/ /test.genieblog.ch/public_html/genieblog/; 
             quit
           "
