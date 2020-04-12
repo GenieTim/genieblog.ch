@@ -58,10 +58,8 @@ jobs:
         run: yarn run staging
 
       - name: Upload build
-        uses: genietim/ftp-action@master
-        with:
-          host: lx3.hoststar.hosting
-          user: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          localDir: ./build_staging/
-          remoteDir: "test.genieblog.ch/public_html/genieblog/"
+        run: |
+          sudo apt-get install ncftp
+          cd "./build_staging/"
+          ncftpput -m -R -z -u "${{ secrets.FTP_USER }}" -p "${{ secrets.FTP_PASSWORD }}" "lx3.hoststar.hosting" "test.genieblog.ch/public_html/" "."
+          cd ".."

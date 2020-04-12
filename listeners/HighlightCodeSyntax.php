@@ -38,7 +38,6 @@ class HighlightCodeSyntax
       // $match has the following structure:
       // 0: full match; 1: programming language (group 1, if matched); 2: the code
       //
-      var_dump($match);
       assert(count($match) == 3);
       $input = $match[2]; // htmlspecialchars_decode($match[2]);
 
