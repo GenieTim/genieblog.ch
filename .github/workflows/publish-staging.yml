@@ -60,4 +60,4 @@ jobs:
       - name: Upload build
         run: |
           sudo apt-get install lftp
-          lftp -d -e "set ftp:ssl-force false; set ssl:verify-certificate false; mirror --reverse --continue --dereference --verbose=3 -P -x ^\.git/$ ./build_staging/ /test.genieblog.ch/public_html/genieblog/; quit" -u ${{ secrets.FTP_USER }},${{ secrets.FTP_PASSWORD }} "ftp://lx3.hoststar.hosting"
+          lftp -d -e "set ftp:ssl-force false; set ssl:verify-certificate false; mirror --reverse --continue --dereference --verbose=3 ./build_staging/ /test.genieblog.ch/public_html/genieblog/; quit" -u ${{ secrets.FTP_USER }},${{ secrets.FTP_PASSWORD }} "ftp://lx3.hoststar.hosting"
