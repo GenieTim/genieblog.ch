@@ -68,7 +68,7 @@ jobs:
             set ftp:ssl-force false; 
             set ssl:verify-certificate false; 
             open ftp://lx3.hoststar.hosting
-            user github.genieblog.ch tmScmmNuJ88XfW6mGrqy7socX4MnW. 
+            user ${{ secrets.FTP_USER }} ${{ secrets.FTP_PASSWORD }} 
             mirror -v -P 5 -R ./build_staging/ /test.genieblog.ch/public_html/genieblog/; 
             quit
           "
