@@ -59,7 +59,5 @@ jobs:
 
       - name: Upload build
         run: |
-          sudo apt-get install ncftp
-          cd "./build_staging/"
-          ncftpput -m -R -z -u "${{ secrets.FTP_USER }}" -p "${{ secrets.FTP_PASSWORD }}" "genieblog.ch" "test.genieblog.ch/public_html/" "."
-          cd ".."
+          sudo apt-get install lftp
+          lftp -d -e "set ftp:ssl-force $INPUT_FORCESSL; set ssl:verify-certificate false; mirror --reverse --continue --dereference --verbose=3 -P -x ^\.git/$ $INPUT_LOCALDIR $INPUT_REMOTEDIR; quit" -u $INPUT_USER,$INPUT_PASSWORD lx3.hoststar.hosting
