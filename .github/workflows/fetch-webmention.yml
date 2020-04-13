@@ -36,7 +36,7 @@ jobs:
         run: echo "::set-output name=has_changes::$((git diff --quiet && git diff --staged --quiet && echo 'false') || echo 'true')"
 
       - name: Commit to repository
-        if: steps.changes_check.outputs.has_changes
+        if: steps.changes_check.outputs.has_changes == 'true'
         env:
           COMMIT_MSG: |
             Fetch webmentions
@@ -47,7 +47,7 @@ jobs:
 
       - name: Start post update
         uses: peter-evans/repository-dispatch@v1
-        if: steps.changes_check.outputs.has_changes
+        if: steps.changes_check.outputs.has_changes == 'true'
         with:
           token: ${{ secrets.REPO_ACCESS_TOKEN }}
           repository: genietim/genieblog.ch

@@ -39,7 +39,7 @@ class HighlightCodeSyntax
       // 0: full match; 1: programming language (group 1, if matched); 2: the code
       //
       assert(count($match) == 3);
-      $input = $match[2]; // htmlspecialchars_decode($match[2]);
+      $input = htmlspecialchars_decode($match[2]);
 
       $highlighter = new Highlighter();
       $highlighter->setAutodetectLanguages([
