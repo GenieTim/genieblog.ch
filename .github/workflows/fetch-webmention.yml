@@ -32,20 +32,23 @@ jobs:
           git add .
 
       - name: Check for changes
-        id: changes-check
-        run: echo "::set-output name=has-changes::$(git diff --quiet && git diff --staged --quiet)"
+        id: changes_check
+        run: echo "::set-output name=has_changes::$(git diff --quiet && git diff --staged --quiet)"
 
       - name: Commit to repository
+        if: ${{ !steps.changes_check.outputs.has_changes }}
         env:
           COMMIT_MSG: |
             Fetch webmentions
             skip-checks: true
         run: |
-          ${{ steps.changes-check.has-changes.dir }} || (git commit -m "${COMMIT_MSG}"; git push origin master)
+          echo ${{ steps.changes_check.outputs.has_changes }}
+          git commit -m "${COMMIT_MSG}"
+          git push origin master
 
       - name: Start post update
         uses: peter-evans/repository-dispatch@v1
-        if: ${{ !steps.changes-check.has-changes.dir }}
+        if: ${{ !steps.changes_check.outputs.has_changes }}
         with:
           token: ${{ secrets.REPO_ACCESS_TOKEN }}
           repository: genietim/genieblog.ch
