@@ -62,7 +62,7 @@ jobs:
           sudo apt-get install lftp
           lftp -e "
             set net:timeout 5;
-            set net:max-retries 3;
+            set net:max-retries 10;
             set net:reconnect-interval-multiplier 1;
             set net:reconnect-interval-base 5;
             set ftp:ssl-force false; 

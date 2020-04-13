@@ -1,19 +1,4 @@
 /**
- * Search functionality
- */
-import Search from './components/Search.vue';
-window.axios = require('axios');
-window.Vue = require('vue');
-
-Vue.config.productionTip = false;
-
-new Vue({
-    components: {
-        Search,
-    },
-}).$mount('#vue-search');
-
-/**
  * Service Worker setup for offline support
  */
 if ('serviceWorker' in navigator) {
@@ -32,6 +17,41 @@ if ('serviceWorker' in navigator) {
  * Instant click for perceived performance improvement
  */
 const InstantClick = require('instantclick');
+
+/**
+ * Search functionality
+ */
+import Search from './components/Search.vue';
+window.axios = require('axios');
+window.Vue = require('vue');
+
+Vue.config.productionTip = false;
+
+let initializeVue = function () {
+    new Vue({
+        components: {
+            Search,
+        },
+    }).$mount('#vue-search');
+};
+
+initializeVue();
+
+/**
+ * Register events of InstantClick
+ */
+
+InstantClick.on('change', function () {
+    try {
+        ga('send', 'pageview', location.pathname + location.search);
+    } catch(e) {
+        // eighter adblock/tracker blocking or development site
+        console.log(e);
+    }
+    // re-initialize search
+    initializeVue();
+});
+// finally, initialize
 InstantClick.init();
 
 /**
