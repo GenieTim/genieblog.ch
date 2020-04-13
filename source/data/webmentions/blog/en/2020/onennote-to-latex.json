@@ -1,0 +1,20 @@
+[
+  {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Telly",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/f7ba24796dea625fb9dfa19df67d3d2de636abd2e08c2f00531d6e8bda9fe0f5.jpg",
+      "url": "https://twitter.com/Telly91360846"
+    },
+    "url": "https://twitter.com/genie_tim/status/1249628767817019392#favorited-by-1249305762263748608",
+    "published": null,
+    "wm-received": "2020-04-13T12:35:54Z",
+    "wm-id": 781890,
+    "wm-source": "https://brid-gy.appspot.com/like/twitter/genie_tim/1249628767817019392/1249305762263748608",
+    "wm-target": "https://genieblog.ch/blog/en/2020/onennote-to-latex/",
+    "like-of": "https://genieblog.ch/blog/en/2020/onennote-to-latex/",
+    "wm-property": "like-of",
+    "wm-private": false
+  }
+]

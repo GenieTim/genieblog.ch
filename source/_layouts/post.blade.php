@@ -39,20 +39,32 @@
     <details class="">
         <summary class="font-semibold">Webmentions</summary>
         <div class="flex flex-col">
-            @if (empty($page->webmentions()))
-            <p>{{ $page->translate("page.no_comments") }}</p>
-            @endif
+            @php
+            $hasComments = false;
+            @endphp
             @foreach ($page->webmentions() as $i => $comment)
+            @if (!empty($comment->content))
+            @php
+            $hasComments = true;
+            @endphp
             <div class="comment">
                 <div class="comment-author">
                     {{ $comment->author->name }}
                 </div>
                 <div class="comment-content">
-                    {{ $comment->content->html }}
-                    <a href="' . $comment['url'] . '">Link</a>
+                    @if (isset($comment->content->html))
+                        {{ $comment->content->html }}
+                    @else
+                        {{ $comment->content->txt }}
+                    @endif
+                    <a href="' . {{ $comment->url }} . '">Link</a>
                 </div>
             </div>
+            @endif
             @endforeach
+            @if (!$hasComments)
+            <p>{{ $page->translate("page.no_comments") }}</p>
+            @endif
         </div>
     </details>
 </div>

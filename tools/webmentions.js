@@ -1,4 +1,5 @@
 const fs = require("fs");
+const path = require("path");
 const https = require("https");
 
 /**
@@ -15,6 +16,7 @@ fetchWebmentions().then(webmentions => {
     const filename = `${__dirname}/../source/data/webmentions/${slug}.json`;
 
     if (!fs.existsSync(filename)) {
+      ensureDirectoryExistence(filename);
       fs.writeFileSync(filename, JSON.stringify([webmention], null, 2));
 
       return;
@@ -29,6 +31,22 @@ fetchWebmentions().then(webmentions => {
     fs.writeFileSync(filename, JSON.stringify(entries, null, 2));
   });
 });
+
+/**
+ * Make sure all directories to a file exist
+ * 
+ * @param {string} filePath 
+ */
+function ensureDirectoryExistence(filePath) {
+  var dirname = path.dirname(filePath);
+  if (fs.existsSync(dirname)) {
+    return true;
+  }
+  ensureDirectoryExistence(dirname);
+  fs.mkdirSync(dirname, {
+    recursive: true
+  });
+}
 
 /**
  * Actually load the webmentions from the 
