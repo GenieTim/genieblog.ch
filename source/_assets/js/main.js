@@ -27,15 +27,14 @@ window.Vue = require('vue');
 
 Vue.config.productionTip = false;
 
-let initializeVue = function () {
+function initializeVue() {
     new Vue({
         components: {
             Search,
         },
     }).$mount('#vue-search');
+    console.log("Inited Vue");
 };
-
-initializeVue();
 
 /**
  * Register events of InstantClick
@@ -44,11 +43,11 @@ initializeVue();
 InstantClick.on('change', function () {
     try {
         ga('send', 'pageview', location.pathname + location.search);
-    } catch(e) {
+    } catch (e) {
         // eighter adblock/tracker blocking or development site
         console.log(e);
     }
-    // re-initialize search
+    // (re)-initialize search
     initializeVue();
 });
 // finally, initialize

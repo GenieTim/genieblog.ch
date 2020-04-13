@@ -83,7 +83,7 @@ export default {
     return {
       fuse: null,
       searching: false,
-      query: ""
+      query: ''
     };
   },
   computed: {
@@ -99,9 +99,6 @@ export default {
       this.$nextTick(() => {
         this.$refs.search.focus();
       });
-    },
-    nonSearching() {
-      this.searching = false;
     },
     reset() {
       this.query = "";
