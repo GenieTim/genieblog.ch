@@ -23,6 +23,14 @@
 @endforeach
 @endif
 
+@if ($page->isOld())
+<div class="alert">
+    <p>{{ $page->translate('page.note.old') }}</p>
+    <p>{{ $page->translate('page.note.github') }} <a href="https://github.com/GenieTim/genieblog.ch"
+            title="Source of genieblog.ch">GitHub</a></p>
+</div>
+@endif
+
 <div class="border-b border-secondary text-base" v-pre>
     @yield('content')
 </div>
@@ -31,10 +39,10 @@
     <details class="">
         <summary class="font-semibold">Webmentions</summary>
         <div class="flex flex-col">
-            @if (empty($page->webmentions($page)))
+            @if (empty($page->webmentions()))
             <p>{{ $page->translate("page.no_comments") }}</p>
             @endif
-            @foreach ($page->webmentions($page) as $i => $comment)
+            @foreach ($page->webmentions() as $i => $comment)
             <div class="comment">
                 <div class="comment-author">
                     {{ $comment->author->name }}

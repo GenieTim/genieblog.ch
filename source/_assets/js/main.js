@@ -33,7 +33,6 @@ function initializeVue() {
             Search,
         },
     }).$mount('#vue-search');
-    console.log("Inited Vue");
 };
 
 /**

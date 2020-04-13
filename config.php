@@ -4,6 +4,7 @@ use Illuminate\Support\Str;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Translation\FileLoader;
 use Illuminate\Translation\Translator;
+use TightenCo\Jigsaw\Collection\CollectionItem;
 
 const LANGUAGES = ["de", "en"];
 
@@ -26,7 +27,7 @@ function getMultilangCollections()
             'filter' => function ($post) {
                 return !$post->draft;
             },
-            'webmentions' => function ($post) {
+            'webmentions' => function (CollectionItem $post) {
                 $path = $post->getUrl();
                 $path = str_replace(['https://', 'www.genieblog.ch', 'index.html'], "", $path);
                 $path = trim($path, '/');
@@ -35,6 +36,44 @@ function getMultilangCollections()
                     return json_decode(file_get_contents($commentsFile));
                 }
                 return [];
+            },
+            /**
+             * Function to check whether a post is old. 
+             */
+            'isOld' => function (CollectionItem $post, $dayDiff = 730) {
+                /**
+                 * Check the date the post was updated:
+                 * If its update date is declared, take that one
+                 */
+                if (property_exists($post, 'updated')) {
+                    $postDate = $post->updated;
+                } else {
+                    /**
+                     * If not though, check if we can use the files modification date.
+                     * Fall back to the default date of the post
+                     */
+                    $sourceFile = $post->getSource() . '/' . $post->getFilename() . '.md';
+                    if (file_exists($sourceFile)) {
+                        $postDate = filemtime($sourceFile);
+                    } else {
+                        $postDate = $post->date;
+                    }
+                }
+
+                /**
+                 * Finally, convert the dates before checking the difference
+                 */
+                if (!$postDate instanceof \DateTime) {
+                    if (is_int($postDate)) {
+                        $timestamp = $postDate;
+                        $postDate = new \DateTime();
+                        $postDate->setTimestamp($timestamp);
+                    } else {
+                        $postDate = new \DateTime($postDate);
+                    }
+                }
+                $now = new \DateTime();
+                return $postDate->diff($now)->days > $dayDiff;
             }
         ];
 
