@@ -65,9 +65,10 @@ jobs:
             set net:max-retries 10;
             set net:reconnect-interval-multiplier 1;
             set net:reconnect-interval-base 5;
+            set sftp:auto-confirm yes;
             set ftp:ssl-force false; 
             set ssl:verify-certificate false; 
-            open ftp://lx3.hoststar.hosting
+            open sftp://lx3.hoststar.hosting:5544
             user ${{ secrets.FTP_USER }} ${{ secrets.FTP_PASSWORD }} 
             mirror -v -P 5 -R ./build_staging/ /test.genieblog.ch/public_html/genieblog/; 
             quit
