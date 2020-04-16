@@ -2,10 +2,10 @@
 author: Tim Bernhard
 comments: true
 date: 2014-12-25 09:37:10+00:00
-excerpt: >-
-  Wie man mit dem Java-Framework libGDX das Drücken irgendeiner Taste abfängt. 
-
-  libGDX ist ein Framework, optimal für die Programmierung von Games und Spielen, und zwar plattformunabhängig. Die Projekte lassen sich für iOs, Android, PCs und Macs und sogar fürs Web exportieren!
+excerpt: >
+  "Wie man mit dem Java-Framework libGDX das Drücken irgendeiner Taste abfängt. 
+  libGDX ist ein Framework, optimal für die Programmierung von Games und Spielen, und zwar plattformunabhängig.
+  Die Projekte lassen sich für iOs, Android, PCs und Macs und sogar fürs Web exportieren!"
 layout: post
 link: http://genieblog.ch/irgendein-tastendruck-in-libgdx/
 slug: irgendein-tastendruck-in-libgdx
@@ -24,11 +24,13 @@ language: de
 cover_image: 2014/logo-libgdx.png
 ---
 
-Bei einem aktuellen Projekt eines Games in der Programmiersprache Java, das ich mithilfe des Frameworks libGDX erstelle, wollte ich an einem Punkt den Nutzer fragen, ob er bereit ist, weiterzuspielen. Dem Spielerlebnis zuliebe sollte dies auf keinen Fall über einen Ja/Nein Dialog geschehen.
+Bei einem aktuellen Projekt eines Games in der Programmiersprache Java, das ich mithilfe des Frameworks libGDX erstelle, wollte ich an einem Punkt den Nutzer fragen, ob er bereit ist, weiterzuspielen.
+Dem Spielerlebnis zuliebe sollte dies auf keinen Fall über einen Ja/Nein Dialog geschehen.
 
 Da mit libGDX das Spiel sowohl für Desktop-PCs wie auch für Android und iOs Mobilgeräte konzipiert sein würde, ist ein einfacher Klick auf den Bildschirm zwar für die Mobilgeräte angenehm, nicht jedoch für den Desktop-Nutzer, da dieser die Maus für die eigentliche Steuerung des Spiels nicht benötigt.
 
-Es liegt also eine zweispurige Lösung nahe: für die Mobilgeräte sollte es reichen, wenn sie auf den Bildschirm tippen, der PC-Nutzer dagegen sollte eine Taste drücken, um das Spiel zu beginnen. Doch welche?
+Es liegt also eine zweispurige Lösung nahe: für die Mobilgeräte sollte es reichen, wenn sie auf den Bildschirm tippen, der PC-Nutzer dagegen sollte eine Taste drücken, um das Spiel zu beginnen.
+Doch welche?
 
 ## Tastatureingabe in libGDX
 
@@ -44,11 +46,13 @@ if (Gdx.input.isKeyPressed(Input.Keys.ENTER)) {
 			// tu was du willst - Enter wurde gedrückt
 		}`
 
-Damit sind wir schon ziemlich nah am Ziel - wir müssen nur Input.Keys.??? anpassen, so dass die Tastatur nach der von uns gewählte Taste gefragt wird. Eine Liste mit den verschiedenen Input.Keys.* findest Du hier: [http://libgdx.badlogicgames.com/nightlies/docs/api/com/badlogic/gdx/Input.Keys.html](http://libgdx.badlogicgames.com/nightlies/docs/api/com/badlogic/gdx/Input.Keys.html)
+Damit sind wir schon ziemlich nah am Ziel - wir müssen nur Input.Keys.??? anpassen, so dass die Tastatur nach der von uns gewählte Taste gefragt wird.
+Eine Liste mit den verschiedenen Input.Keys.* findest Du hier: [http://libgdx.badlogicgames.com/nightlies/docs/api/com/badlogic/gdx/Input.Keys.html](http://libgdx.badlogicgames.com/nightlies/docs/api/com/badlogic/gdx/Input.Keys.html)
 
 ### Die Lösung
 
-Doch nur welche Taste wollen wir denn nun verwenden? Genau, alle! Es soll nicht darauf ankommen, welche Taste der Nutzer drückt, er will doch einfach das Spiel starten. Da wir bestimmt keinen ewig langen Schalter à la `if (rechts oder links oder bla oder bla...)` haben möchten, gibt es zum Glück den **Any Key**! ;)
+Doch nur welche Taste wollen wir denn nun verwenden? Genau, alle! Es soll nicht darauf ankommen, welche Taste der Nutzer drückt, er will doch einfach das Spiel starten.
+Da wir bestimmt keinen ewig langen Schalter à la `if (rechts oder links oder bla oder bla...)` haben möchten, gibt es zum Glück den **Any Key**! ;)
 
 Dieser sieht folgendermassen aus, und löst unser Problem ausserordentlich elegant:
 

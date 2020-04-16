@@ -19,4 +19,6 @@ language: de
 cover_image: false
 ---
 
-Bringt – insbesondere da es gratis ist – neue Browser auf tausende Rechner. Ein grosses Hurra von jedem Web Developer. Und doch steckt Microsoft Edge noch in den Kinderschuhen.
+Bringt – insbesondere da es gratis ist – neue Browser auf tausende Rechner.
+Ein grosses Hurra von jedem Web Developer.
+Und doch steckt Microsoft Edge noch in den Kinderschuhen.

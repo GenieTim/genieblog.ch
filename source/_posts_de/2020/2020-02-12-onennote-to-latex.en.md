@@ -21,7 +21,8 @@ Es dauerte ein paar Versuche und Schritte, aber es gelang mir schließlich, eini
 Ich habe sie in OneNote auf meinem Surface-Gerät aufgenommen, da dies der einfachste und schnellste Weg ist, die Notizen zu "prototypisieren". Aufgrund meiner Erfahrung und aller Verknüpfungsmöglichkeiten schreibe ich die Gleichungen schneller als
 schreiben sie tatsächlich von Hand aus.
 Um meine Notizen anderen Personen zur Bearbeitung zur Verfügung zu stellen, kann ich die bereitgestellten Exportoptionen verwenden
-in der OneNote-Windows-App: docx, pdf oder erneut OneNote. Die ersten beiden bieten keinen sinnvollen Export, da sie auch nicht das Editieren von Gleichungen ermöglichen, wie es möglich sein sollte.
+in der OneNote-Windows-App: docx, pdf oder erneut OneNote.
+Die ersten beiden bieten keinen sinnvollen Export, da sie auch nicht das Editieren von Gleichungen ermöglichen, wie es möglich sein sollte.
 
 Jetzt wollte ich sie nach LaTeX exportieren, da laTeX fantastische Gleichungs- und Rechenfunktionen bietet.
 Leider ist diese Option nicht standardmäßig verfügbar.

@@ -31,11 +31,15 @@ How does a calculator draw the logarithm? I would like to investigate this quest
 First, it is worth looking at the conversion formula for the log of ten: logb (x) = loga (x) / loga (b)
 Thus logb (x) = log10 (x) / log10 (b) and the only logarithm that still has to be drawn is the decadic one, also written as lg ().
 
-What is that supposed to achieve? The logarithm of 10 is worlds easier than most other numbers. In addition, you only have to program a way in which the logarithm should be drawn, and not a separate path for every other logarithm.
+What is that supposed to achieve? The logarithm of 10 is worlds easier than most other numbers.
+In addition, you only have to program a way in which the logarithm should be drawn, and not a separate path for every other logarithm.
 
 ## Draw the logarithm of 10
 
-So far so good. This allows us to concentrate entirely on taking the logarithm of 10. Let's start with the simple part: we create a form in which the user enters the number from which he wants to have taken the 10th logarithm. Since we do not want to use `Math.log ()` or similar, we will also do without `Math.pow ()` and jQuery. The fact that the code no longer looks so elegant is irrelevant - it just has to serve the purpose.
+So far so good.
+This allows us to concentrate entirely on taking the logarithm of 10. Let's start with the simple part: we create a form in which the user enters the number from which he wants to have taken the 10th logarithm.
+Since we do not want to use `Math.log ()` or similar, we will also do without `Math.pow ()` and jQuery.
+The fact that the code no longer looks so elegant is irrelevant - it just has to serve the purpose.
 It could look like this:
 
     
@@ -93,7 +97,8 @@ Kommen wir nun also zur Funktion log(), dem Herzstück unseres Kunstwerks, die d
     function log(wert, basis) {
         var zahl = wert;
         var gesucht = "";
-        /* eigentliche Rechnung. Gibt den Logarithmus mit 15 Stellen aus */
+        /* eigentliche Rechnung.
+Gibt den Logarithmus mit 15 Stellen aus */
         for (var i = 0; i < 15; i++) {
             var a; c = 0;
             for (a = 0; zahl >= power(basis, a); a++) {
@@ -110,9 +115,13 @@ Kommen wir nun also zur Funktion log(), dem Herzstück unseres Kunstwerks, die d
         return gesucht.replace("0000000000", "0");
     }
 
-We always limit ourselves to one digit, more precisely: to the _i-_th digit. We then count up the temporary number c in steps of one until it is greater or corresponds to the value entered the first time, the other times the entry without the first_i_ digits. The rear digits are moved to the front with `number = power (number, base)`.
+We always limit ourselves to one digit, more precisely: to the _i-_th digit.
+We then count up the temporary number c in steps of one until it is greater or corresponds to the value entered the first time, the other times the entry without the first_i_ digits.
+The rear digits are moved to the front with `number = power (number, base)`.
 
-And what does `power ()` stand for? This is our replacement for `Math.pow ()`. Yes, admittedly, this choice of name is not very imaginative. For this purpose. The function `power ()` is not very difficult and quite self-explanatory:
+And what does `power ()` stand for? This is our replacement for `Math.pow ()`. Yes, admittedly, this choice of name is not very imaginative.
+For this purpose.
+The function `power ()` is not very difficult and quite self-explanatory:
 
     
     function power(basis, exponent) {
@@ -130,7 +139,8 @@ And what does `power ()` stand for? This is our replacement for `Math.pow ()`. Y
         }
     }
 
-This completes our code. If our code is not obvious, write your question in the comments.
+This completes our code.
+If our code is not obvious, write your question in the comments.
 
 Test the code here:
 <iframe src="http://jsfiddle.net/BernhardWebstudio/vx7m21nd/16/embedded/result,js,html" allowfullscreen="allowfullscreen" width="100%" height="300" frameborder="0"></iframe>

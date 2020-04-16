@@ -34,4 +34,5 @@ I dynamically generate [MediaQueries](https://wiki.selfhtml.org/wiki/CSS/Media_Q
         $i: $i+1;
     }
 
-In my case, it generates the media queries for all breakpoints defined for the Zurb Foundation Framework in the Sass array `$breakpoints`. For each breakpoint, it increases the number of elements displayed in a row of the grid by adjusting its width, starting with two elements for the smallest screen width. Of course, for the .element, the `display` property must be set to `inline-block`.
+In my case, it generates the media queries for all breakpoints defined for the Zurb Foundation Framework in the Sass array `$breakpoints`. For each breakpoint, it increases the number of elements displayed in a row of the grid by adjusting its width, starting with two elements for the smallest screen width.
+Of course, for the .element, the `display` property must be set to `inline-block`.

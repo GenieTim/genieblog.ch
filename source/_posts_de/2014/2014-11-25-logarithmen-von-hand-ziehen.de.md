@@ -31,11 +31,16 @@ Wie zieht ein Taschenrechner den Logarithmus? Dieser Frage möchte ich in diesem
 Zuerst lohnt es sich, die Umrechnungsformel zum Zehnerlogarithmus anzusehen: logb(x) = loga(x) / loga(b)
 Somit gilt logb(x) = log10(x) / log10(b) und den einzigen Logarithmus, der noch zu ziehen ist, ist der dekadische, auch geschrieben als lg().
 
-Was soll das denn bringen? Den Logarithmus von 10 zu ziehen ist um Welten einfacher, als von den meisten anderen Zahlen. Ausserdem muss man so nur eine Weise einprogrammieren, wie der Logarithmus gezogen werden soll, und nicht für jeden anderen Logarithmus wieder einen eigenen Weg.
+Was soll das denn bringen? Den Logarithmus von 10 zu ziehen ist um Welten einfacher, als von den meisten anderen Zahlen.
+Ausserdem muss man so nur eine Weise einprogrammieren, wie der Logarithmus gezogen werden soll, und nicht für jeden anderen Logarithmus wieder einen eigenen Weg.
 
 ## Den Logarithmus von 10 ziehen
 
-Soweit so gut. Damit können wir uns ganz darauf konzentrieren, den Logarithmus von 10 zu ziehen. Beginnen wir zuerst mit dem einfachen Teil: wir erstellen ein Formular, in das der Nutzer seine Zahl eingibt, von der er den 10. Logarithmus gezogen haben will. Da wir nicht auf `Math.log()` oder ähnliches zurückgreifen möchten, werden wir auch auf `Math.pow()` und jQuery verzichten. Dass der Code dadurch nicht mehr so elegant wirkt ist Nebensache - er muss bloss den Zweck erfüllen.
+Soweit so gut.
+Damit können wir uns ganz darauf konzentrieren, den Logarithmus von 10 zu ziehen.
+Beginnen wir zuerst mit dem einfachen Teil: wir erstellen ein Formular, in das der Nutzer seine Zahl eingibt, von der er den 10. Logarithmus gezogen haben will.
+Da wir nicht auf `Math.log()` oder ähnliches zurückgreifen möchten, werden wir auch auf `Math.pow()` und jQuery verzichten.
+Dass der Code dadurch nicht mehr so elegant wirkt ist Nebensache - er muss bloss den Zweck erfüllen.
 Das könnte folgendermassen aussehen:
 
     
@@ -93,7 +98,8 @@ Kommen wir nun also zur Funktion log(), dem Herzstück unseres Kunstwerks, die d
     function log(wert, basis) {
         var zahl = wert;
         var gesucht = "";
-        /* eigentliche Rechnung. Gibt den Logarithmus mit 15 Stellen aus */
+        /* eigentliche Rechnung.
+Gibt den Logarithmus mit 15 Stellen aus */
         for (var i = 0; i < 15; i++) {
             var a; c = 0;
             for (a = 0; zahl >= power(basis, a); a++) {
@@ -110,9 +116,13 @@ Kommen wir nun also zur Funktion log(), dem Herzstück unseres Kunstwerks, die d
         return gesucht.replace("0000000000", "0");
     }
 
-Wir beschränken uns immer nur auf eine Ziffer, genauer: auf die _i-_te Ziffer. Wir zählen dann die temporäre Zahl c in Einerschritten rauf, bis sie grösser ist oder entspricht dem eingegebenen Wert beim ersten Mal, die anderen Male die Eingabe ohne die vordersten_ i_ Ziffern. Die hinteren Ziffern werden jeweils mit `zahl = power(zahl, basis)` nach vorne geschoben.
+Wir beschränken uns immer nur auf eine Ziffer, genauer: auf die _i-_te Ziffer.
+Wir zählen dann die temporäre Zahl c in Einerschritten rauf, bis sie grösser ist oder entspricht dem eingegebenen Wert beim ersten Mal, die anderen Male die Eingabe ohne die vordersten_ i_ Ziffern.
+Die hinteren Ziffern werden jeweils mit `zahl = power(zahl, basis)` nach vorne geschoben.
 
-Und für was steht power()? Das ist unser Ersatz für `Math.pow()`. Ja, zugegeben, diese Namenswahl ist nicht sehr einfallsreich. Dafür zwecksmässig. Die Funktion power() ist nicht sehr schwer und ziemlich selbsterklärend:
+Und für was steht power()? Das ist unser Ersatz für `Math.pow()`. Ja, zugegeben, diese Namenswahl ist nicht sehr einfallsreich.
+Dafür zwecksmässig.
+Die Funktion power() ist nicht sehr schwer und ziemlich selbsterklärend:
 
     
     function power(basis, exponent) {
@@ -130,7 +140,8 @@ Und für was steht power()? Das ist unser Ersatz für `Math.pow()`. Ja, zugegebe
         }
     }
 
-Damit ist unser Code komplett. Wenn Unser Code nicht einleuchtend ist, so schreib Deine Frage in die Kommentare.
+Damit ist unser Code komplett.
+Wenn Unser Code nicht einleuchtend ist, so schreib Deine Frage in die Kommentare.
 
 Teste den Code hier aus:
 <iframe src="http://jsfiddle.net/BernhardWebstudio/vx7m21nd/16/embedded/result,js,html" allowfullscreen="allowfullscreen" width="100%" height="300" frameborder="0"></iframe>

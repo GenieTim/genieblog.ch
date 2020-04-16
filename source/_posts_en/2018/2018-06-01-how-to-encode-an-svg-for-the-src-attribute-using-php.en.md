@@ -21,7 +21,12 @@ language: en
 cover_image: false
 ---
 
-As SVGs [should preferably](https://css-tricks.com/probably-dont-base64-svg/) not be base64 encoded when setting them on an ``-tag `src`-attribute, the suggested alternative is to URL-encode them. The standard [PHP `urlencode`](https://php.net/manual/de/function.urlencode.php) function unfortunately is not suitable for this task, as the resulting value is not interpreted by any browser as a valid SVG image. Instead, the function [`rawurlencode`](https://secure.php.net/manual/de/function.rawurlencode.php) has to be used. Took me some time to realize. As soon as you get this, you can also take over some other optimizations; maybe get inspired by [Taylor Hunt](https://codepen.io/tigt/post/optimizing-svgs-in-data-uris)s [mini-svg-uri](https://github.com/tigt/mini-svg-data-uri) to decode some characters manually to improve the overall size. A final function could possibly look like this:
+As SVGs [should preferably](https://css-tricks.com/probably-dont-base64-svg/) not be base64 encoded when setting them on an ``-tag `src`-attribute, the suggested alternative is to URL-encode them.
+The standard [PHP `urlencode`](https://php.net/manual/de/function.urlencode.php) function unfortunately is not suitable for this task, as the resulting value is not interpreted by any browser as a valid SVG image.
+Instead, the function [`rawurlencode`](https://secure.php.net/manual/de/function.rawurlencode.php) has to be used.
+Took me some time to realize.
+As soon as you get this, you can also take over some other optimizations; maybe get inspired by [Taylor Hunt](https://codepen.io/tigt/post/optimizing-svgs-in-data-uris)s [mini-svg-uri](https://github.com/tigt/mini-svg-data-uri) to decode some characters manually to improve the overall size.
+A final function could possibly look like this:
 
     function svgUrlEncode($svgPath) {
             $data = \file_get_contents($svgPath);

@@ -18,7 +18,7 @@
 
 @if ($page->categories)
 @foreach ($page->categories as $i => $category)
-<a href="{{ '/blog/' . $page->language . '/categories/' . $category }}" title="View posts in {{ $category }}"
+<a href="{{ '/blog/' . $page->language . '/categories/' . strtolower($category) }}" title="View posts in {{ $category }}"
     class="inline-block bg-secondary-complement hover:bg-secondary leading-loose tracking-wide text-secondary-shade hover:text-secondary-complement uppercase text-xs font-semibold rounded mr-2 px-3 pt-px">{{ $category }}</a>
 @endforeach
 @endif

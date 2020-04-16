@@ -18,12 +18,16 @@ language: en
 cover_image: 2014/logo-libgdx.png
 ---
 
-Another game project in the Java framework libGDX. Another problem that is worth a short blog post: changing the window size.
+Another game project in the Java framework libGDX.
+Another problem that is worth a short blog post: changing the window size.
 
-Whenever I program something, I am infinitely glad that it doesn't have to be perfect from the start. Since I'm unfortunately not a Mozart of computer science, I make mistakes - I'm only human. 
-In order to find these errors, it is advantageous if you can try the program every now and then to test the changes. In logGDX this is logically also possible. 
+Whenever I program something, I am infinitely glad that it doesn't have to be perfect from the start.
+Since I'm unfortunately not a Mozart of computer science, I make mistakes - I'm only human. 
+In order to find these errors, it is advantageous if you can try the program every now and then to test the changes.
+In logGDX this is logically also possible. 
 Since the build process for the Android or iOs application takes a long time, and the respective virtual machine is very resource-intensive, I test my small changes as a desktop application. 
-The _game-feeling_ is identical except for the elements dependent on gyro sensors. But: you can change the size of the window by default! 
+The _game-feeling_ is identical except for the elements dependent on gyro sensors.
+But: you can change the size of the window by default! 
 This is not possible on mobile devices, which is why this function is rather annoying if, for example, you imitate a wiping motion of your finger with the mouse and accidentally change the window size. 
 The graphics shift and distort, you can no longer test ... So what to do about it?
 

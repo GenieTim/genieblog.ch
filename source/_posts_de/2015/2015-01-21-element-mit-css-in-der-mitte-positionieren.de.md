@@ -30,7 +30,8 @@ Der <a href="https://css-tricks.com/centering-css-complete-guide/">Komplette Gui
 
 Um ein Element in der Mitte eines anderen Elements mit CSS zu positionieren muss man unter Umständen etwas improvisieren.
 
-Für die horizontale Mitte ist es keine Schwierigkeiten. Folgendermassen mache ich es jeweils:
+Für die horizontale Mitte ist es keine Schwierigkeiten.
+Folgendermassen mache ich es jeweils:
 
 ```css
 .container {
@@ -63,7 +64,8 @@ zu einer Tabelle machen.
 
 Wenn bloss eine einzelne Zeile Text zentriert werden soll, so kann man dies mit `line-height: Irgendwieviele px;` erreichen.
 
-Für block Elemente, die man nicht zu einer Tabelle machen möchte, gibt es noch die Möglichkeit von negativem margin und absoluter Positionierung. Das sähe zum Beispiel folgendermassen aus:
+Für block Elemente, die man nicht zu einer Tabelle machen möchte, gibt es noch die Möglichkeit von negativem margin und absoluter Positionierung.
+Das sähe zum Beispiel folgendermassen aus:
 
 ```css
 .container {

@@ -19,6 +19,9 @@ language: en
 cover_image: false
 ---
 
-<blockquote>Mix five parts of red-wine vinegar with one part extra-virgin olive oil. The vinegar overload is essential. Add a half clove of garlic, half a teaspoon of Dijon mustard, a good grind of black pepper and a teaspoon of white granulated sugar. Mix well, remove the garlic and dress the salad.</blockquote>
+<blockquote>Mix five parts of red-wine vinegar with one part extra-virgin olive oil.
+The vinegar overload is essential.
+Add a half clove of garlic, half a teaspoon of Dijon mustard, a good grind of black pepper and a teaspoon of white granulated sugar.
+Mix well, remove the garlic and dress the salad.</blockquote>
 
 Source: William Boyd, Solo, Jonathan Cape, London 2013, p. 269

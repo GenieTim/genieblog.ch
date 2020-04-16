@@ -2,12 +2,10 @@
 author: Tim Bernhard
 comments: true
 date: 2015-01-07 13:00:28+00:00
-excerpt: Nach dem aufsetzen von <a title="Lubuntu als Standardbetriebssystem auf dem
-  Cubietruck – per Mac"
-  href="http://genieblog.ch/lubuntu-als-standardbetriebssystem-auf-dem-cubietruck-per-mac/">Lubuntu</a>
-  auf dem Cubietruck fällt auf, dass man nie nach dem Tastaturlayout gefragt
-  wird. Da es mühsam ist, immer die richtigen Tasten zu suchen, ist es
-  naheliegend, dass man das Tastaturlayout wechseln möchte. Nur wie?
+excerpt: >
+  After putting on [Lubuntu on the Cubietruck](http://genieblog.ch/lubuntu-als-standardbetriebssysteme-auf-dem-cubietruck-per-mac/) you notice that you were never asked for the keyboard layout.
+  Since it is tedious to always find the right keys, it is obvious that you want to change the keyboard layout.
+  But how?
 layout: post
 link: http://genieblog.ch/cubietruck-lubuntu-tastaturlayout/
 slug: cubietruck-lubuntu-tastaturlayout
@@ -24,7 +22,9 @@ language: en
 cover_image: 2015/cubietruck.jpg
 ---
 
-After putting on [Lubuntu on the Cubietruck] (http://genieblog.ch/lubuntu-als-standardbetriebssysteme-auf-dem-cubietruck-per-mac/) you notice that you were never asked for the keyboard layout. Since it is tedious to always find the right keys, it is obvious that you want to change the keyboard layout. But how?
+After putting on [Lubuntu on the Cubietruck] (http://genieblog.ch/lubuntu-als-standardbetriebssysteme-auf-dem-cubietruck-per-mac/) you notice that you were never asked for the keyboard layout.
+Since it is tedious to always find the right keys, it is obvious that you want to change the keyboard layout.
+But how?
 
 The Cubie should be connected to the internet for the next steps.
 First start the terminal/console.
@@ -41,11 +41,15 @@ After installing the language packs, you can customize the keyboard layout in tw
 
 ## Adjust the keyboard layout for the current session
 
-If you only want to change the keyboard layout for the current session, use `$ setxkbmap -layout ch` where `ch` is the country code. Replace it e.g. B. by `de` for Germany.
+If you only want to change the keyboard layout for the current session, use `$ setxkbmap -layout ch` where `ch` is the country code.
+Replace it e.g.
+B. by `de` for Germany.
 
 ## Customize the default keyboard layout
 
 To change the default keyboard layout, use the following commands:
 `$ sudo nano /etc/default/keyboard`
-to edit the /etc/default/keyboard file. Change `XKBLAYOUT =" us "` to e.g. B. `XKBLAYOUT =" ch "` where ch is the country code.
+to edit the /etc/default/keyboard file.
+Change `XKBLAYOUT =" us "` to e.g.
+B. `XKBLAYOUT =" ch "` where ch is the country code.
 Now all you have to do is restart your Cubietruck with `sudo reboot` and you are ready to use the keyboard layout you want.

@@ -19,4 +19,6 @@ cover_image: false
 ---
 
 For almost three days I simply couldn't get my Angular application to do what it should with onsen.io. `ng-repeat` were commented out in the DOM tree, `ng-click` did not respond.
-Now I finally noticed and became aware of the problem. The `ng-controller` must not be used on a `<ons-template> </ons-template>`, but may only be set as an attribute on the `<ons-page> </ons-page>` at the earliest. I hope with this observation I can prevent others from having such a serious headache.
+Now I finally noticed and became aware of the problem.
+The `ng-controller` must not be used on a `<ons-template> </ons-template>`, but may only be set as an attribute on the `<ons-page> </ons-page>` at the earliest.
+I hope with this observation I can prevent others from having such a serious headache.

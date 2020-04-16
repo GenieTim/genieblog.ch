@@ -19,7 +19,8 @@ language: de
 cover_image: false
 ---
 
-Mit Windows (Phone) 8 gab Microsoft den Entwicklern die Möglichkeit, ihre Apps für Windows & Windows Phone mit HTML, CSS und JavaScript zu entwickeln. So ist es besonders für Webentwickler wie mich verlockend, die Web App auf jene Geräte zu portieren. 
+Mit Windows (Phone) 8 gab Microsoft den Entwicklern die Möglichkeit, ihre Apps für Windows & Windows Phone mit HTML, CSS und JavaScript zu entwickeln.
+So ist es besonders für Webentwickler wie mich verlockend, die Web App auf jene Geräte zu portieren. 
 
 Gerade Windows Phone brilliert mit einer grossen Personalisierbarkeit; neben der Flexibilität des Sperrbildschirms, dem Hintergrundbild das den Startbildschirm vervollständigt ist auch die Akzentfarbe ein oft genanntes Argument, weshalb Windows Phone besser personalisierbar ist.
 

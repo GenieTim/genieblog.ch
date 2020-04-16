@@ -19,13 +19,16 @@ cover_image: 2015/20170523_135327664_iOS.jpg
 ---
 
 Have you ever tried to compare 1 + 2 with 3 in JavaScript? Or assign an undefined value?
-Now try it. Are the results satisfactory?
+Now try it.
+Are the results satisfactory?
 
-JavaScript is a very controversial programming language. Although it offers approaches to an object-oriented programming language, it is ultimately only prototype-based.
+JavaScript is a very controversial programming language.
+Although it offers approaches to an object-oriented programming language, it is ultimately only prototype-based.
 
 The problem with JavaScript is probably the many cooks who spoil the broth to put it metaphorically.
 
-In the following I don't want to base JavaScript or anything - you can form your own opinion. However, I would like to give you some more examples of what I think are abnormal possibilities.
+In the following I don't want to base JavaScript or anything - you can form your own opinion.
+However, I would like to give you some more examples of what I think are abnormal possibilities.
 
   * Add up "4" and 4.
 

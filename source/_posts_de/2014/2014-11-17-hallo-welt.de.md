@@ -23,4 +23,5 @@ cover_image: 2014/DSC_5126.jpg
 
 Willkommen beim Blog von Tim Bernhard! Ich bin der Gründer von _[Bernhard Webstudio](http://bernhard-webstudio.ch)_ und ein leidenschaftlicher Programmierer!
 
-In Zukunft werden Sie hier Tipps und Tricks zu aktuellen Programmierproblemen finden können. Haben Sie noch ein wenig Geduld!
+In Zukunft werden Sie hier Tipps und Tricks zu aktuellen Programmierproblemen finden können.
+Haben Sie noch ein wenig Geduld!

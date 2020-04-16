@@ -5,8 +5,9 @@ date: 2018-09-01 13:00:43+00:00
 layout: post
 link: http://genieblog.ch/wenn-deine-augen-dich-taeuschen-akltualitaet-des-inhalts-von-buechern-vs-content-von-websiten/
 slug: wenn-deine-augen-dich-taeuschen-akltualitaet-des-inhalts-von-buechern-vs-content-von-websiten
-title: "If Your Eyes Are Fooling You: Up-to-Date Content vs. Books. Content of
-  websites"
+title: >-
+  "If Your Eyes Are Fooling You: Up-to-Date Content vs.
+  Books. Content of websites"
 wordpress_id: 330
 categories:
   - HTML5

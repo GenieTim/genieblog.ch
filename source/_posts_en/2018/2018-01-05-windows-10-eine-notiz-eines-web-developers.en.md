@@ -19,4 +19,6 @@ language: en
 cover_image: false
 ---
 
-Brings new browsers to thousands of computers - especially since it's free. A big hurray from every web developer. And yet Microsoft Edge is still in its infancy.
+Brings new browsers to thousands of computers - especially since it's free.
+A big hurray from every web developer.
+And yet Microsoft Edge is still in its infancy.

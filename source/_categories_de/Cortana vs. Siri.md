@@ -1,6 +1,6 @@
 ---
 extends: _layouts.category
-title: Cortana vs. Siri
+title: "Cortana vs. Siri"
 description: Alle Pfosten über "Cortana vs. Siri".
 ---
           

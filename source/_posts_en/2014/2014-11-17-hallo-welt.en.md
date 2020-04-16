@@ -23,4 +23,5 @@ cover_image: 2014/DSC_5126.jpg
 
 Welcome to Tim Bernhard's blog! I am the founder of _[Bernhard Webstudio](http://bernhard-webstudio.ch)_ and a passionate programmer!
 
-In the future, you will be able to find tips and tricks on current programming problems here. Have a little patience!
+In the future, you will be able to find tips and tricks on current programming problems here.
+Have a little patience!

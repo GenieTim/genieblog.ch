@@ -18,7 +18,8 @@ language: en
 cover_image: false
 ---
 
-Of course there are more than just four ways to do layout like aligning elements next to each other. In this post, I just want to summarize the four ways I tend to use:
+Of course there are more than just four ways to do layout like aligning elements next to each other.
+In this post, I just want to summarize the four ways I tend to use:
 
   * Flowfram
   * Table
@@ -29,7 +30,9 @@ Note that all code is stripped in order to reduce the length of this post.
 
 ## Flowfram
 
-[Flowfram](https://ctan.org/pkg/flowfram?lang=en) is a package which has to be included and configured. In the following, I will only list the way how to align two simple image elements next to each other, even though this package provides much more possibilities. Please refer to the [documentation](http://mirrors.ctan.org/macros/latex/contrib/flowfram/flowfram.pdf) for more informations.
+[Flowfram](https://ctan.org/pkg/flowfram?lang=en) is a package which has to be included and configured.
+In the following, I will only list the way how to align two simple image elements next to each other, even though this package provides much more possibilities.
+Please refer to the [documentation](http://mirrors.ctan.org/macros/latex/contrib/flowfram/flowfram.pdf) for more informations.
 
 ```tex
 % ...
@@ -59,7 +62,9 @@ Note that all code is stripped in order to reduce the length of this post.
 
 ## Table
 
-Good old Table is a method of aligning items too! Note that it is not the intended purpose of a table cell to contain much more than just text, so you might find additional [difficulties](https://tex.stackexchange.com/questions/53061/insert-image-and-list-inside-a-table) inserting an image or a list inside a table. Important for use as a layout tool is simply not to add the borders of the table cells and rows. That simply means no "|" between the float specifiers as well as no `\hline` or similar in the table.
+Good old Table is a method of aligning items too! Note that it is not the intended purpose of a table cell to contain much more than just text, so you might find additional [difficulties](https://tex.stackexchange.com/questions/53061/insert-image-and-list-inside-a-table) inserting an image or a list inside a table.
+Important for use as a layout tool is simply not to add the borders of the table cells and rows.
+That simply means no "|" between the float specifiers as well as no `\hline` or similar in the table.
 
 In the following example, I `\usepackage{[tabularx](https://ctan.org/pkg/tabularx?lang=en)}` in order to get both items the same horizontal space.
 
@@ -78,7 +83,8 @@ In the following example, I `\usepackage{[tabularx](https://ctan.org/pkg/tabular
 
 ## Column
 
-Columns are the way to go for longer parts of the document, or if you even want the whole document splitted into two elements next to each other. You may use the [multicol](https://ctan.org/pkg/multicol?lang=en) package for a simple solution:
+Columns are the way to go for longer parts of the document, or if you even want the whole document splitted into two elements next to each other.
+You may use the [multicol](https://ctan.org/pkg/multicol?lang=en) package for a simple solution:
 
     
 ```tex
@@ -92,7 +98,10 @@ Columns are the way to go for longer parts of the document, or if you even want 
 
 ## Minipage
 
-[Minipage](http://www.sascha-frank.com/latex-minipage.html) is not a package and should be provided automatically by your LaTeX distribution. A minipage is what its name says: a new float environment, a new page, but mini. You can wrap nearly anything inside a minipage and size it the way you want. To align two minipages next to each other, you could do so:
+[Minipage](http://www.sascha-frank.com/latex-minipage.html) is not a package and should be provided automatically by your LaTeX distribution.
+A minipage is what its name says: a new float environment, a new page, but mini.
+You can wrap nearly anything inside a minipage and size it the way you want.
+To align two minipages next to each other, you could do so:
 
 
 ```tex
@@ -109,13 +118,15 @@ Columns are the way to go for longer parts of the document, or if you even want 
     \caption{An image}
     \label{image} 
     \end{minipage}
-\caption{Caption of both sides. Optional.}
+\caption{Caption of both sides.
+Optional.}
 \end{figure}
 ```
 
 ## What to use when?
 
-Answer the following questions to get to a result. Note that this selection is only based on my current opinion and knowledge and therefore up for changes and challenges.
+Answer the following questions to get to a result.
+Note that this selection is only based on my current opinion and knowledge and therefore up for changes and challenges.
 
 Do you need a rather configurable column setup and are you ready to read long documentations and learn about internals of a LaTeX package in order to get the most possibilities? Use Flowfram.
 

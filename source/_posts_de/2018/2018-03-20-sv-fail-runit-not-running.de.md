@@ -18,6 +18,10 @@ language: de
 cover_image: false
 ---
 
-Um diesen Fehler zu beheben, musste ich nur `runit-systemd` installieren. Dieser Fehler trat nach dem Upgrade von Debian Wheezy über Jezzie zu Stretch auf, wenn versucht wurde, den Status zu erhalten bzw. zu starten oder zu stoppen, oder einfach irgendetwas mit dem Befehl `sv` zu tun hatte. Die Installation kann z.B. mit _apt_ vonstatten gehen: 
+Um diesen Fehler zu beheben, musste ich nur `runit-systemd` installieren.
+Dieser Fehler trat nach dem Upgrade von Debian Wheezy über Jezzie zu Stretch auf, wenn versucht wurde, den Status zu erhalten bzw.
+zu starten oder zu stoppen, oder einfach irgendetwas mit dem Befehl `sv` zu tun hatte.
+Die Installation kann z.B.
+mit _apt_ vonstatten gehen: 
 
 `sudo apt-get install runit-systemd`

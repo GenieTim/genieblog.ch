@@ -19,7 +19,9 @@ cover_image: false
 findable: false
 ---
 
-Bei meinem Abenteuer in Moskau und Sankt Petersburg habe ich einiges gelernt. Vieles davon hatte ich eigentlich schon gewusst, doch nicht zu Herzen genommen. Dazu gehört:
+Bei meinem Abenteuer in Moskau und Sankt Petersburg habe ich einiges gelernt.
+Vieles davon hatte ich eigentlich schon gewusst, doch nicht zu Herzen genommen.
+Dazu gehört:
 
   * Bezahlen in einem anderen Land ist trotz Bearbeitungsgebühr günstiger mit einer Kreditkarte als mit der Maestro, während das Abheben von Geld besser mit der Maestro ausgeführt werden sollte
 
@@ -31,7 +33,8 @@ Bei meinem Abenteuer in Moskau und Sankt Petersburg habe ich einiges gelernt. Vi
 
 Passend noch einige Fun Facts, die mich mehr oder weniger überrascht haben:
 
-  * Laut Gerüchten als Trotzreaktion auf Sanktionen hat Russland die Adoption russischer Kinder für Amerikaner verboten. Das ist jedoch leicht problematisch für die russischen Kinder, da die Amerikaner insbesondere für Kinder mit Erbkrankheiten oder Trisomie-21 die "Hauptabnehmer" waren.
+  * Laut Gerüchten als Trotzreaktion auf Sanktionen hat Russland die Adoption russischer Kinder für Amerikaner verboten.
+Das ist jedoch leicht problematisch für die russischen Kinder, da die Amerikaner insbesondere für Kinder mit Erbkrankheiten oder Trisomie-21 die "Hauptabnehmer" waren.
 
   * Moskau liegt genau in der Mitte des weissen und des schwarzen Meeres.
 
@@ -41,9 +44,11 @@ Passend noch einige Fun Facts, die mich mehr oder weniger überrascht haben:
 
   * Vorne in die Metro wagen es - zumindest in Moskau - weniger Leute einzusteigen, aus Angst vor einem terroristischen Anschlag.
 
-  * Unter der Hermitage gibt es das so genannte 'Territorium der Katzen'. Dort leben, wahrlich im Keller der Hermitage, eine grosse Anzahl Katzen, deren Aufgabe die Rattenjagd ist. Sponsoren spenden Geld und Katzenfutter für die Haltung dieser Katzen.
+  * Unter der Hermitage gibt es das so genannte 'Territorium der Katzen'. Dort leben, wahrlich im Keller der Hermitage, eine grosse Anzahl Katzen, deren Aufgabe die Rattenjagd ist.
+Sponsoren spenden Geld und Katzenfutter für die Haltung dieser Katzen.
 
-  * In gewissen Metrostationen unterscheiden sich die Geschwindigkeit des Handlaufs und der Rolltreppe. Das ist ziemlich beirrend, wenn man alle paar Meter neu greifen muss!
+  * In gewissen Metrostationen unterscheiden sich die Geschwindigkeit des Handlaufs und der Rolltreppe.
+Das ist ziemlich beirrend, wenn man alle paar Meter neu greifen muss!
 
   * Die Menge des All-In-One Dusch-Shampoo-Gels, die Akkulaufzeit meines Rasierers sowie die Menge der Zahnpaste hat die 9-Wochen Probe erfolgreich, wenn auch knapp, bestanden und gehalten.
 

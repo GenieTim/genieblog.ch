@@ -17,7 +17,8 @@ cover_image: false
 ---
 
 Mein Name ist Tim Bernhard, geboren bin ich am 2. August 1996.
-Ich besuchte die Kantonsschule in Wiedikon und schloss diese im Frühling 2015 ab. Als Maturaarbeit habe ich meine Leidenschaft für programmiertechnische Projekte mit Hoffnungen für die Zukunft verbunden und das Unternehmen [_Bernhard Webstudio_](http://bernhard-webstudio.ch) gegründet.	 	
+Ich besuchte die Kantonsschule in Wiedikon und schloss diese im Frühling 2015 ab.
+Als Maturaarbeit habe ich meine Leidenschaft für programmiertechnische Projekte mit Hoffnungen für die Zukunft verbunden und das Unternehmen [_Bernhard Webstudio_](http://bernhard-webstudio.ch) gegründet.	 	
 
 Seitdem habe ich einen Bachelor in Chemieingenieurwesen an der 
 ETH Zürich abgeschlossen

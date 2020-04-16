@@ -18,10 +18,12 @@ cover_image: false
 ---
 
 So, it took a few attempts & steps, but I finally succeeded in exporting some of my lecture notes to LaTeX.
-I took them on my Surface device, in OneNote, as that is the easiest & quickest way to "prototype" the notes. Given my experience and all shortcut possibilities, I am faster typing the equations than 
+I took them on my Surface device, in OneNote, as that is the easiest & quickest way to "prototype" the notes.
+Given my experience and all shortcut possibilities, I am faster typing the equations than 
 actually writing them out by hand. 
 In order to provide my notes to other people for them to edit them, I can use the provided export options 
-in the OneNote Windows app: docx, pdf or onnenote again. The first two do not provide a sensible export, since neither allow the editing of equations as it should be possible.
+in the OneNote Windows app: docx, pdf or onnenote again.
+The first two do not provide a sensible export, since neither allow the editing of equations as it should be possible.
 
 Now, I wanted to export them to LaTeX, as laTeX does provide awesome equation & math capabilities.
 Unfortunately, this is not an option available by default. 

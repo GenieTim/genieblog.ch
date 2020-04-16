@@ -27,7 +27,13 @@ module.exports = {
             }
             // console.log(fieldsM);
             let fields = fieldsM[1];
-            let newFields = YAML.parse(fields);
+            let newFields;
+            try {
+              newFields = YAML.parse(fields);
+            } catch (exception) {
+              console.error("Error parsing YAML in file " + files[i]);
+              throw exception;
+            }
             // newFields += "draft: false\n";
             // newFields += "template: post\n";
             // newFields += "description: \n";

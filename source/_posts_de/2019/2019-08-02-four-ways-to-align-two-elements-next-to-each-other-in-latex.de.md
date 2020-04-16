@@ -18,7 +18,8 @@ language: de
 cover_image: false
 ---
 
-Natürlich gibt es mehr als nur vier Möglichkeiten, Elemente nebeneinander auszurichten. In diesem Beitrag möchte ich nur die vier Möglichkeiten zusammenfassen, die ich normalerweise nutze:
+Natürlich gibt es mehr als nur vier Möglichkeiten, Elemente nebeneinander auszurichten.
+In diesem Beitrag möchte ich nur die vier Möglichkeiten zusammenfassen, die ich normalerweise nutze:
 
   * Flowfram
   * Tabelle
@@ -29,7 +30,9 @@ Beachten Sie, dass der gesamte Code auf das wesentliche reduziert wurde, um die 
 
 ## Flowfram
 
-[Flowfram](https://ctan.org/pkg/flowfram?lang=en) ist ein package, das geladen und konfiguriert werden muss. Im Folgenden werde ich nur die Art und Weise auflisten, wie zwei einfache Bildelemente nebeneinander ausgerichtet werden, obwohl dieses Paket viel mehr Möglichkeiten bietet. Weitere Informationen finden Sie in der [Dokumentation](http://mirrors.ctan.org/macros/latex/contrib/flowfram/flowfram.pdf).
+[Flowfram](https://ctan.org/pkg/flowfram?lang=en) ist ein package, das geladen und konfiguriert werden muss.
+Im Folgenden werde ich nur die Art und Weise auflisten, wie zwei einfache Bildelemente nebeneinander ausgerichtet werden, obwohl dieses Paket viel mehr Möglichkeiten bietet.
+Weitere Informationen finden Sie in der [Dokumentation](http://mirrors.ctan.org/macros/latex/contrib/flowfram/flowfram.pdf).
 
 ```tex
 % ...
@@ -59,7 +62,10 @@ Beachten Sie, dass der gesamte Code auf das wesentliche reduziert wurde, um die 
 
 ## Tabelle
 
-Die gute alte Tabelle ist auch eine Methode, Elemente nebeneinander zu positionieren! Beachten Sie, dass es nicht der Zweck einer Tabellenzelle ist, viel mehr als nur Text zu enthalten. Es könnte also sein, dass Sie zusätzliche [Schwierigkeiten](https://tex.stackexchange.com/questions/53061/insert-image-and-list-inside-a-table) haben, beispielsweise ein Bild oder eine Liste in eine Tabelle einzufügen. Wichtig für die Verwendung als Layout-Tool ist einfach, dass sie die Ränder der Tabellenzellen und Reihen nicht hinzufügen. Das bedeutet einfach, keine "`|`" zwischen den "Float Specifiers" sowie keine `hline` oder ähnliches in der Tabelle platzieren.
+Die gute alte Tabelle ist auch eine Methode, Elemente nebeneinander zu positionieren! Beachten Sie, dass es nicht der Zweck einer Tabellenzelle ist, viel mehr als nur Text zu enthalten.
+Es könnte also sein, dass Sie zusätzliche [Schwierigkeiten](https://tex.stackexchange.com/questions/53061/insert-image-and-list-inside-a-table) haben, beispielsweise ein Bild oder eine Liste in eine Tabelle einzufügen.
+Wichtig für die Verwendung als Layout-Tool ist einfach, dass sie die Ränder der Tabellenzellen und Reihen nicht hinzufügen.
+Das bedeutet einfach, keine "`|`" zwischen den "Float Specifiers" sowie keine `hline` oder ähnliches in der Tabelle platzieren.
 
 Im folgenden Beispiel verwende ich `usepackage{[tabularx](https://ctan.org/pkg/tabularx?lang=de)}`, um beiden Elementen den gleichen horizontalen Raum zu geben.
 
@@ -79,7 +85,8 @@ Im folgenden Beispiel verwende ich `usepackage{[tabularx](https://ctan.org/pkg/t
 
 ## Spalten
 
-Spalten sind der Weg, um längere Teile des Dokuments zu bearbeiten, oder um das gesamte Dokument in zwei Elemente nebeneinander aufzuteilen. Sie können das [multicol](https://ctan.org/pkg/multicol?lang=de)-Paket für eine einfache Lösung verwenden:
+Spalten sind der Weg, um längere Teile des Dokuments zu bearbeiten, oder um das gesamte Dokument in zwei Elemente nebeneinander aufzuteilen.
+Sie können das [multicol](https://ctan.org/pkg/multicol?lang=de)-Paket für eine einfache Lösung verwenden:
 
     
 ```tex
@@ -93,7 +100,10 @@ Spalten sind der Weg, um längere Teile des Dokuments zu bearbeiten, oder um das
 
 ## Minipage
 
-[Minipage](http://www.sascha-frank.com/latex-minipage.html) ist kein separates Paket und sollte automatisch von Ihrer LaTeX-Distribution bereitgestellt sein. Eine minipage ist das, was der Name sagt: eine neue Float-Umgebung, eine neue Seite, aber Mini. Sie können fast alles in eine Miniseite packen und die Größe so anpassen, wie Sie möchten. Folgendermassen richten Sie zwei Miniseiten nebeneinander aus:
+[Minipage](http://www.sascha-frank.com/latex-minipage.html) ist kein separates Paket und sollte automatisch von Ihrer LaTeX-Distribution bereitgestellt sein.
+Eine minipage ist das, was der Name sagt: eine neue Float-Umgebung, eine neue Seite, aber Mini.
+Sie können fast alles in eine Miniseite packen und die Größe so anpassen, wie Sie möchten.
+Folgendermassen richten Sie zwei Miniseiten nebeneinander aus:
 
     
 ```tex
@@ -110,13 +120,15 @@ Spalten sind der Weg, um längere Teile des Dokuments zu bearbeiten, oder um das
     \caption{An image}
     \label{image} 
     \end{minipage}
-\caption{Caption of both sides. Optional.}
+\caption{Caption of both sides.
+Optional.}
 \end{figure}
 ```
 
 ## Was brauche ich wann?
 
-Beantworten Sie die folgenden Fragen, um eine Antwort zu erhalten. Beachten Sie, dass diese Auswahl nur auf meiner aktuellen Meinung und meinem Wissen basiert und daher Änderungen ausgesetzt ist.
+Beantworten Sie die folgenden Fragen, um eine Antwort zu erhalten.
+Beachten Sie, dass diese Auswahl nur auf meiner aktuellen Meinung und meinem Wissen basiert und daher Änderungen ausgesetzt ist.
 
 Benötigen Sie ein sehr konfigurierbares Spalten-Setup und sind Sie bereit, lange Dokumentationen zu lesen und die Interna eines LaTeX-Pakets kennenzulernen, um dafür die größtmöglichen Möglichkeiten zu erhalten? Verwenden Sie Flowfram.
 

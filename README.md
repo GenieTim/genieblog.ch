@@ -1,6 +1,8 @@
 # genieblog.ch
 
-This is my personal blog. Just because I can. And because the domain was available, you know.
+This is my personal blog.
+Just because I can.
+And because the domain was available, you know.
 
 [View this blog on its homepage.](https://genieblog.ch/)
 

@@ -18,11 +18,21 @@ language: de
 cover_image: 2014/logo-libgdx.png
 ---
 
-Ein weiteres Game-Projekt im Java-Framework libGDX. Ein weiteres Problem, das einen kurzen Blogbeitrag wert ist: die Änderung der Fenstergrösse.
+Ein weiteres Game-Projekt im Java-Framework libGDX.
+Ein weiteres Problem, das einen kurzen Blogbeitrag wert ist: die Änderung der Fenstergrösse.
 
-Wann auch immer ich etwas programmiere, bin ich unendlich froh über den Umstand dass es nicht von Anfang an perfekt sein muss. Da ich leider kein Mozart der Informatik bin, mache ich Fehler - ich bin ja auch nur ein Mensch. Um diese Fehler zu finden, ist es von Vorteil, wenn man das Programm ab und zu ausprobieren kann, um die Änderungen zu testen. In libGDX geht das logischerweise auch. Da der build-Prozess für die Android bzw. iOs Applikation einigermassen lange dauert, und die jeweilige virtuelle Maschine sehr Ressourcenlastig ist, teste ich meine kleinen Änderungen als Desktopapplikation. Das _Spiel-feeling_ ist bis auf die von Gyro-sensoren abhängigen Elementen identisch. Doch: man kann vom Standard her die Grösse des Fensters ändern! Sowas ist auf Mobilgeräten nicht möglich, weshalb diese Funktion doch eher störend ist, wenn man zum Beispiel mit der Maus eine Wischbewegung des Fingers imitiert und so aus Versehen die Fenstergrösse ändert. Die Grafiken verschieben und verzerren sich, man kann nicht weiter testen... Was also dagegen tun?
+Wann auch immer ich etwas programmiere, bin ich unendlich froh über den Umstand dass es nicht von Anfang an perfekt sein muss.
+Da ich leider kein Mozart der Informatik bin, mache ich Fehler - ich bin ja auch nur ein Mensch.
+Um diese Fehler zu finden, ist es von Vorteil, wenn man das Programm ab und zu ausprobieren kann, um die Änderungen zu testen.
+In libGDX geht das logischerweise auch.
+Da der build-Prozess für die Android bzw.
+iOs Applikation einigermassen lange dauert, und die jeweilige virtuelle Maschine sehr Ressourcenlastig ist, teste ich meine kleinen Änderungen als Desktopapplikation.
+Das _Spiel-feeling_ ist bis auf die von Gyro-sensoren abhängigen Elementen identisch.
+Doch: man kann vom Standard her die Grösse des Fensters ändern! Sowas ist auf Mobilgeräten nicht möglich, weshalb diese Funktion doch eher störend ist, wenn man zum Beispiel mit der Maus eine Wischbewegung des Fingers imitiert und so aus Versehen die Fenstergrösse ändert.
+Die Grafiken verschieben und verzerren sich, man kann nicht weiter testen... Was also dagegen tun?
 
-Um in der Desktopapplikation die Änderung der Fenstergrösse zu verhindern, ist es bloss nötig, dass man im Desktopprojekt die Datei _DesktopLauncher.java_ bearbeitet. Zur Definition von config muss die boolessche Variable resizable auf false gesetzt werden, und schon lässt sich die Fenstergrösse nicht mehr ändern!
+Um in der Desktopapplikation die Änderung der Fenstergrösse zu verhindern, ist es bloss nötig, dass man im Desktopprojekt die Datei _DesktopLauncher.java_ bearbeitet.
+Zur Definition von config muss die boolessche Variable resizable auf false gesetzt werden, und schon lässt sich die Fenstergrösse nicht mehr ändern!
 
 Der Code von DesktopLauncher.java sähe dann etwa folgendermassen aus:
 

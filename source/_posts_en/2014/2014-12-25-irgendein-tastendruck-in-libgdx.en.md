@@ -4,8 +4,8 @@ comments: true
 date: 2014-12-25 09:37:10+00:00
 excerpt: >-
   How to intercept pressing any key with the libGDX Java framework.
-
-   libGDX is a framework, ideal for programming games and games, and that is platform-independent. The projects can be exported for iOs, Android, PCs and Macs and even for the web!
+  libGDX is a framework, ideal for programming games and games, and that is platform-independent.
+  The projects can be exported for iOs, Android, PCs and Macs and even for the web!
 layout: post
 link: http://genieblog.ch/irgendein-tastendruck-in-libgdx/
 slug: irgendein-tastendruck-in-libgdx
@@ -24,11 +24,13 @@ language: en
 cover_image: logo-libgdx.png
 ---
 
-In a current project for a game in the Java programming language, which I create using the libGDX framework, I wanted to ask the user at one point whether he is ready to continue playing. For the sake of the gaming experience, this should never be done via a yes / no dialog.
+In a current project for a game in the Java programming language, which I create using the libGDX framework, I wanted to ask the user at one point whether he is ready to continue playing.
+For the sake of the gaming experience, this should never be done via a yes / no dialog.
 
 Since with libGDX the game would be designed for desktop PCs as well as for Android and iOs mobile devices, a simple click on the screen is pleasant for the mobile devices, but not for the desktop user, because he uses the mouse for the actual control of the game not needed.
 
-So there is a two-lane solution: it should be enough for the mobile devices to tap the screen, while the PC user should press a button to start the game. But which ones?
+So there is a two-lane solution: it should be enough for the mobile devices to tap the screen, while the PC user should press a button to start the game.
+But which ones?
 
 ## Tastatureingabe in libGDX
 
@@ -49,7 +51,8 @@ A list with the different Input.Keys.* can be found here: [http://libgdx.badlogi
 
 ### Die Lösung
 
-But which key do we want to use now? Exactly, everyone! It doesn't matter which key the user presses, they just want to start the game. Luckily, since we definitely don't want to have an eternally long switch à la `if (right or left or bla or bla ...)`, there is the **Any Key**! ;)
+But which key do we want to use now? Exactly, everyone! It doesn't matter which key the user presses, they just want to start the game.
+Luckily, since we definitely don't want to have an eternally long switch à la `if (right or left or bla or bla ...)`, there is the **Any Key**! ;)
 
 This looks as follows and solves our problem extremely elegantly:
 

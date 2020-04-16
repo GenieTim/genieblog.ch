@@ -19,13 +19,16 @@ cover_image: 2015/20170523_135327664_iOS.jpg
 ---
 
 Haben Sie mal versucht, in JavaScript 1 + 2 mit 3 zu vergleichen? Oder `undefined` einen Wert zuzuordnen?
-Versuchen Sie es jetzt. Sind die Ergebnisse befriedigend?
+Versuchen Sie es jetzt.
+Sind die Ergebnisse befriedigend?
 
-JavaScript ist eine sehr kontroverse Programmiersprache. Sie bietet zwar Ansätze einer Objektorientierten Programmiersprache, ist schlussendlich aber bloss prototypenbasiert.
+JavaScript ist eine sehr kontroverse Programmiersprache.
+Sie bietet zwar Ansätze einer Objektorientierten Programmiersprache, ist schlussendlich aber bloss prototypenbasiert.
 
 Das Problem von JavaScript sind wohl die vielen Köche, die den Brei verderben, um es metaphorisch auszudrücken.
 
-Im folgenden möchte ich nicht JavaScript bashen oder so - Ihre Meinung dürfen Sie sich selber bilden. Ich möchte Ihnen jedoch einige weitere Beispiele von meiner Meinung nach abnormalen Möglichkeiten nennen.
+Im folgenden möchte ich nicht JavaScript bashen oder so - Ihre Meinung dürfen Sie sich selber bilden.
+Ich möchte Ihnen jedoch einige weitere Beispiele von meiner Meinung nach abnormalen Möglichkeiten nennen.
 
   * Zählen Sie "4" und 4 zusammen.
 
