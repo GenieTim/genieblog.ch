@@ -23,21 +23,25 @@ jobs:
           php-version: "7.4"
           tools: composer
 
-      - name: Get npm cache directory path
-        id: npm-cache-dir
-        run: echo "::set-output name=dir::$(npm cache dir)"
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir
+        run: echo "::set-output name=dir::$(yarn cache dir)"
 
-      - name: Cache npm dependencies
+      - name: Cache yarn dependencies
         uses: actions/cache@v1
-        id: npm-cache
+        id: yarn-cache
         with:
-          path: ${{ steps.npm-cache-dir.outputs.dir }}
-          key: ${{ runner.os }}-npm-${{ hashFiles('**/npm.lock') }}
-          restore-keys: ${{ runner.os }}-npm-
+          path: ${{ steps.yarn-cache-dir.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+            ${{ runner.os }}-yarn-
 
-      - name: Install npm dependencies
-        if: steps.npm-cache.outputs.cache-hit != 'true'
-        run: npm install
+      - name: Install yarn dependencies
+        # as we allow any keys we have to run the installer anyway
+        # see: https://help.github.com/en/actions/configuring-and-managing-workflows/caching-dependencies-to-speed-up-workflows#matching-a-cache-key
+        # if: steps.yarn-cache.outputs.cache-hit != 'true'
+        run: yarn install
 
       - name: Get composer cache directory
         id: composer-cache-dir
@@ -49,14 +53,17 @@ jobs:
         with:
           path: ${{ steps.composer-cache-dir.outputs.dir }}
           key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
-          restore-keys: ${{ runner.os }}-composer-
+          restore-keys: |
+            ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
+            ${{ runner.os }}-composer-
 
       - name: Install Composer dependencies
-        if: steps.composer-cache.outputs.cache-hit != 'true'
+        # as we allow any keys we have to run the installer anyway
+        # if: steps.composer-cache.outputs.cache-hit != 'true'
         run: composer install --prefer-dist --no-progress
 
       - name: Run build
-        run: npm run production
+        run: yarn run production
 
       - name: Upload posts
         uses: genietim/ftp-action@master
