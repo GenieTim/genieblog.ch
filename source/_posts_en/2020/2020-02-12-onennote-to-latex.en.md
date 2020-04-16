@@ -11,7 +11,7 @@ categories:
 draft: false
 template: post
 description: false
-socialImage: /media/socialImage.jpg
+social_image: false
 extends: _layouts.post
 language: en
 cover_image: false
@@ -27,7 +27,7 @@ The first two do not provide a sensible export, since neither allow the editing 
 
 Now, I wanted to export them to LaTeX, as laTeX does provide awesome equation & math capabilities.
 Unfortunately, this is not an option available by default. 
-And even though the OneNote format is open, 
+And even though the OneNote format is [open](https://docs.microsoft.com/en-us/openspecs/office_file_formats/ms-one/73d22548-a613-4350-8c23-07d15576be50), 
 I did not find a way to decompress the actual OneNote file to access the xml. 
 
 For another project, I already worked with the OneNote API, so I tried to export it with that one. 

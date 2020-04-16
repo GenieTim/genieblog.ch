@@ -5,6 +5,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="{{ $page->getUrl() }}" />
 <meta property="og:description" content="{{ $page->description }}" />
+@if ($page->socialImage)
+    <meta property="og:image" content="{{$page->baseUrl}}/assets/images/{{ $page->socialImage }}" />
+@elseif ($page->cover_image)
+<meta property="og:image" content="{{$page->baseUrl}}/assets/images/{{ $page->cover_image }}" />
+@endif
+
 @endpush
 
 @section('body')
@@ -48,6 +54,8 @@
     </div>
 </article>
 
+@if ($page->comments)
+<!-- "comments" -->
 <div class="border-b border-secondary mb-10 pb-4 pt-4 text-base">
     <details class="">
         <summary class="font-semibold">Webmentions</summary>
@@ -81,6 +89,7 @@
         </div>
     </details>
 </div>
+@endif
 
 <nav class="flex justify-between text-sm md:text-base">
     <div>

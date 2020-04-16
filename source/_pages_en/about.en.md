@@ -8,7 +8,7 @@ slug: about
 title: About me
 wordpress_id: 8
 template: page
-socialImage: /media/socialImage.jpg
+social_image: false
 description: false
 draft: false
 extends: _layouts.page

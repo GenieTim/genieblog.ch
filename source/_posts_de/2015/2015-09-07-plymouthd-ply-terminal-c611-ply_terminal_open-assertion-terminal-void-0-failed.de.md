@@ -13,7 +13,7 @@ categories:
 draft: false
 template: post
 description: false
-socialImage: /media/socialImage.jpg
+social_image: false
 extends: _layouts.post
 language: de
 cover_image: 2015/cubietruck.jpg

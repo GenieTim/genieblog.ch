@@ -4,37 +4,36 @@ comments: true
 date: 2020-02-12 14:20:01+00:00
 layout: post
 slug: onennote-to-latex
-title: Export von OneNote Daten in das LaTeX Format
+title: Konvertierung von OneNote-Seiten nach LaTeX
 wordpress_id: 445
 categories:
   - LaTeX
 draft: false
 template: post
 description: false
-socialImage: /media/socialImage.jpg
+social_image: false
 extends: _layouts.post
 language: de
 cover_image: false
 ---
 
 Es dauerte ein paar Versuche und Schritte, aber es gelang mir schließlich, einige meiner Vorlesungsnotizen nach LaTeX zu exportieren.
-Ich habe sie in OneNote auf meinem Surface-Gerät aufgenommen, da dies der einfachste und schnellste Weg ist, die Notizen zu "prototypisieren". Aufgrund meiner Erfahrung und aller Verknüpfungsmöglichkeiten schreibe ich die Gleichungen schneller als
-schreiben sie tatsächlich von Hand aus.
+Ich habe sie in [OneNote](https://www.onenote.com/) auf meinem Surface-Gerät aufgenommen, da dies der einfachste und schnellste Weg ist, die Notizen zu "prototypisieren". Aufgrund meiner Erfahrung und aller Verknüpfungs-, Copy-Paste- und Shortcut-möglichkeiten schreibe ich die Gleichungen schneller als
+Komiltonen, die sie tatsächlich von Hand ausschreiben.
 Um meine Notizen anderen Personen zur Bearbeitung zur Verfügung zu stellen, kann ich die bereitgestellten Exportoptionen verwenden
 in der OneNote-Windows-App: docx, pdf oder erneut OneNote.
-Die ersten beiden bieten keinen sinnvollen Export, da sie auch nicht das Editieren von Gleichungen ermöglichen, wie es möglich sein sollte.
+Die ersten beiden bieten keinen sinnvollen Export, da sie auch nicht das Editieren von Gleichungen ermöglichen, wie ich es mir wünschte.
 
 Jetzt wollte ich sie nach LaTeX exportieren, da laTeX fantastische Gleichungs- und Rechenfunktionen bietet.
 Leider ist diese Option nicht standardmäßig verfügbar.
-Und obwohl das OneNote-Format geöffnet ist,
-Ich habe keine Möglichkeit gefunden, die aktuelle OneNote-Datei zu dekomprimieren, um auf die XML-Datei zuzugreifen.
+Und obwohl das OneNote-Format [offen](https://docs.microsoft.com/en-us/openspecs/office_file_formats/ms-one/73d22548-a613-4350-8c23-07d15576be50) ist, habe keine Möglichkeit gefunden, die aktuelle OneNote-Datei zu dekomprimieren, um auf die XML-Datei zuzugreifen.
 
 Bei einem anderen Projekt habe ich bereits mit der OneNote-API gearbeitet, also habe ich versucht, sie mit dieser zu exportieren.
 Kein Glück, da die Gleichungen einfach nicht drin sind.
 Eine Möglichkeit, programmgesteuert auf die OneNote-Gleichungen zuzugreifen, ist die Verwendung von [OneNote online](https://onenote.com): Dort finden Sie die Gleichungen als MathML in der HTML-Quelle.
 Um den Code von der OneNote-Webseite zu extrahieren, habe ich ein kleines Skript um [puppeteer](https://pptr.dev/) geschrieben: [check it out](https://github.com/GenieTim/OneNoteExporter)!
 
-Dieser HTML-Code könnte dann mithilfe von [pandoc] (https://github.com/jgm/pandoc), das tatsächlich MathML unterstützt, in LaTeX konvertiert werden.
+Dieser HTML-Code könnte dann mithilfe von [pandoc](https://github.com/jgm/pandoc), das tatsächlich MathML unterstützt, in LaTeX konvertiert werden.
 Das Problem ist, dass der exportierte Code schrecklich aussieht.
 Was wir also tun müssen, ist aufzuräumen: sowohl das HTML zuerst als auch das LaTeX danach.
 

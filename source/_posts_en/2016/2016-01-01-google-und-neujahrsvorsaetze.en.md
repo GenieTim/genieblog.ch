@@ -24,7 +24,7 @@ categories:
 draft: false
 template: post
 description: false
-socialImage: /media/socialImage.jpg
+social_image: false
 extends: _layouts.post
 language: en
 cover_image: false

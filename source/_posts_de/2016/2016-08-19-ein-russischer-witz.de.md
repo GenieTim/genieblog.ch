@@ -14,7 +14,7 @@ post_format: -Quote
 draft: false
 template: post
 description: false
-socialImage: /media/socialImage.jpg
+social_image: false
 extends: _layouts.post
 language: de
 cover_image: false

@@ -20,6 +20,7 @@ function getMultilangCollections()
         // posts
         $collections['posts_' . $lang] = [
             'author' => 'Tim Bernhard', // Default author, if not provided in a post
+            'comments' => true,
             'sort' => '-date',
             'language' => $lang,
             'extends' => '_layout.post',
