@@ -23,21 +23,21 @@ jobs:
           php-version: "7.4"
           tools: composer
 
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir
-        run: echo "::set-output name=dir::$(yarn cache dir)"
+      - name: Get npm cache directory path
+        id: npm-cache-dir
+        run: echo "::set-output name=dir::$(npm cache dir)"
 
-      - name: Cache yarn dependencies
+      - name: Cache npm dependencies
         uses: actions/cache@v1
-        id: yarn-cache
+        id: npm-cache
         with:
-          path: ${{ steps.yarn-cache-dir.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: ${{ runner.os }}-yarn-
+          path: ${{ steps.npm-cache-dir.outputs.dir }}
+          key: ${{ runner.os }}-npm-${{ hashFiles('**/npm.lock') }}
+          restore-keys: ${{ runner.os }}-npm-
 
-      - name: Install yarn dependencies
-        if: steps.yarn-cache.outputs.cache-hit != 'true'
-        run: yarn install
+      - name: Install npm dependencies
+        if: steps.npm-cache.outputs.cache-hit != 'true'
+        run: npm install
 
       - name: Get composer cache directory
         id: composer-cache-dir
@@ -56,7 +56,7 @@ jobs:
         run: composer install --prefer-dist --no-progress
 
       - name: Run build
-        run: yarn run production
+        run: npm run production
 
       - name: Upload posts
         uses: genietim/ftp-action@master

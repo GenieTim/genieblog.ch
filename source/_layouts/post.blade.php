@@ -16,18 +16,22 @@
     <h1 class="leading-none mb-2 p-entry-title p-name">{{ $page->title }}</h1>
 
     <p class="text-primary-shade font-thin text-xl md:mt-0">
-        <span class="h-card p-author">{{ $page->author }}</span>
-        • <time datetime="{{ date('c', $page->date) }}" title="Created" class="dt-published">{{ date('F j, Y', $page->date) }}</time>
+        <a class="h-card p-author"
+            href="{{$page->baseUrl}}/pages/{{$page->language}}/about#{{ urlencode($page->author) }}">
+            {{ $page->author }}
+        </a>
+        • <time datetime="{{ date('c', $page->date) }}" title="Date Published"
+            class="dt-published">{{ date('F j, Y', $page->date) }}</time>
         @if (isset($post->updated))
-        • <time datetime="{{ date('c', $page->updated) }}" title="Updated" class="dt-updated">{{ date('F j, Y', $page->updated) }}</time>
+        • <time datetime="{{ date('c', $page->updated) }}" title="Date Updated"
+            class="dt-updated">{{ date('F j, Y', $page->updated) }}</time>
         @endif
     </p>
 
     @if ($page->categories)
     @foreach ($page->categories as $i => $category)
     <a href="{{ '/blog/' . $page->language . '/categories/' . strtolower($category) }}"
-        title="View posts in {{ $category }}"
-        class="category-tag p-category">{{ $category }}</a>
+        title="View posts in {{ $category }}" class="category-tag p-category">{{ $category }}</a>
     @endforeach
     @endif
 
