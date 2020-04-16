@@ -16,8 +16,11 @@ language: en
 cover_image: false
 ---
 
+<a name="Tim Bernhard" id="Tim Bernhard"></a>
+
 My name is Tim Bernhard, I was born on 2 August 1996.
-I attended the Cantonal School in Wiedikon and graduated in spring 2015. As a high school graduate I have connected my passion for programming projects with hopes for the future and founded the company [_Bernhard Webstudio_](http://bernhard-webstudio.ch).
+I attended the Cantonal School in Wiedikon and graduated in spring 2015. 
+As a high school graduate I have connected my passion for programming projects with hopes for the future and founded the company [_Bernhard Webstudio_](http://bernhard-webstudio.ch).
 
 Since then, I finished a Bachelor in Chemical Engineering at ETH Zurich 
 and am currently pursuing further degrees in Computational Science 

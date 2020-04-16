@@ -20,9 +20,13 @@ categories: null
 # Kontaktadresse
 
 Tim Bernhard
+
 Im Meilibachdörfli 5
+
 8804 Au ZH
+
 Schweiz
+
 [tim@bernhard-webstudio.ch](mailto:tim@bernhard-webstudio.ch)
 
 ## Haftungsausschluss
@@ -62,9 +66,16 @@ Im  Falle der Aktivierung der IP-Anonymisierung auf dieser Webseite wird Ihre  I
 
 Nur in Ausnahmefällen wird die volle IP-Adresse an einen Server von  Google in den USA übertragen und dort gekürzt.
 Google wird diese  Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um Reports  über die Websiteaktivitäten für die Websitebetreiber zusammenzustellen und um  weitere mit der Websitenutzung und der Internetnutzung verbundene  Dienstleistungen zu erbringen.
-Auch wird Google diese Informationen  gegebenenfalls an Dritte übertragen, sofern dies gesetzlich vorgeschrieben oder  soweit Dritte diese Daten im Auftrag von Google verarbeiten.
+Auch wird Google diese Informationen gegebenenfalls an Dritte übertragen, sofern dies gesetzlich vorgeschrieben oder  soweit Dritte diese Daten im Auftrag von Google verarbeiten.
 Die im  Rahmen von Google Analytics von Ihrem Browser übermittelte IP-Adresse wird  nicht mit anderen Daten von Google zusammengeführt. 
 
-Sie können die Installation der Cookies durch eine  entsprechende Einstellung Ihrer Browser Software verhindern; wir weisen Sie  jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche  Funktionen dieser Website voll umfänglich nutzen können.
+Sie können die Installation der Cookies durch eine  entsprechende Einstellung Ihrer Browser Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche  Funktionen dieser Website vollumfänglich nutzen können.
 Durch  die Nutzung dieser Website erklären Sie sich mit der Bearbeitung der über Sie  erhobenen Daten durch Google in der zuvor beschriebenen Art und Weise und zu  dem zuvor benannten Zweck einverstanden.
 
+Möglichkeiten, um die Teilung dieser Daten mit mir, Tim Bernhard, zu verhindern,
+beinhalten die Nutzung eines [AdBlocker](https://github.com/gorhill/uBlock#ublock-origin), 
+eines  [script blocker](https://github.com/hackademix/noscript), 
+oder des Browser [Firefox](https://www.mozilla.org/de/firefox/new/), 
+der in neueren Versionen standardmässig Tracker blockiert.
+Wenn Sie wünschen, dass ich mit Ihren Daten interagiere, 
+kontaktieren Sie mich wie oben oder [hier](../about) beschrieben.

@@ -137,7 +137,7 @@
     <footer class="text-center shadow bg-primary-complement border-t text-sm mt-12 py-4" role="contentinfo">
         <ul class="flex flex-col md:flex-row justify-center list-none">
             <li class="md:mr-2">
-                <a href="" title="Read the imprint/impressum">{{ $page->translate('master.copyright.imprint') }}</a>.
+                <a href="{{$page->baseUrl}}/pages/{{$page->language}}/imprint" title="Read the imprint/impressum">{{ $page->translate('master.copyright.imprint') }}</a>.
             </li>
 
             <li class="md:mr-2">

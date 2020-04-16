@@ -5,7 +5,7 @@ date: 2015-01-07 16:31:21+00:00
 layout: page
 link: http://genieblog.ch/impressum/
 slug: imprint
-title: Impressum
+title: Imprint
 wordpress_id: 65
 template: page
 socialImage: /media/socialImage.jpg
@@ -22,7 +22,6 @@ categories: null
 Information in accordance with section 5 TMG
   
   
-
 Tim Bernhard  
 
 Im Meilibachdorfli 5  
@@ -35,7 +34,7 @@ Telephone: +41 76 365 55 79
 
 E-Mail: [tim@genieblog.ch](mailto:tim@genieblog.ch)  
 
-Internetadresse: [http://genieblog.ch](http://genieblog.ch)  
+Internet address: [http://genieblog.ch](http://genieblog.ch)  
 
 ## Person responsible for content in accordance with 55 Abs. 2 RStV
 
@@ -65,3 +64,10 @@ of the copyright law), every form of utilizing, reproducing or processing works 
 Individual reproductions of a work are allowed only for private use, so must not serve either directly or indirectly for earnings.
 Unauthorized utilization of copyrighted works is punishable (§ 106 of the copyright law).
 
+### Use of trackers
+
+This site uses Google Analytics to get some data on who views this page when.
+If you do not agree with sharing this data with me, Tim Bernhard, please
+use an [AdBlocker](https://github.com/gorhill/uBlock#ublock-origin), a [script blocker](https://github.com/hackademix/noscript), 
+or [Firefox](https://www.mozilla.org/de/firefox/new/), which blocks such trackers by default.
+If you want me to interact with your data, please contact me, as described [here](../about).
