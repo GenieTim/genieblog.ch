@@ -12,28 +12,37 @@
 @include('_components.img', ['alt' => $page->title . 'cover image', 'src' => $page->cover_image ])
 @endif
 
-<h1 class="leading-none mb-2">{{ $page->title }}</h1>
+<article class="h-entry">
+    <h1 class="leading-none mb-2 p-entry-title p-name">{{ $page->title }}</h1>
 
-<p class="text-primary-shade font-thin text-xl md:mt-0">{{ $page->author }} • {{ date('F j, Y', $page->date) }}</p>
+    <p class="text-primary-shade font-thin text-xl md:mt-0">
+        <span class="h-card p-author">{{ $page->author }}</span>
+        • <time datetime="{{ date('c', $page->date) }}" title="Created" class="dt-published">{{ date('F j, Y', $page->date) }}</time>
+        @if (isset($post->updated))
+        • <time datetime="{{ date('c', $page->updated) }}" title="Updated" class="dt-updated">{{ date('F j, Y', $page->updated) }}</time>
+        @endif
+    </p>
 
-@if ($page->categories)
-@foreach ($page->categories as $i => $category)
-<a href="{{ '/blog/' . $page->language . '/categories/' . strtolower($category) }}" title="View posts in {{ $category }}"
-    class="inline-block bg-secondary-complement hover:bg-secondary leading-loose tracking-wide text-secondary-shade hover:text-secondary-complement uppercase text-xs font-semibold rounded mr-2 px-3 pt-px">{{ $category }}</a>
-@endforeach
-@endif
+    @if ($page->categories)
+    @foreach ($page->categories as $i => $category)
+    <a href="{{ '/blog/' . $page->language . '/categories/' . strtolower($category) }}"
+        title="View posts in {{ $category }}"
+        class="category-tag p-category">{{ $category }}</a>
+    @endforeach
+    @endif
 
-@if ($page->isOld())
-<div class="alert">
-    <p>{{ $page->translate('page.note.old') }}</p>
-    <p>{{ $page->translate('page.note.github') }} <a href="https://github.com/GenieTim/genieblog.ch"
-            title="Source of genieblog.ch">GitHub</a></p>
-</div>
-@endif
+    @if ($page->isOld())
+    <div class="alert">
+        <p>{{ $page->translate('page.note.old') }}</p>
+        <p>{{ $page->translate('page.note.github') }} <a href="https://github.com/GenieTim/genieblog.ch"
+                title="Source of genieblog.ch">GitHub</a></p>
+    </div>
+    @endif
 
-<div class="border-b border-secondary text-base" v-pre>
-    @yield('content')
-</div>
+    <div class="border-b border-secondary text-base e-content" v-pre>
+        @yield('content')
+    </div>
+</article>
 
 <div class="border-b border-secondary mb-10 pb-4 pt-4 text-base">
     <details class="">
@@ -53,9 +62,9 @@
                 </div>
                 <div class="comment-content">
                     @if (isset($comment->content->html))
-                        {{ $comment->content->html }}
+                    {{ $comment->content->html }}
                     @else
-                        {{ $comment->content->txt }}
+                    {{ $comment->content->txt }}
                     @endif
                     <a href="' . {{ $comment->url }} . '">Link</a>
                 </div>

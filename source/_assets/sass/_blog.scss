@@ -74,3 +74,23 @@
     @apply .underline;
   }
 }
+
+.category-tag {
+  @apply .bg-secondary-complement;
+  @apply .font-semibold;
+  @apply .inline-block;
+  @apply .leading-loose;
+  @apply .mr-2;
+  @apply .pt-px;
+  @apply .px-3;
+  @apply .rounded;
+  @apply .text-secondary-shade;
+  @apply .text-xs;
+  @apply .tracking-wide;
+  @apply .uppercase;
+
+  &:hover {
+    @apply .bg-secondary;
+    @apply .text-secondary-complement;
+  }
+}
