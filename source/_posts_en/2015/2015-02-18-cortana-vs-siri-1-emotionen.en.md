@@ -5,7 +5,7 @@ date: 2015-02-18 13:00:44+00:00
 layout: post
 link: http://genieblog.ch/cortana-vs-siri-1-emotionen/
 slug: cortana-vs-siri-1-emotionen
-title: "Cortana vs. Siri" #1: Emotionen"
+title: "Cortana vs. Siri #1: Emotionen"
 wordpress_id: 126
 categories:
   - "Cortana vs. Siri"

@@ -5,7 +5,7 @@ date: 2015-02-25 13:41:14+00:00
 layout: post
 link: http://genieblog.ch/cpphallowelt/
 slug: cpphallowelt
-title: C++
+title: "C++: Hello World!"
 wordpress_id: 130
 categories:
   - Hello World

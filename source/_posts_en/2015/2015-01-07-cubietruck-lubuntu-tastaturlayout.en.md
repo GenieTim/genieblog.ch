@@ -9,7 +9,7 @@ excerpt: >
 layout: post
 link: http://genieblog.ch/cubietruck-lubuntu-tastaturlayout/
 slug: cubietruck-lubuntu-tastaturlayout
-title: "Cubietruck mit Lubuntu: Tastaturlayout anpassen"
+title: "Cubietruck with Lubuntu: adjust keyboard"
 wordpress_id: 60
 categories:
   - Cubietruck

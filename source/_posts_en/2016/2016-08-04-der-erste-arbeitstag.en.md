@@ -5,7 +5,7 @@ date: 2016-08-04 20:22:25+00:00
 layout: post
 link: http://genieblog.ch/der-erste-arbeitstag/
 slug: der-erste-arbeitstag
-title: Der erste Arbeitstag
+title: The first workday
 wordpress_id: 288
 categories:
   - Language Exchange
@@ -20,25 +20,25 @@ cover_image: 2016/hermitage.jpg
 findable: false
 ---
 
-Nach einigen organisatorischen Schwierigkeiten, habe ich nun doch eine Praktikumsstelle antreten können.
-Noch dazu an einem sehr tollen Arbeitsplatz: am staatlichen Hermitage-Museum.
-Dieses ist riesig und beherbergt unzählige wertvolle und berühmte Kunstschätze, darunter Bilder von Picasso, Matisse, Monet und vielen mehr.
-Dabei beschränkt sich die Sammlung des Museums nicht bloss auf Bilder: von Waffensammlungen über ägyptische Mumien bis altgriechische Vasen ist alles vertreten.
-Ich habe in diesem Museum zuvor bereits als regulär zahlender Besucher verirrt.
-Nun kann ich während der Arbeitszeit einen Badge nutzen, der mir den Zugang zum Museum, aber auch zu den Bereichen, die mit "Staff only" beschriftet sind, öffnet.
-Damit bieten sich für mich viel mehr Möglichkeiten, mich zu verirren!
+After some organizational difficulties, I was able to start an internship.
+In addition, in a very great workplace: at the state Hermitage Museum.
+This is huge and houses countless valuable and famous art treasures, including pictures by Picasso, Matisse, Monet and many more.
+The museum's collection is not just limited to pictures: everything is represented, from weapon collections to Egyptian mummies to ancient Greek vases.
+I previously strayed into this museum as a regular paying visitor.
+Now I can use a badge during working hours, which gives me access to the museum, but also to the areas labeled "Staff only".
+This gives me a lot more opportunities to get lost!
 
-Obschon das Personal des Volunteer Service des Hermitage Museum nicht wusste, wer ich bin und was ich dort mache, haben sie mich einfach erneut das eine Formular ausfüllen lassen, und schon hatte ich den Job.
-Mein erster Auftrag bestand darin, während etwas mehr als eineinhalb Stunden Menschen, die das Museum mit einem Rucksack betreten wollten, lächelnd darauf hinzuweisen, dass sie diesen doch bitte in der Garderobe lassen sollten.
-Etwas später wurden ich mit einigen anderen Praktikanten beauftragt, einige Kisten vom Generalstabsgebäude in unser Büro zu transportieren.
-Dabei war insbesondere die Genauigkeit bemerkenswert, mit dem der Raustransport überwacht wurde.
-Zuerst dauerte es eine halbe Stunde, bis alle zuständigen Personen ihren Schlüssel am richtigen Ort zusammengesucht, und etliche Formulare korrekt ausgefüllt waren.
-Als wir dann die Pakete raustransportieren wollten, blieben wir wieder an der Bürokratie hängen, da eine der zuständigen Personen nachlässigerweise zu faul war, die Kisten zu zählen, und eine 100 notiert hat.
-In der Tat waren es 104, so dass wir 4 Kisten hätten müssen stehen lassen.
-Mit ein wenig Geschick konnten wir den Inhalt von 4 Kisten auf die übrigen 100 verteilen, so dass 4 leere Kisten zurückblieben.
+Even though the staff of the Hermitage Museum's Volunteer Service didn't know who I was and what I was doing there, they just let me fill out the form again and I was done.
+My first assignment was to give a smile to people who wanted to enter the museum with a backpack for a little over an hour and a half, that they should please leave it in the cloakroom.
+A little later I was asked by some other interns to transport some boxes from the general staff building to our office.
+The accuracy with which the removal was monitored was particularly remarkable.
+First, it took half an hour for all responsible persons to find their key in the right place and for several forms to be correctly filled out.
+When we wanted to transport the parcels out, we got caught up in the bureaucracy again because one of the responsible people was negligent to lazy to count the boxes and wrote down 100.
+Indeed, there were 104 so we should have left 4 boxes.
+With a little skill, we were able to distribute the contents of 4 boxes to the remaining 100, leaving 4 empty boxes.
 
-Nach einem Mittagessen in der Angestellten-Cafeteria die maximal halb so teuer is wie jene für reguläre Besucher, wurde ich mit dem Auftrag bekannt gemacht, der mich während meinem Aufenthalt hier beschäftigen wird.
-Eine ältere Website des Volunteer Service muss einer neuen weichen.
-Neben der Tatsache, dass es sich um eine mehrsprachige Website handelt, ist das übliche Problem zu beobachten, dass zu viele Kundenwünsche den Brei verderben.
-Während die ursprüngliche Idee der neuen Website war, ein wenig mit der alten Website aufzuräumen, wünscht einer nach dem anderen ein Element der alten Website nach dem anderen zurück auf die neue Seite, bis sie wieder den alten, zugemüllten Stand erreicht.
-Mal sehen, wie sich meine Überzeugungskraft in den nächsten Tagen entwickelt.
+After lunch in the staff cafeteria, which is half the price of that for regular visitors, I was introduced to the job that will keep me busy during my stay here.
+An older Volunteer Service website must be replaced by a new one.
+In addition to the fact that it is a multilingual website, the common problem is that too many customer requests spoil the broth.
+While the original idea of ​​the new website was to tidy up a bit with the old website, one after the other wants one element of the old website after the other back to the new page until it reaches the old, cluttered state again.
+Let's see how my persuasiveness will develop over the next few days.

@@ -5,7 +5,7 @@ date: 2015-01-25 08:00:02+00:00
 layout: post
 link: http://genieblog.ch/javahallowelt/
 slug: javahallowelt
-title: Java
+title: "Java: Hello World"
 wordpress_id: 94
 categories:
   - Java

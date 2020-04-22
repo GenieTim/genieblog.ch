@@ -5,7 +5,7 @@ date: 2015-06-21 08:41:46+00:00
 layout: post
 link: http://genieblog.ch/spacemaster-mein-erstes-game-fuer-ios-android/
 slug: spacemaster-mein-erstes-game-fuer-ios-android
-title: spaceMaster - mein erstes Game für iOs & Android
+title: spaceMaster - my first Game for iOs & Android
 wordpress_id: 194
 categories:
   - Java

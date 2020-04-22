@@ -11,7 +11,7 @@ excerpt: >-
 layout: post
 link: http://genieblog.ch/javascript-windows-phone-hardware-backbutton-abfangen/
 slug: javascript-windows-phone-hardware-backbutton-abfangen
-title: "JavaScript: Windows Phone Hardware Backbutton abfangen"
+title: "JavaScript: Catch Windows Phone Hardware Backbutton"
 wordpress_id: 155
 categories:
   - JavaScript

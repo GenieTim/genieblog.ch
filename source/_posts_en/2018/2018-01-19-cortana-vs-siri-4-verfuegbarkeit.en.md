@@ -5,7 +5,7 @@ date: 2018-01-19 13:00:56+00:00
 layout: post
 link: http://genieblog.ch/cortana-vs-siri-4-verfuegbarkeit/
 slug: cortana-vs-siri-4-verfuegbarkeit
-title: "Cortana vs. Siri" #4: Verfügbarkeit"
+title: "Cortana vs. Siri #4: Verfügbarkeit"
 wordpress_id: 149
 categories:
   - "Cortana vs. Siri"

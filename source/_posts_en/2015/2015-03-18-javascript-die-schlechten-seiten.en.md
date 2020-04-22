@@ -5,7 +5,7 @@ date: 2015-03-18 11:00:20+00:00
 layout: post
 link: http://genieblog.ch/javascript-die-schlechten-seiten/
 slug: javascript-die-schlechten-seiten
-title: JavaScript - die schlechten Seiten
+title: JavaScript - some negative sides
 wordpress_id: 141
 categories:
   - JavaScript
