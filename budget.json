@@ -4,6 +4,10 @@
       {
         "resourceType": "third-party",
         "budget": 10
+      },
+      {
+        "resourceType": "total",
+        "budget": 25
       }
     ],
     "resourceSizes": [
@@ -26,10 +30,6 @@
       {
         "resourceType": "script",
         "budget": 500
-      },
-      {
-        "resourceType": "total",
-        "budget": 100
       }
     ],
     "timings": [
