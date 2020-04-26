@@ -35,5 +35,7 @@
         "yaml": "^1.7.2",
         "yargs": "^15.1.0"
     },
-    "dependencies": {}
+    "dependencies": {
+        "dateformat": "^3.0.3"
+    }
 }

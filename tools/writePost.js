@@ -2,53 +2,57 @@ const fs = require("fs");
 const path = require("path");
 const translate = require('@vitalets/google-translate-api');
 var inquirer = require('inquirer');
+var formatDate = require('dateformat');
 
-inquirer.prompt([
-  {
-    type: "list",
-    name: "language",
-    message: "Which language will you write in?",
-    choices: ['de', 'en']
-  }, {
-    type: "input",
-    name: "title",
-    message: "What is the title of the post?"
-  },
-  {
-    type: "editor",
-    name: "content",
-    message: "Enter the content of the post in the editor"
-  }
-]).then(answers => {
-  // potential improvement: read from e.g. git config in case I get an extra author one day
-  const author = "Tim Bernhard";
-  const date = new Date();
-  const slug = string_to_slug(answers.title);
-
-  let fileContent = getFileContent(author, date, answers.language, slug, answers.title, answers.content);
-
-  fs.writeFileSync(getFileName(answers.language, date, slug), fileContent, { encoding: "utf8" });
-
-  let otherLanguage = answers.language == 'de' ? 'en' : 'de';
-  let translatedTitle = await translate(answers.title,
+(async () => {
+  inquirer.prompt([
     {
-      from: answers.language, to: otherLanguage
+      type: "list",
+      name: "language",
+      message: "Which language will you write in?",
+      choices: ['de', 'en']
+    }, {
+      type: "input",
+      name: "title",
+      message: "What is the title of the post?"
+    },
+    {
+      type: "editor",
+      name: "content",
+      message: "Enter the content of the post in the editor"
     }
-  );
-  // TODO: split things up (at [, (, and `)
-  let translatedContent = await translate(answers.content, {
-    from: answers.language, to: otherLanguage
-  });
+  ]).then(async answers => {
+    // potential improvement: read from e.g. git config in case I get an extra author one day
+    const author = "Tim Bernhard";
+    const date = new Date();
+    const slug = string_to_slug(answers.title);
 
-  let translatedFileContent = getFileContent(author, date, otherLanguage, slug, translatedTitle, translatedContent);
+    let fileContent = getFileContent(author, date, answers.language, slug, answers.title, answers.content);
 
-  fs.writeFileSync(getFileName(otherLanguage, date, slug), translatedFileContent, { encoding: "utf8" });
-}).catch(error => console.error(error));
+    fs.writeFileSync(getFileName(answers.language, date, slug), fileContent, { encoding: "utf8" });
+
+    let otherLanguage = answers.language == 'de' ? 'en' : 'de';
+    let translatedTitle = await translate(answers.title,
+      {
+        from: answers.language,
+        to: otherLanguage
+      }
+    );
+    // TODO: split things up (at [, (, and `)
+    let translatedContent = await translate(answers.content, {
+      from: answers.language, to: otherLanguage
+    });
+
+    let translatedFileContent = getFileContent(author, date, otherLanguage, slug, translatedTitle.text, translatedContent.text);
+
+    fs.writeFileSync(getFileName(otherLanguage, date, slug), translatedFileContent, { encoding: "utf8" });
+  }).catch(error => console.error(error));
+})()
 
 // -- MARK: Helper functions
 
 function getFileName(language, date, slug) {
-  return __dirname + '/../source/_posts_' + language + "/" + date.getFullYear() + "/" + date.format('YY-mm-dd') + "-" + slug + ".md"
+  return __dirname + '/../source/_posts_' + language + "/" + date.getFullYear() + "/" + formatDate(date, 'yy-mm-dd') + "-" + slug + ".md"
 }
 
 function getFileContent(author, date, language, slug, title, content) {
