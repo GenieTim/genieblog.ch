@@ -84,6 +84,6 @@ jobs:
       - name: Start lighthouse check
         uses: peter-evans/repository-dispatch@v1
         with:
-          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+          token: ${{ secrets.PERSONAL_REPO_ACCESS_TOKEN }}
           repository: genietim/genieblog.ch
           event-type: stage-uploaded-event
