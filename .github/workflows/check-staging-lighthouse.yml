@@ -1,4 +1,4 @@
-name: Lighthouse CI on Staging
+name: Lighthouse Budget Check
 
 on:
   repository_dispatch:
@@ -18,5 +18,5 @@ jobs:
             https://test.genieblog.ch/genieblog/index.en
             https://test.genieblog.ch/genieblog/blog/en/index.en
           budgetPath: ./budget.json # test performance budgets
-          uploadArtifacts: true # save results as an action artifacts
-          temporaryPublicStorage: true # upload lighthouse report to the temporary storage
+          uploadArtifacts: false # save results as an action artifacts
+          temporaryPublicStorage: false # upload lighthouse report to the temporary storage

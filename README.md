@@ -4,6 +4,7 @@
 ![Staging Current](https://github.com/GenieTim/genieblog.ch/workflows/Publish%20Staging/badge.svg)
 ![Webmentions Updated](https://github.com/GenieTim/genieblog.ch/workflows/Fetch%20Webmentions/badge.svg)
 ![Broken Links](https://github.com/GenieTim/genieblog.ch/workflows/Check%20Markdown%20links/badge.svg)
+![Lighthouse Budget](https://github.com/GenieTim/genieblog.ch/workflows/Lighthouse%20CI%20on%20Staging/badge.svg)
 <!-- markdown-link-check-enable -->
 
 This is my personal blog.

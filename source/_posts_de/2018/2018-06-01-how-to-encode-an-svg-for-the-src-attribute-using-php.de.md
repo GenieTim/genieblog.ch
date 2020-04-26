@@ -28,7 +28,8 @@ Ich habe einige Zeit gebraucht, um das zu realisieren.
 Sobald Sie dies verstanden haben, können Sie auch einige andere Optimierungen übernehmen.
 <!-- codepen does not like being checked for availability -->
 <!-- markdown-link-check-disable-next-line -->
-Vielleicht lassen sie sich inspirieren von [Taylor Hunt](https://codepen.io/tigt/post/optimizing-svgs-in-data-uris)s [mini-svg-uri](https://github.com/tigt/mini-svg-data-uri) um einige Zeichen manuell zu dekodieren, um die Gesamtgröße zu verbessern.
+Vielleicht lassen sie sich inspirieren von [Taylor Hunt](https://codepen.io/tigt/post/optimizing-svgs-in-data-uris)s 
+[mini-svg-uri](https://github.com/tigt/mini-svg-data-uri) um einige Zeichen manuell zu dekodieren, um die Gesamtgröße zu verbessern.
 Eine abschließende Funktion könnte möglicherweise so aussehen:
 
 ```php
