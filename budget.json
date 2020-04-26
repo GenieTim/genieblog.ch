@@ -26,6 +26,20 @@
       {
         "resourceType": "script",
         "budget": 500
+      },
+      {
+        "resourceType": "total",
+        "budget": 50
+      }
+    ],
+    "timings": [
+      {
+        "metric": "interactive",
+        "budget": 5000
+      },
+      {
+        "metric": "first-meaningful-paint",
+        "budget": 2000
       }
     ]
   }
