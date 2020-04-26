@@ -78,4 +78,4 @@ eines  [script blocker](https://github.com/hackademix/noscript),
 oder des Browser [Firefox](https://www.mozilla.org/de/firefox/new/), 
 der in neueren Versionen standardmässig Tracker blockiert.
 Wenn Sie wünschen, dass ich mit Ihren Daten interagiere, 
-kontaktieren Sie mich wie oben oder [hier](../about) beschrieben.
+kontaktieren Sie mich wie oben oder [hier](https://www.genieblog.ch/pages/de/about) beschrieben.

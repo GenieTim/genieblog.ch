@@ -3,7 +3,7 @@ author: Tim Bernhard
 comments: true
 date: 2015-01-07 13:00:28+00:00
 excerpt: >
-  After putting on [Lubuntu on the Cubietruck](http://genieblog.ch/lubuntu-als-standardbetriebssysteme-auf-dem-cubietruck-per-mac/) you notice that you were never asked for the keyboard layout.
+  After putting on [Lubuntu on the Cubietruck](https://www.genieblog.ch/blog/en/2015/lubuntu-als-standardbetriebssystem-auf-dem-cubietruck-per-mac) you notice that you were never asked for the keyboard layout.
   Since it is tedious to always find the right keys, it is obvious that you want to change the keyboard layout.
   But how?
 layout: post
@@ -22,7 +22,7 @@ language: en
 cover_image: 2015/cubietruck.jpg
 ---
 
-After putting on [Lubuntu on the Cubietruck] (http://genieblog.ch/lubuntu-als-standardbetriebssysteme-auf-dem-cubietruck-per-mac/) you notice that you were never asked for the keyboard layout.
+After putting on [Lubuntu on the Cubietruck](https://www.genieblog.ch/blog/en/2015/lubuntu-als-standardbetriebssystem-auf-dem-cubietruck-per-mac) you notice that you were never asked for the keyboard layout.
 Since it is tedious to always find the right keys, it is obvious that you want to change the keyboard layout.
 But how?
 

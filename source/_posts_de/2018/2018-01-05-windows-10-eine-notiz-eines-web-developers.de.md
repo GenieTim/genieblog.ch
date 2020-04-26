@@ -3,7 +3,6 @@ author: Tim Bernhard
 comments: true
 date: 2018-01-05 13:00:11+00:00
 layout: post
-link: http://genieblog.ch/windows-10-eine-notiz-eines-web-developers/
 slug: windows-10-eine-notiz-eines-web-developers
 title: Windows 10 - eine Notiz eines Web-Developers
 wordpress_id: 220

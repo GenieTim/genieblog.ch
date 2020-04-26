@@ -62,7 +62,7 @@ Sinn, “Kohlemotoren, Windmotoren und Dieselmotoren: Was zeigt die CO2-Bilanz?�
 
   4. <span id="src-4"></span>“Battery University,” _ BU-104a: Comparing the Battery with Other Power Sources_, 28-Mar-2019.  [Online]. Available: [https://batteryuniversity.com/learn/article/comparing_the_battery_with_other_power_sources](https://batteryuniversity.com/learn/article/comparing_the_battery_with_other_power_sources). [Accessed: 19-Jun-2019]
 
-  5. <span id="src-5"></span>“6. Efficiency and Power Grids,” _Global CCS Institute_.  [Online]. Available: [https://hub.globalccsinstitute.com/publications/energy-efficiency-technologies-overview-report/6-efficiency-and-power-grids](https://hub.globalccsinstitute.com/publications/energy-efficiency-technologies-overview-report/6-efficiency-and-power-grids). [Accessed: 16-Jun-2019]
+  5. <span id="src-5"></span>Inside Energy. “Lost In Transmission: How Much Electricity Disappears Between A Power Plant And Your Plug?” [Online] Available: [http://insideenergy.org/2015/11/06/lost-in-transmission-how-much-electricity-disappears-between-a-power-plant-and-your-plug/](http://insideenergy.org/2015/11/06/lost-in-transmission-how-much-electricity-disappears-between-a-power-plant-and-your-plug/). [Accessed:  April 26, 2020.]
 
   6. <span id="src-6"></span>“How much carbon dioxide is produced when different fuels are burned?,” _U.S.
 Energy Information Administration_, 04-Jun-2019.  [Online]. Available: [https://www.eia.gov/tools/faqs/faq.php?id=73&t;=11](https://www.eia.gov/tools/faqs/faq.php?id=73&t=11). [Accessed: 19-Jun-2019]

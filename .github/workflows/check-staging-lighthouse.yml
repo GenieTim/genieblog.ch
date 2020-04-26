@@ -1,6 +1,8 @@
-name: Lighthouse CI
+name: Lighthouse CI on Staging
 
 on:
+  repository_dispatch:
+    types: [stage-uploaded-event]
   schedule:
     - cron: "0 2 * * 6" # At 02:00 on Saturday.
 
@@ -13,8 +15,8 @@ jobs:
         uses: treosh/lighthouse-ci-action@v2
         with:
           urls: |
-            https://www.genieblog.ch/index.en
-            https://www.genieblog.ch/blog/en/index.en
+            https://test.genieblog.ch/genieblog/index.en
+            https://test.genieblog.ch/genieblog/blog/en/index.en
           budgetPath: ./budget.json # test performance budgets
           uploadArtifacts: true # save results as an action artifacts
           temporaryPublicStorage: true # upload lighthouse report to the temporary storage

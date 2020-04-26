@@ -28,9 +28,10 @@ Einen Screenshot aufzuzeichnen ist die eine Möglichkeit.
 Dies geht entweder mit den Tastaturkürzeln _cmd + shift + 3_ bzw. _cmd + shift + 4_ auf dem Mac oder auf dem Windows-PC mit folgender Anleitung: [http://windows.microsoft.com/de-CH/windows-xp/help/setup/take-a-screen-shot](http://windows.microsoft.com/de-CH/windows-xp/help/setup/take-a-screen-shot)
 
 Doch für längeren Code, der den Bildschirm sprengt, lohnt sich diese Herangehensweise nicht.
-Doch zum Glück gibt es noch mindestens eine andere Lösung: Exportieren Sie den Code mit _file -> print -> adobe pdf_ bzw. _datei -> drucken -> adobe pdf_ aus eclipse oder ähnlich zu einem pdf, das sie problemlos einbinden können.
-Falls die Auswahl Adobe pdf als Drucker nicht verfügbar ist, können Sie die freeware [CutePDF Writer](http://www.cutepdf.com/products/cutepdf/writer.asp) herunterladen und im Druckdialog auswählen.
+Doch zum Glück gibt es noch mindestens eine andere Lösung: Exportieren Sie den Code mit _file -> print -> adobe pdf_ bzw. _Datei -> drucken -> Adobe PDF_ aus eclipse oder ähnlich zu einem pdf, das sie problemlos einbinden können.
+Falls die Auswahl Adobe PDF als Drucker nicht verfügbar ist, können Sie die freeware 
+[CutePDF Writer](http://www.cutepdf.com/products/cutepdf/writer.asp) herunterladen und im Druckdialog auswählen.
 Doch Vorsicht wenn Sie dieses Programm wählen, dass Sie nicht aus Versehen die ask-toolbar installieren.
 Je nach Druckdialog ist es auch gar nicht nötig, Adobe PDF als Drucker auszuwählen, und der Druckdialog bietet eine eigene Möglichkeit, den Code als PDF zu exportieren (vgl.
 folgender Screenshot).
-[![Druckdialog TextWrangler](http://genieblog.ch/wp-content/uploads/2015/02/Screen-Shot-2015-02-10-at-14.51.55-300x248.png)](http://genieblog.ch/wp-content/uploads/2015/02/Screen-Shot-2015-02-10-at-14.51.55.png)
+[![Druckdialog TextWrangler](http://genieblog.ch/assets/images/2015/Screen-Shot-2015-02-10-at-14.51.55.png)](http://genieblog.ch/assets/images/2015/Screen-Shot-2015-02-10-at-14.51.55.png)

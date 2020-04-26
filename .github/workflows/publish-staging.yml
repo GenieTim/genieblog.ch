@@ -80,3 +80,10 @@ jobs:
             mirror -v -P 5 -R ./build_staging/ /test.genieblog.ch/public_html/genieblog/; 
             quit
           "
+
+      - name: Start lighthouse check
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+          repository: genietim/genieblog.ch
+          event-type: stage-uploaded-event

@@ -69,4 +69,4 @@ This site uses Google Analytics to get some data on who views this page when.
 If you do not agree with sharing this data with me, Tim Bernhard, please
 use an [AdBlocker](https://github.com/gorhill/uBlock#ublock-origin), a [script blocker](https://github.com/hackademix/noscript), 
 or [Firefox](https://www.mozilla.org/de/firefox/new/), which blocks such trackers by default.
-If you want me to interact with your data, please contact me, as described [here](../about).
+If you want me to interact with your data, please contact me, as described [here](https://www.genieblog.ch/pages/en/about).
