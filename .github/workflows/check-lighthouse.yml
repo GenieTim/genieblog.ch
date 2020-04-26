@@ -1,0 +1,20 @@
+name: Lighthouse CI
+
+on:
+  schedule:
+    - cron: "0 2 * * 6" # At 02:00 on Saturday.
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Audit URLs using Lighthouse
+        uses: treosh/lighthouse-ci-action@v2
+        with:
+          urls: |
+            https://www.genieblog.ch/index.en
+            https://www.genieblog.ch/blog/en/index.en
+          budgetPath: ./budget.json # test performance budgets
+          uploadArtifacts: true # save results as an action artifacts
+          temporaryPublicStorage: true # upload lighthouse report to the temporary storage
