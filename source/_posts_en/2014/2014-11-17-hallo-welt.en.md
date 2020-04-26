@@ -8,8 +8,7 @@ slug: hallo-welt
 title: Hallo Welt!
 wordpress_id: 1
 categories:
-  - Bernhard 
-  - Tim 
+  - Tim Bernhard
   - Webstudio 
   - Welcome
 draft: false

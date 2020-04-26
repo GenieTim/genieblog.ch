@@ -3,7 +3,6 @@ author: Tim Bernhard
 comments: true
 date: 2017-08-07 17:00:00+00:00
 layout: post
-link: http://genieblog.ch/calculating-eq-c-of-a-multireaction-system
 slug: calculating-eq-c-of-a-multireaction-system
 title: Calculating equilibrium concentrations of a multi-reaction-system
 wordpress_id: 396

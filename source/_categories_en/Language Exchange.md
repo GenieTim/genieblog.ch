@@ -1,8 +1,7 @@
 ---
 extends: _layouts.category
 title: Language Exchange
-description: All posts that are about "Language Exchange".
+description: All posts that are about my Language Exchange
 ---
           
-These posts are about "Language Exchange", who knew.
-          
+These posts are about my "Language Exchange", who would have thought.

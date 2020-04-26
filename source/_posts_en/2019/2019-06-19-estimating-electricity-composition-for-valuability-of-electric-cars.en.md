@@ -8,7 +8,7 @@ slug: estimating-electricity-composition-for-valuability-of-electric-cars
 title: Estimating Electricity Cleanliness for Valuability of Electric Cars
 wordpress_id: 462
 categories:
-  
+  - Back-of-the-envelope calculation
 draft: false
 template: post
 description: false

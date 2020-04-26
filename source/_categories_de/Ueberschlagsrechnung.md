@@ -1,8 +1,8 @@
 ---
 extends: _layouts.category
 title: Ueberschlagsrechnung
-description: Alle Pfosten über "Ueberschlagsrechnung".
+description: Überschlagsrechnungen
 ---
           
-Diese Beiträge sind über "Ueberschlagsrechnung", wer hätte es gedacht.
-          
+Diese Beiträge enthalten Überschlagsrechnungen, oder auf Schweizerdeutsch "Milchbüechlirechnige".
+Die Motivation, Überschlagsrechnungen zu machen, ist meinem Studium in Chemieingenieurswissenschaften zu verdanken.
