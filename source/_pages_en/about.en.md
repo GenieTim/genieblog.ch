@@ -27,7 +27,7 @@ and am currently pursuing further degrees in Computational Science
 and Engineering at ETH Zurich too.
 
 Do not hesitate to contact me, in case of questions, job opportunities 
-or just some funny thing you found on the internet:
+or some funny thing you found on the internet:
 
 - [E-Mail](mailto:tim@bernhard-webstudio.ch)
 - [0763655579](tel:+41763655579)

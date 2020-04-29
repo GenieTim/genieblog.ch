@@ -48,10 +48,7 @@ Finally, if you find any mistakes in my calculations or have any doubts about my
 
 ### References
 
-  1. <span id="src-1"></span>C.
-Buchal, H.-D.
-Karl, and H.-W.
-Sinn, “Kohlemotoren, Windmotoren und Dieselmotoren: Was zeigt die CO2-Bilanz?” p. 15.
+  1. <span id="src-1"></span>C. Buchal, H.-D. Karl, and H.-W. Sinn, “Kohlemotoren, Windmotoren und Dieselmotoren: Was zeigt die CO2-Bilanz?” p. 15.
 
   2. <span id="src-2"></span>“C-Klasse: T-Modell, Preisliste gültig ab 1. Februar 2019.” Mercedes-Benz Schweiz AG.
 

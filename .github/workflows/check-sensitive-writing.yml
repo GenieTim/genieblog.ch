@@ -1,0 +1,16 @@
+name: Check for Insensitive Writing
+
+on:
+  repository_dispatch:
+    types: [post-change-event]
+#   push:
+#     branches:
+#       - master
+
+jobs:
+  alex-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run alex
+        run: npx alex ./source/_posts_en/**/*.md

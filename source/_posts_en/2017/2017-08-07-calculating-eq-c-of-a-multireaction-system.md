@@ -21,7 +21,7 @@ translations: false
 If you have given the energies of the states as well as the transition states, or already the equilibrium constants, you can calculate the equilibrium concentrations.
 The way to go is to use the general formulas for the equilibrium constant <inline-math>K=exp(-E_A/(R \cdot T))</inline-math> (with <inline-math>E_A=E_{Educt} - E_{TransitionState}</inline-math>) and <inline-math>K=C_{Product}/C_{Educt}</inline-math> and apply them.
 
-If you have a system with more than just one reaction, this can become a tedious task very fast to calculate the corresponding equilibrium concentrations.
+If you have a system with more than one reaction, this can become a tedious task very fast to calculate the corresponding equilibrium concentrations.
 That's when you want another way to go. 
 To be precise, you need a program which does it for you.
 What is has to do in general is to solve a system of equations, with the same number of equations as reactions. 

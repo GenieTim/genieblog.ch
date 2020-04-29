@@ -23,12 +23,12 @@ findable: false
 After some organizational difficulties, I was able to start an internship.
 In addition, in a very great workplace: at the state Hermitage Museum.
 This is huge and houses countless valuable and famous art treasures, including pictures by Picasso, Matisse, Monet and many more.
-The museum's collection is not just limited to pictures: everything is represented, from weapon collections to Egyptian mummies to ancient Greek vases.
+The museum's collection is not limited to pictures: everything is represented, from weapon collections to Egyptian mummies to ancient Greek vases.
 I previously strayed into this museum as a regular paying visitor.
 Now I can use a badge during working hours, which gives me access to the museum, but also to the areas labeled "Staff only".
 This gives me a lot more opportunities to get lost!
 
-Even though the staff of the Hermitage Museum's Volunteer Service didn't know who I was and what I was doing there, they just let me fill out the form again and I was done.
+Even though the staff of the Hermitage Museum's Volunteer Service didn't know who I was and what I was doing there, they let me fill out the form again and I was done.
 My first assignment was to give a smile to people who wanted to enter the museum with a backpack for a little over an hour and a half, that they should please leave it in the cloakroom.
 A little later I was asked by some other interns to transport some boxes from the general staff building to our office.
 The accuracy with which the removal was monitored was particularly remarkable.

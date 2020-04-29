@@ -29,7 +29,7 @@ Why the two buses stood in different directions and which one should be boarded 
 In any case, the bus I chose took me after a detour that led around in a wide circle to passport control as it should be.
 
 After the passport control, my contact person for the organization in Moscow was waiting for me.
-She led me to her car, which took us to my dormitory at half an hour from Moscow.
+They led me to their car, which took us to my dormitory at half an hour from Moscow.
 We spent most of the time on the large, five- to six-lane highways that encircle Moscow like a belt.
 Traffic rules seemed unnecessary to me on these streets, there was so much free space.
 And apparently I was not alone with this opinion: most drivers seemed to drive as they liked.
@@ -40,7 +40,7 @@ Now I arrived safely in my new, temporary home.
 During the night I experienced another traffic encounter.
 Or rather, with its noises.
 Unfortunately, the dormitory is located on another four-lane road.
-And because of the temperatures, it is simply not possible to go to sleep with the windows closed.
+And because of the temperatures, it is not possible to go to sleep with the windows closed.
 
 The next day I spent mostly wandering around looking for a metro station.
 According to a safe source, there is only a pre-paid public transport ticket in the metro stations.
@@ -56,4 +56,4 @@ In practice, thanks to a sufficient number of pedestrian strips, it is not neces
 The traffic lights on the pedestrian strips offer a very practical feature from my point of view: They show the seconds it takes until the traffic lights turn red or green again.
 So you can make a competent decision whether you can still take the plunge or not.
 The green light consists of an animated green man who runs faster when time is running out.
-And especially in these modern times, the time displayed has the responsibility to tell the pedestrian looking at his cell phone how long he can concentrate on the essentials, his smartphone.
+And especially in these modern times, the time displayed has the responsibility to tell the pedestrian looking at their cell phone how long they can concentrate on the essentials, their smartphone.
