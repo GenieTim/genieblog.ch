@@ -19,7 +19,7 @@ jobs:
       - name: Fetch webmentions
         env:
           WEBMENTIONS_TOKEN: ${{ secrets.WEBMENTIONS_TOKEN }}
-        run: node ./tools/webmentions.js
+        run: node ./bin/webmentions.js
 
       - name: Setup git
         env:
