@@ -10,5 +10,5 @@
 /source/*.js.map
 
 test.sh
-tools/upload-prod.sh
-tools/upload-stage.sh
+bin/upload-prod.sh
+bin/upload-stage.sh

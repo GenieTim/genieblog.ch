@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8c35ac74975bee00c9c25f6e3c37824b",
+    "content-hash": "0e86d13f2857f40278f2daff9c412b60",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -169,7 +169,7 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v6.18.3",
+            "version": "v6.18.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -213,7 +213,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v6.18.3",
+            "version": "v6.18.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -257,7 +257,7 @@
         },
         {
             "name": "illuminate/events",
-            "version": "v6.18.3",
+            "version": "v6.18.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/events.git",
@@ -302,7 +302,7 @@
         },
         {
             "name": "illuminate/filesystem",
-            "version": "v6.18.3",
+            "version": "v6.18.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/filesystem.git",
@@ -354,16 +354,16 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v6.18.3",
+            "version": "v6.18.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "526acedfae9d1112ec82797a0d40dbae40ca709a"
+                "reference": "38cb5e56f30e6ecff3e88a0f3031139a0f6740d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/526acedfae9d1112ec82797a0d40dbae40ca709a",
-                "reference": "526acedfae9d1112ec82797a0d40dbae40ca709a",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/38cb5e56f30e6ecff3e88a0f3031139a0f6740d8",
+                "reference": "38cb5e56f30e6ecff3e88a0f3031139a0f6740d8",
                 "shasum": ""
             },
             "require": {
@@ -411,20 +411,20 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2020-03-13T19:52:35+00:00"
+            "time": "2020-04-21T13:29:27+00:00"
         },
         {
             "name": "illuminate/translation",
-            "version": "v6.18.3",
+            "version": "v6.18.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/translation.git",
-                "reference": "577237df0680ecf9f939d5a88d1e373bb07c0022"
+                "reference": "07ed6fe6fb0affc7b4febd4c533343c6df4dee01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/translation/zipball/577237df0680ecf9f939d5a88d1e373bb07c0022",
-                "reference": "577237df0680ecf9f939d5a88d1e373bb07c0022",
+                "url": "https://api.github.com/repos/illuminate/translation/zipball/07ed6fe6fb0affc7b4febd4c533343c6df4dee01",
+                "reference": "07ed6fe6fb0affc7b4febd4c533343c6df4dee01",
                 "shasum": ""
             },
             "require": {
@@ -457,11 +457,11 @@
             ],
             "description": "The Illuminate Translation package.",
             "homepage": "https://laravel.com",
-            "time": "2020-01-07T13:47:03+00:00"
+            "time": "2020-04-15T13:06:56+00:00"
         },
         {
             "name": "illuminate/view",
-            "version": "v6.18.3",
+            "version": "v6.18.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/view.git",
@@ -2123,16 +2123,16 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v3.6.2",
+            "version": "v3.6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "786a947e57086cf236cefdee80784634224b99fa"
+                "reference": "1b3103013797f04521c6cae5560f604649484066"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/786a947e57086cf236cefdee80784634224b99fa",
-                "reference": "786a947e57086cf236cefdee80784634224b99fa",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/1b3103013797f04521c6cae5560f604649484066",
+                "reference": "1b3103013797f04521c6cae5560f604649484066",
                 "shasum": ""
             },
             "require": {
@@ -2188,7 +2188,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-03-27T23:36:02+00:00"
+            "time": "2020-04-12T15:18:03+00:00"
         }
     ],
     "packages-dev": [],

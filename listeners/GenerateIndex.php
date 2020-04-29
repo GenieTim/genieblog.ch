@@ -3,12 +3,16 @@
 namespace App\Listeners;
 
 use TightenCo\Jigsaw\Jigsaw;
+use Symfony\Component\Yaml\Yaml;
 
 class GenerateIndex
 {
     public function handle(Jigsaw $jigsaw)
     {
-        foreach (['en', 'de'] as $lang) {
+        $global_config = Yaml::parseFile(__DIR__ . "/../global-config.yaml");
+        $LANGUAGES = $global_config->language;
+
+        foreach ($LANGUAGES as $lang) {
             $data = collect($jigsaw->getCollection('posts_' . $lang)->map(function ($page) use ($jigsaw) {
                 if ($page->findable) {
                     return [

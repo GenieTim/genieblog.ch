@@ -5,8 +5,11 @@ use Illuminate\Filesystem\Filesystem;
 use Illuminate\Translation\FileLoader;
 use Illuminate\Translation\Translator;
 use TightenCo\Jigsaw\Collection\CollectionItem;
+use Symfony\Component\Yaml\Yaml;
 
-const LANGUAGES = ["de", "en"];
+
+$global_config = Yaml::parseFile("global-config.yaml");
+$LANGUAGES = $global_config->language;
 
 /**
  * Get all collections in the desired languages
@@ -16,7 +19,8 @@ const LANGUAGES = ["de", "en"];
 function getMultilangCollections()
 {
     $collections = [];
-    foreach (LANGUAGES as $langKey => $lang) {
+    global $LANGUAGES;
+    foreach ($LANGUAGES as $langKey => $lang) {
         // posts
         $collections['posts_' . $lang] = [
             'author' => 'Tim Bernhard', // Default author, if not provided in a post
@@ -117,7 +121,7 @@ return [
     'siteName' => 'genieblog.ch',
     'siteDescription' => 'A genius for a genius',
     'siteAuthor' => 'Tim Bernhard',
-    'languages' => LANGUAGES,
+    'languages' => $LANGUAGES,
     'language' => 'en', // default language, if undefined for some reason
     // might be bool or array: if array, have keys the languages, as values the path to the other language
     // TODO: don't rely on URL/path, as it might be different for different environments
@@ -136,17 +140,28 @@ return [
             return $url;
         }
         if (is_array($page->translations)) {
-            return $page->basUrl . $page->tranlations[$targetLanguage];
-        }
-        for ($i = 0; $i < count(LANGUAGES); ++$i) {
-            $tryLanguage = LANGUAGES[$i];
-            if (strpos($url, "$tryLanguage") !== false) {
-                // replace all possible occurences of the language in the file name/path
-                $rep1 = str_replace("/$tryLanguage/", "/$targetLanguage/", $url);
-                $rep2 = str_replace(".$tryLanguage.", ".$targetLanguage.", $rep1);
-                return str_replace(".$tryLanguage/", ".$targetLanguage/", $rep2);
+            // if there is a '/' in the translation, it is an URL/path
+            if (Str::contains($page->translations[$targetLanguage], '/')) {
+                return $page->baseUrl . $page->translations[$targetLanguage];
             }
+            // otherwise, it is the translated slug
+            // in which case we have to rebuild the URL.
+            // For a blog post, e.g., according to the scheme defined above:
+            // blog/' . $lang . '/{date|Y}/{slug}'
+            // the replacement here is rather opinionated: 
+            // expects /$lang/ as well as slug being last part of URL.
+            // First, replace the language as needed,
+            $rep1 = str_replace("/$page->language/", "/$targetLanguage/", $url);
+            // then, make sure the URL ends in slug: replace some possibly distracting stuff
+            $rep2 = preg_replace('/index.html$/', '', $rep1);
+            $rep3 = rtrim($rep2, '/');
+            // finally, assemble new
+            return dirname($rep3) . '/' . $page->translations[$targetLanguage] . '/';
         }
+        // replace all possible occurences of the language in the file name/path
+        $rep1 = str_replace("/" . $page->language . "/", "/" . $targetLanguage . "/", $url);
+        $rep2 = str_replace("." . $page->language . ".", "." . $targetLanguage . ".", $rep1);
+        return str_replace("." . $page->language . "/", "." . $targetLanguage . "/", $rep2);
     },
     'hasTranslation' => function ($page, $targetLanguage) {
         // check whether a certain translation is existing/available/accessible

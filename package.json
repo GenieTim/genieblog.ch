@@ -14,6 +14,7 @@
         "browser-sync-webpack-plugin": "^2.0.1",
         "copy-webpack-plugin": "^5.1.1",
         "cross-env": "^7.0.2",
+        "dateformat": "^3.0.3",
         "extra-watch-webpack-plugin": "^1.0.3",
         "fuse.js": "^5.1.0",
         "hasbin": "^1.2.3",
@@ -33,8 +34,9 @@
         "vue-template-compiler": "^2.6.11",
         "workbox-webpack-plugin": "^5.0.0",
         "yaml": "^1.7.2",
-        "dateformat": "^3.0.3",
         "yargs": "^15.1.0"
     },
-    "dependencies": {}
+    "dependencies": {
+        "js-yaml": "^3.13.1"
+    }
 }
