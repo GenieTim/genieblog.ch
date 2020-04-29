@@ -7,10 +7,17 @@ use Illuminate\Translation\Translator;
 use TightenCo\Jigsaw\Collection\CollectionItem;
 use Symfony\Component\Yaml\Yaml;
 
+$LANGUAGES;
 
-$global_config = Yaml::parseFile("global-config.yaml");
-$LANGUAGES = $global_config->language;
-
+function getLanguages()
+{
+    global $LANGUAGES;
+    if (is_null($LANGUAGES)) {
+        $global_config = Yaml::parseFile("global-config.yaml");
+        $LANGUAGES = $global_config['languages'];
+    }
+    return $LANGUAGES;
+}
 /**
  * Get all collections in the desired languages
  *
@@ -19,8 +26,8 @@ $LANGUAGES = $global_config->language;
 function getMultilangCollections()
 {
     $collections = [];
-    global $LANGUAGES;
-    foreach ($LANGUAGES as $langKey => $lang) {
+    $languages = getLanguages();
+    foreach ($languages as $langKey => $lang) {
         // posts
         $collections['posts_' . $lang] = [
             'author' => 'Tim Bernhard', // Default author, if not provided in a post
@@ -121,7 +128,7 @@ return [
     'siteName' => 'genieblog.ch',
     'siteDescription' => 'A genius for a genius',
     'siteAuthor' => 'Tim Bernhard',
-    'languages' => $LANGUAGES,
+    'languages' => getLanguages(),
     'language' => 'en', // default language, if undefined for some reason
     // might be bool or array: if array, have keys the languages, as values the path to the other language
     // TODO: don't rely on URL/path, as it might be different for different environments

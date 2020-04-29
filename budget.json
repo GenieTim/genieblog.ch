@@ -13,7 +13,7 @@
       },
       {
         "resourceType": "stylesheet",
-        "budget": 200
+        "budget": 50
       },
       {
         "resourceType": "font",
@@ -25,7 +25,7 @@
       },
       {
         "resourceType": "script",
-        "budget": 500
+        "budget": 100
       },
       {
         "resourceType": "total",

@@ -70,7 +70,7 @@ const yaml = require('js-yaml');
 function getLanguages() {
   let fileContents = fs.readFileSync(__dirname + '/../global-config.yaml', 'utf8');
   let data = yaml.safeLoad(fileContents);
-  return data.languges;
+  return data.languages;
 }
 
 function getFileName(language, date, slug) {
