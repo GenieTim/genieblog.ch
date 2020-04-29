@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 return [
   'about' => 'about',
@@ -7,5 +7,5 @@ return [
   'checkout.github' => 'Help fix typos & translation or checkout the source on',
   'copyright.imprint' => 'Imprint',
   'copyright.rights' => 'All rights reserved.',
-  'language.choose' => 'Read this page in language:',
+  'language.choose' => 'View this page in another language:',
 ];
