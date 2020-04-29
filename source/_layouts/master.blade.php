@@ -130,6 +130,8 @@
 
     <div id="skip-content-target" class="hidden" tabindex="-1"></div>
 
+    @yield('hero')
+
     <main role="main" class="flex-auto w-full container max-w-4xl mx-auto py-16 px-6">
         @yield('body')
     </main>
@@ -137,19 +139,18 @@
     <footer class="text-center shadow bg-primary-complement border-t text-sm mt-12 py-4" role="contentinfo">
         <ul class="flex flex-col md:flex-row justify-center list-none">
             <li class="md:mr-2">
-                <a href="{{$page->baseUrl}}/pages/{{$page->language}}/imprint" title="Read the imprint/impressum">{{ $page->translate('master.copyright.imprint') }}</a>.
+                <a href="{{$page->baseUrl}}/pages/{{$page->language}}/imprint"
+                    title="Read the imprint/impressum">{{ $page->translate('master.copyright.imprint') }}</a>.
             </li>
 
-            <li class="md:mr-2">
+            <li class="md:mr-2 lang-selection">
                 {{ $page->translate('master.language.choose') }}
                 @foreach ($page->languages as $lang)
                 @if ($page->hasTranslation($lang))
-                <a href="{{ $page->translateUrl($lang) }}" title="Read this in {{$lang}}">
-                    {{$lang}}
-                </a>@if (!$loop->last), @endif
+                <a href="{{ $page->translateUrl($lang) }}" title="Read this in {{$lang}}"
+                    class="lang-link">{{$lang}}</a>{{ $loop->last ? "." : ", " }}
                 @endif
                 @endforeach
-                .
             </li>
 
             <li>

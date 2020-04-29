@@ -3,7 +3,44 @@ extends: _layouts.master
 language: en
 ---
 
+@section('hero')
+<!-- landing page -->
+<div class="w-full hero">
+    <div class="circuit w-full absolute">
+        <h1>Developer</h1>
+    </div>
+    <div class="split w-full absolute">
+        <h1>&</h1>
+    </div>
+    <div class="graphene w-full absolute">
+        <h1>Chemist</h1>
+    </div>
+</div>
+@endsection
+
+
 @section('body')
+
+<!-- about this site -->
+<div class="w-full mb-6">
+    This is the personal website of me, <a href="{{ $page->baseUrl }}/pages/en/about#Tim+Bernhard">Tim Bernhard</a>.
+    I use this website mainly to publish in the blog whatever I was missing when searching the web,
+    whatever advice and ideas I wished for or got when solving a problem.
+    Sometimes, the content is just some ideas, a short code snippet, and sometimes a slightly longer tutorial.
+    I kindly as you to not use the content as an exemple of my technical writing skills – if it has to be used to
+    assess me, please see it rather as an example of things I am interested in. But even then,
+    I would kindly suggest you rather <a href="mailto:tim@genieblog.ch" title="contact Tim">ask</a> for my CV,
+    checkout my <a href="https://github.com/genietim/" title="Tim's GitHub account">GitHub account</a>
+    or the <a href="https://bernhard-webstudio.ch/projects" title="Tim's Projects for clients">projects</a> I do for
+    clients.
+</div>
+<hr class="border-b my-6" />
+
+<!-- featured posts -->
+<div class="w-full mb-6">
+    <h1>From the <a title="To the blog"
+            href="{{$page->baseUrl}}/blog/{{$page->language}}/index.{{$page->language}}">Blog</a></h1>
+</div>
 
 @foreach ($posts_en->where('featured', true) as $featuredPost)
 <div class="w-full mb-6">
@@ -16,8 +53,7 @@ language: en
     </p>
 
     <h2 class="text-3xl mt-0">
-        <a href="{{ $featuredPost->getUrl() }}" title="Read {{ $featuredPost->title }}"
-            class="font-extrabold">
+        <a href="{{ $featuredPost->getUrl() }}" title="Read {{ $featuredPost->title }}" class="font-extrabold">
             {{ $featuredPost->title }}
         </a>
     </h2>
@@ -35,6 +71,7 @@ language: en
 @endif
 @endforeach
 
+<!-- non-featured posts -->
 @foreach ($posts_en->where('featured', false)->take(6)->chunk(2) as $row)
 <div class="flex flex-col md:flex-row md:-mx-6">
     @foreach ($row as $post)
@@ -55,7 +92,7 @@ language: en
 
 <p>
     All posts can be found in the <a title="{{ $page->siteName }} Blog"
-    href="{{$page->baseUrl}}/blog/{{$page->language}}/index.{{$page->language}}">blog</a>!
+        href="{{$page->baseUrl}}/blog/{{$page->language}}/index.{{$page->language}}">blog</a>!
 </p>
 
 @stop

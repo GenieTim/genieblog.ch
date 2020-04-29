@@ -94,3 +94,87 @@
     @apply .text-secondary-complement;
   }
 }
+
+.hero {
+  height: 25rem;
+
+  >div {
+    height: 25rem;
+    margin-top: -1px;
+
+    >h1 {
+      font-size: 5rem;
+
+      @screen xl {
+        font-size: 7rem;
+      }
+    }
+  }
+
+  .circuit {
+    @apply .bg-primary-complement;
+    @apply .text-primary-shade;
+    background-image: url('/assets/img/circuit-board.svg');
+    text-align: left;
+    z-index: 3;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 39%, 80% 33%, 45% 41%, 0% 35%);
+
+    h1 {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+    }
+  }
+
+  .split {
+    @apply .bg-primary-shade;
+    @apply .text-primary-complement;
+    text-align: center;
+    z-index: 2;
+
+    h1 {
+      position: absolute;
+      top: 50%; // position the top  edge of the element at the middle of the parent
+      left: 50%; // position the left edge of the element at the middle of the parent 
+      transform: translate(-50%, -50%); // This is a shorthand of translateX(-50%) and translateY(-50%) 
+    }
+  }
+
+  .graphene {
+    @apply .bg-primary-complement;
+    @apply .text-primary-shade;
+    background-image: url('/assets/img/graphene.svg');
+    text-align: right;
+    z-index: 3;
+    clip-path: polygon(0% 100%, 100% 100%, 100% 65%, 80% 53%, 60% 63%, 45% 73%, 0% 61%);
+
+    h1 {
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+    }
+  }
+
+  // on larger screens we can allow to crop/overwrite diagonally instead of horizontally
+  // screen size dependent crop
+  @screen sm {
+    .circuit {
+      clip-path: polygon(0% 0%, 91% 0%, 78% 18%, 60% 31%, 54% 29%, 48% 30%, 45% 40%, 35% 33%, 34% 38%, 21% 29%, 6% 36%, 0% 35%);
+    }
+
+    .graphene {
+      clip-path: polygon(0% 100%, 15% 74%, 33% 69%, 50% 63%, 64% 54%, 78% 58%, 92% 59%, 100% 58%, 100% 55%, 100% 100%);
+    }
+  }
+
+  // and on even larger screens even vertically
+  @screen lg {
+    .circuit {
+      clip-path: polygon(0% 0%, 56% 0%, 45% 18%, 48% 29%, 43% 38%, 46% 45%, 45% 51%, 39% 61%, 43% 64%, 41% 72%, 42% 81%, 45% 89%, 48% 100%, 0% 100%);
+    }
+
+    .graphene {
+      clip-path: polygon(71% 0%, 100% 0%, 100% 100%, 71% 100%, 56% 100%, 61% 85%, 60% 72%, 65% 67%, 65% 50%, 68% 42%, 67% 25%, 72% 15%, 66% 8%);
+    }
+  }
+}
