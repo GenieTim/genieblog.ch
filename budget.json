@@ -4,6 +4,10 @@
       {
         "resourceType": "third-party",
         "budget": 10
+      },
+      {
+        "resourceType": "total",
+        "budget": 25
       }
     ],
     "resourceSizes": [
@@ -25,10 +29,6 @@
       },
       {
         "resourceType": "script",
-        "budget": 100
-      },
-      {
-        "resourceType": "total",
         "budget": 100
       }
     ],
