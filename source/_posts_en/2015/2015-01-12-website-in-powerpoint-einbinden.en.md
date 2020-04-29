@@ -10,8 +10,8 @@ excerpt: >-
   present.
   PowerPoint changes when you connect the computer to a projector
   from "Duplicate the Ad" to "Extend the Ad",
-  so that the beamer serves as a second display, just for the presentation.
-  Due to this automatic change, you cannot simply switch to another program such as B.
+  so that the beamer serves as a second display for the presentation.
+  Due to this automatic change, you cannot switch to another program such as B.
   open a browser and display it on the projector.
   Unfortunately, this makes it difficult to display websites during a presentation.
   Fortunately, there are some solutions.
@@ -39,9 +39,9 @@ cover_image: false
 
 When you present a Microsoft PowerPoint presentation, you have probably already enjoyed the advantages of the reference tools.
 Whether the notes, the laser pointer or the stopwatch - I also prefer this view to present.
-When you have connected the computer to a projector, PowerPoint changes from "Duplicate the display" to "Extend the display", so that the projector serves as a second display, just for the presentation.
+When you have connected the computer to a projector, PowerPoint changes from "Duplicate the display" to "Extend the display", so that the projector serves as a second display for the presentation only.
 
-Due to this automatic change, you cannot simply switch to another program such as B.
+Due to this automatic change, you cannot switch to another program such as B.
 open a browser and display it on the projector.
 Unfortunately, this makes it difficult to display websites during a presentation.
 Fortunately, there are some solutions.

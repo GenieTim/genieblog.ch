@@ -18,20 +18,20 @@ language: en
 cover_image: false
 ---
 
-For an HTML5 application, I had the idea of ​​just renaming some elements in localStorage instead of deleting them.
-Since this would happen several times, the renaming had to be done clearly so that the other elements are not overwritten.
+For an HTML5 application, I had the idea of ​​renaming some elements in localStorage instead of deleting them.
+Since this would happen several times, the renaming had to be done so that the other elements are not overwritten.
 And what is more suitable for unambiguous identification than the current time with date, milliseconds and everything?
 
 Well; the idea may sound good, but how can you get the element out of memory one day? How can I call an element with an almost random key?
 
 Yes, dear reader, that's exactly the question I asked myself.
-You probably already thought of the title "Pah, I know that ...". And of course you are right, but since no solutions could be found on my part after a short internet search, I would like to introduce two of them here.
+You probably already thought of the title "Pah, I know that ...". And yes, you are right, but since no solutions could be found on my part after a short internet search, I would like to introduce two of them here.
 
 One solution is probably the more elegant one: every time you write a new "random element" in the storage, write the corresponding key in an array, which is also written in the localStorage.
 
-The other solution is the one that led to the title "Brainstorm". Although the idea is very obvious and I should have thought of it earlier, it just came to me as a flash of inspiration.
+The other solution is the one that led to the title "Brainstorm". Although the idea is very obvious and I should have thought of it earlier, it came to me as a flash of inspiration.
 The key thought is this: `localStorage` is an object like any other.
-So you can go through it with a simple `for` loop.
+So you can go through it with an ordinary `for` loop.
 For example, you can do this if you want to list all of the items below each other:
 
 ```javascript

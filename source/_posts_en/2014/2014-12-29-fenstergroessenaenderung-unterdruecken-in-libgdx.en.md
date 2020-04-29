@@ -45,12 +45,12 @@ import ch.genieblog.yourgame;
 public class DesktopLauncher {
 	public static void main (String[] arg) {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
-		config.title = "yourGameTitle"; // Der Titel der Applikation
-		config.width = 480; // Die Breite der Applikation; entspricht der Breite 
-                                    // eines durchschnittlichen Android-Smartphones
-		config.height = 800; // Die Höhe der Applikation; entspricht der Höhe
-                                    // eines durchschnittlichen Android-Smartphones
-		config.resizable = false; // und hier verhindern wir die Fenstergrössenänderung
+		config.title = "yourGameTitle"; // The title of the application
+		config.width = 480; // The width of the application; corresponds to the width
+                                    // of an average smartphone
+		config.height = 800; //The amount of the application; corresponds to the height
+                                    // of an average smartphone
+		config.resizable = false; // and here we prevent the window size from changing
 		new LwjglApplication(new spaceMaster(), config);
 	}
 }`

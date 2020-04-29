@@ -52,14 +52,14 @@ There are various tutorials for [this](https://blog.jgrossi.com/2013/creating-yo
 ## Boni
 
 To give the Symfony character to your package, you will want to integrate e.g. [dependency injection](https://symfony.com/doc/current/components/dependency_injection.html), expose a class as a service or use the general Symfony [configuration](https://symfony.com/doc/current/components/config/definition.html) for your services.
-This can easily be achieved by adding the relevant Symfony components as dependencies via composer, e.g.
+This can be achieved by adding the relevant Symfony components as dependencies via composer, e.g.
 use command `composer require symfony/dependency-injection`. Afterwards, you can use them the same way you are using them in your Symfony application.
 Pay attention not to limit the dependency versions too much, otherwise you may prevent a user from upgrading Symfony.
 
 There are may boni you can add to your repository, if it is published on e.g.
 GitHub: to give users and contributors a chance to better understand the state of your repository, integrate some of the [apps](https://github.com/marketplace) and add [badges](https://shields.io/#/) to your README file.
 
-Finally, let's talk [testing](https://symfony.com/doc/current/testing.html): as your package should not ship with a Kernel oder similar, you have nothing to simply run.
+Finally, let's talk [testing](https://symfony.com/doc/current/testing.html): as your package should not ship with a Kernel oder similar, you have nothing to run.
 There are workarounds: either you let your bundle live in a complete application, e.g.
 as a submodule, and test the application as a whole.
 Or you use [unit-testing](https://symfony.com/doc/current/create_framework/unit_testing.html). If your choice falls on the latter, I can recommend using [ConfigTest](https://github.com/SymfonyTest/SymfonyConfigTest) if your bundle uses the configuration component.

@@ -22,5 +22,5 @@ cover_image: false
 
 
 * Do not compress HTML, only JS & CSS
-* As your application is PHP anyway, just add the 'defer' atrribute to all JavaScripts possible
+* As your application is PHP anyway, add the 'defer' atrribute to all JavaScripts possible
 * Even though you are using Doctrine, you have to remember to add indices to your database columns

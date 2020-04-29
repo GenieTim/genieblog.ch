@@ -37,16 +37,16 @@ In addition, you only have to program a way in which the logarithm should be dra
 ## Draw the logarithm of 10
 
 So far so good.
-This allows us to concentrate entirely on taking the logarithm of 10. Let's start with the simple part: we create a form in which the user enters the number from which he wants to have taken the 10th logarithm.
+This allows us to concentrate entirely on taking the logarithm of 10. Let's start with the HTML: we create a form in which the user enters the number from which they wants to have taken the 10th logarithm.
 Since we do not want to use `Math.log ()` or similar, we will also do without `Math.pow ()` and jQuery.
-The fact that the code no longer looks so elegant is irrelevant - it just has to serve the purpose.
+The fact that the code no longer looks so elegant is irrelevant here - it has to serve the purpose.
 It could look like this:
 
     
     <code class="language-markup"><form> 
     <-- An Input field for the number --> 
     <input type="text" id="zahl" size="40" placeholder="Zehnerlogarithmus von..." /> 
-    <-- a Button to start the calculations (der losHandler() is started) since we write this program just for demo purposes, it is justifiable that we hide a little script in the HTML code (onclick) and disregard the strict separation of model, view and controller --> 
+    <-- a Button to start the calculations (der losHandler() is started) since we write this program only for demo purposes, it is justifiable that we hide a little script in the HTML code (onclick) and disregard the strict separation of model, view and controller --> 
     <input type="button" id="los" value="Los!" onClick="losHandler(); return false;" /> 
     </form>
     <-- and an output paragraph for the result. --> 
@@ -56,42 +56,42 @@ Then we write the `losHandler()`. This should be able to read and use the user i
 This is how you can solve it:
 
     
-    <code class="language-javascript">function ausweg(eingabe) {
-    /* If the user types in a number smaller than 1, we are powerless with our method */
-    return Math.log(eingabe) / Math.LN10;
+    function ausweg(eingabe) {
+        /* If the user types in a number smaller than 1, we are powerless with our method */
+        return Math.log(eingabe) / Math.LN10;
     }
     function losHandler() {
-    /* keep the base variable for possible later versions */
-    var basis = 10;
-    /* read the input */
-    var eingabe = document.getElementById("zahl");
-    /* prepare the output */
-    var ergebnis = document.getElementById("ergebnis");
-    ergebnis.innerHTML = "";
-    eingabe = parseFloat(eingabe.value);
-    /* validate the input */
-    if (eingabe === null) {
-    alert("No input found!");
-    }
-    /* for different Browsers, and just to be sure... */
-    else if (eingabe === "") {
-    alert("No input found!");
-    } else if (eingabe === undefined) {
-    alert("No input found!");
-    } else if (isNaN(parseInt(eingabe))) {
-    alert("Please only enter numbers!");
-    } else if (eingabe < 0) {
-    alert("Please only enter numbers bigger than 0!");
-    /* otherwise, output result */
-    } else if (eingabe < 1) {
-    ergebnis.innerHTML = "log<sub>" + basis + "</sub>" + eingabe + " = " + ausweg(eingabe);
-    } else {
-    ergebnis.innerHTML = "log<sub>" + basis + "</sub>" + eingabe + " = " + log(eingabe, basis);
-    }
+        /* keep the base variable for possible later versions */
+        var basis = 10;
+        /* read the input */
+        var eingabe = document.getElementById("zahl");
+        /* prepare the output */
+        var ergebnis = document.getElementById("ergebnis");
+        ergebnis.innerHTML = "";
+        eingabe = parseFloat(eingabe.value);
+        /* validate the input */
+        if (eingabe === null) {
+            alert("No input found!");
+        }
+        /* for different Browsers, and to be sure... */
+        else if (eingabe === "") {
+            alert("No input found!");
+        } else if (eingabe === undefined) {
+            alert("No input found!");
+        } else if (isNaN(parseInt(eingabe))) {
+            alert("Please only enter numbers!");
+        } else if (eingabe < 0) {
+            alert("Please only enter numbers bigger than 0!");
+        /* otherwise, output result */
+        } else if (eingabe < 1) {
+            ergebnis.innerHTML = "log<sub>" + basis + "</sub>" + eingabe + " = " + ausweg(eingabe);
+        } else {
+            ergebnis.innerHTML = "log<sub>" + basis + "</sub>" + eingabe + " = " + log(eingabe, basis);
+        }
     }
 
-Der Ausweg ist nötig, da die von uns geschrieben werdende Funktion nicht imstande sein wird, Eingaben kleiner als 1 zu verarbeiten.
-Kommen wir nun also zur Funktion log(), dem Herzstück unseres Kunstwerks, die den Logarithmus zur Basis zehn berechnet:
+The way out is necessary because the function we are writing will not be able to process inputs less than 1.
+Now we come to the function `log()`, the heart of our artwork, which calculates the logarithm of base ten:
 
     
     function log(wert, basis) {
@@ -140,7 +140,7 @@ The function `power ()` is not very difficult and quite self-explanatory:
     }
 
 This completes our code.
-If our code is not obvious, write your question in the comments.
+If our code is not clear, write your question in the comments.
 
 Test the code here:
 <iframe src="http://jsfiddle.net/BernhardWebstudio/vx7m21nd/16/embedded/result,js,html" allowfullscreen="allowfullscreen" width="100%" height="300" frameborder="0"></iframe>

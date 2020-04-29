@@ -27,7 +27,7 @@ Many rumors came with them - will Siri be available on OS X? And after all these
 Things look different with Cortana.
 One of the first Windows 10 Technical Previews came with Cortana.
 The range of functions corresponds to that of Windows Phone, logically, since Microsoft would like to deliver the same OS for all devices.
-And if you use Cortana on your smartphone as well as on your desktop computer with the same Microsoft account, the data will of course be synchronized from one device to another via the cloud.
+And if you use Cortana on your smartphone as well as on your desktop computer with the same Microsoft account, the data will be synchronized from one device to another via the cloud.
 It is an open question whether this is an advantage if the same voice control from the cell phone is also available on the desktop computer.
 But it's one more point that goes to Cortana.
 But the game is not over yet.

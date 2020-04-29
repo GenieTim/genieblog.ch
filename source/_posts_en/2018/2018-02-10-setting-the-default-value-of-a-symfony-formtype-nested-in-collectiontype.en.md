@@ -21,7 +21,7 @@ cover_image: false
 There are a few proposed ways to hack a default value to form fields.
 The problen gets bigger when handling [`CollectionType`](https://symfony.com/doc/current/reference/forms/types/collection.html)s, as the underlying objects don't get constructed automatically.
 Workarounds are numerous, e.g.
-simply setting [`prototype_data`](https://symfony.com/doc/current/reference/forms/types/collection.html#prototype-data) on the `CollectionType` to an instantiated object.
+setting [`prototype_data`](https://symfony.com/doc/current/reference/forms/types/collection.html#prototype-data) on the `CollectionType` to an instantiated object.
 Unfortunately, for me, not one of these worked out when working with _nested_ CollectionTypes. 
 
 The only way that worked out for me was adding a [`DataTransformer`](https://symfony.com/doc/current/form/data_transformers.html) which checks in the `reverseTransform` function whether the object to transform is `null`, and if, set it to a new instance instead.

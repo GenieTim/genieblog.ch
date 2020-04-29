@@ -33,7 +33,7 @@ The properties you want to be mapped have to be listed in the configuration file
 
   * To map relations such as ManyToOne, ManyToMany or OneToOne, the property gets a subkey "type" with value "nested", after which the a new "properties" key is necessary followed by the properties of the related Entity
 
-  * To create a development environment separat from the production index, simply set the index_name attribute of the relevant index to a environment-dependent value, such as "app_%kernel.environment%"
+  * To create a development environment separat from the production index, set the index_name attribute of the relevant index to a environment-dependent value, such as "app_%kernel.environment%"
 
 When you finally have the configuration set up, you have to run `./bin/console-dev fos:elastica:populate`. This will show you errors in the configuration, if you have some, respectively sync your database with the elasticsearch instance.
 The next step you will want to take is to use Elasticsearch to search, duh.

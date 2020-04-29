@@ -18,8 +18,8 @@ language: en
 cover_image: false
 ---
 
-Of course there are more than just four ways to do layout like aligning elements next to each other.
-In this post, I just want to summarize the four ways I tend to use:
+Of course there are more than four ways to do layout like aligning elements next to each other.
+In this post, I want to summarize the four ways I tend to use:
 
   * Flowfram
   * Table
@@ -62,9 +62,9 @@ Please refer to the [documentation](http://mirrors.ctan.org/macros/latex/contrib
 
 ## Table
 
-Good old Table is a method of aligning items too! Note that it is not the intended purpose of a table cell to contain much more than just text, so you might find additional [difficulties](https://tex.stackexchange.com/questions/53061/insert-image-and-list-inside-a-table) inserting an image or a list inside a table.
-Important for use as a layout tool is simply not to add the borders of the table cells and rows.
-That simply means no "|" between the float specifiers as well as no `\hline` or similar in the table.
+Good old Table is a method of aligning items too! Note that it is not the intended purpose of a table cell to contain much more than only text, so you might find additional [difficulties](https://tex.stackexchange.com/questions/53061/insert-image-and-list-inside-a-table) inserting an image or a list inside a table.
+Important for use as a layout tool is not to add the borders of the table cells and rows.
+That means no "|" between the float specifiers as well as no `\hline` or similar in the table.
 
 In the following example, I `\usepackage{[tabularx](https://ctan.org/pkg/tabularx?lang=en)}` in order to get both items the same horizontal space.
 

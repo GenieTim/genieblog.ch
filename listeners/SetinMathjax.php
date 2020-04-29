@@ -25,7 +25,7 @@ class SetinMathjax
       if (strpos($file_content, '<math>') !== false || strpos($file_content, '<inline-math>') !== false) {
         // either we could parse & handle stuff here...
         // but since no nice library for PHP is available, 
-        // it seems to be less of a hack to just use mathjax.
+        // it seems to be less of a hack to just using mathjax where necessary.
         $src = '<script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>';
         $replacement = $src . '</head>';
         $new_file_content = str_replace('</head>', $replacement, $file_content);

@@ -24,7 +24,7 @@ cover_image: 2015/cubietruck.jpg
 ---
 
 When you first connect the Cubietruck (v / o Cubieboard 3), the Android operating system starts automatically.
-Fortunately, since this does not exhaust the full potential of the Cubies, it can be easily replaced by Lubuntu.
+Fortunately, since this does not exhaust the full potential of the Cubies, it can be replaced by Lubuntu.
 This can be done, for example, as follows:
 
 Preparations
@@ -48,7 +48,7 @@ Start the Live Suit program and select the downloaded * .img file by clicking on
 If the * .gz file is still available in your download folder, you must unzip it first.
 This should happen automatically by double clicking on the file.
 
-If you have not already done so, power up your Cubietruck and hang it on your screen.
+If you have not already done so, power up your Cubietruck and connect it to a screen.
 If any of the lights on the Cubie come on, press the "Power on" button for a while until the lights go out and the Cubie is switched off.
 Now connect the MiniUSB cable to the Mac (but not yet to the Cubietruck). Press the switch labeled "FEL" on the Cubie.
 After holding it down for approx. 10 seconds, plug the MiniUSB cable into the Cubie.

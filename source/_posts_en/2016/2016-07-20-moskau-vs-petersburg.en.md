@@ -25,7 +25,7 @@ A continuously updated article with the differences that I noticed in these two 
 
 **The subway**
 After my train journey from Moscow to St. Petersburg, I had to take the metro and luggage.
-I was surprised a lot because there was simply no such thing in Moscow.
+I was surprised a lot because there was no such thing in Moscow.
 For example, advertising: Moscow's metro looks thoroughly clean and pure.
 There is no rubbish lying around, the elegant arches and supports look polished, and advertising is nowhere to be seen.
 It is quite different in St. Petersburg: the corridors are lit up practically only by neon signs.

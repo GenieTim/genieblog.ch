@@ -31,7 +31,7 @@ And even though the OneNote format is [open](https://docs.microsoft.com/en-us/op
 I did not find a way to decompress the actual OneNote file to access the xml. 
 
 For another project, I already worked with the OneNote API, so I tried to export it with that one. 
-No luck either, as the equations are simply not in there.
+No luck either, as the equations are not in there.
 Finally, one way I found to programatically access the OneNote equations is to use [OneNote online](https://onenote.com): There, you can find the equations as MathML in the HTML source. 
 To extract the code from the OneNote webpage, I wrote a small script around [puppeteer](https://pptr.dev/): [check it out](https://github.com/GenieTim/OneNoteExporter)!
 

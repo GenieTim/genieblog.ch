@@ -18,6 +18,12 @@ language: en
 cover_image: 2015/20170523_135327664_iOS.jpg
 ---
 
+<div class="alert">
+I am by far not the only one having written on this topic, nor did I do any good.
+
+More entertaining examples can for example be found in the following video: [https://www.youtube.com/watch?v=2pL28CcEijU[(https://www.youtube.com/watch?v=2pL28CcEijU).
+</div>
+
 Have you ever tried to compare 1 + 2 with 3 in JavaScript? Or assign an undefined value?
 Now try it.
 Are the results satisfactory?
@@ -39,6 +45,3 @@ However, I would like to give you some more examples of what I think are abnorma
   * Check 0 == "", false == "0", and variations
 
 I hope you enjoy it - if you can think of other examples that you think should be included in this list, please write them in the comments!
-
-update:
-More entertaining examples can also be found in the following video: [https://www.youtube.com/watch?v=2pL28CcEijU[(https://www.youtube.com/watch?v=2pL28CcEijU) (although I do not use any WTF would describe as such)
