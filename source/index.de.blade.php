@@ -37,7 +37,7 @@ language: de
         title="Tim kontaktieren">anzufragen</a>,
     meinen <a href="https://github.com/genietim/" title="Tim's GitHub account">GitHub account</a>
     oder die <a href="https://bernhard-webstudio.ch/projects" title="Tim's Projects for clients">Projekte</a>, die ich
-    für Klienten umsetzten darf anzuschauen.
+    für Klienten umsetzten durfte, anzuschauen.
 </div>
 <hr class="border-b my-6" />
 
@@ -46,6 +46,7 @@ language: de
     <h1>Aus dem <a title="Zum Blog"
             href="{{$page->baseUrl}}/blog/{{$page->language}}/index.{{$page->language}}">Blog</a></h1>
 </div>
+<hr class="border-b my-6">
 
 @foreach ($posts_de->where('featured', true) as $featuredPost)
 <div class="w-full mb-6">

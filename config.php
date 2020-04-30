@@ -168,7 +168,8 @@ return [
         // replace all possible occurences of the language in the file name/path
         $rep1 = str_replace("/" . $page->language . "/", "/" . $targetLanguage . "/", $url);
         $rep2 = str_replace("." . $page->language . ".", "." . $targetLanguage . ".", $rep1);
-        return str_replace("." . $page->language . "/", "." . $targetLanguage . "/", $rep2);
+        $rep3 = str_replace("index." . $page->language, "index." . $targetLanguage, $rep2);
+        return str_replace("." . $page->language . "/", "." . $targetLanguage . "/", $rep3);
     },
     'hasTranslation' => function ($page, $targetLanguage) {
         // check whether a certain translation is existing/available/accessible
