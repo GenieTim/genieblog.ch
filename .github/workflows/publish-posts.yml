@@ -72,4 +72,4 @@ jobs:
           user: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
           localDir: ./build_production/blog/
-          remoteDir: "genieblog.ch/public_html/blog/"
+          remoteDir: "www.genieblog.ch/public_html/blog/"
