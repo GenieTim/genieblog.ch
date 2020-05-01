@@ -4,8 +4,19 @@ language: en
 ---
 
 @section('hero')
+
 <!-- landing page -->
 <div class="w-full hero">
+    {{-- <div class="page-0">
+        <h1>Welcome on genieblog.ch</h1>
+    </div>
+    <div class="page-1">
+        <h2>Tim Bernhard's personal Website</h2>
+    </div>
+    <div class="page-2">
+        <h1>Tim is a</h1>
+    </div>
+    <div class="page-3"> --}}
     <div class="circuit w-full absolute">
         <h1>Developer</h1>
     </div>
@@ -15,9 +26,9 @@ language: en
     <div class="graphene w-full absolute">
         <h1>Chemist</h1>
     </div>
+    {{-- </div> --}}
 </div>
-@endsection
-
+@stop
 
 @section('body')
 
@@ -30,8 +41,8 @@ language: en
     I kindly as you to not use the content as an exemple of my technical writing skills – if it has to be used to
     assess me, please see it rather as an example of things I am interested in. But even then,
     I would kindly suggest you rather <a href="mailto:tim@genieblog.ch" title="contact Tim">ask</a> for my CV,
-    checkout my <a href="https://github.com/genietim/" title="Tim's GitHub account">GitHub account</a>
-    or the <a href="https://bernhard-webstudio.ch/projects" title="Tim's Projects for clients">projects</a> I do for
+    checkout my <a href="https://github.com/genietim/" title="Tims GitHub account">GitHub account</a>
+    or the <a href="https://bernhard-webstudio.ch/projects" title="Tims Projects for clients">projects</a> I do for
     clients.
 </div>
 <hr class="border-b my-6" />

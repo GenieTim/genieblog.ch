@@ -95,8 +95,22 @@
   }
 }
 
+.social-icons {
+  svg {
+    max-height: 2em;
+    max-width: 2em;
+    @apply .inline;
+    @apply .m-3;
+
+    path {
+      fill: var(--color-primary);
+    }
+  }
+}
+
 .hero {
   height: 25rem;
+  overflow: hidden;
 
   >div {
     height: 25rem;
@@ -114,6 +128,7 @@
   .circuit {
     @apply .bg-primary-complement;
     @apply .text-primary-shade;
+    text-shadow: var(--color-primary-complement) 2px 2px;
     background-image: url('/assets/img/circuit-board.svg');
     text-align: left;
     z-index: 3;
@@ -129,6 +144,7 @@
   .split {
     @apply .bg-primary-shade;
     @apply .text-primary-complement;
+    text-shadow: var(--color-primary) 2px 2px;
     text-align: center;
     z-index: 2;
 
@@ -143,6 +159,7 @@
   .graphene {
     @apply .bg-primary-complement;
     @apply .text-primary-shade;
+    text-shadow: var(--color-primary-complement) 2px 2px;
     background-image: url('/assets/img/graphene.svg');
     text-align: right;
     z-index: 3;
