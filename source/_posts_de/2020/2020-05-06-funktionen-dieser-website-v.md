@@ -1,7 +1,8 @@
 ---
 author: Tim Bernhard
 categories:
-cover_image: false
+  - Genieblog
+cover_image: 2020/christian-englmeier-J7EUjSlNQtg-unsplash.jpg
 date: 2020-05-06 20:42:12+02:00
 description: false
 draft: false
@@ -18,12 +19,12 @@ translations:
 
 ---
 
-Ab heute, dem 6. Mai 2020 hat diese Seite ziemlich vor kurzem neu gestaltet.
+Diese Seite wurde von kurzem (also relativ zum Datum 6.5.2020) neu gestaltet.
 Um genauer zu sein, nicht nur neu gestaltet, sondern von Grund auf neu entwickelt.
-Alles, was ist der Inhalt übrig geblieben ist, die ich erfolgreich migriert.
+Alles, was übrig geblieben ist, ist der Inhalt, den ich erfolgreich migriert habe.
 Früher wurde diese Seite von [Wordpress] läuft (https://wordpress.org/).
 Ich entschied mich für wechseln, da ich meine Hände auf mit statischen Seite Generatoren bekommen wollte.
-Man kann mehr über den Schalter und ihre Vor- und Nachteile in einem anderen Beitrag lesen.
+Man kann mehr über den Schalter und ihre Vor- und Nachteile in einem [anderen Beitrag](https://genieblog.ch/blog/de/2020/migration-von-wordpress-jigsaw) lesen.
 
 In diesem Beitrag werde ich die Profis präsentieren, und alles, was in sie hineingegangen.
 

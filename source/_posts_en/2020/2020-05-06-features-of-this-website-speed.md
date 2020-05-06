@@ -2,7 +2,7 @@
 author: Tim Bernhard
 categories:
   - Genieblog
-cover_image: false
+cover_image: 2020/christian-englmeier-J7EUjSlNQtg-unsplash.jpg
 date: 2020-05-06 20:42:12+02:00
 description: false
 draft: false
@@ -24,7 +24,7 @@ To be more accurate, not only redesigned, but redeveloped from scratch.
 All that's left is the content, which I successfully migrated.
 Before, this site was run by [WordPress](https://wordpress.org/).
 I chose to switch since I wanted to get my hands on with static page generators.
-One may read more about the switch and its pros and cons in another post.
+One may read more about the switch and its pros and cons in [another post](https://genieblog.ch/blog/en/2020/migration-from-wordpress-to-jigsaw).
 
 In this post, I will present the pros, and everything that went into it.
 
