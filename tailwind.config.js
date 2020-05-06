@@ -1,4 +1,5 @@
 module.exports = {
+  purge: false, // we do Purge CSS separately
   theme: {
     extend: {
       colors: {

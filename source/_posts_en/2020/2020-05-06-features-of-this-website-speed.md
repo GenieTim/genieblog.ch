@@ -26,7 +26,7 @@ Before, this site was run by [WordPress](https://wordpress.org/).
 I chose to switch since I wanted to get my hands on with static page generators.
 One may read more about the switch and its pros and cons in [another post](https://genieblog.ch/blog/en/2020/migration-from-wordpress-to-jigsaw).
 
-In this post, I will present the pros, and everything that went into it.
+In this post, I will present one of the pros: how easy it was to make the website faster without any dubious WordPress plugins.
 
 ## I am Speed.
 
