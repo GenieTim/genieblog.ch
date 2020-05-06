@@ -7,5 +7,5 @@ return [
   'checkout.github' => 'Help fix typos & translation or checkout the source on',
   'copyright.imprint' => 'Imprint',
   'copyright.rights' => 'All rights reserved.',
-  'language.choose' => 'View this page in another language:',
+  'language.choose' => 'This page is available in the following languages:',
 ];

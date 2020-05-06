@@ -109,12 +109,11 @@ async function translatePost(sourceLanguage, targetLanguage, sourcePost) {
 }
 
 function getFileContent(author, date, language, posts) {
-  let fileContent = `
----
+  let fileContent = `---
 author: ${author}
 categories:
 cover_image: false
-date: ${date.toUTCString()}
+date: ${formatDate(date, 'yyyy-mm-dd HH:MM:sso')}
 description: false
 draft: false
 extends: _layouts.post
