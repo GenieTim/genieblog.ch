@@ -1,6 +1,8 @@
+#!/usr/bin/env node
+
 const fs = require("fs");
 const path = require("path");
-const translate = require('@vitalets/google-translate-api');
+const { translate } = require('deepl-translator');
 var inquirer = require('inquirer');
 var formatDate = require('dateformat');
 const yaml = require('js-yaml');
@@ -74,10 +76,7 @@ function getFileName(language, date, slug) {
 
 async function translatePost(sourceLanguage, targetLanguage, sourcePost) {
   console.log("Translating to " + targetLanguage);
-  let translatedTitle = await translate(sourcePost.title, {
-    from: sourceLanguage,
-    to: targetLanguage
-  });
+  let translatedTitle = await translate(sourcePost.title, targetLanguage, sourceLanguage);
   let translatedContent = "";
   // split code to not translate code
   let codeSplitContent = sourcePost.content.split('```');
@@ -87,9 +86,7 @@ async function translatePost(sourceLanguage, targetLanguage, sourcePost) {
       let toTranslate = codeSplitContent[content_idx];
       // let's not translate empty text (e.g. from ```)
       if (toTranslate.length > 0) {
-        translatedContent += (await translate(toTranslate, {
-          from: sourceLanguage, to: targetLanguage
-        })).text;
+        translatedContent += (await translate(toTranslate, targetLanguage, sourceLanguage)).translation;
       }
     } else {
       // code – no translation ?!? (note: caution: comments)
@@ -102,9 +99,9 @@ async function translatePost(sourceLanguage, targetLanguage, sourcePost) {
   translatedContent = translatedContent.replace(/\] \(/g, '](');
 
   return {
-    title: translatedTitle.text,
+    title: translatedTitle.translation,
     content: translatedContent,
-    slug: string_to_slug(translatedTitle.text)
+    slug: string_to_slug(translatedTitle.translation)
   }
 }
 
