@@ -1,6 +1,7 @@
 ---
 author: Tim Bernhard
 categories:
+  - Genieblog
 cover_image: false
 date: 2020-05-06 21:37:06
 description: false

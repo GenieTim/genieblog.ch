@@ -22,11 +22,12 @@ translations:
 Diese Seite wurde von kurzem (also relativ zum Datum 6.5.2020) neu gestaltet.
 Um genauer zu sein, nicht nur neu gestaltet, sondern von Grund auf neu entwickelt.
 Alles, was übrig geblieben ist, ist der Inhalt, den ich erfolgreich migriert habe.
-Früher wurde diese Seite von [Wordpress] läuft (https://wordpress.org/).
-Ich entschied mich für wechseln, da ich meine Hände auf mit statischen Seite Generatoren bekommen wollte.
-Man kann mehr über den Schalter und ihre Vor- und Nachteile in einem [anderen Beitrag](https://genieblog.ch/blog/de/2020/migration-von-wordpress-jigsaw) lesen.
+Früher wurde diese Seite mit [Wordpress](https://wordpress.org/) betrieben, jetzt wird sie durch [JigSaw](https://jigsaw.tighten.co/) generiert.
+Ich entschied mich für wechseln, da ich gerne etwas mit static site generators herumspielen wollte.
+Man kann mehr über den Wechsel und ihre Vor- und Nachteile in einem [anderen Beitrag](https://genieblog.ch/blog/de/2020/migration-von-wordpress-jigsaw) lesen.
 
-In diesem Beitrag werde ich die Profis präsentieren, und alles, was in sie hineingegangen.
+In diesem Beitrag werde ich einen der Vorteile präsentieren: 
+wie ich die Website signifikant schneller machen konnte, ohne dubiose WordPress-plugins.
 
 ## Geschwindigkeit. Pure Geschwindigkeit.
 
