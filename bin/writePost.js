@@ -80,7 +80,7 @@ async function translatePost(sourceLanguage, targetLanguage, sourcePost) {
   });
   let translatedContent = "";
   // split code to not translate code
-  let codeSplitContent = sourcePost.content.split('`');
+  let codeSplitContent = sourcePost.content.split('```');
   for (let content_idx = 0; content_idx < codeSplitContent.length; content_idx++) {
     if (content_idx % 2 == 0) {
       // text
@@ -113,7 +113,7 @@ function getFileContent(author, date, language, posts) {
 author: ${author}
 categories:
 cover_image: false
-date: ${formatDate(date, 'yyyy-mm-dd HH:MM:sso')}
+date: ${formatDate(date, 'yyyy-mm-dd HH:MM:ss')}
 description: false
 draft: false
 extends: _layouts.post
@@ -122,7 +122,7 @@ layout: post
 slug: ${posts[language].slug}
 social_image: false
 template: post
-title: ${posts[language].title}
+title: "${posts[language].title}"
 translations:
 `;
 
