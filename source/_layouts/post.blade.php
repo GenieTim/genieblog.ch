@@ -15,7 +15,7 @@
 
 @section('body')
 @if ($page->cover_image)
-@include('_components.img', ['alt' => $page->title . 'cover image', 'src' => $page->cover_image ])
+@include('_components.img', ['alt' => $page->title . 'cover image', 'src' => $page->cover_image, 'classes' => 'mb-6' ])
 @endif
 
 <article class="h-entry">
