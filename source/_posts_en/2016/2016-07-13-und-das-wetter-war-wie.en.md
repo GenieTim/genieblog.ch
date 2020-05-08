@@ -21,6 +21,7 @@ findable: false
 ---
 
 I pay attention to appropriate alliterations at the beginning of a somewhat limited-excellent entry.
+At least in the german version of this blog post, ha ha.
 
 But let's talk about the weather.
 On the day of my arrival I was soaked to the bone after covering a distance of almost 200 meters.

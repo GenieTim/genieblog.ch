@@ -6,7 +6,7 @@
 <meta property="og:url" content="{{ $page->getUrl() }}" />
 <meta property="og:description" content="{{ $page->description }}" />
 @if ($page->socialImage)
-    <meta property="og:image" content="{{$page->baseUrl}}/assets/images/{{ $page->socialImage }}" />
+<meta property="og:image" content="{{$page->baseUrl}}/assets/images/{{ $page->socialImage }}" />
 @elseif ($page->cover_image)
 <meta property="og:image" content="{{$page->baseUrl}}/assets/images/{{ $page->cover_image }}" />
 @endif
@@ -36,7 +36,7 @@
 
     @if ($page->categories)
     @foreach ($page->categories as $i => $category)
-    <a href="{{ '/blog/' . $page->language . '/categories/' . strtolower($category) }}"
+    <a href="{{ '/blog/' . $page->language . '/categories/' . $page->underscorify($category) }}"
         title="View posts in {{ $category }}" class="category-tag p-category">{{ $category }}</a>
     @endforeach
     @endif

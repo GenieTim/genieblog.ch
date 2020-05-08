@@ -5,7 +5,7 @@ date: 2014-11-17 18:45:43+00:00
 layout: post
 link: http://genieblog.ch/hallo-welt/
 slug: hallo-welt
-title: Hallo Welt!
+title: "Hello World!"
 wordpress_id: 1
 categories:
   - Tim Bernhard
