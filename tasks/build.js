@@ -29,7 +29,7 @@ module.exports = {
                         let fileName = path.parse(path.basename(files[i]));
                         promises.push(new Promise(async (resolve, reject) => {
                             const image = await Jimp.read(files[i]);
-                            for (const size of sizes) {
+                            for (let size of sizes) {
                                 // do not scale up, only down...
                                 if (image.bitmap.height < size || image.bitmap.width < size) {
                                     continue;
@@ -44,15 +44,15 @@ module.exports = {
                                     let statsNew = fs.statSync(targetFile);
                                     if (statsNew.mtime > statsOld.mtime) {
                                         // do not recompile if already exits & current
-                                        return;
+                                        continue;
                                     }
                                 }
                                 await sizedImage.resize(size, Jimp.AUTO);
                                 await sizedImage.quality(68);
                                 await sizedImage.writeAsync(targetFile);
                                 console.log("Output " + targetFile + " from " + files[i]);
-                                resolve();
                             }
+                            resolve();
                         }));
                     }
                 });
