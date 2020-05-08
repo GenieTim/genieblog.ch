@@ -242,4 +242,7 @@ return [
     'isActive' => function ($page, $path) {
         return Str::endsWith(trimPath($page->getPath()), trimPath($path));
     },
+    'underscorify' => function ($page, $path) {
+        return str_replace(" ", "_", strtolower($path));
+    }
 ];
