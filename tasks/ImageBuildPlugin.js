@@ -34,10 +34,10 @@ class ImageBuildPlugin {
                   // do not recompile if already exits & current
                   continue;
                 } else {
-                  console.info("Will generate again: " + file + " is newer then " + targetFile)
+                  // console.info("Will generate again: " + file + " is newer then " + targetFile)
                 }
               } else {
-                console.info("File " + targetFile + " not found.");
+                // console.info("File " + targetFile + " not found.");
               }
               sizes_to_do.push(size);
               target_file_paths.push(targetFile);
@@ -47,7 +47,7 @@ class ImageBuildPlugin {
             if (sizes_to_do.length > 0) {
               // we do the loop over the sizes twice in order to read only the files we really need to
               let image = await Jimp.read(file);
-              for (let size_i = 0; size_i < sizes_to_do.length; ++i) {
+              for (let size_i = 0; size_i < sizes_to_do.length; ++size_i) {
                 // do not scale up, only down...
                 // note that this leads to an overhead in time this script takes
                 if (image.bitmap.height < sizes_to_do[size_i] || image.bitmap.width < sizes_to_do[size_i]) {

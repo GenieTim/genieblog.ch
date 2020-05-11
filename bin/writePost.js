@@ -43,7 +43,7 @@ const yaml = require('js-yaml');
       let language = languages[lan_idx];
       if (language != answers.language) {
         try {
-          posts[language] = await translatePost(answers.language, language, posts[answers.language]);
+          posts[language] = await translatePost(answers.language.toUpperCase(), language.toUpperCase(), posts[answers.language]);
         } catch (e) {
           console.error(e);
           console.log("Failed to translate post to " + language, posts);
