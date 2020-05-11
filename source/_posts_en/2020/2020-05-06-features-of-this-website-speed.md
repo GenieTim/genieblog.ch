@@ -71,7 +71,7 @@ To get the images in the posts to load fast, it is sensible to resize them to wh
 As I wanted to keep away from all server-side scripts, I cannot use a dynamic resizer, which could return the image in the pixel-perfect size.
 Instead, I have to rely on the [srcset](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) img attribute. 
 
-To get the images to the desired sizes and compress them, I use a [custom script](https://github.com/GenieTim/genieblog.ch/blob/af9b40a6361a8ca0f21444b5b1a25464c9764562/tasks/build.js#L17).
+To get the images to the desired sizes and compress them, I use a [custom webpack plugin](https://github.com/GenieTim/genieblog.ch/blob/9fe1f6ab78b91e5500b9f7d69d53986734ed9237/tasks/ImageBuildPlugin.js#L1).
 
 On the other hand, to set the srcset attribute appropriately, I have a [blade template](https://github.com/GenieTim/genieblog.ch/blob/2dbcbd6369bceaafd2d4e1743d730c5e1d8e1bdd/source/_components/img.blade.php#L8) constructing the sources as appropriate. 
 

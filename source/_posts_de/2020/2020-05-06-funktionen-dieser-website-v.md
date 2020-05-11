@@ -71,7 +71,7 @@ Um die Bilder in den Beiträgen zu erhalten, die schnell laden, ist es sinnvoll,
 Da ich nach Möglichkeit keine serverseitigen Skripts verwenden wollte, kann ich nicht einen dynamischen Resizer verwenden, der das Bild in der Pixel perfekte Größe zurückgeben könnte.
 Stattdessen muss ich mich auf das [srcset](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) img Attribut verlassen.
 
-Um die Bilder zu den gewünschten Größen zuzuscheinen und zu komprimieren verwende ich ein [eigenes Script](https://github.com/GenieTim/genieblog.ch/blob/2dbcbd6369bceaafd2d4e1743d730c5e1d8e1bdd/tasks/build.js#L17).
+Um die Bilder zu den gewünschten Größen zuzuscheinen und zu komprimieren verwende ich ein [eigenes Webpack Plugin](https://github.com/GenieTim/genieblog.ch/blob/9fe1f6ab78b91e5500b9f7d69d53986734ed9237/tasks/ImageBuildPlugin.js#L1).
 
 Auf der anderen Seite, dass das srcset Attribut entsprechend gesetzt wird, habe ich ein [blade template](https://github.com/GenieTim/genieblog.ch/blob/2dbcbd6369bceaafd2d4e1743d730c5e1d8e1bdd/source/_components/img.blade.php#L8), das die nötige Arbeit übernimmt.
 
