@@ -12,7 +12,7 @@ layout: post
 slug: abkuhlung-durch-trocknen-nasser-wasche
 social_image: false
 template: post
-title: Abkühlung durch trocknen nasser Wäsche
+title: Abkühlung durch Trocknen nasser Wäsche
 translations:
   de: abkuhlung-durch-trocknen-nasser-wasche
   en: cooling-by-dry-wet-laundry
@@ -20,9 +20,9 @@ translations:
 
 In dieser Überschlagsrechnung soll berechnet werden, wie sehr 
 das trocknen nasser Wäsche im Haus zu einer Abkühlung führen kann.
-Die Motivation für die Berechnung ist, dass ein Familienmitglied 
+Die Motivation für diese Berechnung ist, dass ein Familienmitglied 
 der Meinung war, dass die Wohnung sich signifikant kälter anfühle, 
-wenn noch Wäsche getrocknet würde.
+wenn Wäsche getrocknet werde.
 
 Folgende Annahmen werden hierfür getroffen:
 
@@ -36,8 +36,8 @@ Folgende Annahmen werden hierfür getroffen:
 	
 Damit ergeben sich entsprechend 
 2 kg * 2257 kJ/kg = 4'514 kJ 
-Energie, die benötigt werden um die Wäsche zu trocknen und damit für Abkühlung sorgen.
-Für Abkühlung von 100 m<sup>3</sup> * 1.25 kg/m<sup>3</sup> = 125 kg Luft 
+Energie, die benötigt werden um die Wäsche zu trocknen und dafür der Luft entzogen werden und für Abkühlung sorgen.
+Für die Abkühlung von 100 m<sup>3</sup> * 1.25 kg/m<sup>3</sup> = 125 kg Luft 
 macht das einen Temperaturunterschied von 4514 kJ / (125 kg * 1005 kJ/(kg * K)) = 0.0359 K pro Kubikmeter Luft.
 
 Damit lässt sich abschätzen, dass die Abkühlung mit dieser 
