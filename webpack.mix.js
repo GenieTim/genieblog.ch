@@ -3,6 +3,7 @@ const build = require('./tasks/build.js');
 const categoryGenerator = require('./tasks/generateCategories.js');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const mix = require('laravel-mix');
+const ImageBuildPlugin = require('./tasks/ImageBuildPlugin');
 let tailwindcss = require('tailwindcss');
 require('laravel-mix-purgecss');
 
@@ -10,7 +11,9 @@ mix.disableSuccessNotifications();
 mix.setPublicPath('source/assets/build/');
 mix.webpackConfig({
     plugins: [
-        build.images,
+        new ImageBuildPlugin({
+            inject: false
+        }),
         categoryGenerator,
         build.jigsaw,
         build.browserSync(),
@@ -34,9 +37,9 @@ mix.webpackConfig({
 });
 
 mix.js('source/_assets/js/main.js', 'js')
-    .sourceMaps()
+    // .sourceMaps()
     .sass('source/_assets/sass/main.scss', 'css/main.css')
-    .sourceMaps()
+    // .sourceMaps()
     .options({
         processCssUrls: false,
         postCss: [
@@ -44,7 +47,7 @@ mix.js('source/_assets/js/main.js', 'js')
             // require('postcss-css-variables')({
             //     preserve: true
             // })
-        ],
+        ]
     })
     .purgeCss({
         extensions: ['html', 'md', 'js', 'php', 'vue'],
