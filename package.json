@@ -38,6 +38,8 @@
     },
     "dependencies": {
         "deepl-translator": "^1.2.1",
-        "js-yaml": "^3.13.1"
+        "js-yaml": "^3.13.1",
+        "markdown-translator": "^0.3.0",
+        "tmp": "^0.2.1"
     }
 }
