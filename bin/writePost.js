@@ -1,10 +1,12 @@
 #!/usr/bin/env node
 
+const formatDate = require('dateformat');
 const fs = require("fs");
+const inquirer = require('inquirer');
+const markdownTranslate = require('markdown-translator')
 const path = require("path");
-const { translate } = require('deepl-translator');
-var inquirer = require('inquirer');
-var formatDate = require('dateformat');
+const subscriptionKey = getSubscriptionKey();
+const tmp = require('tmp');
 const yaml = require('js-yaml');
 
 (async () => {
@@ -64,47 +66,84 @@ const yaml = require('js-yaml');
 })()
 
 // -- MARK: Helper functions
+/**
+ * Get the languages this blog is in
+ */
 function getLanguages() {
   let fileContents = fs.readFileSync(__dirname + '/../global-config.yaml', 'utf8');
   let data = yaml.safeLoad(fileContents);
   return data.languages;
 }
 
+/**
+ * Get the secrete azure translation service subscription key
+ */
+function getSubscriptionKey() {
+  let fileContents = fs.readFileSync(__dirname + '/../.env.yaml', 'utf8');
+  let data = yaml.safeLoad(fileContents);
+  return data.subscription_key;
+}
+
+/**
+ * Helper function to assemble the filename & path of the post markdown file
+ * 
+ * @param {string} language The language of the post for which to get the file name
+ * @param {Date} date The date of the post
+ * @param {string} slug The slug of the post
+ */
 function getFileName(language, date, slug) {
   return __dirname + '/../source/_posts_' + language + "/" + date.getFullYear() + "/" + formatDate(date, 'yyyy-mm-dd') + "-" + slug + ".md"
 }
 
+/**
+ * Translate a post
+ * 
+ * @param {string} sourceLanguage The language to translate from
+ * @param {string} targetLanguage The language to translate to
+ * @param {object} sourcePost The post object with properties: title, content, slug
+ */
 async function translatePost(sourceLanguage, targetLanguage, sourcePost) {
   console.log("Translating to " + targetLanguage);
-  let translatedTitle = await translate(sourcePost.title, targetLanguage, sourceLanguage);
-  let translatedContent = "";
-  // split code to not translate code
-  let codeSplitContent = sourcePost.content.split('```');
-  for (let content_idx = 0; content_idx < codeSplitContent.length; content_idx++) {
-    if (content_idx % 2 == 0) {
-      // text
-      let toTranslate = codeSplitContent[content_idx];
-      // let's not translate empty text (e.g. from ```)
-      if (toTranslate.length > 0) {
-        translatedContent += (await translate(toTranslate, targetLanguage, sourceLanguage)).translation;
-      }
-    } else {
-      // code – no translation ?!? (note: caution: comments)
-      // also, here, inline code is translated. A more clever splitting would be helpful
-      // neither are \t resp. 4 spaces code blocks escaped 
-      translatedContent += "```" + codeSplitContent[content_idx] + "```";
-    }
-  }
-  // fix links possibly destroyed by translation service
-  translatedContent = translatedContent.replace(/\] \(/g, '](');
+  let translatedTitle = await translateMarkdownString(sourcePost.title, sourceLanguage, targetLanguage);
+  let translatedContent = await translateMarkdownString(sourcePost.content, sourceLanguage, targetLanguage);
 
   return {
-    title: translatedTitle.translation,
+    title: translatedTitle,
     content: translatedContent,
-    slug: string_to_slug(translatedTitle.translation)
+    slug: string_to_slug(translatedTitle)
   }
 }
 
+/**
+ * Translate a string of markdown
+ * 
+ * @param {string} text The markdonw-text to translate
+ * @param {string} sourceLanguage The language to translate from
+ * @param {string} targetLanguage The language to translate to
+ */
+async function translateMarkdownString(text, sourceLanguage, targetLanguage) {
+  const tmpFile = tmp.fileSync();
+  fs.writeSync(tmpFile.fd, text);
+  const tmpFilePath = tmpFile.name;
+  console.log("Tmp file: " + tmpFilePath);
+  let translatedText = await markdownTranslate({
+    src: tmpFilePath,
+    from: sourceLanguage,
+    to: targetLanguage,
+    subscriptionKey: subscriptionKey,
+    region: "westeurope"
+  });
+  return translatedText.trim();
+}
+
+/**
+ * Get the string which matches the content of a post file
+ * 
+ * @param {string} author The author of the post
+ * @param {Date} date The publishing date of the post
+ * @param {string} language The (short) language of the post
+ * @param {array} posts An array of post objects to access
+ */
 function getFileContent(author, date, language, posts) {
   let fileContent = `---
 author: ${author}

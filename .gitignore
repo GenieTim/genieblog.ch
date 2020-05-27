@@ -12,3 +12,5 @@
 test.sh
 bin/upload-prod.sh
 bin/upload-stage.sh
+
+.env.yaml
