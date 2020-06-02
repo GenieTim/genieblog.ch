@@ -5,9 +5,9 @@ const fs = require("fs");
 const inquirer = require('inquirer');
 const markdownTranslate = require('markdown-translator')
 const path = require("path");
-const subscriptionKey = getSubscriptionKey();
 const tmp = require('tmp');
 const yaml = require('js-yaml');
+const subscriptionKey = getSubscriptionKey();
 
 (async () => {
   const languages = getLanguages();
