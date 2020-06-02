@@ -41,7 +41,7 @@ Sie werden im Folgenden aufgeführt.
 Da die Seite statisch kompiliert wird, halte ich es für wichtig, wenn möglich schon bei der Kompilierung der Seite so viel Arbeit zu erledigen wie möglich.
 Ein Beispiel für eine Arbeit, die nicht clientseitig ausgeführt werden muss, ist beispielsweise die Code-Formatierung.
 Das Template kommt standardmässig mit [highlight.js](https://highlightjs.org/usage/) installiert.
-Der Ersatz zu Kompilierzeit für diese Funktion ist [highlight.php](https://github.com/scrivo/highlight.php) zusammen mit einem passenden [Jigsaw-Listener](https://github.com/GenieTim/genieblog.ch/blob/2dbcbd6369bceaafd2d4e1743d730c5e1d8e1bdd/listeners/HighlightCodeSyntax.php).
+Der Ersatz zu Kompilierzeit für diese Funktion ist [highlight.php](https://github.com/scrivo/highlight.php) zusammen mit einem passenden [Jigsaw-Listener](https://github.com/GenieTim/genieblog.ch/blob/e99a8e5544c00819f00b5c374db9bf2db5cc3888/listeners/HighlightCodeSyntax.php).
 Auf diese Weise müssen weniger Berechnungen clientseitige wiederholt werden und weniger JavaScript muss über das Netzwerk übertragen werden.
 Als kleiner Nachteil ist die resultierende HTML-Datei etwas größer, wenn es Code zu formatieren gab.
 

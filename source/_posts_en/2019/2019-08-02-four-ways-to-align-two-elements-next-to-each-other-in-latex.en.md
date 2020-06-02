@@ -66,7 +66,7 @@ Good old Table is a method of aligning items too! Note that it is not the intend
 Important for use as a layout tool is not to add the borders of the table cells and rows.
 That means no "|" between the float specifiers as well as no `\hline` or similar in the table.
 
-In the following example, I `\usepackage{[tabularx](https://ctan.org/pkg/tabularx?lang=en)}` in order to get both items the same horizontal space.
+In the following example, I [`\usepackage{tabularx}`](https://ctan.org/pkg/tabularx?lang=en) in order to get both items the same horizontal space.
 
 ```tex
 \begin{table}[!h]
