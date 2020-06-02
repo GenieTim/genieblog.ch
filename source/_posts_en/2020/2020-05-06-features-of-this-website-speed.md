@@ -40,7 +40,7 @@ They are listed in the following.
 Since the page is compiled statically, I consider it important to do all the work if possible during the compilation time.
 In this case, work that is not required to run client-side is for example the code formatting.
 The template by default comes with [highlight.js](https://highlightjs.org/usage/) installed. 
-The compile time replacement for this is [highlight.php](https://github.com/scrivo/highlight.php) together with a matching [Jigsaw-listener](https://github.com/GenieTim/genieblog.ch/blob/2dbcbd6369bceaafd2d4e1743d730c5e1d8e1bdd/listeners/HighlightCodeSyntax.php).
+The compile time replacement for this is [highlight.php](https://github.com/scrivo/highlight.php) together with a matching [Jigsaw-listener](https://github.com/GenieTim/genieblog.ch/blob/e99a8e5544c00819f00b5c374db9bf2db5cc3888/listeners/HighlightCodeSyntax.php).
 This way, less computations have to be repeated client-side and less JavaScript has to be transferred.
 As a minor drawback, the HTML is slightly bigger if there was code to format.
 

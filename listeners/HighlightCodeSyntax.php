@@ -7,6 +7,7 @@ use TightenCo\Jigsaw\Jigsaw;
 
 class HighlightCodeSyntax
 {
+  private $log = "";
 
   public function handle(Jigsaw $jigsaw)
   {
@@ -17,8 +18,10 @@ class HighlightCodeSyntax
         $content = $jigsaw->readOutputFile($file);
         $formattedContent = $this->applySyntaxHighlighting($content);
         $jigsaw->writeOutputFile($file, $formattedContent);
+        $this->log .= "File: " . $file . "\n";
       }
     }
+    var_dump($this->log);
   }
 
   /**
@@ -57,8 +60,11 @@ class HighlightCodeSyntax
         $code = $highlighter->highlightAuto($input)->value;
       }
 
+      $this->log .= "Found " . $match[1] . " code: " . $input . "\n";
+      $this->log .= "to be replaced with: " . $code . "\n";
+
       // make sure to re-include <pre><code ...></>
-      return str_replace($input, $code, $match[0]);
+      return str_replace($match[2], $code, $match[0]);
     }, $value);
   }
 }

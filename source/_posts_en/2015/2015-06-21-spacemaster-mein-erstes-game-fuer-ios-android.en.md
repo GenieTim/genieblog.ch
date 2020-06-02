@@ -35,6 +35,6 @@ However, the price of CHF 1.- is comparatively very low, so hopefully these cost
 
 How many points did you get?
 
-			[](https://geo.itunes.apple.com/ch/app/pixelspacemaster/id993483077?mt=8&uo=6)[](https://play.google.com/store/apps/details?id=ch.genieblog.android)
+[](https://geo.itunes.apple.com/ch/app/pixelspacemaster/id993483077?mt=8&uo=6)[](https://play.google.com/store/apps/details?id=ch.genieblog.android)
 
 More Infos around the game: [http://bernhard-webstudio.ch/spacemaster](http://bernhard-webstudio.ch/spacemaster)

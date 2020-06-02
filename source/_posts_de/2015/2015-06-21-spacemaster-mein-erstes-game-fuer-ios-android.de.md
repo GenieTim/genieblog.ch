@@ -35,6 +35,6 @@ Der Preis von CHF 1.- ist jedoch vergleichsweise sehr tief, so dass diese Kosten
 
 Wie viele Punkte haben Sie erreicht? Schreiben Sie die Antwort in die Kommentare!
 
-			[](https://geo.itunes.apple.com/ch/app/pixelspacemaster/id993483077?mt=8&uo=6)[](https://play.google.com/store/apps/details?id=ch.genieblog.android)
+[](https://geo.itunes.apple.com/ch/app/pixelspacemaster/id993483077?mt=8&uo=6)[](https://play.google.com/store/apps/details?id=ch.genieblog.android)
 
 Weitere Infos zum Spiel: [http://bernhard-webstudio.ch/spacemaster](http://bernhard-webstudio.ch/spacemaster)
