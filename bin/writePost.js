@@ -149,6 +149,7 @@ function getFileContent(author, date, language, posts) {
 author: ${author}
 categories:
 cover_image: false
+canonical_url: "https://www.genieblog.ch/blog/${language}/${formatDate(date, 'yyyy')}/${posts[language].slug}"
 date: ${formatDate(date, 'yyyy-mm-dd HH:MM:ss')}
 description: false
 draft: false

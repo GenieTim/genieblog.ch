@@ -32,7 +32,7 @@ That's why, in the following, I describe the work I have done in the end:
 
 First, I set up two functions that are borrowed from [this article](http://sickel.net/blogg/?p=688).
 
-```R
+```r
 "cnvrt.coords" <-function(x,y=NULL){
 # Stolen from the teachingDemos library, simplified for this use case
 	xy <- xy.coords(x,y, recycle=TRUE)
