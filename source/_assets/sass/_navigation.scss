@@ -29,9 +29,7 @@
   @apply .bg-primary;
 }
 
-.sr-only {
-
-}
+.sr-only {}
 
 // Hamburger menu button
 button#menu-toggle {
@@ -148,6 +146,10 @@ button#menu-toggle {
       }
     }
   }
+}
+
+#main-nav-menu {
+  z-index: 999;
 }
 
 @media (prefers-reduced-motion: reduce) {
