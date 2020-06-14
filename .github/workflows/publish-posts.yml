@@ -16,6 +16,8 @@ jobs:
 
       - name: Setup Node
         uses: actions/setup-node@v1
+        with:
+          node-version: "12"
 
       - name: Install PHP
         uses: shivammathur/setup-php@v2
