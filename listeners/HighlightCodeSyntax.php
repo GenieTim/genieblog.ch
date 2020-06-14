@@ -21,7 +21,7 @@ class HighlightCodeSyntax
         $this->log .= "File: " . $file . "\n";
       }
     }
-    var_dump($this->log);
+    // var_dump($this->log);
   }
 
   /**
