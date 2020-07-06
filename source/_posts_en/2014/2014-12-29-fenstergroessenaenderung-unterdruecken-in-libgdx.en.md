@@ -5,7 +5,7 @@ date: 2014-12-29 18:07:03+00:00
 layout: post
 link: http://genieblog.ch/fenstergroessenaenderung-unterdruecken-in-libgdx/
 slug: fenstergroessenaenderung-unterdruecken-in-libgdx
-title: Fenstergrössenänderung unterdrücken in libGDX
+title: Suppress window size changes in libGDX
 wordpress_id: 39
 categories:
   - libGDX

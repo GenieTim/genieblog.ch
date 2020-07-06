@@ -83,7 +83,7 @@ export default {
     return {
       fuse: null,
       searching: false,
-      query: ''
+      query: ""
     };
   },
   computed: {
@@ -110,7 +110,7 @@ export default {
     const html = document.querySelector("html");
     const lang = html.getAttribute("lang");
     // then, base url to load from
-    const base = document.querySelector("head base");
+    const base = document.querySelector("head link[rel='home']");
     const baseUrl = base.getAttribute("href");
 
     axios(baseUrl + "/index_" + lang + ".json")

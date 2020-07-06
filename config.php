@@ -243,6 +243,7 @@ return [
         return Str::endsWith(trimPath($page->getPath()), trimPath($path));
     },
     'underscorify' => function ($page, $path) {
-        return str_replace(" ", "_", strtolower($path));
+        $rep1 = str_replace(" ", "_", strtolower($path));
+        return str_replace("-", "_", $rep1);
     }
 ];
