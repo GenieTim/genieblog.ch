@@ -9,7 +9,7 @@ excerpt: >-
 layout: post
 link: http://genieblog.ch/irgendein-tastendruck-in-libgdx/
 slug: irgendein-tastendruck-in-libgdx
-title: Irgendein Tastendruck in libGDX
+title: Intercept any keyboard press in libGDX
 wordpress_id: 40
 categories:
   - Java

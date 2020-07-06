@@ -5,7 +5,7 @@ date: 2018-06-01 19:44:24+00:00
 layout: post
 link: http://genieblog.ch/how-to-encode-an-svg-for-the-src-attribute-using-php/
 slug: how-to-encode-an-svg-for-the-src-attribute-using-php
-title: How to Encode an SVG for the `src`-Attribute using PHP
+title: Encodieren einer SVG Datei für das `src`-Attribut mit PHP
 wordpress_id: 412
 categories:
   - PHP
@@ -30,15 +30,19 @@ Sobald Sie dies verstanden haben, können Sie auch einige andere Optimierungen �
 <!-- markdown-link-check-disable-next-line -->
 Vielleicht lassen sie sich inspirieren von [Taylor Hunt](https://codepen.io/tigt/post/optimizing-svgs-in-data-uris)s 
 [mini-svg-uri](https://github.com/tigt/mini-svg-data-uri) um einige Zeichen manuell zu dekodieren, um die Gesamtgröße zu verbessern.
-Eine abschließende Funktion könnte möglicherweise so aussehen:
+
+Eine abschließende Funktion könnte beispielsweise so aussehen:
 
 ```php
 function svgUrlEncode($svgPath) {
+    // einlesen der Datei
     $data = \file_get_contents($svgPath);
+    // encodieren von ersten Charakteren
     $data = \preg_replace('/\v(?:[\v\h]+)/', ' ', $data);
     $data = \str_replace('"', "'", $data);
     $data = \rawurlencode($data);
-    // re-decode a few characters understood by browsers to improve compression
+    // zurück-decodieren gewisser Charakter, die von Browsern verstanden werden, 
+    // um die Kompressierung zu verbessern
     $data = \str_replace('%20', ' ', $data);
     $data = \str_replace('%3D', '=', $data);
     $data = \str_replace('%3A', ':', $data);

@@ -5,7 +5,7 @@ date: 2014-11-25 11:00:38+00:00
 layout: post
 link: http://genieblog.ch/logarithmen-von-hand-ziehen/
 slug: logarithmen-von-hand-ziehen
-title: Logarithmen von Hand ziehen
+title: Manually taking the logarithm
 wordpress_id: 14
 categories:
   - HTML5

@@ -13,7 +13,7 @@
     <meta property="og:url" content="{{ $page->getUrl() }}" />
     <meta property="og:description" content="{{ $page->siteDescription }}" />
 
-    <base href="{{$page->baseUrl}}" />
+    {{-- <base href="{{$page->baseUrl}}" /> --}}
 
     <title>{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}</title>
 

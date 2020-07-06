@@ -32,12 +32,12 @@ The following assumptions are made for this:
 * Heating water, humidity, change properties neglected by changing temperature: All properties constant at initial conditions
 * Heat of vaporization of water 2257 kJ / kg and 40.8 kJ / mol [[2]](#src-2)
 * Heat capacity of air: 1005 kJ / (kg * K) [[3]](#src-3)
-* Density air: 1.25 kg / m<sup>3</sup> [[3]](#src-3)
+* Density air: 1.25 kg / m<sup>3</sup>  [[3]](#src-3)
 
 This results in correspondingly
 2 kg * 2257 kJ / kg = 4'514 kJ
 Energy needed to dry the laundry, providing cooling.
-For the cooling of 100 m<sup>3</sup> * 1.25 kg / m<sup>3</sup> 125 kg air
+For the cooling of 100 m<sup>3</sup> * 1.25 kg / m<sup>3</sup> = 125 kg air
 , this energy leads to an approximate temperature difference of 
 4514 kJ / (125 kg * 1005 kJ / (kg * K)) = 0.0359 K per cubic meter of air.
 

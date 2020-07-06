@@ -1,11 +1,10 @@
 const { GenerateSW } = require('workbox-webpack-plugin');
-const build = require('./tasks/build.js');
 const categoryGenerator = require('./tasks/generateCategories.js');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const mix = require('laravel-mix');
 const ImageBuildPlugin = require('./tasks/ImageBuildPlugin');
-let tailwindcss = require('tailwindcss');
 require('laravel-mix-purgecss');
+require('laravel-mix-jigsaw');
 
 mix.disableSuccessNotifications();
 mix.setPublicPath('source/assets/build/');
@@ -15,14 +14,6 @@ mix.webpackConfig({
             inject: false
         }),
         categoryGenerator,
-        build.jigsaw,
-        build.browserSync(),
-        build.watch([
-            'config.php',
-            'source/**/*.md',
-            'source/**/*.php',
-            'source/**/*.scss',
-        ]),
         new CopyWebpackPlugin({
             patterns: [
                 { from: 'source/assets/build/images', to: 'images' }
@@ -40,19 +31,21 @@ mix.webpackConfig({
 
 mix.js('source/_assets/js/main.js', 'js')
     .sass('source/_assets/sass/main.scss', 'css/main.css')
-    .sourceMaps()
+    .jigsaw({
+        watch: ['config.php', 'source/**/*.md', 'source/**/*.php', 'source/**/*.scss'],
+    })
     .options({
         processCssUrls: false,
         postCss: [
-            tailwindcss(),
+            require('tailwindcss'),
             // require('postcss-css-variables')({
             //     preserve: true
             // })
         ]
     })
     .purgeCss({
-        extensions: ['html', 'md', 'js', 'php', 'vue'],
-        folders: ['source'],
+        content: ['source/**/*.html', 'source/**/*.md', 'source/**/*.js', 'source/**/*.php', 'source/**/*.vue'],
         whitelistPatterns: [/language/, /hljs/, /mce/],
     })
+    .sourceMaps()
     .version();
