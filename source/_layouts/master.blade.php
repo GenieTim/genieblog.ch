@@ -211,7 +211,7 @@
                     @foreach ($page->languages as $lang)
                     @if ($page->hasTranslation($lang))
                     <a href="{{ $page->translateUrl($lang) }}" title="Read this in {{$lang}}"
-                        class="lang-link">{{$lang}}</a>{{ $loop->last ? "." : ", " }}
+                        class="lang-link" data-no-instant>{{$lang}}</a>{{ $loop->last ? "." : ", " }}
                     @endif
                     @endforeach
                 </li>

@@ -23,8 +23,8 @@
 
 <p>Wenn Sie nicht automatisch weitergeleitet werden, wählen Sie hier Ihre Sprache:</p>
 <ul>
-  <li><a href="{{$page->baseUrl}}/index.de">DE: Deutsch/German</a></li>
-  <li><a href="{{$page->baseUrl}}/index.en">EN: English/Englisch</a></li>
+  <li><a href="{{$page->baseUrl}}/index.de" data-no-instant>DE: Deutsch/German</a></li>
+  <li><a href="{{$page->baseUrl}}/index.en" data-no-instant>EN: English/Englisch</a></li>
 </ul>
 
 @stop
