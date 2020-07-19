@@ -58,32 +58,63 @@
 <!-- "comments" -->
 <div class="border-b border-secondary mb-10 pb-4 pt-4 text-base">
     <details class="">
-        <summary class="font-semibold">Webmentions</summary>
+        @php
+        // "memoization"
+        $webmentions = $page->webmentions()
+        @endphp
+        <summary class="font-semibold">
+            @if ($webmentions['count']['all'] != 0) {{ $webmentions['count']['all'] }} @endif
+            @if ($webmentions['count']['all'] == 1)
+            Webmention
+            @else
+            Webmentions
+            @endif
+        </summary>
         <div class="flex flex-col">
-            @php
-            $hasComments = false;
-            @endphp
-            @foreach ($page->webmentions() as $i => $comment)
-            @if (!empty($comment->content))
-            @php
-            $hasComments = true;
-            @endphp
+            <div class="counts full-width">
+                @php
+                $types=[ 'like-of'=> [
+                'symbol' => '❤️',
+                'name' => 'Likes'
+                ],
+                'repost-of' => [
+                'symbol' => '🔁',
+                'name' => 'Reposts'
+                ],
+                'bookmark-of' => [
+                'symbol' => '🔖',
+                'name' => 'Bookmarks'
+                ],
+                'mention-of' => [
+                'symbol' => '🗣',
+                'name' => 'Mentions'
+                ]
+                ];
+                @endphp
+                @foreach ($types as $i => $type)
+                @if($webmentions['count'][$i] != 0)
+                <span title="{{ $type['name'] }}">{{ $webmentions['count'][$i] }} {{ $type['symbol'] }}</span>
+                @endif
+                @endforeach
+            </div>
+            @foreach ($webmentions['raw'] as $i => $comment)
+            @if (!empty($comment['content']))
             <div class="comment">
                 <div class="comment-author">
-                    {{ $comment->author->name }}
+                    {{ $comment['author']['name'] }}
                 </div>
                 <div class="comment-content">
                     @if (isset($comment->content->html))
-                    {{ $comment->content->html }}
+                    {{ $comment['content']['html'] }}
                     @else
-                    {{ $comment->content->txt }}
+                    {{ $comment['content']['txt'] }}
                     @endif
-                    <a href="' . {{ $comment->url }} . '">Link</a>
+                    <a href="' . {{ $comment['url'] }} . '">Link</a>
                 </div>
             </div>
             @endif
             @endforeach
-            @if (!$hasComments)
+            @if ($webmentions['count']['all'] == 0)
             <p>{{ $page->translate("page.no_comments") }}</p>
             @endif
         </div>
