@@ -42,8 +42,8 @@
     <link href="https://twitter.com/genie_tim" rel="me">
     <link rel="webmention" href="https://webmention.io/genieblog.ch/webmention" />
     <link rel="pingback" href="https://webmention.io/genieblog.ch/xmlrpc" />
-    <link href="{{$page->baseUrl}}/blog/feed.atom" type="application/atom+xml" rel="alternate"
-        title="{{ $page->siteName }} Atom Feed">
+    <link href="{{ $page->baseUrl }}/blog/{{ $page->language }}/feed.{{ $page->language }}.atom"
+        type="application/atom+xml" rel="alternate" title="{{ $page->siteName }} Atom Feed">
 
     @stack('meta')
 
@@ -210,8 +210,8 @@
                     {{ $page->translate('master.language.choose') }}
                     @foreach ($page->languages as $lang)
                     @if ($page->hasTranslation($lang))
-                    <a href="{{ $page->translateUrl($lang) }}" title="Read this in {{$lang}}"
-                        class="lang-link" data-no-instant>{{$lang}}</a>{{ $loop->last ? "." : ", " }}
+                    <a href="{{ $page->translateUrl($lang) }}" title="Read this in {{$lang}}" class="lang-link"
+                        data-no-instant>{{$lang}}</a>{{ $loop->last ? "." : ", " }}
                     @endif
                     @endforeach
                 </li>
