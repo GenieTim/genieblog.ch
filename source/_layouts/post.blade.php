@@ -71,7 +71,7 @@
             @endif
         </summary>
         <div class="flex flex-col">
-            <div class="counts full-width">
+            <div class="counts full-width mt-3">
                 @php
                 $types=[ 'like-of'=> [
                 'symbol' => '❤️',

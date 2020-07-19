@@ -30,6 +30,8 @@ fetchWebmentions().then(webmentions => {
 
     fs.writeFileSync(filename, JSON.stringify(entries, null, 2));
   });
+}).catch(error => {
+  console.error(error)
 });
 
 /**
@@ -65,9 +67,9 @@ function fetchWebmentions() {
     `&since=${since.toISOString()}` +
     "&per-page=999";
 
-  doGetJSON(url).then(response => {
+  return doGetJSON(url).then(response => {
     if (!("children" in response)) {
-      throw new Error("Invalid webmention.io response.");
+      throw new Error("Invalid webmention.io response. Got response: " + JSON.stringify(response));
     }
 
     return response.children;
