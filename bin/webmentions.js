@@ -65,6 +65,21 @@ function fetchWebmentions() {
     `&since=${since.toISOString()}` +
     "&per-page=999";
 
+  doGetJSON(url).then(response => {
+    if (!("children" in response)) {
+      throw new Error("Invalid webmention.io response.");
+    }
+
+    return response.children;
+  })
+}
+
+/**
+ * Make a "GET" request to fetch some JSON data
+ * 
+ * @param {string} url 
+ */
+function doGetJSON(url) {
   return new Promise((resolve, reject) => {
     https
       .get(url, res => {
@@ -86,10 +101,6 @@ function fetchWebmentions() {
         reject(error);
       });
   }).then(response => {
-    if (!("children" in response)) {
-      throw new Error("Invalid webmention.io response.");
-    }
-
-    return response.children;
+    return response
   });
 }
