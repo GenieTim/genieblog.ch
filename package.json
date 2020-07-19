@@ -9,7 +9,7 @@
     },
     "devDependencies": {
         "axios": "^0.19.0",
-        "browser-sync": "^2.26.3",
+        "browser-sync": "^2.26.10",
         "browser-sync-webpack-plugin": "^2.0.1",
         "copy-webpack-plugin": "^6.0.2",
         "cross-env": "^7.0.2",
@@ -18,7 +18,7 @@
         "extra-watch-webpack-plugin": "^1.0.3",
         "fuse.js": "^6.3.0",
         "hasbin": "^1.2.3",
-        "inquirer": "^7.2.0",
+        "inquirer": "^7.3.2",
         "instantclick": "^3.1.0-2",
         "jimp": "^0.14.0",
         "js-yaml": "^3.14.0",
@@ -32,14 +32,14 @@
         "resolve-url-loader": "^3.1.0",
         "responsive-loader": "^1.2.0",
         "sass": "^1.26.10",
-        "sass-loader": "^9.0.1",
-        "tailwindcss": "^1.4.6",
+        "sass-loader": "^9.0.2",
+        "tailwindcss": "^1.5.1",
         "tmp": "^0.2.1",
         "vue": "^2.5.21",
         "vue-template-compiler": "^2.6.11",
         "workbox-webpack-plugin": "^5.0.0",
         "yaml": "^1.10.0",
-        "yargs": "^15.1.0"
+        "yargs": "^15.4.1"
     },
     "dependencies": {}
 }
