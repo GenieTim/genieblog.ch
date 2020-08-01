@@ -44,25 +44,19 @@ function getMultilangCollections()
                 $path = str_replace(['https://', 'www.genieblog.ch', 'index.html'], "", $path);
                 $path = trim($path, '/');
                 $commentsFile = __DIR__ . '/source/data/webmentions/' . $path . '.json';
-                $counts = ['in-reply-to' => 0, 'like-of' => 0, 'repost-of' => 0, 'bookmark-of' => 0, 'mention-of' => 0, 'rsvp' => 0];
+                $counts = ['all' => 0, 'in-reply-to' => 0, 'like-of' => 0, 'repost-of' => 0, 'bookmark-of' => 0, 'mention-of' => 0, 'rsvp' => 0];
+                $data = [];
                 if (file_exists($commentsFile)) {
                     $data = json_decode(file_get_contents($commentsFile), true);
                     // process data minimally
-
                     foreach ($data as $key => $value) {
                         $counts[$value['wm-property']] += 1;
                     }
                     $counts['all'] = count($data);
-                    $comments = [
-                        'raw' => $data,
-                        'count' => $counts
-                    ];
-                    return $comments;
                 }
                 return [
-                    'count' => [
-                        $counts
-                    ]
+                    'count' => $counts,
+                    'raw' => $data
                 ];
             },
             /**
