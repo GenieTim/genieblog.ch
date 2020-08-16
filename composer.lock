@@ -192,7 +192,7 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v7.23.1",
+            "version": "v7.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -239,7 +239,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v7.23.1",
+            "version": "v7.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -283,7 +283,7 @@
         },
         {
             "name": "illuminate/events",
-            "version": "v7.23.1",
+            "version": "v7.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/events.git",
@@ -328,7 +328,7 @@
         },
         {
             "name": "illuminate/filesystem",
-            "version": "v7.23.1",
+            "version": "v7.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/filesystem.git",
@@ -383,16 +383,16 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v7.23.1",
+            "version": "v7.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "7bdde5ecd25f66e3e8b9a2ddc5dbc3154df103b6"
+                "reference": "9b0c0af8d2dd1a729f6337d0ed5c81a241ea43ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/7bdde5ecd25f66e3e8b9a2ddc5dbc3154df103b6",
-                "reference": "7bdde5ecd25f66e3e8b9a2ddc5dbc3154df103b6",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/9b0c0af8d2dd1a729f6337d0ed5c81a241ea43ab",
+                "reference": "9b0c0af8d2dd1a729f6337d0ed5c81a241ea43ab",
                 "shasum": ""
             },
             "require": {
@@ -441,11 +441,11 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2020-07-31T13:31:49+00:00"
+            "time": "2020-08-10T13:58:23+00:00"
         },
         {
             "name": "illuminate/translation",
-            "version": "v7.23.1",
+            "version": "v7.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/translation.git",
@@ -491,16 +491,16 @@
         },
         {
             "name": "illuminate/view",
-            "version": "v7.23.1",
+            "version": "v7.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/view.git",
-                "reference": "808db49349c24f5f5713a0a30dd7435886fe982f"
+                "reference": "6ad2bb27974199b175a0d685c51325e8e1b3d253"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/view/zipball/808db49349c24f5f5713a0a30dd7435886fe982f",
-                "reference": "808db49349c24f5f5713a0a30dd7435886fe982f",
+                "url": "https://api.github.com/repos/illuminate/view/zipball/6ad2bb27974199b175a0d685c51325e8e1b3d253",
+                "reference": "6ad2bb27974199b175a0d685c51325e8e1b3d253",
                 "shasum": ""
             },
             "require": {
@@ -535,7 +535,7 @@
             ],
             "description": "The Illuminate View package.",
             "homepage": "https://laravel.com",
-            "time": "2020-08-04T14:10:54+00:00"
+            "time": "2020-08-10T20:00:58+00:00"
         },
         {
             "name": "michelf/php-markdown",
@@ -623,16 +623,16 @@
         },
         {
             "name": "mockery/mockery",
-            "version": "1.4.1",
+            "version": "1.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mockery/mockery.git",
-                "reference": "1404386ca3410b04fe58b9517e85d702ab33b2c6"
+                "reference": "20cab678faed06fac225193be281ea0fddb43b93"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mockery/mockery/zipball/1404386ca3410b04fe58b9517e85d702ab33b2c6",
-                "reference": "1404386ca3410b04fe58b9517e85d702ab33b2c6",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/20cab678faed06fac225193be281ea0fddb43b93",
+                "reference": "20cab678faed06fac225193be281ea0fddb43b93",
                 "shasum": ""
             },
             "require": {
@@ -644,7 +644,7 @@
                 "phpunit/phpunit": "<8.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^8.5 || ^9.0"
+                "phpunit/phpunit": "^8.5 || ^9.3"
             },
             "type": "library",
             "extra": {
@@ -687,7 +687,7 @@
                 "test double",
                 "testing"
             ],
-            "time": "2020-07-09T08:31:54+00:00"
+            "time": "2020-08-11T18:10:13+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -2378,16 +2378,16 @@
         },
         {
             "name": "tightenco/jigsaw-blog-template",
-            "version": "1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tightenco/jigsaw-blog-template.git",
-                "reference": "8ba22f89261c57689a3d4eb691aed5558a660d8e"
+                "reference": "ace974d67d29c868ce55807424391a64fc02acac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tightenco/jigsaw-blog-template/zipball/8ba22f89261c57689a3d4eb691aed5558a660d8e",
-                "reference": "8ba22f89261c57689a3d4eb691aed5558a660d8e",
+                "url": "https://api.github.com/repos/tightenco/jigsaw-blog-template/zipball/ace974d67d29c868ce55807424391a64fc02acac",
+                "reference": "ace974d67d29c868ce55807424391a64fc02acac",
                 "shasum": ""
             },
             "require": {
@@ -2428,7 +2428,7 @@
                 "static",
                 "template"
             ],
-            "time": "2020-04-24T13:25:51+00:00"
+            "time": "2020-08-12T13:19:54+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
