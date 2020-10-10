@@ -29,7 +29,7 @@
       },
       {
         "resourceType": "script",
-        "budget": 200
+        "budget": 250
       }
     ],
     "timings": [
@@ -39,7 +39,7 @@
       },
       {
         "metric": "first-meaningful-paint",
-        "budget": 2000
+        "budget": 1500
       }
     ]
   }
