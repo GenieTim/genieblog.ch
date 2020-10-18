@@ -9,7 +9,7 @@
     },
     "devDependencies": {
         "axios": "^0.20.0",
-        "browser-sync": "^2.26.12",
+        "browser-sync": "^2.26.13",
         "browser-sync-webpack-plugin": "^2.0.1",
         "copy-webpack-plugin": "^6.2.1",
         "cross-env": "^7.0.2",
@@ -33,13 +33,13 @@
         "responsive-loader": "^2.2.0",
         "sass": "^1.27.0",
         "sass-loader": "^10.0.3",
-        "tailwindcss": "^1.9.1",
+        "tailwindcss": "^1.9.4",
         "tmp": "^0.2.1",
         "vue": "^2.6.12",
         "vue-template-compiler": "^2.6.12",
         "workbox-webpack-plugin": "^5.1.4",
         "yaml": "^1.10.0",
-        "yargs": "^16.0.3"
+        "yargs": "^16.1.0"
     },
     "dependencies": {}
 }
