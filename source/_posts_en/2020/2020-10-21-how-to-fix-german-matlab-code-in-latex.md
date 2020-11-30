@@ -2,7 +2,7 @@
 author: Tim Bernhard
 categories:
 cover_image: false
-canonical_url: "https://www.genieblog.ch/blog/en/2020/how-to-fix-german-matlab-code-in-latex"
+canonical_url: https://www.genieblog.ch/blog/en/2020/how-to-fix-german-matlab-code-in-latex
 date: 2020-10-21 10:02:06
 description: false
 draft: false
