@@ -2,7 +2,7 @@
 author: Tim Bernhard
 categories:
 cover_image: false
-canonical_url: "https://www.genieblog.ch/blog/de/2020/wie-man-deutschen-matlab-code-in-latex-repariert"
+canonical_url: https://www.genieblog.ch/blog/de/2020/wie-man-deutschen-matlab-code-in-latex-repariert
 date: 2020-10-21 10:02:06
 description: false
 draft: false
@@ -25,11 +25,11 @@ Wenn z. B. ein Fehler auftritt (ersetzen Sie "B6 durch das Für dich fehlfallend
 
     Invalid UTF-8 byte sequence "B6
 
-hier ist der Grund und fix.
+hier ist der Grund und die Lösung.
 
 Grund: DIE UTF-8-Codierung wird nicht von Listings-Paket gelesen. 
 
-Fix: Legen Sie die UTF-8-Zeichen explizit auf die von LaTeX lesbaren Werte fest, z. B.:
+Fix: Legen Sie die UTF-8-Zeichen explizit auf die von LaTeX lesbaren Werte fest, z.B.:
 
     \lstset{%
     		literate=%
@@ -61,4 +61,5 @@ Fix: Legen Sie die UTF-8-Zeichen explizit auf die von LaTeX lesbaren Werte fest,
     			{,{ }end}{\lstbasicfont ,{ }end}{5}
     	}
 
-Wenn Sie [mcode.sty](https://ch.mathworks.com/matlabcentral/fileexchange/8015-m-code-latex-package)können Sie diesen Code einfach hinzufügen. Ab heute sind die relevanten Zeilen, die geändert werden müssen, um die Linie Nummer 239.
+Wenn Sie [mcode.sty](https://ch.mathworks.com/matlabcentral/fileexchange/8015-m-code-latex-package) können Sie diesen Code einfach hinzufügen. 
+Zum Zeitpunkt heute sind die relevanten Zeilen, die geändert werden müssen, um die Zeilen-Nummer 239.
