@@ -24,4 +24,4 @@ findable: false
 <blockquote>What is the highest place in Moscow? The Lubjanka cellar, from there you can see as far as Siberia ...</blockquote>
 
 A joke I was told by a friendly teacher in my time in Moscow. 
-I highly recommend checking out the list of [CIA-approved jokes](https://www.cia.gov/library/readingroom/docs/CIA-RDP89G00720R000800040003-6.pdf) to tell in the UDSSR if you liked this one.
+I highly recommend checking out the list of [CIA-approved jokes](http://web.archive.org/web/20201206040314/https://www.cia.gov/library/readingroom/docs/CIA-RDP89G00720R000800040003-6.pdf) to tell in the UDSSR if you liked this one.

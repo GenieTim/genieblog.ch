@@ -37,7 +37,7 @@ Folgende Dinge sollten Sie bereitgelegt haben:
 
   * das Programm [Live Suit](http://linux-sunxi.org/LiveSuit)
 
-  * ein Image des Betriebssystems ([Lubuntu](http://dl.cubieboard.org/software/a20-cubietruck/lubuntu/ct-lubuntu-nand-v1.02/))
+  * ein Image des Betriebssystems ([Lubuntu](https://lubuntu.net/downloads/))
 
 Hinweis: Wenn Sie nicht wissen welche Lubuntu Version Sie wählen sollten, achten Sie auf den Namen der Datei.
 Wenn Sie Ihren Cubietruck per Hdmi an den Bildschirm anschliessen benötigen Sie die Datei auf -hdmi, entsprechend bei -vga wenn Ihr Bildschirm per VGA angeschlossen ist. 
