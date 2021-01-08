@@ -58,7 +58,7 @@ Sinn, “Kohlemotoren, Windmotoren und Dieselmotoren: Was zeigt die CO2-Bilanz?�
 
   2. <span id="src-2"></span>“C-Klasse: T-Modell, Preisliste gültig ab 1. Februar 2019.” Mercedes-Benz Schweiz AG.
 
-  3. <span id="src-3"></span>“Tesla Model 3 Standard Range,” _Electric Vehicle Database_.  [Online]. Available: [https://ev-database.org/car/1060/Tesla-Model-3-Standard-Range](https://ev-database.org/car/1060/Tesla-Model-3-Standard-Range). [Accessed: 19-Jun-2019]
+  3. <span id="src-3"></span>“Tesla Model 3 Standard Range,” _Electric Vehicle Database_.  [Online]. Available: [https://ev-database.org/car/1320/Tesla-Model-3-Standard-Range-Plus](https://ev-database.org/car/1320/Tesla-Model-3-Standard-Range-Plus). [Accessed: 19-Jun-2019]
 
   4. <span id="src-4"></span>“Battery University,” _ BU-104a: Comparing the Battery with Other Power Sources_, 28-Mar-2019.  [Online]. Available: [https://batteryuniversity.com/learn/article/comparing_the_battery_with_other_power_sources](https://batteryuniversity.com/learn/article/comparing_the_battery_with_other_power_sources). [Accessed: 19-Jun-2019]
 
