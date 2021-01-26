@@ -67,7 +67,7 @@ jobs:
         run: yarn run staging
       
       - name: Upload Build
-        uses: genietim/ftp-action@releases/v4
+        uses: genietim/ftp-action@master
         with:
           host: sftp://lx3.hoststar.hosting:5544
           user: ${{ secrets.FTP_USER }}
