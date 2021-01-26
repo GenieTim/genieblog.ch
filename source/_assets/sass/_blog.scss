@@ -4,7 +4,7 @@
 :root {
   --color-primary: theme('colors.orange.400');
   --color-primary-shade: theme('colors.white');
-  --color-primary-complement: #140A02;
+  --color-primary-complement: #140a02;
   --color-primary-complement-shade: theme('colors.black');
   --color-secondary: theme('colors.orange.600');
   --color-secondary-shade: theme('colors.black');
@@ -35,7 +35,7 @@
     --color-primary-complement-shade: theme('colors.white');
     --color-secondary: theme('colors.orange.400');
     --color-secondary-shade: theme('colors.white');
-    --color-secondary-complement: #140A02;
+    --color-secondary-complement: #140a02;
   }
 
   .darkmode-only {
@@ -55,43 +55,42 @@
   // }
 }
 
-
 .alert {
-  @apply .bg-primary;
-  @apply .my-4;
-  @apply .p-3;
-  @apply .rounded;
-  @apply .text-primary-complement-shade;
+  @apply bg-primary;
+  @apply my-4;
+  @apply p-3;
+  @apply rounded;
+  @apply text-primary-complement-shade;
 
   &::before {
-    content: "Note: ";
-    @apply .font-bold;
-    @apply .capitalize;
+    content: 'Note: ';
+    @apply font-bold;
+    @apply capitalize;
   }
 
   a {
-    @apply .text-primary-complement;
-    @apply .underline;
+    @apply text-primary-complement;
+    @apply underline;
   }
 }
 
 .category-tag {
-  @apply .bg-secondary-complement;
-  @apply .font-semibold;
-  @apply .inline-block;
-  @apply .leading-loose;
-  @apply .mr-2;
-  @apply .pt-px;
-  @apply .px-3;
-  @apply .rounded;
-  @apply .text-secondary-shade;
-  @apply .text-xs;
-  @apply .tracking-wide;
-  @apply .uppercase;
+  @apply bg-secondary-complement;
+  @apply font-semibold;
+  @apply inline-block;
+  @apply leading-loose;
+  @apply mr-2;
+  @apply pt-px;
+  @apply px-3;
+  @apply rounded;
+  @apply text-secondary-shade;
+  @apply text-xs;
+  @apply tracking-wide;
+  @apply uppercase;
 
   &:hover {
-    @apply .bg-secondary;
-    @apply .text-secondary-complement;
+    @apply bg-secondary;
+    @apply text-secondary-complement;
   }
 }
 
@@ -99,8 +98,8 @@
   svg {
     max-height: 2em;
     max-width: 2em;
-    @apply .inline;
-    @apply .m-3;
+    @apply inline;
+    @apply m-3;
 
     path {
       fill: var(--color-primary);
@@ -112,11 +111,11 @@
   height: 25rem;
   overflow: hidden;
 
-  >div {
+  > div {
     height: 25rem;
     margin-top: -1px;
 
-    >h1 {
+    > h1 {
       font-size: 5rem;
 
       @screen xl {
@@ -126,8 +125,8 @@
   }
 
   .circuit {
-    @apply .bg-primary-complement;
-    @apply .text-primary-shade;
+    @apply bg-primary-complement;
+    @apply text-primary-shade;
     text-shadow: var(--color-primary-complement) 2px 2px;
     background-image: url('/assets/img/circuit-board.svg');
     text-align: left;
@@ -142,8 +141,8 @@
   }
 
   .split {
-    @apply .bg-primary-shade;
-    @apply .text-primary-complement;
+    @apply bg-primary-shade;
+    @apply text-primary-complement;
     text-shadow: var(--color-primary) 2px 2px;
     text-align: center;
     z-index: 2;
@@ -151,19 +150,30 @@
     h1 {
       position: absolute;
       top: 50%; // position the top  edge of the element at the middle of the parent
-      left: 50%; // position the left edge of the element at the middle of the parent 
-      transform: translate(-50%, -50%); // This is a shorthand of translateX(-50%) and translateY(-50%) 
+      left: 50%; // position the left edge of the element at the middle of the parent
+      transform: translate(
+        -50%,
+        -50%
+      ); // This is a shorthand of translateX(-50%) and translateY(-50%)
     }
   }
 
   .graphene {
-    @apply .bg-primary-complement;
-    @apply .text-primary-shade;
+    @apply bg-primary-complement;
+    @apply text-primary-shade;
     text-shadow: var(--color-primary-complement) 2px 2px;
     background-image: url('/assets/img/graphene.svg');
     text-align: right;
     z-index: 3;
-    clip-path: polygon(0% 100%, 100% 100%, 100% 65%, 80% 53%, 60% 63%, 45% 73%, 0% 61%);
+    clip-path: polygon(
+      0% 100%,
+      100% 100%,
+      100% 65%,
+      80% 53%,
+      60% 63%,
+      45% 73%,
+      0% 61%
+    );
 
     h1 {
       position: absolute;
@@ -176,22 +186,75 @@
   // screen size dependent crop
   @screen sm {
     .circuit {
-      clip-path: polygon(0% 0%, 91% 0%, 78% 18%, 60% 31%, 54% 29%, 48% 30%, 45% 40%, 35% 33%, 34% 38%, 21% 29%, 6% 36%, 0% 35%);
+      clip-path: polygon(
+        0% 0%,
+        91% 0%,
+        78% 18%,
+        60% 31%,
+        54% 29%,
+        48% 30%,
+        45% 40%,
+        35% 33%,
+        34% 38%,
+        21% 29%,
+        6% 36%,
+        0% 35%
+      );
     }
 
     .graphene {
-      clip-path: polygon(0% 100%, 15% 74%, 33% 69%, 50% 63%, 64% 54%, 78% 58%, 92% 59%, 100% 58%, 100% 55%, 100% 100%);
+      clip-path: polygon(
+        0% 100%,
+        15% 74%,
+        33% 69%,
+        50% 63%,
+        64% 54%,
+        78% 58%,
+        92% 59%,
+        100% 58%,
+        100% 55%,
+        100% 100%
+      );
     }
   }
 
   // and on even larger screens even vertically
   @screen lg {
     .circuit {
-      clip-path: polygon(0% 0%, 56% 0%, 45% 18%, 48% 29%, 43% 38%, 46% 45%, 45% 51%, 39% 61%, 43% 64%, 41% 72%, 42% 81%, 45% 89%, 48% 100%, 0% 100%);
+      clip-path: polygon(
+        0% 0%,
+        56% 0%,
+        45% 18%,
+        48% 29%,
+        43% 38%,
+        46% 45%,
+        45% 51%,
+        39% 61%,
+        43% 64%,
+        41% 72%,
+        42% 81%,
+        45% 89%,
+        48% 100%,
+        0% 100%
+      );
     }
 
     .graphene {
-      clip-path: polygon(71% 0%, 100% 0%, 100% 100%, 71% 100%, 56% 100%, 61% 85%, 60% 72%, 65% 67%, 65% 50%, 68% 42%, 67% 25%, 72% 15%, 66% 8%);
+      clip-path: polygon(
+        71% 0%,
+        100% 0%,
+        100% 100%,
+        71% 100%,
+        56% 100%,
+        61% 85%,
+        60% 72%,
+        65% 67%,
+        65% 50%,
+        68% 42%,
+        67% 25%,
+        72% 15%,
+        66% 8%
+      );
     }
   }
 }

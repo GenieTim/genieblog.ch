@@ -1,58 +1,59 @@
 @media (max-width: theme('screens.lg')) {
   .nav-menu {
-    @apply .absolute;
-    @apply .bg-primary-complement-shade;
-    @apply .inset-x-0;
-    @apply .pb-2;
-    @apply .pt-6;
-    @apply .px-2;
-    @apply .shadow;
-    @apply .w-auto;
+    @apply absolute;
+    @apply bg-primary-complement-shade;
+    @apply inset-x-0;
+    @apply pb-2;
+    @apply pt-6;
+    @apply px-2;
+    @apply shadow;
+    @apply w-auto;
     top: theme('spacing.24');
-    @apply .border-b-2;
-    @apply .border-primary;
+    @apply border-b-2;
+    @apply border-primary;
   }
 
   .nav-menu__item {
-    @apply .block;
-    @apply .no-underline;
-    @apply .mb-4;
-    @apply .mt-0;
-    @apply .text-primary-shade;
-    @apply .border-b;
-    @apply .border-primary;
+    @apply block;
+    @apply no-underline;
+    @apply mb-4;
+    @apply mt-0;
+    @apply text-primary-shade;
+    @apply border-b;
+    @apply border-primary;
   }
 }
 
 .turbolinks-progress-bar,
 #instantclick-bar {
-  @apply .bg-primary;
+  @apply bg-primary;
 }
 
-.sr-only {}
+.sr-only {
+}
 
 // Hamburger menu button
 button#menu-toggle {
-  $size: 2.5rem; // theme('spacing.10'); //  
+  $size: 2.5rem; // theme('spacing.10'); //
   $margin: $size / 7;
   $width: $size;
   $border_size: 2px;
   height: $size;
   position: relative;
-  transition: all 300ms cubic-bezier(.61, .01, .42, 1);
+  transition: all 300ms cubic-bezier(0.61, 0.01, 0.42, 1);
   cursor: pointer;
   flex-direction: column;
 
   div {
-    @apply .rounded;
-    @apply .bg-primary-complement;
+    @apply rounded;
+    @apply bg-primary-complement;
     border: $border_size solid var(--color-primary-complement);
     display: block;
     height: 0px;
     position: relative;
-    margin-bottom: .15rem;
-    margin-top: .15rem;
-    transition: all 300ms cubic-bezier(.61, .01, .42, 1);
+    margin-bottom: 0.15rem;
+    margin-top: 0.15rem;
+    transition: all 300ms cubic-bezier(0.61, 0.01, 0.42, 1);
     width: (4/7) * $size;
 
     &:nth-child(1) {
@@ -98,7 +99,7 @@ button#menu-toggle {
           border-radius: 50%;
           height: 2px;
           opacity: 1;
-          transition: opacity 600ms cubic-bezier(.61, .01, .42, 1);
+          transition: opacity 600ms cubic-bezier(0.61, 0.01, 0.42, 1);
           width: 2px;
         }
       }
@@ -112,11 +113,11 @@ button#menu-toggle {
       }
 
       animation: atom 350ms linear 1;
-      background:transparent;
+      background: transparent;
       border-radius: 50%;
       border: $border_size solid var(--color-primary-complement);
-      height: (1/3)*$size;
-      width: (2/3)*$size;
+      height: (1/3) * $size;
+      width: (2/3) * $size;
     }
   }
 
@@ -127,7 +128,7 @@ button#menu-toggle {
       border: $border_size solid var(--color-primary-complement);
       height: 0px;
       top: 0px;
-      width: (25/30)*$size;
+      width: (25/30) * $size;
 
       &:nth-child(1) {
         transform: rotate(-45deg);
@@ -158,7 +159,6 @@ button#menu-toggle {
   }
 }
 
-
 @keyframes atom {
   0% {
     transform: rotate(180deg);
@@ -172,7 +172,6 @@ button#menu-toggle {
 }
 
 @keyframes ball {
-
   // rightmost
   0% {
     left: -20%;
