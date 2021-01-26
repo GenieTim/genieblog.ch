@@ -65,23 +65,16 @@ jobs:
 
       - name: Run build
         run: yarn run staging
-
-      - name: Upload build
-        run: |
-          sudo apt-get install lftp
-          lftp -e "
-            set net:timeout 5;
-            set net:max-retries 10;
-            set net:reconnect-interval-multiplier 1;
-            set net:reconnect-interval-base 5;
-            set sftp:auto-confirm yes;
-            set ftp:ssl-force false; 
-            set ssl:verify-certificate false; 
-            open sftp://lx3.hoststar.hosting:5544
-            user ${{ secrets.FTP_USER }} ${{ secrets.FTP_PASSWORD }} 
-            mirror -v -P 5 -R ./build_staging/ /test.genieblog.ch/public_html/genieblog/; 
-            quit
-          "
+      
+      - name: Upload Build
+        uses: genietim/ftp-action@releases/v4
+        with:
+          host: sftp://lx3.hoststar.hosting:5544
+          user: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          localDir: "./build_staging/"
+          remoteDir: "/test.genieblog.ch/public_html/genieblog/"
+          forceSsl: false
 
       - name: Start lighthouse check
         uses: peter-evans/repository-dispatch@v1
