@@ -63,7 +63,7 @@ jobs:
         # if: steps.composer-cache.outputs.cache-hit != 'true'
         run: composer install --prefer-dist --no-progress
 
-      - name: Run build
+      - name: Run Build
         run: yarn run staging
       
       - name: Upload Build
@@ -76,7 +76,7 @@ jobs:
           remoteDir: "/test.genieblog.ch/public_html/genieblog/"
           forceSsl: false
 
-      - name: Start lighthouse check
+      - name: Start LightHouse Check
         uses: peter-evans/repository-dispatch@v1
         with:
           token: ${{ secrets.PERSONAL_REPO_ACCESS_TOKEN }}
