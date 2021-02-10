@@ -24,9 +24,9 @@ Information in accordance with section 5 TMG
   
 Tim Bernhard  
 
-Im Meilibachdorfli 5  
+Eschwiesenstrasse 19
 
-8804 Au  
+8003 Zürich
 
 ### Contact
 
