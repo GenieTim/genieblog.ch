@@ -21,9 +21,9 @@ categories: null
 
 Tim Bernhard
 
-Im Meilibachdörfli 5
+Eschwiesenstrasse 19
 
-8804 Au ZH
+8003 Zürich
 
 Schweiz
 
