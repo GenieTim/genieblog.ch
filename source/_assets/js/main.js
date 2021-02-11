@@ -21,11 +21,15 @@ const InstantClick = require('instantclick');
 /**
  * Search functionality
  */
-import Search from './components/Search.vue';
 window.axios = require('axios');
 window.Vue = require('vue');
+import Search from './components/Search.vue';
 
-Vue.config.productionTip = false;
+try {
+    Vue.config.productionTip = false;
+} catch (e) {
+    console.error(e)
+}
 
 function initializeVue() {
     new Vue({

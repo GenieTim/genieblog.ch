@@ -14,7 +14,7 @@ class GenerateIndex
 
         foreach ($LANGUAGES as $lang) {
             $data = collect($jigsaw->getCollection('posts_' . $lang)->map(function ($page) use ($jigsaw) {
-                if ($page->findable) {
+                if ($page->findable && false === $page->draft) {
                     return [
                         'title' => $page->title,
                         'categories' => $page->categories,
