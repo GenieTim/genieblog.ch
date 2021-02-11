@@ -1,10 +1,10 @@
+const mix = require('laravel-mix');
+require('laravel-mix-purgecss');
+require('laravel-mix-jigsaw');
 const { GenerateSW } = require('workbox-webpack-plugin');
 const categoryGenerator = require('./tasks/generateCategories.js');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const mix = require('laravel-mix');
 const ImageBuildPlugin = require('./tasks/ImageBuildPlugin');
-require('laravel-mix-purgecss');
-require('laravel-mix-jigsaw');
 
 mix.disableSuccessNotifications();
 mix.setPublicPath('source/assets/build/');
@@ -46,7 +46,7 @@ mix.js('source/_assets/js/main.js', 'js')
     })
     .purgeCss({
         content: ['source/**/*.html', 'source/**/*.md', 'source/**/*.js', 'source/**/*.php', 'source/**/*.vue'],
-        whitelistPatterns: [/language/, /hljs/, /mce/],
+        whitelistPatterns: [/language/, /hljs/, /mce/, /^hljs-.*/]
     })
     .sourceMaps()
     .version();
