@@ -1,0 +1,825 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>genieblog.ch</title>
+    <link href="https://test.genieblog.ch/genieblog" />
+    <link type="application/atom+xml" rel="self" href="https://test.genieblog.ch/genieblog/blog/en/feed.en.atom" />
+    <updated>2021-02-11T19:29:54+00:00</updated>
+    <id>https://test.genieblog.ch/genieblog/blog/en/feed.en.atom</id>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+                <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2020/how-to-fix-german-matlab-code-in-latex</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2020/how-to-fix-german-matlab-code-in-latex" />
+    <title>How to fix german MATLAB code in LaTeX</title>
+    <published>2020-10-21T10:02:06+00:00</published>
+    <updated>2020-10-21T10:02:06+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">If you encounter an error such as, for example (replace &quot;B6 with the character byte that fails for you, e.g. &quot;93)
+
+
+
+here is the reason and fix.
+
+Reason: UTF-8 encoding is not read by listings package.
+
+Fix: explicitly set the UTF-8 characters to the......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2020/barplot-with-broken-axis-in-r</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2020/barplot-with-broken-axis-in-r" />
+    <title>Barplot with Broken Axis in R</title>
+    <published>2020-06-02T21:12:31+00:00</published>
+    <updated>2020-06-02T21:12:31+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">Following scenario:
+you have some data to be plotted in a bar plot with R.
+Your data has – as it should – confidence intervals. 
+Unfortunately, one of the few confidence intervals is huge and scales the whole plot in a way that the actual bars seem......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2020/migration-from-wordpress-to-jigsaw</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2020/migration-from-wordpress-to-jigsaw" />
+    <title>Migration from WordPress to Jigsaw</title>
+    <published>2020-05-06T21:37:06+00:00</published>
+    <updated>2020-05-06T21:37:06+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">As of today, 6. May 2020, this site has been redesigned pretty recently. 
+To be more accurate, not only redesigned, but redeveloped from scratch.
+All that&#039;s left is the content, which I successfully migrated.
+Before, this site was run by WordPress, now......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2020/features-of-this-website-speed</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2020/features-of-this-website-speed" />
+    <title>Features of this website: speed</title>
+    <published>2020-05-06T18:42:12+00:00</published>
+    <updated>2020-05-06T18:42:12+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">As of today, 6. May 2020, this site has been redesigned pretty recently. 
+To be more accurate, not only redesigned, but redeveloped from scratch.
+All that&#039;s left is the content, which I successfully migrated.
+Before, this site was run by WordPress.
+I......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2020/cooling-by-dry-wet-laundry</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2020/cooling-by-dry-wet-laundry" />
+    <title>Cooling by drying wet laundry</title>
+    <published>2020-05-06T17:35:39+00:00</published>
+    <updated>2020-05-06T17:35:39+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">In this rough calculation it is to be calculated how much
+drying wet laundry can lead the house to cool down.
+The motivation for the calculation is that a family member
+thought that the apartment is feeling significantly colder,
+whenever laundry was left......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2020/genieblog-twolang</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2020/genieblog-twolang" />
+    <title>Why is this site available in mutliple languages?</title>
+    <published>2020-04-16T14:20:01+00:00</published>
+    <updated>2020-04-16T14:20:01+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">As is so often the case, the reasons are historical.
+This page was originally started in German.
+After all, that&#039;s my native language.
+However, since I mainly use English in my daily work, read blogs and use software in English,
+I wanted to give......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2020/onennote-to-latex</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2020/onennote-to-latex" />
+    <title>Exporting OneNote data to LaTeX format</title>
+    <published>2020-02-12T14:20:01+00:00</published>
+    <updated>2020-02-12T14:20:01+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">So, it took a few attempts &amp;amp; steps, but I finally succeeded in exporting some of my lecture notes to LaTeX.
+I took them on my Surface device, in OneNote, as that is the easiest &amp;amp; quickest way to &quot;prototype&quot; the notes.
+Given my experience and all......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2019/four-ways-to-align-two-elements-next-to-each-other-in-latex</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2019/four-ways-to-align-two-elements-next-to-each-other-in-latex" />
+    <title>Four ways to align two elements next to each other in LaTeX</title>
+    <published>2019-08-02T16:00:30+00:00</published>
+    <updated>2019-08-02T16:00:30+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">Of course there are more than four ways to do layout like aligning elements next to each other.
+In this post, I want to summarize the four ways I tend to use:
+
+
+Flowfram
+Table
+Column
+Minipage
+
+
+Note that all code is stripped in order to reduce the length......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2019/estimating-electricity-composition-for-valuability-of-electric-cars</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2019/estimating-electricity-composition-for-valuability-of-electric-cars" />
+    <title>Estimating Electricity Cleanliness for Valuability of Electric Cars</title>
+    <published>2019-06-19T16:00:49+00:00</published>
+    <updated>2019-06-19T16:00:49+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">The purpose of this post is to calculate the viable &quot;dirtiness&quot; of electricity for electric cars in order for them to be the better alternative to conventional diesel or petrol powered cars.
+It is a justification of my own information bubble as well as......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2019/fixing-0-using-this-not-in-object-context-in-joomla</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2019/fixing-0-using-this-not-in-object-context-in-joomla" />
+    <title>My fix to`0 - Using $this not in object context` in Joomla!</title>
+    <published>2019-06-09T17:20:52+00:00</published>
+    <updated>2019-06-09T17:20:52+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">After migrating, the Joomla! page would not show up.
+Instead, only the error &quot;0 - Using $this not in object context&quot; was showing up.
+In my case, I was able to fix the issue by replacing – in the code of the template – all......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2018/wenn-deine-augen-dich-taeuschen-akltualitaet-des-inhalts-von-buechern-vs-content-von-websiten</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2018/wenn-deine-augen-dich-taeuschen-akltualitaet-des-inhalts-von-buechern-vs-content-von-websiten" />
+    <title>&quot;If Your Eyes Are Fooling You: Up-to-Date Content vs. Books. Content of websites&quot;</title>
+    <published>2018-09-01T13:00:43+00:00</published>
+    <updated>2018-09-01T13:00:43+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">Unlike books and newspapers, old websites can be updated in design so that content looks up to date again without it being!
+
+Contact Bernhard Webstudio to get a new look for your content!...</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2018/how-to-create-a-third-party-symfony-bundle</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2018/how-to-create-a-third-party-symfony-bundle" />
+    <title>How to Create a Third-Party Symfony Bundle</title>
+    <published>2018-08-31T12:40:39+00:00</published>
+    <updated>2018-08-31T12:40:39+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">Have an awesome library you want to integrate in your Symfony application? Share your code between different Symfony instances? Share your code with other people? Create your bundle standalone and distribute it via Composer! Here is a short overview on......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2018/my-first-third-party-symfony-bundle</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2018/my-first-third-party-symfony-bundle" />
+    <title>My first third-party Symfony Bundle</title>
+    <published>2018-07-11T13:45:36+00:00</published>
+    <updated>2018-07-11T13:45:36+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">I created my first open-source Symfony bundle: PlaceholderBundle. It is an abstraction of Primitive  and/or SQIP for use in a PHP respectively Symfony application.
+This way, you can automatically generate nice &amp;amp; adaptive placeholders for images in......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2018/how-to-encode-an-svg-for-the-src-attribute-using-php</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2018/how-to-encode-an-svg-for-the-src-attribute-using-php" />
+    <title>How to Encode an SVG for the `src`-Attribute using PHP</title>
+    <published>2018-06-01T19:44:24+00:00</published>
+    <updated>2018-06-01T19:44:24+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">As SVGs should preferably not be base64 encoded when setting them on an ``-tag &lt;code&gt;src&lt;/code&gt;-attribute, the suggested alternative is to URL-encode them.
+The standard PHP &lt;code&gt;urlencode&lt;/code&gt; function unfortunately is not suitable for this task, as......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2018/getting-started-with-elastica-queries-in-symfony</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2018/getting-started-with-elastica-queries-in-symfony" />
+    <title>Getting started with elastica queries in Symfony</title>
+    <published>2018-04-06T20:08:11+00:00</published>
+    <updated>2018-04-06T20:08:11+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">When integrating Elasticsearch with Symfony, there can be a few troubles for newcomers.
+
+The easiest way to achieve integration is by following the setup instructions of the FOSElasticaBundle, in case you have a running Elasticsearch instance already at......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2018/sv-fail-runit-not-running</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2018/sv-fail-runit-not-running" />
+    <title>sv: fail: runit not running</title>
+    <published>2018-03-20T14:00:33+00:00</published>
+    <updated>2018-03-20T14:00:33+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">To fix this error, all I had to do is install &lt;code&gt;runit-systemd&lt;/code&gt;. This error appeared after the upgrade from Debian wheezy over jezzie to stretch when trying to get the status respectively start or stop, or do anything with the command......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2018/setting-the-defualt-value-of-a-symfony-formtype-nested-in-collectiontype</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2018/setting-the-defualt-value-of-a-symfony-formtype-nested-in-collectiontype" />
+    <title>Setting the default value of a Symfony FormType nested in CollectionType</title>
+    <published>2018-02-10T14:00:49+00:00</published>
+    <updated>2018-02-10T14:00:49+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">There are a few proposed ways to hack a default value to form fields.
+The problen gets bigger when handling &lt;code&gt;CollectionType&lt;/code&gt;s, as the underlying objects don&#039;t get constructed automatically.
+Workarounds are numerous, e.g.
+setting......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2018/vaccination-controversy-introduced-by-pharma-industry-because-they-dont-earn-enough-by-vaccination</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2018/vaccination-controversy-introduced-by-pharma-industry-because-they-dont-earn-enough-by-vaccination" />
+    <title>Vaccination controversy introduced by pharma industry because they don&#039;t earn enough by vaccination</title>
+    <published>2018-02-01T13:00:49+00:00</published>
+    <updated>2018-02-01T13:00:49+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">Well, at least I would like this kind of controversy/conspiracy as it would lead to the opposite effect of what the vaccination-conspiracy is leading to today.
+Also, this theory would be a lot more supportable by evidence, numbers and logic than the......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2018/spotlight-und-bing</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2018/spotlight-und-bing" />
+    <title>Spotlight and Bing</title>
+    <published>2018-01-25T13:00:25+00:00</published>
+    <updated>2018-01-25T13:00:25+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">Spotlight on Mac works with Bing, like Cortana!
+
+Well, not really, unfortunately.
+This funny trivia fact is not true anymore since  25.9.2017 ....</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2018/cortana-vs-siri-4-verfuegbarkeit</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2018/cortana-vs-siri-4-verfuegbarkeit" />
+    <title>Cortana vs. Siri #4: Availability</title>
+    <published>2018-01-19T13:00:56+00:00</published>
+    <updated>2018-01-19T13:00:56+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">It took a long time, but now this point also seems to go to Cortana: For not too long, Cortana has been available on Windows 10 devices as standard in Switzerland without having to be tricky, and Siri is also available on desktop devices and laptops......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2018/apple-superdrive-mit-windows-verwenden</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2018/apple-superdrive-mit-windows-verwenden" />
+    <title>Use Apple Superdrive with Windows</title>
+    <published>2018-01-12T13:00:49+00:00</published>
+    <updated>2018-01-12T13:00:49+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">The Apple Superdrive drive is easy to use on Windows.
+However, the appropriate driver must be installed for this.
+
+Here&#039;s how to do it: Download the  Apple Boot Camp Support Software . The file is a zip file, a &quot;zip-compressed folder&quot;, as Windows calls......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2017/calculating-eq-c-of-a-multireaction-system</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2017/calculating-eq-c-of-a-multireaction-system" />
+    <title>Calculating equilibrium concentrations of a multi-reaction-system</title>
+    <published>2017-08-07T17:00:00+00:00</published>
+    <updated>2017-08-07T17:00:00+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">If you have given the energies of the states as well as the transition states, or already the equilibrium constants, you can calculate the equilibrium concentrations.
+The way to go is to use the general formulas for the equilibrium constant K=exp(-E_A/(R......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2017/dynamic-mediaqueries-for-image-grid-using-sass</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2017/dynamic-mediaqueries-for-image-grid-using-sass" />
+    <title>Dynamic grid from breakpoints</title>
+    <published>2017-02-22T17:29:16+00:00</published>
+    <updated>2017-02-22T17:29:16+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">I dynamically generate MediaQueries from Zurb Foundation breakpoints for a grid with the following Sass code:
+
+
+
+In my case, it generates the media queries for all breakpoints defined for the Zurb Foundation Framework in the Sass array......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2016/ein-russischer-witz</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2016/ein-russischer-witz" />
+    <title>A russian joke</title>
+    <published>2016-08-19T16:00:49+00:00</published>
+    <updated>2016-08-19T16:00:49+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">What is the highest place in Moscow? The Lubjanka cellar, from there you can see as far as Siberia ...
+
+A joke I was told by a friendly teacher in my time in Moscow. 
+I highly recommend checking out the list of CIA-approved jokes to tell in the UDSSR if......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2016/erkenntnisse-fuers-leben</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2016/erkenntnisse-fuers-leben" />
+    <title>Learning for life</title>
+    <published>2016-08-19T10:00:52+00:00</published>
+    <updated>2016-08-19T10:00:52+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">I learned a lot during my adventure in Moscow and St. Petersburg.
+I actually knew a lot of it, but I didn&#039;t take it to heart.
+This includes:
+
+
+Paying in another country is cheaper with a credit card than with the Maestro, despite the processing fee,......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2016/cortana-in-der-schweiz</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2016/cortana-in-der-schweiz" />
+    <title>Cortana finally available in Switzerland!</title>
+    <published>2016-08-17T18:10:28+00:00</published>
+    <updated>2016-08-17T18:10:28+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">With the Anniversary Update of Windows 10, the time has finally come - the voice assistant from Microsoft is finally also available in Switzerland. Cortana only understands High German, but that is understandable....</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2016/ueber-essen</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2016/ueber-essen" />
+    <title>On food</title>
+    <published>2016-08-10T17:32:23+00:00</published>
+    <updated>2016-08-10T17:32:23+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">Russian cuisine has its own charm.
+In general, I dare to judge that mild to slightly sour flavors predominate.
+Compared to Swiss cuisine, there is definitely more soup and less cheese.
+I didn&#039;t come across hard cheese in particular.
+Concerning soup,......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2016/der-erste-arbeitstag</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2016/der-erste-arbeitstag" />
+    <title>The first workday</title>
+    <published>2016-08-04T20:22:25+00:00</published>
+    <updated>2016-08-04T20:22:25+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">After some organizational difficulties, I was able to start an internship.
+In addition, in a very great workplace: at the state Hermitage Museum.
+This is huge and houses countless valuable and famous art treasures, including pictures by Picasso, Matisse,......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2016/moskau-vs-petersburg</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2016/moskau-vs-petersburg" />
+    <title>Moskau vs. Petersburg</title>
+    <published>2016-07-20T13:00:29+00:00</published>
+    <updated>2016-07-20T13:00:29+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">A continuously updated article with the differences that I noticed in these two big cities.
+
+The subway
+After my train journey from Moscow to St. Petersburg, I had to take the metro and luggage.
+I was surprised a lot because there was no such thing in......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2016/und-das-wetter-war-wie</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2016/und-das-wetter-war-wie" />
+    <title>And how was the weather?</title>
+    <published>2016-07-13T13:00:11+00:00</published>
+    <updated>2016-07-13T13:00:11+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">I pay attention to appropriate alliterations at the beginning of a somewhat limited-excellent entry.
+At least in the german version of this blog post, ha ha.
+
+But let&#039;s talk about the weather.
+On the day of my arrival I was soaked to the bone after......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2016/ein-meisterwerk-der-flachen-situationskomik</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2016/ein-meisterwerk-der-flachen-situationskomik" />
+    <title>A masterpiece of flat situation comedy</title>
+    <published>2016-07-01T16:04:37+00:00</published>
+    <updated>2016-07-01T16:04:37+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">💋😍😘❤💕💓💘💌
+
+From Moscow with love ;)...</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2016/james-bonds-salad-dressing</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2016/james-bonds-salad-dressing" />
+    <title>James Bond&#039;s Salad Dressing</title>
+    <published>2016-06-29T15:08:59+00:00</published>
+    <updated>2016-06-29T15:08:59+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">Mix five parts of red-wine vinegar with one part extra-virgin olive oil.
+The vinegar overload is essential.
+Add a half clove of garlic, half a teaspoon of Dijon mustard, a good grind of black pepper and a teaspoon of white granulated sugar.
+Mix well,......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2016/sprache-sprechen</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2016/sprache-sprechen" />
+    <title>On speaking languages</title>
+    <published>2016-06-29T14:00:20+00:00</published>
+    <updated>2016-06-29T14:00:20+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">The motivation for a language exchange? Learn the language, of course.
+In my case Russian.
+An exciting language: Influences of Vikings, Mongols, Greeks and many more developed into their own complex language, which is characterized in particular by a far......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2016/ueber-verkehr</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2016/ueber-verkehr" />
+    <title>On traffic</title>
+    <published>2016-06-23T14:40:44+00:00</published>
+    <updated>2016-06-23T14:40:44+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">Fortunately, the term &quot;traffic&quot; is widespread.
+So my first encounter with traffic was at the airport.
+With a delay of just over 30 minutes, my plane landed comfortably and gently at Moscow airport.
+Instead of docking onto the terminal hose 10 meters next......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2016/google-und-neujahrsvorsaetze</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2016/google-und-neujahrsvorsaetze" />
+    <title>Google and New Year&#039;s resolutions</title>
+    <published>2016-01-01T07:00:31+00:00</published>
+    <updated>2016-01-01T07:00:31+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">Wer im Web sucht, verrät etwas über sich - zumindest wenn er sich nicht dagegen schützt. So zeichnen Google, Bing und Co. jede Suchanfrage auf, zusammen mit Datum, Ort und welche Daten auch immer sie noch kriegen können. Zu unserem Glück bieten sie immer wieder einen Einblick in ihre Daten und zeigen Trends und Highlights, so zum Beispiel auf &lt;a href=&quot;http://www.google.com/trends/?hl=de&quot; title=&quot;Google Trends&quot;&gt;google.com/trends&lt;/a&gt;. Diese Daten können wichtige Erkenntnisse liefern oder einfach faszinieren. Und sie repräsentieren die Gedanken und Sorgen unserer Gesellschaft....</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2015/plymouthd-ply-terminal-c611-ply_terminal_open-assertion-terminal-void-0-failed</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2015/plymouthd-ply-terminal-c611-ply_terminal_open-assertion-terminal-void-0-failed" />
+    <title>plymouthd: ply-terminal.c:611: ply_terminal_open: Assertion &#039;terminal != ((void *)0)&#039; failed</title>
+    <published>2015-09-07T13:15:36+00:00</published>
+    <updated>2015-09-07T13:15:36+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">plymouthd: ply-terminal.c:611: ply_terminal_open: Assertion &#039;terminal != ((void *)0)&#039; failed
+
+An error message that practically stops the Cubietruck.
+Fooling around on the keyboard does not help anymore.
+But there is another solution: &lt;code&gt;Ctrl + Alt +......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2015/ist-ein-objekt-mit-einer-eigenschaft-in-meinem-array</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2015/ist-ein-objekt-mit-einer-eigenschaft-in-meinem-array" />
+    <title>Is an Object with a Property in my Array?</title>
+    <published>2015-08-20T11:00:46+00:00</published>
+    <updated>2015-08-20T11:00:46+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">The following code can be used to test whether an object in an &#039;array&#039; array has a &#039;property&#039; property with the value &#039;value&#039;:...</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2015/lesemodus-rueckentwicklung-des-webs</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2015/lesemodus-rueckentwicklung-des-webs" />
+    <title>Reading mode - destruction of the currently known web?</title>
+    <published>2015-08-17T11:19:45+00:00</published>
+    <updated>2015-08-17T11:19:45+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">More and more devices with Internet access are offering the option in the browser to display the website as text with the pictures without style.
+Depending on the browser, this function is called &quot;Reader View&quot; or &quot;Read mode&quot;, for example.
+The amazing......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2015/angular-onsen-io</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2015/angular-onsen-io" />
+    <title>Angular &amp; Onsen.io</title>
+    <published>2015-08-15T13:00:55+00:00</published>
+    <updated>2015-08-15T13:00:55+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">For almost three days I couldn&#039;t get my Angular application to do what it should with onsen.io. &lt;code&gt;ng-repeat&lt;/code&gt; were commented out in the DOM tree, &lt;code&gt;ng-click&lt;/code&gt; did not respond.
+Now I finally noticed and became aware of the problem.
+The......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2015/spacemaster-mein-erstes-game-fuer-ios-android</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2015/spacemaster-mein-erstes-game-fuer-ios-android" />
+    <title>spaceMaster - my first Game for iOs &amp; Android</title>
+    <published>2015-06-21T08:41:46+00:00</published>
+    <updated>2015-06-21T08:41:46+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">The game, which I originally developed as a project in EF Informatik, is now available for Android and iOs.
+
+The game is all about flying your rocket through space and collecting the gold coins you will find along the way.
+But be careful: the universe is......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2015/cortana-vs-siri-2-desktop</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2015/cortana-vs-siri-2-desktop" />
+    <title>Cortana vs. Siri #2: Desktop</title>
+    <published>2015-05-05T12:30:38+00:00</published>
+    <updated>2015-05-05T12:30:38+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">A few years have passed since Siri was first introduced.
+Many rumors came with them - will Siri be available on OS X? And after all these years, the sobering answer is still: &quot;Probably one day, but so far nothing is definite!&quot;
+Things look different with......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2015/gesamter-localstorage-auslesen</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2015/gesamter-localstorage-auslesen" />
+    <title>Brainstorm: read the whole localStorage</title>
+    <published>2015-04-12T11:00:34+00:00</published>
+    <updated>2015-04-12T11:00:34+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">For an HTML5 application, I had the idea of ​​renaming some elements in localStorage instead of deleting them.
+Since this would happen several times, the renaming had to be done so that the other elements are not overwritten.
+And what is more......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2015/javascript-windows-phone-hardware-backbutton-abfangen</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2015/javascript-windows-phone-hardware-backbutton-abfangen" />
+    <title>JavaScript: Catch Windows Phone Hardware Backbutton</title>
+    <published>2015-03-30T02:33:06+00:00</published>
+    <updated>2015-03-30T02:33:06+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">When programming a Windows Phone application with JavaScript, the &quot;back&quot; button at the bottom left of the smartphone can also be intercepted in order to carry out an alternative activity, for example, ending the application. In the following I would like to explain the procedure....</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2015/css-windows-phone-akzentfarbe</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2015/css-windows-phone-akzentfarbe" />
+    <title>CSS: Windows Phone Accent Colour</title>
+    <published>2015-03-18T11:00:34+00:00</published>
+    <updated>2015-03-18T11:00:34+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">With Windows (Phone) 8, Microsoft gave developers the opportunity to develop their apps for Windows &amp;amp; Windows Phone with HTML, CSS and JavaScript.
+So it is particularly tempting for web developers like me to port the web app to those devices.......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2015/javascript-die-schlechten-seiten</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2015/javascript-die-schlechten-seiten" />
+    <title>JavaScript - some negative sides</title>
+    <published>2015-03-18T11:00:20+00:00</published>
+    <updated>2015-03-18T11:00:20+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">I am by far not the only one having written on this topic, nor did I do any good.
+
+More entertaining examples can for example be found in the following video: [https://www.youtube.com/watch?v=2pL28CcEijU[(https://www.youtube.com/watch?v=2pL28CcEijU).......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2015/cpphallowelt</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2015/cpphallowelt" />
+    <title>C++: Hello World!</title>
+    <published>2015-02-25T13:41:14+00:00</published>
+    <updated>2015-02-25T13:41:14+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">...</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2015/cortana-vs-siri-1-emotionen</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2015/cortana-vs-siri-1-emotionen" />
+    <title>Cortana vs. Siri #1: Emotionen</title>
+    <published>2015-02-18T13:00:44+00:00</published>
+    <updated>2015-02-18T13:00:44+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">Even though Microsoft&#039;s voice assistant is still in the beta phase, Cortana already has many features that cannot be found with the older sibling Siri of Apple.
+
+The feature that I want to start with this article today is the emotions.
+Siri could be......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2015/formatierter-source-code-in-indesign-und-co-einbinden</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2015/formatierter-source-code-in-indesign-und-co-einbinden" />
+    <title>Embed Formated Source Code in Indesign &amp; Co.</title>
+    <published>2015-02-10T13:57:49+00:00</published>
+    <updated>2015-02-10T13:57:49+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">Be it a bachelor&#039;s, doctoral or a little schoolwork in the field of computer science: it hardly gets by without code.
+But how can you integrate the code, as nicely as it is formatted in Eclipse and Co., without LaTeX knowledge in Word or InDesign?......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2015/csharphallowelt</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2015/csharphallowelt" />
+    <title>C#: Hello world!</title>
+    <published>2015-02-05T16:20:03+00:00</published>
+    <updated>2015-02-05T16:20:03+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">...</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2015/javahallowelt</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2015/javahallowelt" />
+    <title>Java: Hello World</title>
+    <published>2015-01-25T08:00:02+00:00</published>
+    <updated>2015-01-25T08:00:02+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">...</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2015/website-in-powerpoint-einbinden</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2015/website-in-powerpoint-einbinden" />
+    <title>Embed Website in PowerPoint</title>
+    <published>2015-01-12T11:00:30+00:00</published>
+    <updated>2015-01-12T11:00:30+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">When you present a Microsoft PowerPoint presentation, you have already enjoyed the advantages of the reference tools. Whether the notes the laser pointer or the stopwatch - I also prefer this view present. PowerPoint changes when you connect the computer to a projector from &quot;Duplicate the Ad&quot; to &quot;Extend the Ad&quot;, so that the beamer serves as a second display for the presentation. Due to this automatic change, you cannot switch to another program such as B. open a browser and display it on the projector. Unfortunately, this makes it difficult to display websites during a presentation. Fortunately, there are some solutions....</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2015/cubietruck-lubuntu-tastaturlayout</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2015/cubietruck-lubuntu-tastaturlayout" />
+    <title>Cubietruck with Lubuntu: adjust keyboard</title>
+    <published>2015-01-07T13:00:28+00:00</published>
+    <updated>2015-01-07T13:00:28+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">After putting on [Lubuntu on the Cubietruck](https://www.genieblog.ch/blog/en/2015/lubuntu-als-standardbetriebssystem-auf-dem-cubietruck-per-mac) you notice that you were never asked for the keyboard layout. Since it is tedious to always find the right keys, it is clear that you want to change the keyboard layout. But how?
+...</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2015/lubuntu-als-standardbetriebssystem-auf-dem-cubietruck-per-mac</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2015/lubuntu-als-standardbetriebssystem-auf-dem-cubietruck-per-mac" />
+    <title>Lubuntu as default OS on the Cubietruck - using a Mac</title>
+    <published>2015-01-03T12:32:26+00:00</published>
+    <updated>2015-01-03T12:32:26+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">When you first connect the Cubietruck (v / o Cubieboard 3), the Android operating system starts automatically.
+Fortunately, since this does not exhaust the full potential of the Cubies, it can be replaced by Lubuntu.
+This can be done, for example, as......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2014/fenstergroessenaenderung-unterdruecken-in-libgdx</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2014/fenstergroessenaenderung-unterdruecken-in-libgdx" />
+    <title>Suppress window size changes in libGDX</title>
+    <published>2014-12-29T18:07:03+00:00</published>
+    <updated>2014-12-29T18:07:03+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">Another game project in the Java framework libGDX.
+Another problem that is worth a short blog post: changing the window size.
+
+Whenever I program something, I am infinitely glad that it doesn&#039;t have to be perfect from the start.
+Since I&#039;m unfortunately......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2014/irgendein-tastendruck-in-libgdx</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2014/irgendein-tastendruck-in-libgdx" />
+    <title>Intercept any keyboard press in libGDX</title>
+    <published>2014-12-25T09:37:10+00:00</published>
+    <updated>2014-12-25T09:37:10+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">How to intercept pressing any key with the libGDX Java framework. libGDX is a framework, ideal for programming games and games, and that is platform-independent. The projects can be exported for iOs, Android, PCs and Macs and even for the web!...</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2014/logarithmen-von-hand-ziehen</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2014/logarithmen-von-hand-ziehen" />
+    <title>Manually taking the logarithm</title>
+    <published>2014-11-25T11:00:38+00:00</published>
+    <updated>2014-11-25T11:00:38+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">How does a calculator draw the logarithm? I would like to investigate this question in this article and use HTML and JavaScript to program the first step of a corresponding logarithmic puller.
+
+
+
+First, it is worth looking at the conversion formula for......</summary>
+    
+</entry>
+            <entry>
+    <id>https://test.genieblog.ch/genieblog/blog/en/2014/hallo-welt</id>
+    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/en/2014/hallo-welt" />
+    <title>Hello World!</title>
+    <published>2014-11-17T18:45:43+00:00</published>
+    <updated>2014-11-17T18:45:43+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">Welcome to Tim Bernhard&#039;s blog! I am the founder of Bernhard Webstudio and a passionate programmer!
+
+In the future, you will be able to find tips and tricks on current programming problems here.
+Have a little patience!...</summary>
+    
+</entry>
+    </feed>
