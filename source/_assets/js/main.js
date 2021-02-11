@@ -22,7 +22,8 @@ const InstantClick = require('instantclick');
  * Search functionality
  */
 window.axios = require('axios');
-window.Vue = require('vue');
+import Vue from 'vue'
+// window.Vue = require('vue');
 import Search from './components/Search.vue';
 
 try {
@@ -32,6 +33,7 @@ try {
 }
 
 function initializeVue() {
+    // console.log(Vue);
     new Vue({
         components: {
             Search,
