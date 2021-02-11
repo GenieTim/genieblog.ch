@@ -45,6 +45,11 @@
     <link href="{{ $page->baseUrl }}/blog/{{ $page->language }}/feed.{{ $page->language }}.atom"
         type="application/atom+xml" rel="alternate" title="{{ $page->siteName }} Atom Feed">
 
+    <!-- some SEO improvement -->
+    @if ($page->requiresCanonical)
+    <link rel="canonical" href="https://www.genieblog.ch/{{ $page->getPath() }}" />
+    @endif
+
     @stack('meta')
 
     @if ($page->production)

@@ -135,6 +135,7 @@ function getMultilangCollections()
 return [
     'baseUrl' => '',
     'production' => false,
+    'requiresCanonical' => true,
     'siteName' => 'genieblog.ch',
     'siteDescription' => 'A genius for a genius',
     'siteAuthor' => 'Tim Bernhard',
