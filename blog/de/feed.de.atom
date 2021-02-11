@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>genieblog.ch</title>
-    <link href="https://test.genieblog.ch/genieblog" />
-    <link type="application/atom+xml" rel="self" href="https://test.genieblog.ch/genieblog/blog/de/feed.de.atom" />
-    <updated>2021-02-11T19:29:54+00:00</updated>
-    <id>https://test.genieblog.ch/genieblog/blog/de/feed.de.atom</id>
+    <link href="https://genietim.github.io/genieblog.ch/" />
+    <link type="application/atom+xml" rel="self" href="https://genietim.github.io/genieblog.ch/blog/de/feed.de.atom" />
+    <updated>2021-02-11T19:43:08+00:00</updated>
+    <id>https://genietim.github.io/genieblog.ch/blog/de/feed.de.atom</id>
     <author>
         <name>Tim Bernhard</name>
     </author>
                 <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2020/wie-man-deutschen-matlab-code-in-latex-repariert</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2020/wie-man-deutschen-matlab-code-in-latex-repariert" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2020/wie-man-deutschen-matlab-code-in-latex-repariert</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2020/wie-man-deutschen-matlab-code-in-latex-repariert" />
     <title>Wie man deutschen MATLAB-Code in LaTeX repariert</title>
     <published>2020-10-21T10:02:06+00:00</published>
     <updated>2020-10-21T10:02:06+00:00</updated>
@@ -29,8 +29,8 @@ Fix: Legen Sie die UTF-8-Zeichen explizit......</summary>
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2020/barplot-mit-gebrochener-achse-in-r</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2020/barplot-mit-gebrochener-achse-in-r" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2020/barplot-mit-gebrochener-achse-in-r</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2020/barplot-mit-gebrochener-achse-in-r" />
     <title>Barplot mit gebrochener Achse in R</title>
     <published>2020-06-02T21:12:31+00:00</published>
     <updated>2020-06-02T21:12:31+00:00</updated>
@@ -44,8 +44,8 @@ Leider ist eines der Konfidenzintervalle riesig und skaliert den ganzen Plot so,
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2020/migration-von-wordpress-jigsaw</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2020/migration-von-wordpress-jigsaw" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2020/migration-von-wordpress-jigsaw</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2020/migration-von-wordpress-jigsaw" />
     <title>Migration von Wordpress Jigsaw</title>
     <published>2020-05-06T21:37:06+00:00</published>
     <updated>2020-05-06T21:37:06+00:00</updated>
@@ -59,8 +59,8 @@ Früher......</summary>
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2020/funktionen-dieser-website-v</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2020/funktionen-dieser-website-v" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2020/funktionen-dieser-website-v</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2020/funktionen-dieser-website-v" />
     <title>Funktionen dieser Website: Geschwindigkeit</title>
     <published>2020-05-06T18:42:12+00:00</published>
     <updated>2020-05-06T18:42:12+00:00</updated>
@@ -74,8 +74,8 @@ Früher......</summary>
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2020/abkuhlung-durch-trocknen-nasser-wasche</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2020/abkuhlung-durch-trocknen-nasser-wasche" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2020/abkuhlung-durch-trocknen-nasser-wasche</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2020/abkuhlung-durch-trocknen-nasser-wasche" />
     <title>Abkühlung durch Trocknen nasser Wäsche</title>
     <published>2020-05-06T17:35:39+00:00</published>
     <updated>2020-05-06T17:35:39+00:00</updated>
@@ -89,8 +89,8 @@ der Meinung war, dass die Wohnung sich signifikant......</summary>
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2020/genieblog-twolang</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2020/genieblog-twolang" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2020/genieblog-twolang</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2020/genieblog-twolang" />
     <title>Wieso ist diese Seite Zweisprachig?</title>
     <published>2020-04-16T14:20:01+00:00</published>
     <updated>2020-04-16T14:20:01+00:00</updated>
@@ -105,8 +105,8 @@ und insbesondere auch......</summary>
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2020/onennote-to-latex</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2020/onennote-to-latex" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2020/onennote-to-latex</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2020/onennote-to-latex" />
     <title>Konvertierung von OneNote-Seiten nach LaTeX</title>
     <published>2020-02-12T14:20:01+00:00</published>
     <updated>2020-02-12T14:20:01+00:00</updated>
@@ -118,8 +118,8 @@ Ich habe sie in OneNote auf meinem Surface-Gerät aufgenommen, da dies der einfa
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2019/four-ways-to-align-two-elements-next-to-each-other-in-latex</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2019/four-ways-to-align-two-elements-next-to-each-other-in-latex" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2019/four-ways-to-align-two-elements-next-to-each-other-in-latex</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2019/four-ways-to-align-two-elements-next-to-each-other-in-latex" />
     <title>Vier Wege, zwei Elemente in LaTeX nebeneinander zu positionieren</title>
     <published>2019-08-02T16:00:30+00:00</published>
     <updated>2019-08-02T16:00:30+00:00</updated>
@@ -140,8 +140,8 @@ Beachten Sie, dass der......</summary>
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2019/estimating-electricity-composition-for-valuability-of-electric-cars</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2019/estimating-electricity-composition-for-valuability-of-electric-cars" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2019/estimating-electricity-composition-for-valuability-of-electric-cars</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2019/estimating-electricity-composition-for-valuability-of-electric-cars" />
     <title>Einschätzung der notwendingen Stromsauberkeit für den sinnvollen Einsatz von E-Autos</title>
     <published>2019-06-19T16:00:49+00:00</published>
     <updated>2019-06-19T16:00:49+00:00</updated>
@@ -153,8 +153,8 @@ Der Post ist einerseits eine Bestätigung......</summary>
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2019/fixing-0-using-this-not-in-object-context-in-joomla</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2019/fixing-0-using-this-not-in-object-context-in-joomla" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2019/fixing-0-using-this-not-in-object-context-in-joomla</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2019/fixing-0-using-this-not-in-object-context-in-joomla" />
     <title>Meine Lösung für `0 - Using $this not in object context` in Joomla!</title>
     <published>2019-06-09T17:20:52+00:00</published>
     <updated>2019-06-09T17:20:52+00:00</updated>
@@ -167,8 +167,8 @@ In meinem Fall konnte ich das Problem beheben, indem ich - im Code des Templates
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2018/wenn-deine-augen-dich-taeuschen-akltualitaet-des-inhalts-von-buechern-vs-content-von-websiten</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2018/wenn-deine-augen-dich-taeuschen-akltualitaet-des-inhalts-von-buechern-vs-content-von-websiten" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2018/wenn-deine-augen-dich-taeuschen-akltualitaet-des-inhalts-von-buechern-vs-content-von-websiten</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2018/wenn-deine-augen-dich-taeuschen-akltualitaet-des-inhalts-von-buechern-vs-content-von-websiten" />
     <title>Wenn die Augen täuschen: Aktualität des Inhalts von Büchern vs. Websiten</title>
     <published>2018-09-01T13:00:43+00:00</published>
     <updated>2018-09-01T13:00:43+00:00</updated>
@@ -181,8 +181,8 @@ Kontaktiere Bernhard Webstudio, wir erstellen Ihnen ein neues Design für Ihre I
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2018/how-to-create-a-third-party-symfony-bundle</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2018/how-to-create-a-third-party-symfony-bundle" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2018/how-to-create-a-third-party-symfony-bundle</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2018/how-to-create-a-third-party-symfony-bundle" />
     <title>How to Create a Third-Party Symfony Bundle</title>
     <published>2018-08-31T12:40:39+00:00</published>
     <updated>2018-08-31T12:40:39+00:00</updated>
@@ -193,8 +193,8 @@ Kontaktiere Bernhard Webstudio, wir erstellen Ihnen ein neues Design für Ihre I
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2018/my-first-third-party-symfony-bundle</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2018/my-first-third-party-symfony-bundle" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2018/my-first-third-party-symfony-bundle</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2018/my-first-third-party-symfony-bundle" />
     <title>Mein erstes Symfony-Bundle als Drittanbietern</title>
     <published>2018-07-11T13:45:36+00:00</published>
     <updated>2018-07-11T13:45:36+00:00</updated>
@@ -207,8 +207,8 @@ Auf diese Weise können Sie automatisch nette und anpassungsfähige......</summa
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2018/how-to-encode-an-svg-for-the-src-attribute-using-php</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2018/how-to-encode-an-svg-for-the-src-attribute-using-php" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2018/how-to-encode-an-svg-for-the-src-attribute-using-php</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2018/how-to-encode-an-svg-for-the-src-attribute-using-php" />
     <title>Encodieren einer SVG Datei für das `src`-Attribut mit PHP</title>
     <published>2018-06-01T19:44:24+00:00</published>
     <updated>2018-06-01T19:44:24+00:00</updated>
@@ -220,8 +220,8 @@ Die Standard PHP &lt;code&gt;urlencode&lt;/code&gt; Leider ist es......</summary
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2018/getting-started-with-elastica-queries-in-symfony</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2018/getting-started-with-elastica-queries-in-symfony" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2018/getting-started-with-elastica-queries-in-symfony</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2018/getting-started-with-elastica-queries-in-symfony" />
     <title>Getting started with elastica queries in Symfony</title>
     <published>2018-04-06T20:08:11+00:00</published>
     <updated>2018-04-06T20:08:11+00:00</updated>
@@ -234,8 +234,8 @@ Der einfachste Weg, um eine Integration zu erreichen, besteht darin, den Install
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2018/sv-fail-runit-not-running</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2018/sv-fail-runit-not-running" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2018/sv-fail-runit-not-running</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2018/sv-fail-runit-not-running" />
     <title>sv: fail: runit not running</title>
     <published>2018-03-20T14:00:33+00:00</published>
     <updated>2018-03-20T14:00:33+00:00</updated>
@@ -248,8 +248,8 @@ zu starten oder zu stoppen, oder......</summary>
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2018/setting-the-defualt-value-of-a-symfony-formtype-nested-in-collectiontype</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2018/setting-the-defualt-value-of-a-symfony-formtype-nested-in-collectiontype" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2018/setting-the-defualt-value-of-a-symfony-formtype-nested-in-collectiontype</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2018/setting-the-defualt-value-of-a-symfony-formtype-nested-in-collectiontype" />
     <title>Setting the default value of a Symfony FormType nested in CollectionType</title>
     <published>2018-02-10T14:00:49+00:00</published>
     <updated>2018-02-10T14:00:49+00:00</updated>
@@ -262,8 +262,8 @@ Es gibt zahlreiche......</summary>
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2018/vaccination-controversy-introduced-by-pharma-industry-because-they-dont-earn-enough-by-vaccination</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2018/vaccination-controversy-introduced-by-pharma-industry-because-they-dont-earn-enough-by-vaccination" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2018/vaccination-controversy-introduced-by-pharma-industry-because-they-dont-earn-enough-by-vaccination</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2018/vaccination-controversy-introduced-by-pharma-industry-because-they-dont-earn-enough-by-vaccination" />
     <title>Impfkontroverse von der Pharmaindustrie eingeführt, weil sie nicht verdienen genug durch Impfung</title>
     <published>2018-02-01T13:00:49+00:00</published>
     <updated>2018-02-01T13:00:49+00:00</updated>
@@ -275,8 +275,8 @@ Auch diese Theorie wäre viel mehr durch Beweise, Zahlen und Logik zu unterstüt
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2018/spotlight-und-bing</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2018/spotlight-und-bing" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2018/spotlight-und-bing</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2018/spotlight-und-bing" />
     <title>Spotlight and Bing</title>
     <published>2018-01-25T13:00:25+00:00</published>
     <updated>2018-01-25T13:00:25+00:00</updated>
@@ -290,8 +290,8 @@ Dieser witzige Trivia-Fakt gilt seit dem 25.9.2017 leider nicht mehr....</summar
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2018/cortana-vs-siri-4-verfuegbarkeit</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2018/cortana-vs-siri-4-verfuegbarkeit" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2018/cortana-vs-siri-4-verfuegbarkeit</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2018/cortana-vs-siri-4-verfuegbarkeit" />
     <title>Cortana vs. Siri #4: Verfügbarkeit</title>
     <published>2018-01-19T13:00:56+00:00</published>
     <updated>2018-01-19T13:00:56+00:00</updated>
@@ -302,8 +302,8 @@ Dieser witzige Trivia-Fakt gilt seit dem 25.9.2017 leider nicht mehr....</summar
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2018/apple-superdrive-mit-windows-verwenden</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2018/apple-superdrive-mit-windows-verwenden" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2018/apple-superdrive-mit-windows-verwenden</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2018/apple-superdrive-mit-windows-verwenden" />
     <title>Apple Superdrive mit Windows verwenden</title>
     <published>2018-01-12T13:00:49+00:00</published>
     <updated>2018-01-12T13:00:49+00:00</updated>
@@ -318,8 +318,8 @@ Die Datei ist eine......</summary>
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2017/dynamic-mediaqueries-for-image-grid-using-sass</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2017/dynamic-mediaqueries-for-image-grid-using-sass" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2017/dynamic-mediaqueries-for-image-grid-using-sass</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2017/dynamic-mediaqueries-for-image-grid-using-sass" />
     <title>Dynamischer grid generiert aus breakpoints</title>
     <published>2017-02-22T17:29:16+00:00</published>
     <updated>2017-02-22T17:29:16+00:00</updated>
@@ -334,8 +334,8 @@ In meinem Fall generiert es die Medienabfragen für alle Breakpoints, die für d
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2016/ein-russischer-witz</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2016/ein-russischer-witz" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2016/ein-russischer-witz</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2016/ein-russischer-witz" />
     <title>Ein russischer Witz</title>
     <published>2016-08-19T16:00:49+00:00</published>
     <updated>2016-08-19T16:00:49+00:00</updated>
@@ -346,8 +346,8 @@ In meinem Fall generiert es die Medienabfragen für alle Breakpoints, die für d
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2016/erkenntnisse-fuers-leben</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2016/erkenntnisse-fuers-leben" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2016/erkenntnisse-fuers-leben</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2016/erkenntnisse-fuers-leben" />
     <title>Erkenntnisse fürs Leben</title>
     <published>2016-08-19T10:00:52+00:00</published>
     <updated>2016-08-19T10:00:52+00:00</updated>
@@ -363,8 +363,8 @@ Bezahlen in einem anderen Land ist trotz Bearbeitungsgebühr günstiger mit.....
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2016/cortana-in-der-schweiz</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2016/cortana-in-der-schweiz" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2016/cortana-in-der-schweiz</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2016/cortana-in-der-schweiz" />
     <title>Cortana in Switzerland!</title>
     <published>2016-08-17T18:10:28+00:00</published>
     <updated>2016-08-17T18:10:28+00:00</updated>
@@ -375,8 +375,8 @@ Bezahlen in einem anderen Land ist trotz Bearbeitungsgebühr günstiger mit.....
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2016/ueber-essen</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2016/ueber-essen" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2016/ueber-essen</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2016/ueber-essen" />
     <title>Über Essen</title>
     <published>2016-08-10T17:32:23+00:00</published>
     <updated>2016-08-10T17:32:23+00:00</updated>
@@ -390,8 +390,8 @@ Insbesondere hartem Käse......</summary>
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2016/der-erste-arbeitstag</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2016/der-erste-arbeitstag" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2016/der-erste-arbeitstag</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2016/der-erste-arbeitstag" />
     <title>Der erste Arbeitstag</title>
     <published>2016-08-04T20:22:25+00:00</published>
     <updated>2016-08-04T20:22:25+00:00</updated>
@@ -404,8 +404,8 @@ Dieses ist riesig und beherbergt unzählige wertvolle und berühmte......</summa
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2016/moskau-vs-petersburg</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2016/moskau-vs-petersburg" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2016/moskau-vs-petersburg</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2016/moskau-vs-petersburg" />
     <title>Moskau vs. Petersburg</title>
     <published>2016-07-20T13:00:29+00:00</published>
     <updated>2016-07-20T13:00:29+00:00</updated>
@@ -420,8 +420,8 @@ Dabei hat mich vieles......</summary>
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2016/und-das-wetter-war-wie</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2016/und-das-wetter-war-wie" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2016/und-das-wetter-war-wie</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2016/und-das-wetter-war-wie" />
     <title>Und das Wetter war wie?</title>
     <published>2016-07-13T13:00:11+00:00</published>
     <updated>2016-07-13T13:00:11+00:00</updated>
@@ -435,8 +435,8 @@ Am Tag meiner Ankunft war ich nach dem Zurücklegen einer Distanz von knapp 200 
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2016/ein-meisterwerk-der-flachen-situationskomik</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2016/ein-meisterwerk-der-flachen-situationskomik" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2016/ein-meisterwerk-der-flachen-situationskomik</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2016/ein-meisterwerk-der-flachen-situationskomik" />
     <title>Ein Meisterwerk der flachen Situationskomik</title>
     <published>2016-07-01T16:04:37+00:00</published>
     <updated>2016-07-01T16:04:37+00:00</updated>
@@ -449,8 +449,8 @@ Liebesgrüsse aus Moskau ;)...</summary>
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2016/james-bonds-salad-dressing</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2016/james-bonds-salad-dressing" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2016/james-bonds-salad-dressing</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2016/james-bonds-salad-dressing" />
     <title>James Bond&#039;s Salad Dressing</title>
     <published>2016-06-29T15:08:59+00:00</published>
     <updated>2016-06-29T15:08:59+00:00</updated>
@@ -464,8 +464,8 @@ Mix well,......</summary>
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2016/sprache-sprechen</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2016/sprache-sprechen" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2016/sprache-sprechen</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2016/sprache-sprechen" />
     <title>Über Sprache sprechen</title>
     <published>2016-06-29T14:00:20+00:00</published>
     <updated>2016-06-29T14:00:20+00:00</updated>
@@ -478,8 +478,8 @@ Eine spannende Sprache: Einflüsse von Wikingern, Mongolen, Griechen und vielen 
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2016/ueber-verkehr</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2016/ueber-verkehr" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2016/ueber-verkehr</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2016/ueber-verkehr" />
     <title>Über Verkehr</title>
     <published>2016-06-23T14:40:44+00:00</published>
     <updated>2016-06-23T14:40:44+00:00</updated>
@@ -493,8 +493,8 @@ Anstatt am 10 Meter......</summary>
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2016/google-und-neujahrsvorsaetze</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2016/google-und-neujahrsvorsaetze" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2016/google-und-neujahrsvorsaetze</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2016/google-und-neujahrsvorsaetze" />
     <title>Google und Neujahrsvorsätze</title>
     <published>2016-01-01T07:00:31+00:00</published>
     <updated>2016-01-01T07:00:31+00:00</updated>
@@ -505,8 +505,8 @@ Anstatt am 10 Meter......</summary>
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2015/plymouthd-ply-terminal-c611-ply_terminal_open-assertion-terminal-void-0-failed</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2015/plymouthd-ply-terminal-c611-ply_terminal_open-assertion-terminal-void-0-failed" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2015/plymouthd-ply-terminal-c611-ply_terminal_open-assertion-terminal-void-0-failed</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2015/plymouthd-ply-terminal-c611-ply_terminal_open-assertion-terminal-void-0-failed" />
     <title>plymouthd: ply-terminal.c:611: ply_terminal_open: Assertion &#039;terminal != ((void *)0)&#039; failed</title>
     <published>2015-09-07T13:15:36+00:00</published>
     <updated>2015-09-07T13:15:36+00:00</updated>
@@ -521,8 +521,8 @@ Da gibt es aber......</summary>
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2015/ist-ein-objekt-mit-einer-eigenschaft-in-meinem-array</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2015/ist-ein-objekt-mit-einer-eigenschaft-in-meinem-array" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2015/ist-ein-objekt-mit-einer-eigenschaft-in-meinem-array</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2015/ist-ein-objekt-mit-einer-eigenschaft-in-meinem-array" />
     <title>Ist ein Objekt mit einer Eigenschaft in meinem Array?</title>
     <published>2015-08-20T11:00:46+00:00</published>
     <updated>2015-08-20T11:00:46+00:00</updated>
@@ -533,8 +533,8 @@ Da gibt es aber......</summary>
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2015/lesemodus-rueckentwicklung-des-webs</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2015/lesemodus-rueckentwicklung-des-webs" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2015/lesemodus-rueckentwicklung-des-webs</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2015/lesemodus-rueckentwicklung-des-webs" />
     <title>Lesemodus - Rückentwicklung des Webs?</title>
     <published>2015-08-17T11:19:45+00:00</published>
     <updated>2015-08-17T11:19:45+00:00</updated>
@@ -546,8 +546,8 @@ Je nach Browser heisst diese Funktion zum Beispiel &quot;Reader View&quot; bzw. 
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2015/angular-onsen-io</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2015/angular-onsen-io" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2015/angular-onsen-io</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2015/angular-onsen-io" />
     <title>Angular &amp; Onsen.io</title>
     <published>2015-08-15T13:00:55+00:00</published>
     <updated>2015-08-15T13:00:55+00:00</updated>
@@ -559,8 +559,8 @@ Nun endlich ist mir das Problem......</summary>
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2015/spacemaster-mein-erstes-game-fuer-ios-android</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2015/spacemaster-mein-erstes-game-fuer-ios-android" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2015/spacemaster-mein-erstes-game-fuer-ios-android</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2015/spacemaster-mein-erstes-game-fuer-ios-android" />
     <title>spaceMaster - mein erstes Game für iOs &amp; Android</title>
     <published>2015-06-21T08:41:46+00:00</published>
     <updated>2015-06-21T08:41:46+00:00</updated>
@@ -573,8 +573,8 @@ Im Spiel geht es darum, dass Sie mit Ihrer Rakete durch das All fliegen und die 
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2015/cortana-vs-siri-2-desktop</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2015/cortana-vs-siri-2-desktop" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2015/cortana-vs-siri-2-desktop</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2015/cortana-vs-siri-2-desktop" />
     <title>Cortana vs. Siri #2: Desktop</title>
     <published>2015-05-05T12:30:38+00:00</published>
     <updated>2015-05-05T12:30:38+00:00</updated>
@@ -586,8 +586,8 @@ Mit ihnen kamen viele Gerüchte - wird Siri auch auf OS X verfügbar sein? Und n
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2015/note-apple-music</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2015/note-apple-music" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2015/note-apple-music</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2015/note-apple-music" />
     <title>Notiz an mich: music?</title>
     <published>2015-04-22T18:10:28+00:00</published>
     <updated>2015-04-22T18:10:28+00:00</updated>
@@ -601,8 +601,8 @@ Mit ihnen kamen viele Gerüchte - wird Siri auch auf OS X verfügbar sein? Und n
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2015/gesamter-localstorage-auslesen</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2015/gesamter-localstorage-auslesen" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2015/gesamter-localstorage-auslesen</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2015/gesamter-localstorage-auslesen" />
     <title>Geistesblitz: gesamter localStorage auslesen</title>
     <published>2015-04-12T11:00:34+00:00</published>
     <updated>2015-04-12T11:00:34+00:00</updated>
@@ -614,8 +614,8 @@ Da dies mehrfach geschehen würde, musste die Umbenennung eindeutig erfolgen, da
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2015/javascript-windows-phone-hardware-backbutton-abfangen</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2015/javascript-windows-phone-hardware-backbutton-abfangen" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2015/javascript-windows-phone-hardware-backbutton-abfangen</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2015/javascript-windows-phone-hardware-backbutton-abfangen" />
     <title>JavaScript: Windows Phone Hardware Backbutton abfangen</title>
     <published>2015-03-30T02:33:06+00:00</published>
     <updated>2015-03-30T02:33:06+00:00</updated>
@@ -626,8 +626,8 @@ Da dies mehrfach geschehen würde, musste die Umbenennung eindeutig erfolgen, da
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2015/css-windows-phone-akzentfarbe</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2015/css-windows-phone-akzentfarbe" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2015/css-windows-phone-akzentfarbe</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2015/css-windows-phone-akzentfarbe" />
     <title>CSS: Windows Phone Akzentfarbe</title>
     <published>2015-03-18T11:00:34+00:00</published>
     <updated>2015-03-18T11:00:34+00:00</updated>
@@ -639,8 +639,8 @@ So ist es besonders für Webentwickler wie mich verlockend, die Web App auf jene
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2015/javascript-die-schlechten-seiten</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2015/javascript-die-schlechten-seiten" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2015/javascript-die-schlechten-seiten</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2015/javascript-die-schlechten-seiten" />
     <title>JavaScript - die schlechten Seiten</title>
     <published>2015-03-18T11:00:20+00:00</published>
     <updated>2015-03-18T11:00:20+00:00</updated>
@@ -656,8 +656,8 @@ Sie bietet zwar......</summary>
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2015/cpphallowelt</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2015/cpphallowelt" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2015/cpphallowelt</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2015/cpphallowelt" />
     <title>C++</title>
     <published>2015-02-25T13:41:14+00:00</published>
     <updated>2015-02-25T13:41:14+00:00</updated>
@@ -668,8 +668,8 @@ Sie bietet zwar......</summary>
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2015/cortana-vs-siri-1-emotionen</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2015/cortana-vs-siri-1-emotionen" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2015/cortana-vs-siri-1-emotionen</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2015/cortana-vs-siri-1-emotionen" />
     <title>Cortana vs. Siri #1: Emotionen</title>
     <published>2015-02-18T13:00:44+00:00</published>
     <updated>2015-02-18T13:00:44+00:00</updated>
@@ -682,8 +682,8 @@ Das Feature, mit dem ich heute mit diesem Artikel beginnen möchte,......</summa
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2015/formatierter-source-code-in-indesign-und-co-einbinden</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2015/formatierter-source-code-in-indesign-und-co-einbinden" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2015/formatierter-source-code-in-indesign-und-co-einbinden</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2015/formatierter-source-code-in-indesign-und-co-einbinden" />
     <title>Formatierter Source Code in Indesign und Co. einbinden</title>
     <published>2015-02-10T13:57:49+00:00</published>
     <updated>2015-02-10T13:57:49+00:00</updated>
@@ -695,8 +695,8 @@ Doch wie kann man den Code, so schön wie er in Eclipse und Co. formatiert wird,
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2015/csharphallowelt</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2015/csharphallowelt" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2015/csharphallowelt</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2015/csharphallowelt" />
     <title>C#</title>
     <published>2015-02-05T16:20:03+00:00</published>
     <updated>2015-02-05T16:20:03+00:00</updated>
@@ -707,8 +707,8 @@ Doch wie kann man den Code, so schön wie er in Eclipse und Co. formatiert wird,
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2015/javahallowelt</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2015/javahallowelt" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2015/javahallowelt</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2015/javahallowelt" />
     <title>Java: Hallo Welt</title>
     <published>2015-01-25T08:00:02+00:00</published>
     <updated>2015-01-25T08:00:02+00:00</updated>
@@ -719,8 +719,8 @@ Doch wie kann man den Code, so schön wie er in Eclipse und Co. formatiert wird,
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2015/element-mit-css-in-der-mitte-positionieren</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2015/element-mit-css-in-der-mitte-positionieren" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2015/element-mit-css-in-der-mitte-positionieren</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2015/element-mit-css-in-der-mitte-positionieren" />
     <title>Element mit CSS in der Mitte positionieren</title>
     <published>2015-01-21T06:30:23+00:00</published>
     <updated>2015-01-21T06:30:23+00:00</updated>
@@ -735,8 +735,8 @@ Um ein Element in der Mitte eines anderen Elements mit CSS zu positionieren muss
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2015/website-in-powerpoint-einbinden</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2015/website-in-powerpoint-einbinden" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2015/website-in-powerpoint-einbinden</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2015/website-in-powerpoint-einbinden" />
     <title>Website in PowerPoint einbinden</title>
     <published>2015-01-12T11:00:30+00:00</published>
     <updated>2015-01-12T11:00:30+00:00</updated>
@@ -748,8 +748,8 @@ Durch diesen automatischen Wechsel kann man anschliessend nicht einfach so ein a
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2015/cubietruck-lubuntu-tastaturlayout</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2015/cubietruck-lubuntu-tastaturlayout" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2015/cubietruck-lubuntu-tastaturlayout</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2015/cubietruck-lubuntu-tastaturlayout" />
     <title>Cubietruck mit Lubuntu: Tastaturlayout anpassen</title>
     <published>2015-01-07T13:00:28+00:00</published>
     <updated>2015-01-07T13:00:28+00:00</updated>
@@ -761,8 +761,8 @@ Durch diesen automatischen Wechsel kann man anschliessend nicht einfach so ein a
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2015/lubuntu-als-standardbetriebssystem-auf-dem-cubietruck-per-mac</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2015/lubuntu-als-standardbetriebssystem-auf-dem-cubietruck-per-mac" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2015/lubuntu-als-standardbetriebssystem-auf-dem-cubietruck-per-mac</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2015/lubuntu-als-standardbetriebssystem-auf-dem-cubietruck-per-mac" />
     <title>Lubuntu als Standardbetriebssystem auf dem Cubietruck - per Mac</title>
     <published>2015-01-03T12:32:26+00:00</published>
     <updated>2015-01-03T12:32:26+00:00</updated>
@@ -775,8 +775,8 @@ Das geht zum......</summary>
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2014/fenstergroessenaenderung-unterdruecken-in-libgdx</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2014/fenstergroessenaenderung-unterdruecken-in-libgdx" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2014/fenstergroessenaenderung-unterdruecken-in-libgdx</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2014/fenstergroessenaenderung-unterdruecken-in-libgdx" />
     <title>Fenstergrössenänderung unterdrücken in libGDX</title>
     <published>2014-12-29T18:07:03+00:00</published>
     <updated>2014-12-29T18:07:03+00:00</updated>
@@ -790,8 +790,8 @@ Wann auch immer ich etwas programmiere, bin ich unendlich froh über den Umstand
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2014/irgendein-tastendruck-in-libgdx</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2014/irgendein-tastendruck-in-libgdx" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2014/irgendein-tastendruck-in-libgdx</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2014/irgendein-tastendruck-in-libgdx" />
     <title>Irgendein Tastendruck in libGDX</title>
     <published>2014-12-25T09:37:10+00:00</published>
     <updated>2014-12-25T09:37:10+00:00</updated>
@@ -803,8 +803,8 @@ Wann auch immer ich etwas programmiere, bin ich unendlich froh über den Umstand
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2014/logarithmen-von-hand-ziehen</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2014/logarithmen-von-hand-ziehen" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2014/logarithmen-von-hand-ziehen</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2014/logarithmen-von-hand-ziehen" />
     <title>Logarithmen von Hand ziehen</title>
     <published>2014-11-25T11:00:38+00:00</published>
     <updated>2014-11-25T11:00:38+00:00</updated>
@@ -819,8 +819,8 @@ Zuerst lohnt es sich, die Umrechnungsformel zum......</summary>
     
 </entry>
             <entry>
-    <id>https://test.genieblog.ch/genieblog/blog/de/2014/hallo-welt</id>
-    <link type="text/html" rel="alternate" href="https://test.genieblog.ch/genieblog/blog/de/2014/hallo-welt" />
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2014/hallo-welt</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2014/hallo-welt" />
     <title>Hallo Welt!</title>
     <published>2014-11-17T18:45:43+00:00</published>
     <updated>2014-11-17T18:45:43+00:00</updated>
