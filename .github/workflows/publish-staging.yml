@@ -79,7 +79,7 @@ jobs:
             set ssl:verify-certificate false; 
             open sftp://lx3.hoststar.hosting:5544
             user ${{ secrets.FTP_USER }} ${{ secrets.FTP_PASSWORD }} 
-            mirror -v -P 5 -R ./build_staging/ /test.genieblog.ch/public_html/genieblog/; 
+            mirror -P 5 -R ./build_staging/ /test.genieblog.ch/public_html/genieblog/; 
             quit
           "
 
