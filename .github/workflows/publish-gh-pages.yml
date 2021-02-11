@@ -64,32 +64,13 @@ jobs:
         run: composer install --prefer-dist --no-progress
 
       - name: Run Build
-        run: yarn run staging
+        run: yarn run gh-pages
       
       - name: Upload Build
         uses: JamesIves/github-pages-deploy-action@4.0.0
         with:
           branch: gh-pages # The branch the action should deploy to.
-          folder: ./build_staging/ # The folder the action should deploy.
-        # shell: bash
-        # env:
-        #   FTP_USER: ${{ secrets.FTP_USER }}
-        #   FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }} 
-        # run: |
-        #   sudo apt-get install lftp
-        #   lftp -e "
-        #     set net:timeout 5;
-        #     set net:max-retries 10;
-        #     set net:reconnect-interval-multiplier 1;
-        #     set net:reconnect-interval-base 5;
-        #     set sftp:auto-confirm yes;
-        #     set ftp:ssl-force false; 
-        #     set ssl:verify-certificate false; 
-        #     open sftp://lx3.hoststar.hosting:5544
-        #     user $FTP_USER $FTP_PASSWORD
-        #     mirror -P 5 -R ./build_staging/ /test.genieblog.ch/public_html/genieblog/; 
-        #     quit
-        #   "
+          folder: ./build_gh-pages/ # The folder the action should deploy.
 
       - name: Start LightHouse Check
         uses: peter-evans/repository-dispatch@v1
