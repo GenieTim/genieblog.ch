@@ -6,6 +6,7 @@
         "watch-poll": "mix watch -- --watch-options-poll=1000",
         "hot": "mix watch --hot",
         "staging": "NODE_ENV=staging mix",
+        "gh-pages": "NODE_ENV=gh-pages mix",
         "production": "mix --production"
     },
     "devDependencies": {
