@@ -46,7 +46,7 @@ mix.js('source/_assets/js/main.js', 'js')
     })
     .purgeCss({
         content: ['source/**/*.html', 'source/**/*.md', 'source/**/*.js', 'source/**/*.php', 'source/**/*.vue'],
-        whitelistPatterns: [/language/, /hljs/, /mce/, /^hljs-.*/]
+        safelist: { deep: [/language/, /hljs/, /mce/, /^hljs-.*/] }
     })
     .sourceMaps()
     .version();
