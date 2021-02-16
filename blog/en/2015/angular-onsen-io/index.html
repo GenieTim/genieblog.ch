@@ -29,7 +29,7 @@
             Tim Bernhard
         </a>
         • <time datetime="2015-08-15T13:00:55+00:00" title="Date Published"
-            class="dt-published">August 15, 2015</time></p><a href="/blog/en/categories/javascript"
+            class="dt-published">August 15, 2015</time></p><a href="https://genietim.github.io/genieblog.ch//blog/en/categories/javascript"
         title="View posts in JavaScript" class="category-tag p-category">JavaScript</a><div class="border-b border-secondary text-base e-content" v-pre><p>For almost three days I couldn't get my Angular application to do what it should with onsen.io. <code>ng-repeat</code> were commented out in the DOM tree, <code>ng-click</code> did not respond.
 Now I finally noticed and became aware of the problem.
 The <code>ng-controller</code> must not be used on a <code>&lt;ons-template&gt; &lt;/ons-template&gt;</code>, but may only be set as an attribute on the <code>&lt;ons-page&gt; &lt;/ons-page&gt;</code> at the earliest.

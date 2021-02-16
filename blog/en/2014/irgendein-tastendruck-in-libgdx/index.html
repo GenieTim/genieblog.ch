@@ -30,9 +30,9 @@
             Tim Bernhard
         </a>
         • <time datetime="2014-12-25T09:37:10+00:00" title="Date Published"
-            class="dt-published">December 25, 2014</time></p><a href="/blog/en/categories/java"
-        title="View posts in Java" class="category-tag p-category">Java</a><a href="/blog/en/categories/java"
-        title="View posts in Java" class="category-tag p-category">Java</a><a href="/blog/en/categories/libgdx"
+            class="dt-published">December 25, 2014</time></p><a href="https://genietim.github.io/genieblog.ch//blog/en/categories/java"
+        title="View posts in Java" class="category-tag p-category">Java</a><a href="https://genietim.github.io/genieblog.ch//blog/en/categories/java"
+        title="View posts in Java" class="category-tag p-category">Java</a><a href="https://genietim.github.io/genieblog.ch//blog/en/categories/libgdx"
         title="View posts in libGDX" class="category-tag p-category">libGDX</a><div class="border-b border-secondary text-base e-content" v-pre><p>In a current project for a game in the Java programming language, which I create using the libGDX framework, I wanted to ask the user at one point whether they are ready to continue playing.
 For the sake of the gaming experience, this should never be done via a yes / no dialog.</p><p>Since with libGDX the game would be designed for desktop PCs as well as for Android and iOs mobile devices, a sole click on the screen is pleasant for the mobile devices, but not for the desktop user, because they use the mouse for the actual control of the game not needed.</p><p>So there is a two-lane solution: it should be enough for the mobile devices to tap the screen, while the PC user should press a button to start the game.
 But which ones?</p><h2>Keyboard input in libGDX</h2><p>In general, keyboard input in libGDX can be received in two ways: On the one hand, I can always ask "Hey, keyboard, was <em>Enter</em> pressed?". Or I say to the keyboard: "Hey, boy, get in touch when <em>Enter</em> has been pressed!". I prefer the first solution because the _render () _ function is called again and again anyway, and this way is chosen in most example projects.</p><p>How does this way work now? The keyboard input is provided by the method com.badlogic.gdx.Gdx.input.isKeyPressed (int key). The following is then checked, for example:</p><pre><code>    <span class="hljs-comment">// import com.badlogic.gdx.Gdx;</span>

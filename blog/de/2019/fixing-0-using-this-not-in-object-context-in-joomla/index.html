@@ -29,7 +29,7 @@
             Tim Bernhard
         </a>
         • <time datetime="2019-06-09T17:20:52+00:00" title="Date Published"
-            class="dt-published">June 9, 2019</time></p><a href="/blog/de/categories/joomla"
+            class="dt-published">June 9, 2019</time></p><a href="https://genietim.github.io/genieblog.ch//blog/de/categories/joomla"
         title="View posts in Joomla" class="category-tag p-category">Joomla</a><div class="border-b border-secondary text-base e-content" v-pre><p>Nach der Migration wurde die Joomla! Seite schlichtweg nicht angezeigt.
 Stattdessen wurde nur der Fehler "<code>0 - Using $this not in object context</code>" angezeigt.
 In meinem Fall konnte ich das Problem beheben, indem ich - im Code des Templates - alle <code>JFactory::getMenu()</code> durch <code>$ application-&gt;getMenu()</code> ersetzte, wobei <code>$application</code> gesetzt wurde als <code>$application = JFactory::getApplication()</code>.</p><p>Beachten Sie, dass dies möglicherweise nicht die einzig mögliche Lösung  für diesen Fehler ist.

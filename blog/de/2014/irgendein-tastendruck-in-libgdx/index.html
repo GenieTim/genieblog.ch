@@ -30,9 +30,9 @@
             Tim Bernhard
         </a>
         • <time datetime="2014-12-25T09:37:10+00:00" title="Date Published"
-            class="dt-published">December 25, 2014</time></p><a href="/blog/de/categories/java"
-        title="View posts in Java" class="category-tag p-category">Java</a><a href="/blog/de/categories/java"
-        title="View posts in Java" class="category-tag p-category">Java</a><a href="/blog/de/categories/libgdx"
+            class="dt-published">December 25, 2014</time></p><a href="https://genietim.github.io/genieblog.ch//blog/de/categories/java"
+        title="View posts in Java" class="category-tag p-category">Java</a><a href="https://genietim.github.io/genieblog.ch//blog/de/categories/java"
+        title="View posts in Java" class="category-tag p-category">Java</a><a href="https://genietim.github.io/genieblog.ch//blog/de/categories/libgdx"
         title="View posts in LibGDX" class="category-tag p-category">LibGDX</a><div class="border-b border-secondary text-base e-content" v-pre><p>Bei einem aktuellen Projekt eines Games in der Programmiersprache Java, das ich mithilfe des Frameworks libGDX erstelle, wollte ich an einem Punkt den Nutzer fragen, ob er bereit ist, weiterzuspielen.
 Dem Spielerlebnis zuliebe sollte dies auf keinen Fall über einen Ja/Nein Dialog geschehen.</p><p>Da mit libGDX das Spiel sowohl für Desktop-PCs wie auch für Android und iOs Mobilgeräte konzipiert sein würde, ist ein einfacher Klick auf den Bildschirm zwar für die Mobilgeräte angenehm, nicht jedoch für den Desktop-Nutzer, da dieser die Maus für die eigentliche Steuerung des Spiels nicht benötigt.</p><p>Es liegt also eine zweispurige Lösung nahe: für die Mobilgeräte sollte es reichen, wenn sie auf den Bildschirm tippen, der PC-Nutzer dagegen sollte eine Taste drücken, um das Spiel zu beginnen.
 Doch welche?</p><h2>Tastatureingabe in libGDX</h2><p>Generell kann eine Tastatureingabe in libGDX  auf zwei Arten entgegengenommen werden: Einerseits kann ich immer wieder fragen "Hey, Tastatur, wurde gerade <em>Enter</em> gedrückt?". Oder ich sage der Tastatur: "Hey, Junge, melde Dich doch wenn <em>Enter</em> gedrückt wurde!". Ich bevorzuge die erste Lösung, da die <em>render()</em>-Funktion sowieso immer wieder aufgerufen wird, und dieser Weg in den meisten Beispielprojekten gewählt wird.</p><p>Wie funktioniert denn nun dieser Weg? Die Tastatureingabe wird bereitgestellt durch die Methode com.badlogic.gdx.Gdx.input.isKeyPressed(int key). Geprüft wird dann zum Beispiel folgendermassen:</p><p><code>// import com.badlogic.gdx.Gdx;

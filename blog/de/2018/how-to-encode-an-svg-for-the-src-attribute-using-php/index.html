@@ -29,10 +29,10 @@
             Tim Bernhard
         </a>
         • <time datetime="2018-06-01T19:44:24+00:00" title="Date Published"
-            class="dt-published">June 1, 2018</time></p><a href="/blog/de/categories/php"
-        title="View posts in PHP" class="category-tag p-category">PHP</a><a href="/blog/de/categories/tutorial"
-        title="View posts in Tutorial" class="category-tag p-category">Tutorial</a><a href="/blog/de/categories/image"
-        title="View posts in image" class="category-tag p-category">image</a><a href="/blog/de/categories/svg"
+            class="dt-published">June 1, 2018</time></p><a href="https://genietim.github.io/genieblog.ch//blog/de/categories/php"
+        title="View posts in PHP" class="category-tag p-category">PHP</a><a href="https://genietim.github.io/genieblog.ch//blog/de/categories/tutorial"
+        title="View posts in Tutorial" class="category-tag p-category">Tutorial</a><a href="https://genietim.github.io/genieblog.ch//blog/de/categories/image"
+        title="View posts in image" class="category-tag p-category">image</a><a href="https://genietim.github.io/genieblog.ch//blog/de/categories/svg"
         title="View posts in SVG" class="category-tag p-category">SVG</a><div class="border-b border-secondary text-base e-content" v-pre><p>Weil SVGs <a href="https://css-tricks.com/probably-dont-base64-svg/">besser nicht</a> base64 encodiert sein soll wenn Sie als <code>&lt;img /&gt;</code>-tag <code>src</code>-attribute gesetzt werden sollen, ist die vorgeschlagene Alternative die URL-Codierung.
 Die Standard <a href="https://php.net/manual/de/function.urlencode.php">PHP <code>urlencode</code></a> Leider ist es nicht für diese Aufgabe geeignet, da der resultierende Wert von keinem Browser als gültiges SVG-Bild interpretiert wird.
 Stattdessen muss die Funktion <a href="https://secure.php.net/manual/de/function.rawurlencode.php"><code>rawurlencode</code></a> verwendet werden.
