@@ -39,7 +39,8 @@ module.exports = {
             // newFields += "description: \n";
             if ('categories' in newFields && newFields.categories && newFields.categories.length > 0) {
               newFields.categories.forEach(category => {
-                const categoryFile = __dirname + "/../source/_categories_" + lang + "/" + category + ".md";
+                const escapedCategory = category.replaceAll(" ", "_").replaceAll("-", "_")
+                const categoryFile = __dirname + "/../source/_categories_" + lang + "/" + escapedCategory + ".md";
                 if (!fs.existsSync(categoryFile)) {
                   let newFileContent;
                   if (lang == "de") {
