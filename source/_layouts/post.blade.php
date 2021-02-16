@@ -36,7 +36,7 @@
 
     @if ($page->categories)
     @foreach ($page->categories as $i => $category)
-    <a href="{{ '/blog/' . $page->language . '/categories/' . $page->underscorify($category) }}"
+    <a href="{{ $page->baseUrl . '/blog/' . $page->language . '/categories/' . $page->underscorify($category) }}"
         title="View posts in {{ $category }}" class="category-tag p-category">{{ $category }}</a>
     @endforeach
     @endif
