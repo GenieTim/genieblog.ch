@@ -46,7 +46,14 @@ class ImageBuildPlugin {
             // then, do the actual processing
             if (sizes_to_do.length > 0) {
               // we do the loop over the sizes twice in order to read only the files we really need to
-              let image = await Jimp.read(file);
+              let image = null;
+              try {
+                image = await Jimp.read(file);
+              } catch (e) {
+                console.error("Failed to read image", e);
+                resolve();
+                return;
+              }
               for (let size_i = 0; size_i < sizes_to_do.length; ++size_i) {
                 // do not scale up, only down...
                 // note that this leads to an overhead in time this script takes
@@ -55,10 +62,14 @@ class ImageBuildPlugin {
                 }
                 // clone
                 let sizedImage = image;
-                await sizedImage.resize(sizes_to_do[size_i], Jimp.AUTO);
-                await sizedImage.quality(68);
-                await sizedImage.writeAsync(target_file_paths[size_i]);
-                console.info("Output " + target_file_paths[size_i] + " from " + file);
+                try {
+                  await sizedImage.resize(sizes_to_do[size_i], Jimp.AUTO);
+                  await sizedImage.quality(68);
+                  await sizedImage.writeAsync(target_file_paths[size_i]);
+                  console.info("Output " + target_file_paths[size_i] + " from " + file);
+                } catch (e) {
+                  console.error("Failed to save scaled image", e);
+                }
               }
             }
             resolve();
@@ -66,7 +77,9 @@ class ImageBuildPlugin {
         }
       });
       return new Promise((resolve, reject) => {
-        Promise.all(promises).then(resolve());
+        Promise.all(promises).then(resolve()).catch((e) => {
+          console.error(e);
+        });
       });
     });
   }
