@@ -55,7 +55,13 @@ const subscriptionKey = getSubscriptionKey();
 
     // finally, save results
     for (language in posts) {
-      fs.writeFileSync(getFileName(language, date, posts[language].slug), getFileContent(author, date, language, posts), { encoding: "utf8" });
+      let fileTarget = getFileName(language, date, posts[language].slug)
+      try {
+        fs.mkdirSync(path.dirname(fileTarget), { recursive: true });
+      } catch (e) {
+        console.warn(e)
+      }
+      fs.writeFileSync(fileTarget, getFileContent(author, date, language, posts), { encoding: "utf8" });
     }
   }).catch(error => {
     // on error, log everything to prevent work loss
@@ -71,7 +77,7 @@ const subscriptionKey = getSubscriptionKey();
  */
 function getLanguages() {
   let fileContents = fs.readFileSync(__dirname + '/../global-config.yaml', 'utf8');
-  let data = yaml.safeLoad(fileContents);
+  let data = yaml.load(fileContents);
   return data.languages;
 }
 
@@ -80,7 +86,7 @@ function getLanguages() {
  */
 function getSubscriptionKey() {
   let fileContents = fs.readFileSync(__dirname + '/../.env.yaml', 'utf8');
-  let data = yaml.safeLoad(fileContents);
+  let data = yaml.load(fileContents);
   return data.subscription_key;
 }
 
