@@ -4,4 +4,4 @@ title: Language Exchange
 description: All posts that are about my Language Exchange
 ---
           
-These posts are about my "Language Exchange", who would have thought.
+These posts are about my "Language Exchange"s.
