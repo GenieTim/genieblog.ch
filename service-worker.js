@@ -179,6 +179,12 @@ define("./service-worker.js",['./workbox-b763d10b'], function (workbox) { 'use s
     "url": "/images/2020/christian-englmeier-J7EUjSlNQtg-unsplash-300.jpg",
     "revision": "95b9273cc9057ddde69dd41aa4871a88"
   }, {
+    "url": "/images/2021/front_cover_extending_lammps-150.jpg",
+    "revision": "2e10b8aeaeafd2a79d9289905d56ba95"
+  }, {
+    "url": "/images/2021/front_cover_extending_lammps-300.jpg",
+    "revision": "199437f83150d4131a24191fe5e208a4"
+  }, {
     "url": "/images/favicon/android-chrome-192x192-150.png",
     "revision": "998b28919d4b1807258ad7daf2b7846d"
   }, {

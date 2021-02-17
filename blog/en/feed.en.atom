@@ -3,12 +3,27 @@
     <title>genieblog.ch</title>
     <link href="https://genietim.github.io/genieblog.ch/" />
     <link type="application/atom+xml" rel="self" href="https://genietim.github.io/genieblog.ch/blog/en/feed.en.atom" />
-    <updated>2021-02-16T16:32:05+00:00</updated>
+    <updated>2021-02-17T18:06:14+00:00</updated>
     <id>https://genietim.github.io/genieblog.ch/blog/en/feed.en.atom</id>
     <author>
         <name>Tim Bernhard</name>
     </author>
                 <entry>
+    <id>https://genietim.github.io/genieblog.ch/blog/en/2021/how-to-implement-follow-up-e-mails-in-pipefy</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/en/2021/how-to-implement-follow-up-e-mails-in-pipefy" />
+    <title>How to Implement Follow-Up E-Mails in Pipefy</title>
+    <published>2021-02-15T19:34:39+00:00</published>
+    <updated>2021-02-15T19:34:39+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">Pipefy is an awesome tool to manage your workflows and projects.
+
+I had the opportunity to implement a few workflows for a client of Bernhard Webstudio.
+One request was to have Follow-Up E-Mails, meaning E-Mails that are sent to the client a year or......</summary>
+    
+</entry>
+            <entry>
     <id>https://genietim.github.io/genieblog.ch/blog/en/2020/how-to-fix-german-matlab-code-in-latex</id>
     <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/en/2020/how-to-fix-german-matlab-code-in-latex" />
     <title>How to fix german MATLAB code in LaTeX</title>
