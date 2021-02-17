@@ -111,7 +111,7 @@ function getMultilangCollections()
                 }
                 return $allPosts->filter(function ($post) use ($page, $lang) {
                     if ($post->categories) {
-                        return in_array($page->getFilename(), $post->categories, true) && $post->language === $lang;
+                        return in_array($page->title, $post->categories, true) && $post->language === $lang;
                     }
                     return false;
                 });
