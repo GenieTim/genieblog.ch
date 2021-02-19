@@ -3,12 +3,27 @@
     <title>genieblog.ch</title>
     <link href="https://genietim.github.io/genieblog.ch/" />
     <link type="application/atom+xml" rel="self" href="https://genietim.github.io/genieblog.ch/blog/de/feed.de.atom" />
-    <updated>2021-02-17T18:06:14+00:00</updated>
+    <updated>2021-02-19T18:01:58+00:00</updated>
     <id>https://genietim.github.io/genieblog.ch/blog/de/feed.de.atom</id>
     <author>
         <name>Tim Bernhard</name>
     </author>
                 <entry>
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2021/implementieren-von-follow-up-e-mails-in-pipefy</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2021/implementieren-von-follow-up-e-mails-in-pipefy" />
+    <title>Implementieren von Follow-Up-E-Mails in Pipefy</title>
+    <published>2021-02-15T19:34:39+00:00</published>
+    <updated>2021-02-15T19:34:39+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">Pipefy ist ein großartiges Tool, um Ihre Workflows und Projekte zu verwalten.
+
+Ich hatte die Möglichkeit, einige Workflows für einen Kunden von Bernhard Webstudio.
+Eine Anfrage war, Follow-Up-E-Mails zu haben, d. h. E-Mails, die ein Jahr oder später......</summary>
+    
+</entry>
+            <entry>
     <id>https://genietim.github.io/genieblog.ch/blog/de/2020/wie-man-deutschen-matlab-code-in-latex-repariert</id>
     <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2020/wie-man-deutschen-matlab-code-in-latex-repariert" />
     <title>Wie man deutschen MATLAB-Code in LaTeX repariert</title>
