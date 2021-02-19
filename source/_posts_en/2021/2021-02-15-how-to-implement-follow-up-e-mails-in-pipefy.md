@@ -33,7 +33,7 @@ This is how you can schedule the sending of E-Mails in order for them to be sent
 The way to trigger a card to become _expired_ is to **set a due date**. As soon as the due date is reached (and the card has not yet reached a final phase), the alert will be triggered.
 
 The disadvantage is that you cannot use the due date field for something else. Another disadvantage is, that the metric of when the card finished is rendered useless.  
-Both of these disadvantes can be eliminated by using a by-me-called proxy-pipe for the follow-ups. With proxy-pipe, I mean a connected pipe e.g. called “Follow-Up”, which has nothing else to do then managing follow-ups. There, you (automatically?) create a card for each follow-up you want to send, equipped with a due-date [or have an initial phase with an SLA, as seen next], an E-Mail [the recipient] and possibly a text field [the content or a field to decide in a condition which E-Mail to send, in case you have multiple Follow-Up templates].  
+Both of these disadvantages can be eliminated by using a by-me-called proxy-pipe for the follow-ups. With proxy-pipe, I mean a connected pipe e.g. called “Follow-Up”, which has nothing else to do then managing follow-ups. There, you (automatically?) create a card for each follow-up you want to send, equipped with a due-date [or have an initial phase with an SLA, as seen next], an E-Mail [the recipient] and possibly a text field [the content or a field to decide in a condition which E-Mail to send, in case you have multiple Follow-Up templates].  
 
 The way to trigger a card to become _late_ is to **[add a SLA](https://help.pipefy.com/en/articles/614604-late-alert)** to a phase.  
 This has the benefit, that the due date is not used by something else.  
@@ -47,8 +47,8 @@ The action upon the trigger will be the sending of the E-Mail template.
 
 If you want to implement multiple follow-ups, the possibilities are:
 
-*   - using the proxy-pipe again as mentioned above: just create more than one connected card in the follow-up pipe
-*   - using a counter: you can have a counter field (you do not need that one if you want to send the same E-Mail again) which you update with the same trigger that triggers the first E-Mail.
+- using the proxy-pipe again as mentioned above: just create more than one connected card in the follow-up pipe
+- using a counter: you can have a counter field (you do not need that one if you want to send the same E-Mail again) which you update with the same trigger that triggers the first E-Mail.
 
 Update the due date (if you chose the path of the expired card) or move the card back and forth (if you used the late alert) in order to have the trigger go off again.  
 Use the counter with conditionals in the follow-up sending automation to decide which E-Mail to send.  

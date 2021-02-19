@@ -8,7 +8,7 @@ cover_image: 2021/front_cover_extending_lammps.jpg
 canonical_url: https://www.genieblog.ch/blog/en/2021/review-of-extending-lammps
 date: 2021-02-19 10:02:06
 description: false
-draft: true
+draft: false
 extends: _layouts.post
 language: en
 layout: post
@@ -30,7 +30,7 @@ Foreword by Dr. Steven Plimpton, lead developer of LAMMPS.
 ISBN: 978-1-80056-226-4.
 
 As I myself only looked into the LAMMPS source code to know where errors come from 
-([my contribution to LAMMPS](https://github.com/lammps/lammps/pull/2474), some typo-fixes in the documentation do not count), 
+([my contribution to LAMMPS](https://github.com/lammps/lammps/pull/2474), some typo-fixes in the documentation, do not count), 
 I was indeed curious and hopeful to learn much new things about the innerworkings of LAMMPS. 
 
 I was not disappointed: even though I did not yet have time to verify and apply my new knowledge,
