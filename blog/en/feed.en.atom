@@ -3,12 +3,28 @@
     <title>genieblog.ch</title>
     <link href="https://genietim.github.io/genieblog.ch/" />
     <link type="application/atom+xml" rel="self" href="https://genietim.github.io/genieblog.ch/blog/en/feed.en.atom" />
-    <updated>2021-02-19T18:01:58+00:00</updated>
+    <updated>2021-02-19T18:18:43+00:00</updated>
     <id>https://genietim.github.io/genieblog.ch/blog/en/feed.en.atom</id>
     <author>
         <name>Tim Bernhard</name>
     </author>
                 <entry>
+    <id>https://genietim.github.io/genieblog.ch/blog/en/2021/review-of-extending-lammps</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/en/2021/review-of-extending-lammps" />
+    <title>Review: Extending and Modifying LAMMPS</title>
+    <published>2021-02-19T10:02:06+00:00</published>
+    <updated>2021-02-19T10:02:06+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">The full title is quite a mouthfull: &quot;Extending and Modifying LAMMPS —
+Writing Your Own Source Code —
+A pragmatic guide to extending LAMMPS as per custom simulation requirements&quot;,
+a book by 
+Dr. Shafat Mubin and Jichen Li, published by Packt, with a......</summary>
+    
+</entry>
+            <entry>
     <id>https://genietim.github.io/genieblog.ch/blog/en/2021/how-to-implement-follow-up-e-mails-in-pipefy</id>
     <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/en/2021/how-to-implement-follow-up-e-mails-in-pipefy" />
     <title>How to Implement Follow-Up E-Mails in Pipefy</title>
