@@ -1,8 +1,9 @@
 ---
 author: Tim Bernhard
 categories:
+  - pipefy
 cover_image: false
-canonical_url: "https://www.genieblog.ch/blog/en/2021/how-to-implement-follow-up-e-mails-in-pipefy"
+canonical_url: https://www.genieblog.ch/blog/en/2021/how-to-implement-follow-up-e-mails-in-pipefy
 date: 2021-02-15 19:34:39
 description: false
 draft: false
@@ -16,7 +17,6 @@ title: "How to Implement Follow-Up E-Mails in Pipefy"
 translations:
   en: how-to-implement-follow-up-e-mails-in-pipefy
   de: implementieren-von-follow-up-e-mails-in-pipefy
-
 ---
 
 [Pipefy](https://www.pipefy.com/) is an awesome tool to manage your workflows and projects.
@@ -61,4 +61,4 @@ This way, the field will have value "+" after the first run, "++" after the seco
 Use this in the automation as an "equal to" condition. E.g. for the fifth E-Mail, the condition would be: {{counter_field}} "equal to" "++++".
 
 Note: this post was also published in the Pipefy Community (with some bonus images!), to be found in:
-https://community.pipefy.com/tips-and-inspiration-45/product-hacks-implement-follow-up-e-mails-with-pipefy-819
+[https://community.pipefy.com/tips-and-inspiration-45/product-hacks-implement-follow-up-e-mails-with-pipefy-819](https://community.pipefy.com/tips-and-inspiration-45/product-hacks-implement-follow-up-e-mails-with-pipefy-819)
