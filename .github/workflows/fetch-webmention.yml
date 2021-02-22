@@ -49,6 +49,6 @@ jobs:
         uses: peter-evans/repository-dispatch@v1
         if: steps.changes_check.outputs.has_changes == 'true'
         with:
-          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+          token: ${{ secrets.PERSONAL_REPO_ACCESS_TOKEN }}
           repository: genietim/genieblog.ch
           event-type: post-change-event
