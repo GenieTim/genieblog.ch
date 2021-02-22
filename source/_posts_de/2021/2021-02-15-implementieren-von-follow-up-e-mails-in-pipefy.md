@@ -2,7 +2,7 @@
 author: Tim Bernhard
 categories:
 cover_image: false
-canonical_url: "https://www.genieblog.ch/blog/de/2021/implementieren-von-follow-up-e-mails-in-pipefy"
+canonical_url: https://www.genieblog.ch/blog/de/2021/implementieren-von-follow-up-e-mails-in-pipefyg
 date: 2021-02-15 19:34:39
 description: false
 draft: false

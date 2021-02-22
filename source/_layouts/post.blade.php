@@ -110,8 +110,8 @@
                         <div class="comment-content">
                             @if (isset($comment->content->html))
                             {{ $comment['content']['html'] }}
-                            @else
-                            {{ $comment['content']['txt'] }}
+                            @elseif(isset($comment->content->text))
+                            {{ $comment['content']['text'] }}
                             @endif
                             <a href="' . {{ $comment['url'] }} . '">Link</a>
                         </div>
