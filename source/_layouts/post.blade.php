@@ -101,23 +101,23 @@
             @if ($webmentions['count']['all'] == 0)
             <p>{{ $page->translate("page.no_comments") }}</p>
             @else
-                @foreach ($webmentions['raw'] as $i => $comment)
-                    @if (!empty($comment['content']))
-                    <div class="comment">
-                        <div class="comment-author">
-                            {{ $comment['author']['name'] }}
-                        </div>
-                        <div class="comment-content">
-                            @if (isset($comment->content->html))
-                            {{ $comment['content']['html'] }}
-                            @elseif(isset($comment->content->text))
-                            {{ $comment['content']['text'] }}
-                            @endif
-                            <a href="' . {{ $comment['url'] }} . '">Link</a>
-                        </div>
-                    </div>
+            @foreach ($webmentions['raw'] as $i => $comment)
+            @if (!empty($comment['content']))
+            <div class="comment p-4 pt-6">
+                <div class="comment-author">
+                    {{ $comment['author']['name'] }}
+                </div>
+                <div class="comment-content">
+                    @if (isset($comment['content']['html']))
+                    {{ $comment['content']['html'] }}
+                    @elseif(isset($comment['content']['text']))
+                    {{ $comment['content']['text'] }}
                     @endif
-                @endforeach
+                    <a href="{{ $comment['url'] }}">Link</a>
+                </div>
+            </div>
+            @endif
+            @endforeach
             @endif
         </div>
     </details>
