@@ -1,7 +1,7 @@
-define("./workbox-b763d10b.js",['exports'], function (exports) { 'use strict';
+define("./workbox-4b5c23d1.js",['exports'], function (exports) { 'use strict';
 
     try {
-      self['workbox:core:6.1.0'] && _();
+      self['workbox:core:6.1.1'] && _();
     } catch (e) {}
 
     /*
@@ -494,7 +494,7 @@ define("./workbox-b763d10b.js",['exports'], function (exports) { 'use strict';
     };
 
     try {
-      self['workbox:routing:6.1.0'] && _();
+      self['workbox:routing:6.1.1'] && _();
     } catch (e) {}
 
     /*
@@ -1388,7 +1388,7 @@ define("./workbox-b763d10b.js",['exports'], function (exports) { 'use strict';
     }
 
     try {
-      self['workbox:precaching:6.1.0'] && _();
+      self['workbox:precaching:6.1.1'] && _();
     } catch (e) {}
 
     /*
@@ -1874,7 +1874,7 @@ define("./workbox-b763d10b.js",['exports'], function (exports) { 'use strict';
     }
 
     try {
-      self['workbox:strategies:6.1.0'] && _();
+      self['workbox:strategies:6.1.1'] && _();
     } catch (e) {}
 
     function toRequest(input) {
@@ -1979,8 +1979,8 @@ define("./workbox-b763d10b.js",['exports'], function (exports) { 'use strict';
       }
       /**
        * Fetches a given request (and invokes any applicable plugin callback
-       * methods) using the `fetchOptions` and `plugins` defined on the strategy
-       * object.
+       * methods) using the `fetchOptions` (for non-navigation requests) and
+       * `plugins` defined on the `Strategy` object.
        *
        * The following plugin lifecycle methods are invoked when using this method:
        * - `requestWillFetch()`
@@ -2465,8 +2465,9 @@ define("./workbox-b763d10b.js",['exports'], function (exports) { 'use strict';
        * @param {Array<Object>} [options.plugins] [Plugins]{@link https://developers.google.com/web/tools/workbox/guides/using-plugins}
        * to use in conjunction with this caching strategy.
        * @param {Object} [options.fetchOptions] Values passed along to the
-       * [`init`]{@link https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch#Parameters}
-       * of all fetch() requests made by this strategy.
+       * [`init`](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch#Parameters)
+       * of [non-navigation](https://github.com/GoogleChrome/workbox/issues/1796)
+       * `fetch()` requests made by this strategy.
        * @param {Object} [options.matchOptions] The
        * [`CacheQueryOptions`]{@link https://w3c.github.io/ServiceWorker/#dictdef-cachequeryoptions}
        * for any `cache.match()` or `cache.put()` calls made by this strategy.
@@ -3472,4 +3473,4 @@ define("./workbox-b763d10b.js",['exports'], function (exports) { 'use strict';
     exports.precacheAndRoute = precacheAndRoute;
 
 });
-//# sourceMappingURL=workbox-b763d10b.js.map
+//# sourceMappingURL=workbox-4b5c23d1.js.map
