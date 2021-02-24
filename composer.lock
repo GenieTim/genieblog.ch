@@ -2403,16 +2403,16 @@
         },
         {
             "name": "tightenco/jigsaw",
-            "version": "v1.3.35",
+            "version": "v1.3.36",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tighten/jigsaw.git",
-                "reference": "b385e1c83ee09661824dfbc917c5b83b424bb842"
+                "reference": "e905076cdf3f217492505b3c3f58d063b70ab11d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tighten/jigsaw/zipball/b385e1c83ee09661824dfbc917c5b83b424bb842",
-                "reference": "b385e1c83ee09661824dfbc917c5b83b424bb842",
+                "url": "https://api.github.com/repos/tighten/jigsaw/zipball/e905076cdf3f217492505b3c3f58d063b70ab11d",
+                "reference": "e905076cdf3f217492505b3c3f58d063b70ab11d",
                 "shasum": ""
             },
             "require": {
@@ -2470,9 +2470,9 @@
             ],
             "support": {
                 "issues": "https://github.com/tighten/jigsaw/issues",
-                "source": "https://github.com/tighten/jigsaw/tree/v1.3.35"
+                "source": "https://github.com/tighten/jigsaw/tree/v1.3.36"
             },
-            "time": "2021-02-07T22:51:08+00:00"
+            "time": "2021-02-19T19:47:38+00:00"
         },
         {
             "name": "tightenco/jigsaw-blog-template",
