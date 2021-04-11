@@ -3,12 +3,28 @@
     <title>genieblog.ch</title>
     <link href="https://genietim.github.io/genieblog.ch/" />
     <link type="application/atom+xml" rel="self" href="https://genietim.github.io/genieblog.ch/blog/en/feed.en.atom" />
-    <updated>2021-04-06T07:52:44+00:00</updated>
+    <updated>2021-04-11T15:42:51+00:00</updated>
     <id>https://genietim.github.io/genieblog.ch/blog/en/feed.en.atom</id>
     <author>
         <name>Tim Bernhard</name>
     </author>
                 <entry>
+    <id>https://genietim.github.io/genieblog.ch/blog/en/2021/vulnerability-in-wp-events-schedule-plugin</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/en/2021/vulnerability-in-wp-events-schedule-plugin" />
+    <title>Vulnerability in WP Events Schedule Plugin</title>
+    <published>2021-03-26T16:37:06+00:00</published>
+    <updated>2021-03-26T16:37:06+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">This is my first post of a vulnerability I discovered and reported.
+
+It is not the first vulnerability I detected and reported though,
+a few years ago I found a way to send mails from and to addresses I should not be able to.
+That one lead to me being......</summary>
+    
+</entry>
+            <entry>
     <id>https://genietim.github.io/genieblog.ch/blog/en/2021/review-of-extending-lammps</id>
     <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/en/2021/review-of-extending-lammps" />
     <title>Review: Extending and Modifying LAMMPS</title>
