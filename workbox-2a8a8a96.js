@@ -1,7 +1,7 @@
-define("./workbox-50d709e9.js",['exports'], function (exports) { 'use strict';
+define("./workbox-2a8a8a96.js",['exports'], function (exports) { 'use strict';
 
     try {
-      self['workbox:core:6.1.2'] && _();
+      self['workbox:core:6.1.5'] && _();
     } catch (e) {}
 
     /*
@@ -494,7 +494,7 @@ define("./workbox-50d709e9.js",['exports'], function (exports) { 'use strict';
     };
 
     try {
-      self['workbox:routing:6.1.2'] && _();
+      self['workbox:routing:6.1.5'] && _();
     } catch (e) {}
 
     /*
@@ -1016,6 +1016,8 @@ define("./workbox-50d709e9.js",['exports'], function (exports) { 'use strict';
        *
        * @param {Object} options
        * @param {URL} options.url
+       * @param {boolean} options.sameOrigin The result of comparing `url.origin`
+       *     against the current origin.
        * @param {Request} options.request The request to match.
        * @param {Event} options.event The corresponding event.
        * @return {Object} An object with `route` and `params` properties.
@@ -1388,7 +1390,7 @@ define("./workbox-50d709e9.js",['exports'], function (exports) { 'use strict';
     }
 
     try {
-      self['workbox:precaching:6.1.2'] && _();
+      self['workbox:precaching:6.1.5'] && _();
     } catch (e) {}
 
     /*
@@ -1874,7 +1876,7 @@ define("./workbox-50d709e9.js",['exports'], function (exports) { 'use strict';
     }
 
     try {
-      self['workbox:strategies:6.1.2'] && _();
+      self['workbox:strategies:6.1.5'] && _();
     } catch (e) {}
 
     function toRequest(input) {
@@ -3468,4 +3470,4 @@ define("./workbox-50d709e9.js",['exports'], function (exports) { 'use strict';
     exports.precacheAndRoute = precacheAndRoute;
 
 });
-//# sourceMappingURL=workbox-50d709e9.js.map
+//# sourceMappingURL=workbox-2a8a8a96.js.map
