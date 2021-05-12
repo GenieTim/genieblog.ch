@@ -5,6 +5,7 @@
 [![Webmentions Updated](https://github.com/GenieTim/genieblog.ch/workflows/Fetch%20Webmentions/badge.svg)](https://github.com/GenieTim/genieblog.ch/actions?query=workflow%3A%22Fetch+Webmentions%22)
 [![Broken Links](https://github.com/GenieTim/genieblog.ch/workflows/Check%20Markdown%20links/badge.svg)](https://github.com/GenieTim/genieblog.ch/actions?query=workflow%3A%22Check+Markdown+links%22)
 [![Lighthouse Budget](https://github.com/GenieTim/genieblog.ch/workflows/Lighthouse%20Budget%20Check/badge.svg)](https://github.com/GenieTim/genieblog.ch/actions?query=workflow%3A%22Lighthouse+Budget+Check%22)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FGenieTim%2Fgenieblog.ch.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FGenieTim%2Fgenieblog.ch?ref=badge_shield)
 <!-- markdown-link-check-enable -->
 
 This is my personal blog.
@@ -79,3 +80,7 @@ Now that you’ve edited your configuration variables and know how to customize 
 # options: dev, staging, production
 npm run dev
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FGenieTim%2Fgenieblog.ch.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FGenieTim%2Fgenieblog.ch?ref=badge_large)
