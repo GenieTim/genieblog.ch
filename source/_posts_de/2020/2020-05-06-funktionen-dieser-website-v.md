@@ -16,23 +16,20 @@ title: "Funktionen dieser Website: Geschwindigkeit"
 translations:
   en: features-of-this-website-speed
   de: funktionen-dieser-website-v
-
----
-
-Diese Seite wurde von kurzem (also relativ zum Datum 6.5.2020) neu gestaltet.
+---Diese Seite wurde von kurzem (also relativ zum Datum 6.5.2020) neu gestaltet.
 Um genauer zu sein, nicht nur neu gestaltet, sondern von Grund auf neu entwickelt.
 Alles, was übrig geblieben ist, ist der Inhalt, den ich erfolgreich migriert habe.
 Früher wurde diese Seite mit [Wordpress](https://wordpress.org/) betrieben, jetzt wird sie durch [JigSaw](https://jigsaw.tighten.co/) generiert.
 Ich entschied mich für wechseln, da ich gerne etwas mit static site generators herumspielen wollte.
 Man kann mehr über den Wechsel und ihre Vor- und Nachteile in einem [anderen Beitrag](https://genieblog.ch/blog/de/2020/migration-von-wordpress-jigsaw) lesen.
 
-In diesem Beitrag werde ich einen der Vorteile präsentieren: 
+In diesem Beitrag werde ich einen der Vorteile präsentieren:
 wie ich die Website signifikant schneller machen konnte, ohne dubiose WordPress-plugins.
 
 ## Geschwindigkeit. Pure Geschwindigkeit.
 
 Diese Seite ist statisch bedient, dh der gesamte Inhalt ist bereits in der endgültigen Form: HTML.
-Keine [PHP](https://php.net) Skripte in zwischen holen oder den Inhalt zu manipulieren.
+Keine [PHP](https://www.php.net/) Skripte in zwischen holen oder den Inhalt zu manipulieren.
 Ich begann aus der [Jigsaw Blog-Vorlage](https://github.com/tightenco/jigsaw-blog-template/), aber ich fand einige Verbesserungsmöglichkeiten.
 Sie werden im Folgenden aufgeführt.
 
@@ -104,7 +101,7 @@ mix.webpackConfig({
 
 ### InstantClick
 
-Schliesslich wird [InstantClick](http://instantclick.io/) verwendet, um dem Client eine zusätzliche wahrgenommene Leistungssteigerung vorzutäuschen. 
+Schliesslich wird [InstantClick](http://instantclick.io/) verwendet, um dem Client eine zusätzliche wahrgenommene Leistungssteigerung vorzutäuschen.
 Dies durch verfrühtes Laden der Ziele jeglicher Links: noch bevor Besuchende dieser Website fertig geklickt haben, beginnt das Skript, die Ziel-Seite zu laden, und schiebt sie danach unter.
 
 ## Quellen
