@@ -34,11 +34,9 @@
         title="View posts in Tutorial" class="category-tag p-category">Tutorial</a><a href="https://genietim.github.io/genieblog.ch//blog/en/categories/image"
         title="View posts in image" class="category-tag p-category">image</a><a href="https://genietim.github.io/genieblog.ch//blog/en/categories/svg"
         title="View posts in SVG" class="category-tag p-category">SVG</a><div class="border-b border-secondary text-base e-content" v-pre><p>As SVGs <a href="https://css-tricks.com/probably-dont-base64-svg/">should preferably</a> not be base64 encoded when setting them on an ``-tag <code>src</code>-attribute, the suggested alternative is to URL-encode them.
-The standard <a href="https://php.net/manual/de/function.urlencode.php">PHP <code>urlencode</code></a> function unfortunately is not suitable for this task, as the resulting value is not interpreted by any browser as a valid SVG image.
-Instead, the function <a href="https://secure.php.net/manual/de/function.rawurlencode.php"><code>rawurlencode</code></a> has to be used.
-Took me some time to realize.
-<!-- codepen does not like being checked for availability --><!-- markdown-link-check-disable-next-line -->
-As soon as you get this, you can also take over some other optimizations; maybe get inspired by <a href="https://codepen.io/tigt/post/optimizing-svgs-in-data-uris">Taylor Hunt</a>s 
+The standard <a href="https://www.php.net/manual/de/function.urlencode.php">PHP <code>urlencode</code></a> function unfortunately is not suitable for this task, as the resulting value is not interpreted by any browser as a valid SVG image.
+Instead, the function <a href="https://www.php.net/manual/de/function.rawurlencode.php"><code>rawurlencode</code></a> has to be used.
+Took me some time to realize.</p><p><!-- codepen does not like being checked for availability --><!-- markdown-link-check-disable-next-line --></p><p>As soon as you get this, you can also take over some other optimizations; maybe get inspired by <a href="https://codepen.io/tigt/post/optimizing-svgs-in-data-uris">Taylor Hunt</a>s
 <a href="https://github.com/tigt/mini-svg-data-uri">mini-svg-uri</a> to decode some characters manually to improve the overall size.
 A final function could possibly look like this:</p><pre><code><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">svgUrlEncode</span><span class="hljs-params">($svgPath)</span> </span>{
         $data = \file_get_contents($svgPath);

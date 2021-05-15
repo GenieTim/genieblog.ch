@@ -34,12 +34,10 @@
         title="View posts in Tutorial" class="category-tag p-category">Tutorial</a><a href="https://genietim.github.io/genieblog.ch//blog/de/categories/image"
         title="View posts in image" class="category-tag p-category">image</a><a href="https://genietim.github.io/genieblog.ch//blog/de/categories/svg"
         title="View posts in SVG" class="category-tag p-category">SVG</a><div class="border-b border-secondary text-base e-content" v-pre><p>Weil SVGs <a href="https://css-tricks.com/probably-dont-base64-svg/">besser nicht</a> base64 encodiert sein soll wenn Sie als <code>&lt;img /&gt;</code>-tag <code>src</code>-attribute gesetzt werden sollen, ist die vorgeschlagene Alternative die URL-Codierung.
-Die Standard <a href="https://php.net/manual/de/function.urlencode.php">PHP <code>urlencode</code></a> Leider ist es nicht für diese Aufgabe geeignet, da der resultierende Wert von keinem Browser als gültiges SVG-Bild interpretiert wird.
-Stattdessen muss die Funktion <a href="https://secure.php.net/manual/de/function.rawurlencode.php"><code>rawurlencode</code></a> verwendet werden.
+Die Standard <a href="https://www.php.net/manual/de/function.urlencode.php">PHP <code>urlencode</code></a> Leider ist es nicht für diese Aufgabe geeignet, da der resultierende Wert von keinem Browser als gültiges SVG-Bild interpretiert wird.
+Stattdessen muss die Funktion <a href="https://www.php.net/manual/de/function.rawurlencode.php"><code>rawurlencode</code></a> verwendet werden.
 Ich habe einige Zeit gebraucht, um das zu realisieren.
-Sobald Sie dies verstanden haben, können Sie auch einige andere Optimierungen übernehmen.
-<!-- codepen does not like being checked for availability --><!-- markdown-link-check-disable-next-line -->
-Vielleicht lassen sie sich inspirieren von <a href="https://codepen.io/tigt/post/optimizing-svgs-in-data-uris">Taylor Hunt</a>s 
+Sobald Sie dies verstanden haben, können Sie auch einige andere Optimierungen übernehmen.</p><p><!-- codepen does not like being checked for availability --><!-- markdown-link-check-disable-next-line --></p><p>Vielleicht lassen sie sich inspirieren von <a href="https://codepen.io/tigt/post/optimizing-svgs-in-data-uris">Taylor Hunt</a>s
 <a href="https://github.com/tigt/mini-svg-data-uri">mini-svg-uri</a> um einige Zeichen manuell zu dekodieren, um die Gesamtgröße zu verbessern.</p><p>Eine abschließende Funktion könnte beispielsweise so aussehen:</p><pre><code class="language-php"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">svgUrlEncode</span><span class="hljs-params">($svgPath)</span> </span>{
     <span class="hljs-comment">// einlesen der Datei</span>
     $data = \file_get_contents($svgPath);
@@ -47,7 +45,7 @@ Vielleicht lassen sie sich inspirieren von <a href="https://codepen.io/tigt/post
     $data = \preg_replace(<span class="hljs-string">'/\v(?:[\v\h]+)/'</span>, <span class="hljs-string">' '</span>, $data);
     $data = \str_replace(<span class="hljs-string">'"'</span>, <span class="hljs-string">"'"</span>, $data);
     $data = \rawurlencode($data);
-    <span class="hljs-comment">// zurück-decodieren gewisser Charakter, die von Browsern verstanden werden, </span>
+    <span class="hljs-comment">// zurück-decodieren gewisser Charakter, die von Browsern verstanden werden,</span>
     <span class="hljs-comment">// um die Kompressierung zu verbessern</span>
     $data = \str_replace(<span class="hljs-string">'%20'</span>, <span class="hljs-string">' '</span>, $data);
     $data = \str_replace(<span class="hljs-string">'%3D'</span>, <span class="hljs-string">'='</span>, $data);

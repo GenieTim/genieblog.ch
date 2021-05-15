@@ -36,9 +36,9 @@ Um genauer zu sein, nicht nur neu gestaltet, sondern von Grund auf neu entwickel
 Alles, was übrig geblieben ist, ist der Inhalt, den ich erfolgreich migriert habe.
 Früher wurde diese Seite mit <a href="https://wordpress.org/">Wordpress</a> betrieben, jetzt wird sie durch <a href="https://jigsaw.tighten.co/">JigSaw</a> generiert.
 Ich entschied mich für wechseln, da ich gerne etwas mit static site generators herumspielen wollte.
-Man kann mehr über den Wechsel und ihre Vor- und Nachteile in einem <a href="https://genieblog.ch/blog/de/2020/migration-von-wordpress-jigsaw">anderen Beitrag</a> lesen.</p><p>In diesem Beitrag werde ich einen der Vorteile präsentieren: 
+Man kann mehr über den Wechsel und ihre Vor- und Nachteile in einem <a href="https://genieblog.ch/blog/de/2020/migration-von-wordpress-jigsaw">anderen Beitrag</a> lesen.</p><p>In diesem Beitrag werde ich einen der Vorteile präsentieren:
 wie ich die Website signifikant schneller machen konnte, ohne dubiose WordPress-plugins.</p><h2>Geschwindigkeit. Pure Geschwindigkeit.</h2><p>Diese Seite ist statisch bedient, dh der gesamte Inhalt ist bereits in der endgültigen Form: HTML.
-Keine <a href="https://php.net">PHP</a> Skripte in zwischen holen oder den Inhalt zu manipulieren.
+Keine <a href="https://www.php.net/">PHP</a> Skripte in zwischen holen oder den Inhalt zu manipulieren.
 Ich begann aus der <a href="https://github.com/tightenco/jigsaw-blog-template/">Jigsaw Blog-Vorlage</a>, aber ich fand einige Verbesserungsmöglichkeiten.
 Sie werden im Folgenden aufgeführt.</p><h3>Compile-Zeit-Code-Formatierung</h3><p>Da die Seite statisch kompiliert wird, halte ich es für wichtig, wenn möglich schon bei der Kompilierung der Seite so viel Arbeit zu erledigen wie möglich.
 Ein Beispiel für eine Arbeit, die nicht clientseitig ausgeführt werden muss, ist beispielsweise die Code-Formatierung.
@@ -80,7 +80,7 @@ In der Datei <code>webpack.mix.js</code> sind geringfügige Konfigurationsänder
     ]
 });
 (...)
-</code></pre><h3>InstantClick</h3><p>Schliesslich wird <a href="http://instantclick.io/">InstantClick</a> verwendet, um dem Client eine zusätzliche wahrgenommene Leistungssteigerung vorzutäuschen. 
+</code></pre><h3>InstantClick</h3><p>Schliesslich wird <a href="http://instantclick.io/">InstantClick</a> verwendet, um dem Client eine zusätzliche wahrgenommene Leistungssteigerung vorzutäuschen.
 Dies durch verfrühtes Laden der Ziele jeglicher Links: noch bevor Besuchende dieser Website fertig geklickt haben, beginnt das Skript, die Ziel-Seite zu laden, und schiebt sie danach unter.</p><h2>Quellen</h2><p>Inspiration für die serverseitige Code-Formatierung kam von <a href="https://stefanzweifel.io/posts/server-side-syntax-highlighting-with-jigsaw/">Stefan Zweifel</a>.</p><p>Foto von <a href="https://unsplash.com/@christianem?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=credit">Christian Englmeier</a> auf <a href="https://unsplash.com/s/photos/speed?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=credit">Unsplash</a>.</p></div></article><!-- "comments" --><div class="border-b border-secondary mb-10 pb-4 pt-4 text-base"><details class=""><summary class="font-semibold">
                                     Webmentions
                     </summary><div class="flex flex-col"><div class="counts full-width mt-3"></div><p>Keine Kommentare vorhanden für diese Seite.</p></div></details></div><nav class="flex justify-between text-sm md:text-base"><div><a href="https://genietim.github.io/genieblog.ch/blog/de/2020/abkuhlung-durch-trocknen-nasser-wasche" title="Older Post: Abkühlung durch Trocknen nasser Wäsche">

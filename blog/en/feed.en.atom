@@ -3,7 +3,7 @@
     <title>genieblog.ch</title>
     <link href="https://genietim.github.io/genieblog.ch/" />
     <link type="application/atom+xml" rel="self" href="https://genietim.github.io/genieblog.ch/blog/en/feed.en.atom" />
-    <updated>2021-05-15T06:11:14+00:00</updated>
+    <updated>2021-05-15T06:25:47+00:00</updated>
     <id>https://genietim.github.io/genieblog.ch/blog/en/feed.en.atom</id>
     <author>
         <name>Tim Bernhard</name>
@@ -114,7 +114,7 @@ Before, this site was run by WordPress, now......</summary>
     <author>
         <name>Tim Bernhard</name>
     </author>
-    <summary type="html">As of today, 6. May 2020, this site has been redesigned pretty recently. 
+    <summary type="html">As of today, 6. May 2020, this site has been redesigned pretty recently.
 To be more accurate, not only redesigned, but redeveloped from scratch.
 All that&#039;s left is the content, which I successfully migrated.
 Before, this site was run by WordPress.

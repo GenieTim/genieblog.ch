@@ -31,20 +31,20 @@
         </a>
         • <time datetime="2020-05-06T18:42:12+00:00" title="Date Published"
             class="dt-published">May 6, 2020</time></p><a href="https://genietim.github.io/genieblog.ch//blog/en/categories/genieblog"
-        title="View posts in Genieblog" class="category-tag p-category">Genieblog</a><div class="border-b border-secondary text-base e-content" v-pre><p>As of today, 6. May 2020, this site has been redesigned pretty recently. 
+        title="View posts in Genieblog" class="category-tag p-category">Genieblog</a><div class="border-b border-secondary text-base e-content" v-pre><p>As of today, 6. May 2020, this site has been redesigned pretty recently.
 To be more accurate, not only redesigned, but redeveloped from scratch.
 All that's left is the content, which I successfully migrated.
 Before, this site was run by <a href="https://wordpress.org/">WordPress</a>.
 I chose to switch since I wanted to get my hands on with static page generators.
 One may read more about the switch and its pros and cons in <a href="https://genieblog.ch/blog/en/2020/migration-from-wordpress-to-jigsaw">another post</a>.</p><p>In this post, I will present one of the pros: how easy it was to make the website faster without any dubious WordPress plugins.</p><h2>I am Speed.</h2><p>This site is served statically, meaning all the content is already available in the final form: HTML.
-No <a href="https://php.net">PHP</a> scripts in between to fetch or manipulate content.
+No <a href="https://www.php.net/">PHP</a> scripts in between to fetch or manipulate content.
 I started from the <a href="https://github.com/tightenco/jigsaw-blog-template/">jigsaw blog template</a>, but I found quite a few places for improvements.
 They are listed in the following.</p><h3>Compile-time Code Formatting</h3><p>Since the page is compiled statically, I consider it important to do all the work if possible during the compilation time.
 In this case, work that is not required to run client-side is for example the code formatting.
-The template by default comes with <a href="https://highlightjs.org/usage/">highlight.js</a> installed. 
+The template by default comes with <a href="https://highlightjs.org/usage/">highlight.js</a> installed.
 The compile time replacement for this is <a href="https://github.com/scrivo/highlight.php">highlight.php</a> together with a matching <a href="https://github.com/GenieTim/genieblog.ch/blob/e99a8e5544c00819f00b5c374db9bf2db5cc3888/listeners/HighlightCodeSyntax.php">Jigsaw-listener</a>.
 This way, less computations have to be repeated client-side and less JavaScript has to be transferred.
-As a minor drawback, the HTML is slightly bigger if there was code to format.</p><h3>HTML Minification</h3><p>Another improvement over the template is the minification of the resulting HTML code: 
+As a minor drawback, the HTML is slightly bigger if there was code to format.</p><h3>HTML Minification</h3><p>Another improvement over the template is the minification of the resulting HTML code:
 An additional blade directive, spaceless, is used to remove all unnecessary spaces from the post-compiled HTML.
 This way, valuable bytes are saved.</p><pre><code class="language-php"><span class="hljs-comment">// blade.php</span>
 <span class="hljs-meta">&lt;?php</span>
@@ -60,7 +60,7 @@ This way, valuable bytes are saved.</p><pre><code class="language-php"><span cla
 
 </code></pre><h3>Image Compression &amp; Resizing</h3><p>To get the images in the posts to load fast, it is sensible to resize them to what they need to be as well as compressing the file.
 As I wanted to keep away from all server-side scripts, I cannot use a dynamic resizer, which could return the image in the pixel-perfect size.
-Instead, I have to rely on the <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images">srcset</a> img attribute.</p><p>To get the images to the desired sizes and compress them, I use a <a href="https://github.com/GenieTim/genieblog.ch/blob/9fe1f6ab78b91e5500b9f7d69d53986734ed9237/tasks/ImageBuildPlugin.js#L1">custom webpack plugin</a>.</p><p>On the other hand, to set the srcset attribute appropriately, I have a <a href="https://github.com/GenieTim/genieblog.ch/blob/2dbcbd6369bceaafd2d4e1743d730c5e1d8e1bdd/source/_components/img.blade.php#L8">blade template</a> constructing the sources as appropriate.</p><h3>Client-Side Caching</h3><p>A Service Worker, powered by Google's <a href="https://developers.google.com/web/tools/workbox/modules/workbox-webpack-plugin">Workbox</a>, is powering the client-side cache of this website. 
+Instead, I have to rely on the <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images">srcset</a> img attribute.</p><p>To get the images to the desired sizes and compress them, I use a <a href="https://github.com/GenieTim/genieblog.ch/blob/9fe1f6ab78b91e5500b9f7d69d53986734ed9237/tasks/ImageBuildPlugin.js#L1">custom webpack plugin</a>.</p><p>On the other hand, to set the srcset attribute appropriately, I have a <a href="https://github.com/GenieTim/genieblog.ch/blob/2dbcbd6369bceaafd2d4e1743d730c5e1d8e1bdd/source/_components/img.blade.php#L8">blade template</a> constructing the sources as appropriate.</p><h3>Client-Side Caching</h3><p>A Service Worker, powered by Google's <a href="https://developers.google.com/web/tools/workbox/modules/workbox-webpack-plugin">Workbox</a>, is powering the client-side cache of this website.
 Minor configuration changes are necessary in the <code>webpack.mix.js</code> file to get it working:</p><pre><code class="language-js">(...)
 <span class="hljs-selector-tag">mix</span><span class="hljs-selector-class">.webpackConfig</span>({
     <span class="hljs-attribute">plugins</span>: [
