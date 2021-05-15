@@ -16,10 +16,7 @@ title: "Features of this website: speed"
 translations:
   en: features-of-this-website-speed
   de: funktionen-dieser-website-v
-
----
-
-As of today, 6. May 2020, this site has been redesigned pretty recently. 
+---As of today, 6. May 2020, this site has been redesigned pretty recently.
 To be more accurate, not only redesigned, but redeveloped from scratch.
 All that's left is the content, which I successfully migrated.
 Before, this site was run by [WordPress](https://wordpress.org/).
@@ -31,7 +28,7 @@ In this post, I will present one of the pros: how easy it was to make the websit
 ## I am Speed.
 
 This site is served statically, meaning all the content is already available in the final form: HTML.
-No [PHP](https://php.net) scripts in between to fetch or manipulate content.
+No [PHP](https://www.php.net/) scripts in between to fetch or manipulate content.
 I started from the [jigsaw blog template](https://github.com/tightenco/jigsaw-blog-template/), but I found quite a few places for improvements.
 They are listed in the following.
 
@@ -39,14 +36,14 @@ They are listed in the following.
 
 Since the page is compiled statically, I consider it important to do all the work if possible during the compilation time.
 In this case, work that is not required to run client-side is for example the code formatting.
-The template by default comes with [highlight.js](https://highlightjs.org/usage/) installed. 
+The template by default comes with [highlight.js](https://highlightjs.org/usage/) installed.
 The compile time replacement for this is [highlight.php](https://github.com/scrivo/highlight.php) together with a matching [Jigsaw-listener](https://github.com/GenieTim/genieblog.ch/blob/e99a8e5544c00819f00b5c374db9bf2db5cc3888/listeners/HighlightCodeSyntax.php).
 This way, less computations have to be repeated client-side and less JavaScript has to be transferred.
 As a minor drawback, the HTML is slightly bigger if there was code to format.
 
 ### HTML Minification
 
-Another improvement over the template is the minification of the resulting HTML code: 
+Another improvement over the template is the minification of the resulting HTML code:
 An additional blade directive, spaceless, is used to remove all unnecessary spaces from the post-compiled HTML.
 This way, valuable bytes are saved.
 
@@ -69,15 +66,15 @@ return [
 
 To get the images in the posts to load fast, it is sensible to resize them to what they need to be as well as compressing the file.
 As I wanted to keep away from all server-side scripts, I cannot use a dynamic resizer, which could return the image in the pixel-perfect size.
-Instead, I have to rely on the [srcset](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) img attribute. 
+Instead, I have to rely on the [srcset](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) img attribute.
 
 To get the images to the desired sizes and compress them, I use a [custom webpack plugin](https://github.com/GenieTim/genieblog.ch/blob/9fe1f6ab78b91e5500b9f7d69d53986734ed9237/tasks/ImageBuildPlugin.js#L1).
 
-On the other hand, to set the srcset attribute appropriately, I have a [blade template](https://github.com/GenieTim/genieblog.ch/blob/2dbcbd6369bceaafd2d4e1743d730c5e1d8e1bdd/source/_components/img.blade.php#L8) constructing the sources as appropriate. 
+On the other hand, to set the srcset attribute appropriately, I have a [blade template](https://github.com/GenieTim/genieblog.ch/blob/2dbcbd6369bceaafd2d4e1743d730c5e1d8e1bdd/source/_components/img.blade.php#L8) constructing the sources as appropriate.
 
 ### Client-Side Caching
 
-A Service Worker, powered by Google's [Workbox](https://developers.google.com/web/tools/workbox/modules/workbox-webpack-plugin), is powering the client-side cache of this website. 
+A Service Worker, powered by Google's [Workbox](https://developers.google.com/web/tools/workbox/modules/workbox-webpack-plugin), is powering the client-side cache of this website.
 Minor configuration changes are necessary in the `webpack.mix.js` file to get it working:
 
 ```js
@@ -104,7 +101,7 @@ mix.webpackConfig({
 
 ### InstantClick
 
-Finally, to get the client an additional perceived performance boost, [InstantClick](http://instantclick.io/) is used. 
+Finally, to get the client an additional perceived performance boost, [InstantClick](http://instantclick.io/) is used.
 
 This is due to the premature loading of the targets of any links: even before visitors have clicked on the link, the script begins to load the target page and then pushes it into view as soon as the visitor finished clicking or as soon as it is loaded.
 

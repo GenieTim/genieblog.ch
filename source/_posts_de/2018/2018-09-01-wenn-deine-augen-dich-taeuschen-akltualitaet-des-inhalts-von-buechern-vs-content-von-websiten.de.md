@@ -22,4 +22,4 @@ cover_image: false
 
 <blockquote>Im Unterschied zu Büchern und Zeitungen können alte Websites im Design aktualisiert werden, so dass der content wieder aktuell aussieht, ohne dass er das ist!</blockquote>
 
-Kontaktiere [Bernhard Webstudio](https://bernhard-webstudio.ch), wir erstellen Ihnen ein neues Design für Ihre Inhalte!
+Kontaktiere [Bernhard Webstudio](https://www.bernhard-webstudio.ch/), wir erstellen Ihnen ein neues Design für Ihre Inhalte!

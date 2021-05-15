@@ -36,7 +36,8 @@ language: de
     Aber auch dann würde ich eher empfehlen, meinen Lebenslauf <a href="mailto:tim@genieblog.ch"
         title="Tim kontaktieren">anzufragen</a>,
     meinen <a href="https://github.com/genietim/" title="Tim's GitHub account">GitHub account</a>
-    oder die <a href="https://bernhard-webstudio.ch/projects" title="Tim's Projects for clients">Projekte</a>, die ich
+    oder die <a href="https://www.bernhard-webstudio.ch//projects" title="Tim's Projects for clients">Projekte</a>, die
+    ich
     für Klienten umsetzten durfte, anzuschauen.
 </div>
 <hr class="border-b my-6" />

@@ -42,7 +42,7 @@ language: en
     assess me, please see it rather as an example of things I am interested in. But even then,
     I would kindly suggest you rather <a href="mailto:tim@genieblog.ch" title="contact Tim">ask</a> for my CV,
     checkout my <a href="https://github.com/genietim/" title="Tims GitHub account">GitHub account</a>
-    or the <a href="https://bernhard-webstudio.ch/projects" title="Tims Projects for clients">projects</a> I do for
+    or the <a href="https://www.bernhard-webstudio.ch//projects" title="Tims Projects for clients">projects</a> I do for
     clients.
 </div>
 <hr class="border-b my-6" />

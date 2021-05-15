@@ -9,9 +9,9 @@ title: spaceMaster - my first Game for iOs & Android
 wordpress_id: 194
 categories:
   - Java
-  - Android 
-  - Game 
-  - iOs 
+  - Android
+  - Game
+  - iOs
   - Programmierung
 draft: false
 template: post
@@ -39,5 +39,4 @@ How many points did you get?
 
 [![Get it on Google Play](https://developer.android.com/images/brand/de_generic_rgb_wo_45.png)](https://web.archive.org/web/20160130020950/https://play.google.com/store/apps/details?id=ch.genieblog.android)
 
-
-More Infos around the game: [http://bernhard-webstudio.ch/spacemaster](https://www.bernhard-webstudio.ch/spacemaster)
+More Infos around the game: [https://www.bernhard-webstudio.ch/project/spacemaster/](https://www.bernhard-webstudio.ch/project/spacemaster/)
