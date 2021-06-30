@@ -105,7 +105,7 @@ export default {
       this.searching = false;
     }
   },
-  created() {
+  mounted() {
     // first, determine current language
     const html = document.querySelector("html");
     const lang = html.getAttribute("lang");

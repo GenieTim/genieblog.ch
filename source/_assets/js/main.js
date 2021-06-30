@@ -22,23 +22,16 @@ const InstantClick = require('instantclick');
  * Search functionality
  */
 window.axios = require('axios');
-import Vue from 'vue'
-// window.Vue = require('vue');
 import Search from './components/Search.vue';
-
-try {
-    Vue.config.productionTip = false;
-} catch (e) {
-    console.error(e)
-}
+import { createApp } from 'vue';
 
 function initializeVue() {
     // console.log(Vue);
-    new Vue({
+    createApp({
         components: {
             Search,
         },
-    }).$mount('#vue-search');
+    }).mount('#vue-search');
 };
 
 /**

@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 @media (max-width: theme('screens.lg')) {
   .nav-menu {
     @apply absolute;
@@ -35,7 +37,7 @@
 // Hamburger menu button
 button#menu-toggle {
   $size: 2.5rem; // theme('spacing.10'); //
-  $margin: $size / 7;
+  $margin: math.div($size, 7);
   $width: $size;
   $border_size: 2px;
   height: $size;
@@ -54,7 +56,7 @@ button#menu-toggle {
     margin-bottom: 0.15rem;
     margin-top: 0.15rem;
     transition: all 300ms cubic-bezier(0.61, 0.01, 0.42, 1);
-    width: (4/7) * $size;
+    width: math.div(4,7) * $size;
 
     &:nth-child(1) {
       // we move this one from center (with no top value) up
@@ -116,8 +118,8 @@ button#menu-toggle {
       background: transparent;
       border-radius: 50%;
       border: $border_size solid var(--color-primary-complement);
-      height: (1/3) * $size;
-      width: (2/3) * $size;
+      height: math.div(1, 3) * $size;
+      width: math.div(2, 3) * $size;
     }
   }
 
@@ -128,7 +130,7 @@ button#menu-toggle {
       border: $border_size solid var(--color-primary-complement);
       height: 0px;
       top: 0px;
-      width: (25/30) * $size;
+      width: math.div(25, 30) * $size;
 
       &:nth-child(1) {
         transform: rotate(-45deg);
