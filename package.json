@@ -41,6 +41,7 @@
         "tmp": "^0.2.1",
         "vue": "^2.6.14",
         "vue-loader": "^15.9.6",
+        "vue-template-compiler": "^2.6.14",
         "workbox-webpack-plugin": "^6.1.5",
         "yaml": "^1.10.2",
         "yargs": "^17.0.1"
