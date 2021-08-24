@@ -1,7 +1,7 @@
-define("./workbox-2a8a8a96.js",['exports'], function (exports) { 'use strict';
+define("./workbox-9cb17bc4.js",['exports'], function (exports) { 'use strict';
 
     try {
-      self['workbox:core:6.1.5'] && _();
+      self['workbox:core:6.2.4'] && _();
     } catch (e) {}
 
     /*
@@ -71,7 +71,8 @@ define("./workbox-2a8a8a96.js",['exports'], function (exports) { 'use strict';
         if (method === 'groupEnd') {
           inGroup = false;
         }
-      };
+      }; // eslint-disable-next-line @typescript-eslint/ban-types
+
 
       const api = {};
       const loggerMethods = Object.keys(methodToColorMap);
@@ -129,25 +130,28 @@ define("./workbox-2a8a8a96.js",['exports'], function (exports) { 'use strict';
           throw new Error(`Unexpected input to 'incorrect-type' error.`);
         }
 
-        return `The parameter '${paramName}' passed into ` + `'${moduleName}.${className ? className + '.' : ''}` + `${funcName}()' must be of type ${expectedType}.`;
+        const classNameStr = className ? `${className}.` : '';
+        return `The parameter '${paramName}' passed into ` + `'${moduleName}.${classNameStr}` + `${funcName}()' must be of type ${expectedType}.`;
       },
       'incorrect-class': ({
-        expectedClass,
+        expectedClassName,
         paramName,
         moduleName,
         className,
         funcName,
         isReturnValueProblem
       }) => {
-        if (!expectedClass || !moduleName || !funcName) {
+        if (!expectedClassName || !moduleName || !funcName) {
           throw new Error(`Unexpected input to 'incorrect-class' error.`);
         }
 
+        const classNameStr = className ? `${className}.` : '';
+
         if (isReturnValueProblem) {
-          return `The return value from ` + `'${moduleName}.${className ? className + '.' : ''}${funcName}()' ` + `must be an instance of class ${expectedClass.name}.`;
+          return `The return value from ` + `'${moduleName}.${classNameStr}${funcName}()' ` + `must be an instance of class ${expectedClassName}.`;
         }
 
-        return `The parameter '${paramName}' passed into ` + `'${moduleName}.${className ? className + '.' : ''}${funcName}()' ` + `must be an instance of class ${expectedClass.name}.`;
+        return `The parameter '${paramName}' passed into ` + `'${moduleName}.${classNameStr}${funcName}()' ` + `must be an instance of class ${expectedClassName}.`;
       },
       'missing-a-method': ({
         expectedMethod,
@@ -175,16 +179,16 @@ define("./workbox-2a8a8a96.js",['exports'], function (exports) { 'use strict';
           throw new Error(`Unexpected input to ` + `'add-to-cache-list-duplicate-entries' error.`);
         }
 
-        return `Two of the entries passed to ` + `'workbox-precaching.PrecacheController.addToCacheList()' had the URL ` + `${firstEntry._entryId} but different revision details. Workbox is ` + `unable to cache and version the asset correctly. Please remove one ` + `of the entries.`;
+        return `Two of the entries passed to ` + `'workbox-precaching.PrecacheController.addToCacheList()' had the URL ` + `${firstEntry} but different revision details. Workbox is ` + `unable to cache and version the asset correctly. Please remove one ` + `of the entries.`;
       },
       'plugin-error-request-will-fetch': ({
-        thrownError
+        thrownErrorMessage
       }) => {
-        if (!thrownError) {
+        if (!thrownErrorMessage) {
           throw new Error(`Unexpected input to ` + `'plugin-error-request-will-fetch', error.`);
         }
 
-        return `An error was thrown by a plugins 'requestWillFetch()' method. ` + `The thrown error message was: '${thrownError.message}'.`;
+        return `An error was thrown by a plugins 'requestWillFetch()' method. ` + `The thrown error message was: '${thrownErrorMessage}'.`;
       },
       'invalid-cache-name': ({
         cacheNameId,
@@ -456,9 +460,11 @@ define("./workbox-2a8a8a96.js",['exports'], function (exports) { 'use strict';
       }
     };
 
-    const isInstance = (object, expectedClass, details) => {
+    const isInstance = (object, // Need the general type to do the check later.
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    expectedClass, details) => {
       if (!(object instanceof expectedClass)) {
-        details['expectedClass'] = expectedClass;
+        details['expectedClassName'] = expectedClass.name;
         throw new WorkboxError('incorrect-class', details);
       }
     };
@@ -470,7 +476,9 @@ define("./workbox-2a8a8a96.js",['exports'], function (exports) { 'use strict';
       }
     };
 
-    const isArrayOfClass = (value, expectedClass, details) => {
+    const isArrayOfClass = (value, // Need general type to do check later.
+    expectedClass, // eslint-disable-line
+    details) => {
       const error = new WorkboxError('not-array-of-class', details);
 
       if (!Array.isArray(value)) {
@@ -494,7 +502,7 @@ define("./workbox-2a8a8a96.js",['exports'], function (exports) { 'use strict';
     };
 
     try {
-      self['workbox:routing:6.1.5'] && _();
+      self['workbox:routing:6.2.4'] && _();
     } catch (e) {}
 
     /*
@@ -691,7 +699,7 @@ define("./workbox-2a8a8a96.js",['exports'], function (exports) { 'use strict';
 
           if (url.origin !== location.origin && result.index !== 0) {
             {
-              logger.debug(`The regular expression '${regExp}' only partially matched ` + `against the cross-origin URL '${url}'. RegExpRoute's will only ` + `handle cross-origin requests if they match the entire URL.`);
+              logger.debug(`The regular expression '${regExp.toString()}' only partially matched ` + `against the cross-origin URL '${url.toString()}'. RegExpRoute's will only ` + `handle cross-origin requests if they match the entire URL.`);
             }
 
             return;
@@ -816,10 +824,12 @@ define("./workbox-2a8a8a96.js",['exports'], function (exports) { 'use strict';
       addCacheListener() {
         // See https://github.com/Microsoft/TypeScript/issues/28357#issuecomment-436484705
         self.addEventListener('message', event => {
+          // event.data is type 'any'
           if (event.data && event.data.type === 'CACHE_URLS') {
+            // eslint-disable-line
             const {
               payload
-            } = event.data;
+            } = event.data; // eslint-disable-line
 
             {
               logger.debug(`Caching URLs from the window`, payload.urlsToCache);
@@ -842,7 +852,7 @@ define("./workbox-2a8a8a96.js",['exports'], function (exports) { 'use strict';
             event.waitUntil(requestPromises); // If a MessageChannel was used, reply to the message on success.
 
             if (event.ports && event.ports[0]) {
-              requestPromises.then(() => event.ports[0].postMessage(true));
+              void requestPromises.then(() => event.ports[0].postMessage(true));
             }
           }
         });
@@ -982,7 +992,9 @@ define("./workbox-2a8a8a96.js",['exports'], function (exports) { 'use strict';
                   params
                 });
               } catch (catchErr) {
-                err = catchErr;
+                if (catchErr instanceof Error) {
+                  err = catchErr;
+                }
               }
             }
 
@@ -1035,7 +1047,9 @@ define("./workbox-2a8a8a96.js",['exports'], function (exports) { 'use strict';
         const routes = this._routes.get(request.method) || [];
 
         for (const route of routes) {
-          let params;
+          let params; // route.match returns type any, not possible to change right now.
+          // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+
           const matchResult = route.match({
             url,
             sameOrigin,
@@ -1046,19 +1060,21 @@ define("./workbox-2a8a8a96.js",['exports'], function (exports) { 'use strict';
           if (matchResult) {
             {
               // Warn developers that using an async matchCallback is almost always
-              // not the right thing to do. 
+              // not the right thing to do.
               if (matchResult instanceof Promise) {
                 logger.warn(`While routing ${getFriendlyURL(url)}, an async ` + `matchCallback function was used. Please convert the ` + `following route to use a synchronous matchCallback function:`, route);
               }
             } // See https://github.com/GoogleChrome/workbox/issues/2079
+            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
 
 
             params = matchResult;
 
-            if (Array.isArray(matchResult) && matchResult.length === 0) {
+            if (Array.isArray(params) && params.length === 0) {
               // Instead of passing an empty array in as params, use undefined.
               params = undefined;
-            } else if (matchResult.constructor === Object && Object.keys(matchResult).length === 0) {
+            } else if (matchResult.constructor === Object && // eslint-disable-line
+            Object.keys(matchResult).length === 0) {
               // Instead of passing an empty object in as params, use undefined.
               params = undefined;
             } else if (typeof matchResult === 'boolean') {
@@ -1269,7 +1285,7 @@ define("./workbox-2a8a8a96.js",['exports'], function (exports) { 'use strict';
         }) => {
           {
             if (url.pathname === captureUrl.pathname && url.origin !== captureUrl.origin) {
-              logger.debug(`${capture} only partially matches the cross-origin URL ` + `${url}. This route will only handle cross-origin requests ` + `if they match the entire URL.`);
+              logger.debug(`${capture} only partially matches the cross-origin URL ` + `${url.toString()}. This route will only handle cross-origin requests ` + `if they match the entire URL.`);
             }
           }
 
@@ -1297,24 +1313,6 @@ define("./workbox-2a8a8a96.js",['exports'], function (exports) { 'use strict';
       const defaultRouter = getOrCreateDefaultRouter();
       defaultRouter.registerRoute(route);
       return route;
-    }
-
-    function _extends() {
-      _extends = Object.assign || function (target) {
-        for (var i = 1; i < arguments.length; i++) {
-          var source = arguments[i];
-
-          for (var key in source) {
-            if (Object.prototype.hasOwnProperty.call(source, key)) {
-              target[key] = source[key];
-            }
-          }
-        }
-
-        return target;
-      };
-
-      return _extends.apply(this, arguments);
     }
 
     /*
@@ -1390,7 +1388,7 @@ define("./workbox-2a8a8a96.js",['exports'], function (exports) { 'use strict';
     }
 
     try {
-      self['workbox:precaching:6.1.5'] && _();
+      self['workbox:precaching:6.2.4'] && _();
     } catch (e) {}
 
     /*
@@ -1496,13 +1494,15 @@ define("./workbox-2a8a8a96.js",['exports'], function (exports) { 'use strict';
           cachedResponse
         }) => {
           if (event.type === 'install') {
-            // TODO: `state` should never be undefined...
-            const url = state.originalRequest.url;
+            if (state && state.originalRequest && state.originalRequest instanceof Request) {
+              // TODO: `state` should never be undefined...
+              const url = state.originalRequest.url;
 
-            if (cachedResponse) {
-              this.notUpdatedURLs.push(url);
-            } else {
-              this.updatedURLs.push(url);
+              if (cachedResponse) {
+                this.notUpdatedURLs.push(url);
+              } else {
+                this.updatedURLs.push(url);
+              }
             }
           }
 
@@ -1534,6 +1534,8 @@ define("./workbox-2a8a8a96.js",['exports'], function (exports) { 'use strict';
           request,
           params
         }) => {
+          // Params is type any, can't change right now.
+          // eslint-disable-next-line
           const cacheKey = params && params.cacheKey || this._precacheController.getCacheKeyForURL(request.url);
 
           return cacheKey ? new Request(cacheKey) : request;
@@ -1736,6 +1738,13 @@ define("./workbox-2a8a8a96.js",['exports'], function (exports) { 'use strict';
       return new Response(body, modifiedResponseInit);
     }
 
+    /*
+      Copyright 2020 Google LLC
+      Use of this source code is governed by an MIT-style
+      license that can be found in the LICENSE file or at
+      https://opensource.org/licenses/MIT.
+    */
+
     function stripParams(fullURL, ignoreParams) {
       const strippedURL = new URL(fullURL);
 
@@ -1767,10 +1776,9 @@ define("./workbox-2a8a8a96.js",['exports'], function (exports) { 'use strict';
       } // Otherwise, match by comparing keys
 
 
-      const keysOptions = _extends({}, matchOptions, {
+      const keysOptions = Object.assign(Object.assign({}, matchOptions), {
         ignoreSearch: true
       });
-
       const cacheKeys = await cache.keys(request, keysOptions);
 
       for (const cacheKey of cacheKeys) {
@@ -1820,6 +1828,8 @@ define("./workbox-2a8a8a96.js",['exports'], function (exports) { 'use strict';
       license that can be found in the LICENSE file or at
       https://opensource.org/licenses/MIT.
     */
+    // Can't change Function type right now.
+    // eslint-disable-next-line @typescript-eslint/ban-types
 
     const quotaErrorCallbacks = new Set();
 
@@ -1876,8 +1886,16 @@ define("./workbox-2a8a8a96.js",['exports'], function (exports) { 'use strict';
     }
 
     try {
-      self['workbox:strategies:6.1.5'] && _();
+      self['workbox:strategies:6.2.4'] && _();
     } catch (e) {}
+
+    /*
+      Copyright 2020 Google LLC
+
+      Use of this source code is governed by an MIT-style
+      license that can be found in the LICENSE file or at
+      https://opensource.org/licenses/MIT.
+    */
 
     function toRequest(input) {
       return typeof input === 'string' ? new Request(input) : input;
@@ -2025,9 +2043,11 @@ define("./workbox-2a8a8a96.js",['exports'], function (exports) { 'use strict';
             });
           }
         } catch (err) {
-          throw new WorkboxError('plugin-error-request-will-fetch', {
-            thrownError: err
-          });
+          if (err instanceof Error) {
+            throw new WorkboxError('plugin-error-request-will-fetch', {
+              thrownErrorMessage: err.message
+            });
+          }
         } // The request can be altered by plugins with `requestWillFetch` making
         // the original request (most likely from a `fetch` event) different
         // from the Request we make. Pass both to `fetchDidFail` to aid debugging.
@@ -2062,7 +2082,7 @@ define("./workbox-2a8a8a96.js",['exports'], function (exports) { 'use strict';
 
           if (originalRequest) {
             await this.runCallbacks('fetchDidFail', {
-              error,
+              error: error,
               event,
               originalRequest: originalRequest.clone(),
               request: pluginFilteredRequest.clone()
@@ -2087,7 +2107,7 @@ define("./workbox-2a8a8a96.js",['exports'], function (exports) { 'use strict';
       async fetchAndCachePut(input) {
         const response = await this.fetch(input);
         const responseClone = response.clone();
-        this.waitUntil(this.cachePut(input, responseClone));
+        void this.waitUntil(this.cachePut(input, responseClone));
         return response;
       }
       /**
@@ -2112,11 +2132,9 @@ define("./workbox-2a8a8a96.js",['exports'], function (exports) { 'use strict';
           matchOptions
         } = this._strategy;
         const effectiveRequest = await this.getCacheKey(request, 'read');
-
-        const multiMatchOptions = _extends({}, matchOptions, {
+        const multiMatchOptions = Object.assign(Object.assign({}, matchOptions), {
           cacheName
         });
-
         cachedResponse = await caches.match(effectiveRequest, multiMatchOptions);
 
         {
@@ -2210,12 +2228,14 @@ define("./workbox-2a8a8a96.js",['exports'], function (exports) { 'use strict';
         try {
           await cache.put(effectiveRequest, hasCacheUpdateCallback ? responseToCache.clone() : responseToCache);
         } catch (error) {
-          // See https://developer.mozilla.org/en-US/docs/Web/API/DOMException#exception-QuotaExceededError
-          if (error.name === 'QuotaExceededError') {
-            await executeQuotaErrorCallbacks();
-          }
+          if (error instanceof Error) {
+            // See https://developer.mozilla.org/en-US/docs/Web/API/DOMException#exception-QuotaExceededError
+            if (error.name === 'QuotaExceededError') {
+              await executeQuotaErrorCallbacks();
+            }
 
-          throw error;
+            throw error;
+          }
         }
 
         for (const callback of this.iterateCallbacks('cacheDidUpdate')) {
@@ -2252,6 +2272,7 @@ define("./workbox-2a8a8a96.js",['exports'], function (exports) { 'use strict';
               mode,
               request: effectiveRequest,
               event: this.event,
+              // params has a type any can't change right now.
               params: this.params
             }));
           }
@@ -2321,11 +2342,10 @@ define("./workbox-2a8a8a96.js",['exports'], function (exports) { 'use strict';
             const state = this._pluginStateMap.get(plugin);
 
             const statefulCallback = param => {
-              const statefulParam = _extends({}, param, {
+              const statefulParam = Object.assign(Object.assign({}, param), {
                 state
               }); // TODO(philipwalton): not sure why `any` is needed. It seems like
               // this should work with `as WorkboxPluginCallbackParam[C]`.
-
 
               return plugin[name](statefulParam);
             };
@@ -2380,7 +2400,7 @@ define("./workbox-2a8a8a96.js",['exports'], function (exports) { 'use strict';
 
 
       destroy() {
-        this._handlerDeferred.resolve();
+        this._handlerDeferred.resolve(null);
       }
       /**
        * This method will call cacheWillUpdate on the available plugins (or use
@@ -2600,22 +2620,24 @@ define("./workbox-2a8a8a96.js",['exports'], function (exports) { 'use strict';
             });
           }
         } catch (error) {
-          for (const callback of handler.iterateCallbacks('handlerDidError')) {
-            response = await callback({
-              error,
-              event,
-              request
-            });
+          if (error instanceof Error) {
+            for (const callback of handler.iterateCallbacks('handlerDidError')) {
+              response = await callback({
+                error,
+                event,
+                request
+              });
 
-            if (response) {
-              break;
+              if (response) {
+                break;
+              }
             }
           }
 
           if (!response) {
             throw error;
           } else {
-            logger.log(`While responding to '${getFriendlyURL(request.url)}', ` + `an ${error} error occurred. Using a fallback response provided by ` + `a handlerDidError plugin.`);
+            logger.log(`While responding to '${getFriendlyURL(request.url)}', ` + `an ${error instanceof Error ? error.toString() : ''} error occurred. Using a fallback response provided by ` + `a handlerDidError plugin.`);
           }
         }
 
@@ -2649,14 +2671,16 @@ define("./workbox-2a8a8a96.js",['exports'], function (exports) { 'use strict';
           });
           await handler.doneWaiting();
         } catch (waitUntilError) {
-          error = waitUntilError;
+          if (waitUntilError instanceof Error) {
+            error = waitUntilError;
+          }
         }
 
         await handler.runCallbacks('handlerDidComplete', {
           event,
           request,
           response,
-          error
+          error: error
         });
         handler.destroy();
 
@@ -2778,10 +2802,14 @@ define("./workbox-2a8a8a96.js",['exports'], function (exports) { 'use strict';
         }
 
         {
+          // Params in handlers is type any, can't change right now.
+          // eslint-disable-next-line
           const cacheKey = handler.params && handler.params.cacheKey || (await handler.getCacheKey(request, 'read')); // Workbox is going to handle the route.
           // print the routing details to the console.
 
-          logger.groupCollapsed(`Precaching is responding to: ` + getFriendlyURL(request.url));
+          logger.groupCollapsed(`Precaching is responding to: ` + getFriendlyURL(request.url)); // cacheKey is type any, can't change right now.
+          // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+
           logger.log(`Serving the precached url: ${getFriendlyURL(cacheKey.url)}`);
           logger.groupCollapsed(`View request details here.`);
           logger.log(request);
@@ -2895,6 +2923,13 @@ define("./workbox-2a8a8a96.js",['exports'], function (exports) { 'use strict';
 
     };
 
+    /*
+      Copyright 2019 Google LLC
+
+      Use of this source code is governed by an MIT-style
+      license that can be found in the LICENSE file or at
+      https://opensource.org/licenses/MIT.
+    */
     /**
      * Performs efficient precaching of assets.
      *
@@ -3039,6 +3074,8 @@ define("./workbox-2a8a8a96.js",['exports'], function (exports) { 'use strict';
 
 
       install(event) {
+        // waitUntil returns Promise<any>
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-return
         return waitUntil(event, async () => {
           const installReportPlugin = new PrecacheInstallReportPlugin();
           this.strategy.plugins.push(installReportPlugin); // Cache entries one at a time.
@@ -3091,6 +3128,8 @@ define("./workbox-2a8a8a96.js",['exports'], function (exports) { 'use strict';
 
 
       activate(event) {
+        // waitUntil returns Promise<any>
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-return
         return waitUntil(event, async () => {
           const cache = await self.caches.open(this.strategy.cacheName);
           const currentlyCachedRequests = await cache.keys();
@@ -3202,7 +3241,7 @@ define("./workbox-2a8a8a96.js",['exports'], function (exports) { 'use strict';
 
         return options => {
           options.request = new Request(url);
-          options.params = _extends({
+          options.params = Object.assign({
             cacheKey
           }, options.params);
           return this.strategy.handle(options);
@@ -3470,4 +3509,4 @@ define("./workbox-2a8a8a96.js",['exports'], function (exports) { 'use strict';
     exports.precacheAndRoute = precacheAndRoute;
 
 });
-//# sourceMappingURL=workbox-2a8a8a96.js.map
+//# sourceMappingURL=workbox-9cb17bc4.js.map
