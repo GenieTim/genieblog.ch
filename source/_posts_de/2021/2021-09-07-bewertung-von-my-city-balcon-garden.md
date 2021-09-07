@@ -1,6 +1,9 @@
 ---
 author: Tim Bernhard
 categories:
+- Balkon
+- Natur
+- Garten
 cover_image: 2021/mustard_balcony_pot.jpg
 canonical_url: "https://www.genieblog.ch/blog/de/2021/bewertung-von-my-city-balcon-garden"
 date: 2021-09-07 10:40:47

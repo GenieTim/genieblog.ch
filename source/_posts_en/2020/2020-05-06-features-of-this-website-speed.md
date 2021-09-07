@@ -16,7 +16,9 @@ title: "Features of this website: speed"
 translations:
   en: features-of-this-website-speed
   de: funktionen-dieser-website-v
----As of today, 6. May 2020, this site has been redesigned pretty recently.
+---
+
+As of today, 6. May 2020, this site has been redesigned pretty recently.
 To be more accurate, not only redesigned, but redeveloped from scratch.
 All that's left is the content, which I successfully migrated.
 Before, this site was run by [WordPress](https://wordpress.org/).

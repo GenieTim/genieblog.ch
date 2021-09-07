@@ -13,6 +13,7 @@ module.exports = {
       "CategoryGenerator",
       (compilationParams) => {
         return new Promise((resolve) => {
+          // console.log("Generating categories");
           // check all source posts for new categories
           glob(__dirname + "/../source/**/*.md", {}, function (er, files) {
             for (let i = 0; i < files.length; ++i) {
@@ -24,13 +25,18 @@ module.exports = {
               );
               let fieldsM = fileContent.match(fieldsRegex);
               let fileName = path.basename(files[i]);
-              let lang = fileName.match(new RegExp("\\.(en|de)\\."));
+              let directoryName = path.dirname(files[i]);
+              let lang = fileName.match(new RegExp("\\.(en|de)\\.")) || directoryName.match(new RegExp("\\_(en|de)"));
               if (lang) {
                 lang = lang[1];
               } else {
+                console.log("Not detected lang for file " + fileName)
                 continue;
               }
-              // console.log(fieldsM);
+              if (fieldsM == null) {
+                console.log("Not detected fields in file " + fileName)
+                continue;
+              }
               let fields = fieldsM[1];
               let newFields;
               try {

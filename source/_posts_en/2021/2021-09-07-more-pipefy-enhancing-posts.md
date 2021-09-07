@@ -1,7 +1,7 @@
 ---
 author: Tim Bernhard
 categories:
-  - pipefy
+  - Pipefy
 cover_image: false
 canonical_url: "https://www.genieblog.ch/blog/en/2021/more-pipefy-enhancing-posts"
 date: 2021-09-07 09:34:02
@@ -17,13 +17,10 @@ title: "More Pipefy Enhancing Posts"
 translations:
   en: more-pipefy-enhancing-posts
   de: weitere-pipefy-enhancing-posts
-
----
-
-As known from other posts, I use [Pipefy](https://app.pipefy.com/) for one of my clients workflows.
+---As known from other posts, I use [Pipefy](https://app.pipefy.com/) for one of my clients workflows.
 Pipefy is a [powerful no-code tool](https://www.g2.com/products/pipefy/reviews/pipefy-review-4774554), that enables the client to easily have an overview over his processes, projects and clients.
 
-Unfortunately, as is the case with all these tools, there are limitations. 
+Unfortunately, as is the case with all these tools, there are limitations.
 Thanks to Pipefy's GraphQL API and the custom apps, it is possibly to mitigate these limitations somewhat.
 In the [Pipefy Community](https://community.pipefy.com/), these workarounds can be shared with one another.
 
@@ -38,7 +35,7 @@ These posts were:
 - [How to edit your HTML email templates in your favourite HTML Editor](https://community.pipefy.com/tips-and-inspiration-45/how-to-edit-your-html-email-templates-in-your-favourite-html-editor-929)
 - [Adding a Field to Multiple Phases at once](https://community.pipefy.com/tips-and-inspiration-45/adding-a-field-to-multiple-phases-at-once-939)
 
-The latter two list features of my Node-Project, [pipefy-enhancer](https://github.com/GenieTim/PipefyEnhancer). 
+The latter two list features of my Node-Project, [pipefy-enhancer](https://github.com/GenieTim/PipefyEnhancer).
 
 This project (a command line application) has already quite a number of features:
 
@@ -48,4 +45,3 @@ This project (a command line application) has already quite a number of features
 - Edit E-Mail templates in your favourite HTML editor
 - Automatically generate a sort-of documentation of your pipes
 - Remove duplicate entries from a Pipefy database
-
