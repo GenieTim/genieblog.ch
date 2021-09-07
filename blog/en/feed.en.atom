@@ -3,12 +3,55 @@
     <title>genieblog.ch</title>
     <link href="https://genietim.github.io/genieblog.ch/" />
     <link type="application/atom+xml" rel="self" href="https://genietim.github.io/genieblog.ch/blog/en/feed.en.atom" />
-    <updated>2021-08-24T07:59:59+00:00</updated>
+    <updated>2021-09-07T08:54:24+00:00</updated>
     <id>https://genietim.github.io/genieblog.ch/blog/en/feed.en.atom</id>
     <author>
         <name>Tim Bernhard</name>
     </author>
                 <entry>
+    <id>https://genietim.github.io/genieblog.ch/blog/en/2021/review-of-my-city-balcon-garden</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/en/2021/review-of-my-city-balcon-garden" />
+    <title>Review of my City (Balcon) Garden</title>
+    <published>2021-09-07T10:40:47+00:00</published>
+    <updated>2021-09-07T10:40:47+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">Last autumn (more than a year ago, actually), I moved into the city.
+From my agglomeration home, where I grew up midst of green, flowers and trees, the change into the big grey Zürich is a big one
+(even though Zürich too has lots of nice little parks......</summary>
+    
+</entry>
+            <entry>
+    <id>https://genietim.github.io/genieblog.ch/blog/en/2021/reset-microsoft-excels-recent-documents-list-on-macos</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/en/2021/reset-microsoft-excels-recent-documents-list-on-macos" />
+    <title>Reset Microsoft Excel&#039;s Recent Documents List on MacOS </title>
+    <published>2021-09-07T09:47:56+00:00</published>
+    <updated>2021-09-07T09:47:56+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">This is going to be a short one. 
+In essence, my problem was, that Excel listed a file that I deleted long ago in the &quot;Recent Documents&quot; list, together with an alert symbol (⚠️).
+The alert symbol was clickable, but the two suggested options, open or......</summary>
+    
+</entry>
+            <entry>
+    <id>https://genietim.github.io/genieblog.ch/blog/en/2021/more-pipefy-enhancing-posts</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/en/2021/more-pipefy-enhancing-posts" />
+    <title>More Pipefy Enhancing Posts</title>
+    <published>2021-09-07T09:34:02+00:00</published>
+    <updated>2021-09-07T09:34:02+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">As known from other posts, I use Pipefy for one of my clients workflows.
+Pipefy is a powerful no-code tool, that enables the client to easily have an overview over his processes, projects and clients.
+
+Unfortunately, as is the case with all these tools,......</summary>
+    
+</entry>
+            <entry>
     <id>https://genietim.github.io/genieblog.ch/blog/en/2021/vulnerability-in-wp-events-schedule-plugin</id>
     <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/en/2021/vulnerability-in-wp-events-schedule-plugin" />
     <title>Vulnerability in WP Events Schedule Plugin</title>

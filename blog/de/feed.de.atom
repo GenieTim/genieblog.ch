@@ -3,12 +3,55 @@
     <title>genieblog.ch</title>
     <link href="https://genietim.github.io/genieblog.ch/" />
     <link type="application/atom+xml" rel="self" href="https://genietim.github.io/genieblog.ch/blog/de/feed.de.atom" />
-    <updated>2021-08-24T07:59:59+00:00</updated>
+    <updated>2021-09-07T08:54:25+00:00</updated>
     <id>https://genietim.github.io/genieblog.ch/blog/de/feed.de.atom</id>
     <author>
         <name>Tim Bernhard</name>
     </author>
                 <entry>
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2021/bewertung-von-my-city-balcon-garden</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2021/bewertung-von-my-city-balcon-garden" />
+    <title>Bewertung von meinem Stadt (Balkon) Garten</title>
+    <published>2021-09-07T10:40:47+00:00</published>
+    <updated>2021-09-07T10:40:47+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">Letzten Herbst (vor mehr als einem Jahr) bin ich in die Stadt gezogen.
+Von meinem Agglomerations-Zuhause, in dem ich inmitten von Grün, Blumen und Bäumen aufgewachsen bin, ist der Wechsel ins grosse graue Zürich ein grosser Schritt
+(obwohl Zürich......</summary>
+    
+</entry>
+            <entry>
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2021/reset-der-liste-der-letzten-dokumente-von-microsoft-excel-unter-macos</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2021/reset-der-liste-der-letzten-dokumente-von-microsoft-excel-unter-macos" />
+    <title>Reset der Liste der letzten Dokumente in Microsoft Excel unter MacOS</title>
+    <published>2021-09-07T09:47:56+00:00</published>
+    <updated>2021-09-07T09:47:56+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">Dies wird ein kurzer Beitrag sein.
+Im Wesentlichen bestand mein Problem darin, dass Excel eine Datei, die ich vor langer Zeit gelöscht habe, in der Liste &quot;Zuletzt verwendete Dokumente&quot; zusammen mit einem Warnsymbol (⚠️) auflistete.
+Das Warnsymbol......</summary>
+    
+</entry>
+            <entry>
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2021/weitere-pipefy-enhancing-posts</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2021/weitere-pipefy-enhancing-posts" />
+    <title>Weitere Pipefy Enhancing Posts</title>
+    <published>2021-09-07T09:34:02+00:00</published>
+    <updated>2021-09-07T09:34:02+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">Wie aus anderen Beiträgen bekannt, verwende ich Pipefy für die Workflows eines meiner Klienten.
+Pipefy ist ein Leistungsstarkes No-Code-Tool, das es dem Kunden ermöglicht, einen Überblick über seine Prozesse, Projekte und Kunden zu haben.
+
+Leider......</summary>
+    
+</entry>
+            <entry>
     <id>https://genietim.github.io/genieblog.ch/blog/de/2021/implementieren-von-follow-up-e-mails-in-pipefy</id>
     <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2021/implementieren-von-follow-up-e-mails-in-pipefy" />
     <title>Implementieren von Follow-Up-E-Mails in Pipefy</title>

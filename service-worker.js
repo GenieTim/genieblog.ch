@@ -185,11 +185,23 @@ define("./service-worker.js",['./workbox-9cb17bc4'], function (workbox) { 'use s
     "url": "/images/2021/event_schedule-300.png",
     "revision": "830f967994fd5de476672e45952f778b"
   }, {
+    "url": "/images/2021/excel_recent_list-150.png",
+    "revision": "8d9f19b9191b3e870654f1a50aeb5e6a"
+  }, {
+    "url": "/images/2021/excel_recent_list-300.png",
+    "revision": "49010391b75aeff403d3ea31a85e8475"
+  }, {
     "url": "/images/2021/front_cover_extending_lammps-150.jpg",
     "revision": "2e10b8aeaeafd2a79d9289905d56ba95"
   }, {
     "url": "/images/2021/front_cover_extending_lammps-300.jpg",
     "revision": "199437f83150d4131a24191fe5e208a4"
+  }, {
+    "url": "/images/2021/mustard_balcony_pot-150.jpg",
+    "revision": "6bc834ae8c7a3b786d8cf1f69e49e1f0"
+  }, {
+    "url": "/images/2021/mustard_balcony_pot-300.jpg",
+    "revision": "ebc2593af27ae5093867df2157cc1269"
   }, {
     "url": "/images/favicon/android-chrome-192x192-150.png",
     "revision": "998b28919d4b1807258ad7daf2b7846d"
