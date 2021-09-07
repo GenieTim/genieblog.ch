@@ -25,7 +25,8 @@ const subscriptionKey = getSubscriptionKey();
     {
       type: "editor",
       name: "content",
-      message: "Enter the content of the post in the editor"
+      message: "Enter the content of the post in the editor",
+      postfix: ".md"
     }
   ]).then(async answers => {
     // potential improvement: read from e.g. git config in case I get an extra author one day
