@@ -16,7 +16,9 @@ title: "Funktionen dieser Website: Geschwindigkeit"
 translations:
   en: features-of-this-website-speed
   de: funktionen-dieser-website-v
----Diese Seite wurde von kurzem (also relativ zum Datum 6.5.2020) neu gestaltet.
+---
+
+Diese Seite wurde von kurzem (also relativ zum Datum 6.5.2020) neu gestaltet.
 Um genauer zu sein, nicht nur neu gestaltet, sondern von Grund auf neu entwickelt.
 Alles, was übrig geblieben ist, ist der Inhalt, den ich erfolgreich migriert habe.
 Früher wurde diese Seite mit [Wordpress](https://wordpress.org/) betrieben, jetzt wird sie durch [JigSaw](https://jigsaw.tighten.co/) generiert.

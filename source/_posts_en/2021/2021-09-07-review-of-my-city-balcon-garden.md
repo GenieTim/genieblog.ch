@@ -1,6 +1,9 @@
 ---
 author: Tim Bernhard
 categories:
+- Nature
+- Balcon
+- Garden
 cover_image: 2021/mustard_balcony_pot.jpg
 canonical_url: "https://www.genieblog.ch/blog/en/2021/review-of-my-city-balcon-garden"
 date: 2021-09-07 10:40:47
