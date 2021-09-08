@@ -45,3 +45,4 @@ Dieses Projekt (eine Befehlszeilenanwendung) hat bereits eine ganze Reihe von Fu
 - Bearbeiten Sie E-Mail-Vorlagen in Ihrem bevorzugten HTML-Editor
 - Generieren Sie automatisch eine Art Dokumentation Ihrer Rohre
 - Entfernen doppelter Einträge aus einer Pipefy-Datenbank
+- Ver

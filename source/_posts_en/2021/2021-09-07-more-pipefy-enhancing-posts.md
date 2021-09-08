@@ -45,3 +45,4 @@ This project (a command line application) has already quite a number of features
 - Edit E-Mail templates in your favourite HTML editor
 - Automatically generate a sort-of documentation of your pipes
 - Remove duplicate entries from a Pipefy database
+- Move a field from one phase to another (incl. values)
