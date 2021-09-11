@@ -81,7 +81,7 @@ if (!self.define) {
     });
   };
 }
-define("./service-worker.js",['./workbox-9cb17bc4'], function (workbox) { 'use strict';
+define("./service-worker.js",['./workbox-718aa5be'], function (workbox) { 'use strict';
 
   /**
   * Welcome to your Workbox-powered service worker!
@@ -105,7 +105,7 @@ define("./service-worker.js",['./workbox-9cb17bc4'], function (workbox) { 'use s
 
   workbox.precacheAndRoute([{
     "url": "//js/main.js",
-    "revision": "69c5b419f4cd44f9a8a5fb005b7758de"
+    "revision": "063b60667128c4ad245052ae9e3a67ab"
   }, {
     "url": "/images/2014/DSC_5126-150.jpg",
     "revision": "46fc058cdd75e897069ac748fc16e077"
