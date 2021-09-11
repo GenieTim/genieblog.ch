@@ -3,12 +3,26 @@
     <title>genieblog.ch</title>
     <link href="https://genietim.github.io/genieblog.ch/" />
     <link type="application/atom+xml" rel="self" href="https://genietim.github.io/genieblog.ch/blog/de/feed.de.atom" />
-    <updated>2021-09-07T09:20:25+00:00</updated>
+    <updated>2021-09-11T07:46:59+00:00</updated>
     <id>https://genietim.github.io/genieblog.ch/blog/de/feed.de.atom</id>
     <author>
         <name>Tim Bernhard</name>
     </author>
                 <entry>
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2021/ikea-warenkorb-zu-csv</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2021/ikea-warenkorb-zu-csv" />
+    <title>Ikea Warenkorb zu CSV</title>
+    <published>2021-09-08T17:22:48+00:00</published>
+    <updated>2021-09-08T17:22:48+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">Vor einiger Zeit habe ich online bei Ikea bestellt. 
+Da einige der Sachen nicht von mir bezahlt werden sollten, wollte ich eine Liste von allem, was ich gekauft habe, vorzugsweise sofort in Excel verfügbar.
+Dank etwas JavaScript und......</summary>
+    
+</entry>
+            <entry>
     <id>https://genietim.github.io/genieblog.ch/blog/de/2021/bewertung-von-my-city-balcon-garden</id>
     <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2021/bewertung-von-my-city-balcon-garden" />
     <title>Bewertung von meinem Stadt (Balkon) Garten</title>

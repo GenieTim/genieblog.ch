@@ -3,12 +3,25 @@
     <title>genieblog.ch</title>
     <link href="https://genietim.github.io/genieblog.ch/" />
     <link type="application/atom+xml" rel="self" href="https://genietim.github.io/genieblog.ch/blog/en/feed.en.atom" />
-    <updated>2021-09-07T09:20:24+00:00</updated>
+    <updated>2021-09-11T07:46:59+00:00</updated>
     <id>https://genietim.github.io/genieblog.ch/blog/en/feed.en.atom</id>
     <author>
         <name>Tim Bernhard</name>
     </author>
                 <entry>
+    <id>https://genietim.github.io/genieblog.ch/blog/en/2021/ikea-cart-to-csv</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/en/2021/ikea-cart-to-csv" />
+    <title>Ikea Cart to CSV</title>
+    <published>2021-09-08T17:22:48+00:00</published>
+    <updated>2021-09-08T17:22:48+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">Some time ago, I ordered online in Ikea. As some of the stuff was not to be paid by me, I wanted a list of everything I bought, preferrably immediately available in Excel.
+Thanks to some JavaScript and Developer Console magic, this is thankfully easily......</summary>
+    
+</entry>
+            <entry>
     <id>https://genietim.github.io/genieblog.ch/blog/en/2021/review-of-my-city-balcon-garden</id>
     <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/en/2021/review-of-my-city-balcon-garden" />
     <title>Review of my City (Balcon) Garden</title>
