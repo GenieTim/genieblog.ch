@@ -2,7 +2,7 @@
 author: Tim Bernhard
 categories:
 cover_image: false
-canonical_url: "https://www.genieblog.ch/blog/de/2021/ikea-warenkorb-zu-csv"
+canonical_url: https://www.genieblog.ch/blog/de/2021/ikea-warenkorb-zu-csv
 date: 2021-09-08 17:22:48
 description: false
 draft: false

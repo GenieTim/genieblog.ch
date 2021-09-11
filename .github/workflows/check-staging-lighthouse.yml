@@ -15,6 +15,6 @@ jobs:
           urls: |
             https://genietim.github.io/genieblog.ch/index.en
             https://genietim.github.io/genieblog.ch/blog/en/index.en
-          budgetPath: ./budget.json # test performance budgets
+          budgetPath: ./budget-stage.json # test performance budgets
           uploadArtifacts: false # save results as an action artifacts
           temporaryPublicStorage: false # upload lighthouse report to the temporary storage

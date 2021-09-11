@@ -5,7 +5,7 @@ categories:
 - Office
 - Excel
 cover_image: 2021/excel_recent_list.png
-canonical_url: "https://www.genieblog.ch/blog/de/2021/reset-der-liste-der-letzten-dokumente-von-microsoft-excel-unter-macos"
+canonical_url: https://www.genieblog.ch/blog/de/2021/reset-der-liste-der-letzten-dokumente-von-microsoft-excel-unter-macos
 date: 2021-09-07 09:47:56
 description: false
 draft: false

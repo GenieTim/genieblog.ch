@@ -23,12 +23,12 @@ It is a justification of my own information bubble as well as an answer to the r
 
 Let us note down the assumptions that will be made, respectively what we will neglect:
 
-  * Neglect the construction, transport and sell of the car
-  * Start at the point of "customer buys car" with the estimations
-  * Neglect CO2 of fracking, refinery, storage and the transport of the fossil fuels
-  * Assume electricity is composed of coal and water
-  * Assume water energy has zero CO2 emissions
-  * Neglect electricity grid construction
+- Neglect the construction, transport and sell of the car
+- Start at the point of "customer buys car" with the estimations
+- Neglect CO2 of fracking, refinery, storage and the transport of the fossil fuels
+- Assume electricity is composed of coal and water
+- Assume water energy has zero CO2 emissions
+- Neglect electricity grid construction
 
 As for the data, we will calculate with the car models chosen in said paper: a Tesla Model 3 and a Mercedes C 220 d.
 The reference value for the Mercedes is a minimum of 0.134 kg CO2 per Kilometer ​[[2]](#src-2)​. This is the value we will want to maximize the coal proportion to.
@@ -48,15 +48,15 @@ Finally, if you find any mistakes in my calculations or have any doubts about my
 
 ### References
 
-  1. <span id="src-1"></span>C. Buchal, H.-D. Karl, and H.-W. Sinn, “Kohlemotoren, Windmotoren und Dieselmotoren: Was zeigt die CO2-Bilanz?” p. 15.
+1. <span id="src-1"></span>C. Buchal, H.-D. Karl, and H.-W. Sinn, “Kohlemotoren, Windmotoren und Dieselmotoren: Was zeigt die CO2-Bilanz?” p. 15.
 
-  2. <span id="src-2"></span>“C-Klasse: T-Modell, Preisliste gültig ab 1. Februar 2019.” Mercedes-Benz Schweiz AG.
+2. <span id="src-2"></span>“C-Klasse: T-Modell, Preisliste gültig ab 1. Februar 2019.” Mercedes-Benz Schweiz AG.
 
-  3. <span id="src-3"></span>“Tesla Model 3 Standard Range,” _Electric Vehicle Database_.  [Online]. Available: [https://ev-database.org/car/1320/Tesla-Model-3-Standard-Range-Plus](https://ev-database.org/car/1320/Tesla-Model-3-Standard-Range-Plus). [Accessed: 19-Jun-2019]
+3. <span id="src-3"></span>“Tesla Model 3 Standard Range,” _Electric Vehicle Database_. [Online]. Available: [https://ev-database.org/car/1320/Tesla-Model-3-Standard-Range-Plus](https://ev-database.org/car/1320/Tesla-Model-3-Standard-Range-Plus). [Accessed: 19-Jun-2019]
 
-  4. <span id="src-4"></span>“Battery University,” _ BU-104a: Comparing the Battery with Other Power Sources_, 28-Mar-2019.  [Online]. Available: [https://batteryuniversity.com/learn/article/comparing_the_battery_with_other_power_sources](https://batteryuniversity.com/learn/article/comparing_the_battery_with_other_power_sources). [Accessed: 19-Jun-2019]
+4. <span id="src-4"></span>“Battery University,” _ BU-104a: Comparing the Battery with Other Power Sources_, 28-Mar-2019. [Online]. Available: [http://web.archive.org/web/20210319172121/https://batteryuniversity.com/learn/article/comparing_the_battery_with_other_power_sources](http://web.archive.org/web/20210319172121/https://batteryuniversity.com/learn/article/comparing_the_battery_with_other_power_sources). [Accessed: 19-Jun-2019]
 
-  5. <span id="src-5"></span>Inside Energy. “Lost In Transmission: How Much Electricity Disappears Between A Power Plant And Your Plug?” [Online] Available: [http://insideenergy.org/2015/11/06/lost-in-transmission-how-much-electricity-disappears-between-a-power-plant-and-your-plug/](http://insideenergy.org/2015/11/06/lost-in-transmission-how-much-electricity-disappears-between-a-power-plant-and-your-plug/). [Accessed:  April 26, 2020.]
+5. <span id="src-5"></span>Inside Energy. “Lost In Transmission: How Much Electricity Disappears Between A Power Plant And Your Plug?” [Online] Available: [http://insideenergy.org/2015/11/06/lost-in-transmission-how-much-electricity-disappears-between-a-power-plant-and-your-plug/](http://insideenergy.org/2015/11/06/lost-in-transmission-how-much-electricity-disappears-between-a-power-plant-and-your-plug/). [Accessed: April 26, 2020.]
 
-  6. <span id="src-6"></span>“How much carbon dioxide is produced when different fuels are burned?,” _U.S.
-Energy Information Administration_, 04-Jun-2019.  [Online]. Available: [https://www.eia.gov/tools/faqs/faq.php?id=73&t;=11](https://www.eia.gov/tools/faqs/faq.php?id=73&t=11). [Accessed: 19-Jun-2019]
+6. <span id="src-6"></span>“How much carbon dioxide is produced when different fuels are burned?,” _U.S.
+   Energy Information Administration_, 04-Jun-2019. [Online]. Available: [https://www.eia.gov/tools/faqs/faq.php?id=73&t;=11](https://www.eia.gov/tools/faqs/faq.php?id=73&t=11). [Accessed: 19-Jun-2019]

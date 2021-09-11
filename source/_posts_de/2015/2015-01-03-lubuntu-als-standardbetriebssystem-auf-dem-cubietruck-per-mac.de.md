@@ -9,10 +9,10 @@ title: Lubuntu als Standardbetriebssystem auf dem Cubietruck - per Mac
 wordpress_id: 55
 categories:
   - Cubietruck
-  - Betriebssystem 
-  - Computer 
-  - Cubietruck 
-  - Lubuntu 
+  - Betriebssystem
+  - Computer
+  - Cubietruck
+  - Lubuntu
   - NAND
 draft: false
 template: post
@@ -31,21 +31,21 @@ Das geht zum Beispiel folgendermassen:
 
 Folgende Dinge sollten Sie bereitgelegt haben:
 
-  * Cubietruck mit zugehörigen Kabeln
+- Cubietruck mit zugehörigen Kabeln
 
-  * den Mac
+- den Mac
 
-  * das Programm [Live Suit](http://linux-sunxi.org/LiveSuit)
+- das Programm [Live Suit](http://web.archive.org/web/20210502185207/http://linux-sunxi.org/LiveSuit)
 
-  * ein Image des Betriebssystems ([Lubuntu](https://lubuntu.net/downloads/))
+- ein Image des Betriebssystems ([Lubuntu](https://lubuntu.net/downloads/))
 
 Hinweis: Wenn Sie nicht wissen welche Lubuntu Version Sie wählen sollten, achten Sie auf den Namen der Datei.
-Wenn Sie Ihren Cubietruck per Hdmi an den Bildschirm anschliessen benötigen Sie die Datei auf -hdmi, entsprechend bei -vga wenn Ihr Bildschirm per VGA angeschlossen ist. 
+Wenn Sie Ihren Cubietruck per Hdmi an den Bildschirm anschliessen benötigen Sie die Datei auf -hdmi, entsprechend bei -vga wenn Ihr Bildschirm per VGA angeschlossen ist.
 
 ## Haupthandlungen
 
-Starten Sie das Programm Live Suit und wählen Sie indem Sie oben links auf "Image" klicken die heruntergeladene *.img Datei aus.
-Falls in Ihrem Download-Ordner noch immer die *.gz Datei vorhanden ist, müssen Sie diese zuerst entpacken.
+Starten Sie das Programm Live Suit und wählen Sie indem Sie oben links auf "Image" klicken die heruntergeladene _.img Datei aus.
+Falls in Ihrem Download-Ordner noch immer die _.gz Datei vorhanden ist, müssen Sie diese zuerst entpacken.
 Dies sollte durch einen Doppelklick auf die Datei automatisch passieren.
 
 Wenn Sie das nicht bereits gemacht haben, versorgen Sie Ihren Cubietruck mit Strom und hängen Ihn an Ihren Bildschirm.
@@ -58,4 +58,3 @@ Ist das der Fall, können Sie "FEL" loslassen.
 Beantworten Sie die Frage von Live Suit mit "YES". Damit wäre der Zauber schon vorbei - nach wenigen Minuten wird die Imagedatei auf dem NAND vom Cubie installiert sein und starten!
 
 Ich wünsche viel Erfolg beim Nachmachen!
-

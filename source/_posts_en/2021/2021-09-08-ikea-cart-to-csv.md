@@ -2,7 +2,7 @@
 author: Tim Bernhard
 categories:
 cover_image: false
-canonical_url: "https://www.genieblog.ch/blog/en/2021/ikea-cart-to-csv"
+canonical_url: https://www.genieblog.ch/blog/en/2021/ikea-cart-to-csv
 date: 2021-09-08 17:22:48
 description: false
 draft: false

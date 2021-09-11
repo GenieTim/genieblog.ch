@@ -3,7 +3,7 @@ author: Tim Bernhard
 categories:
   - Pipefy
 cover_image: false
-canonical_url: "https://www.genieblog.ch/blog/de/2021/weitere-pipefy-enhancing-posts"
+canonical_url: https://www.genieblog.ch/blog/de/2021/weitere-pipefy-enhancing-posts
 date: 2021-09-07 09:34:02
 description: false
 draft: false
