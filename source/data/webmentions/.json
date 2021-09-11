@@ -16,5 +16,23 @@
     "like-of": "https://genieblog.ch/",
     "wm-property": "like-of",
     "wm-private": false
+  },
+  {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "alessioalionco",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/939dc8814967cc23b24c85a2ebc1f9bac29bd982d2a2d7f05231be0f77cc9104.jpg",
+      "url": "https://twitter.com/alessioalionco"
+    },
+    "url": "https://twitter.com/genie_tim/status/1435181466040913923#favorited-by-14914137",
+    "published": null,
+    "wm-received": "2021-09-07T12:53:03Z",
+    "wm-id": 1264544,
+    "wm-source": "https://brid.gy/like/twitter/genie_tim/1435181466040913923/14914137",
+    "wm-target": "https://genieblog.ch/",
+    "like-of": "https://genieblog.ch/",
+    "wm-property": "like-of",
+    "wm-private": false
   }
 ]
