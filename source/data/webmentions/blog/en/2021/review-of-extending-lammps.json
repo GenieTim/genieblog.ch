@@ -55,5 +55,23 @@
     "like-of": "https://genieblog.ch/",
     "wm-property": "like-of",
     "wm-private": false
-  }
+  },
+  {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Kevin Kodiyan",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/2f449d002c7051d45082fdad4ce6da91c14bfbcfad02d138aa688be7d4548120.jpg",
+      "url": "https://twitter.com/KevinKodiyan"
+    },
+    "url": "https://twitter.com/genie_tim/status/1362827673328881668#favorited-by-1273237360310968321",
+    "published": null,
+    "wm-received": "2021-03-19T11:17:27Z",
+    "wm-id": 1081444,
+    "wm-source": "https://brid.gy/like/twitter/genie_tim/1362827673328881668/1273237360310968321",
+    "wm-target": "https://genieblog.ch/",
+    "like-of": "https://genieblog.ch/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
 ]

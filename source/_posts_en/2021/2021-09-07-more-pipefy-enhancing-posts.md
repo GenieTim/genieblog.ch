@@ -17,7 +17,9 @@ title: "More Pipefy Enhancing Posts"
 translations:
   en: more-pipefy-enhancing-posts
   de: weitere-pipefy-enhancing-posts
----As known from other posts, I use [Pipefy](https://app.pipefy.com/) for one of my clients workflows.
+---
+
+As known from other posts, I use [Pipefy](https://app.pipefy.com/) for one of my clients workflows.
 Pipefy is a [powerful no-code tool](https://www.g2.com/products/pipefy/reviews/pipefy-review-4774554), that enables the client to easily have an overview over his processes, projects and clients.
 
 Unfortunately, as is the case with all these tools, there are limitations.
