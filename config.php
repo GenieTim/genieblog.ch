@@ -48,6 +48,10 @@ function getMultilangCollections()
                 $data = [];
                 if (file_exists($commentsFile)) {
                     $data = json_decode(file_get_contents($commentsFile), true);
+                    if ($data === null) {
+                        throw new Exception("Data in comments file " . $commentsFile . " is emtpy and/or JSON malformed.");
+                        $data = [];
+                    }
                     // process data minimally
                     foreach ($data as $key => $value) {
                         $counts[$value['wm-property']] += 1;

@@ -6,7 +6,7 @@ categories:
 - Excel
 - Note
 cover_image: 2021/excel_recent_list.png
-canonical_url: "https://www.genieblog.ch/blog/en/2021/reset-microsoft-excels-recent-documents-list-on-macos"
+canonical_url: https://www.genieblog.ch/blog/en/2021/reset-microsoft-excels-recent-documents-list-on-macos
 date: 2021-09-07 09:47:56
 description: false
 draft: false
