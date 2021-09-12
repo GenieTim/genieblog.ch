@@ -8,6 +8,9 @@
     },
     {
       "pattern": "^https://app.fossa.com/api/projects/"
+    },
+    {
+      "pattern": "^https://www.g2.com/products/"
     }
   ],
   "httpHeaders": [
