@@ -37,3 +37,4 @@ I can be found in social media:
 - [Facebook](https://facebook.com/tim.genie.bernhard)
 - [Twitter](https://twitter.com/genie_tim)
 - [GitHub](https://github.com/genietim)
+- [LinkedIn](https://www.linkedin.com/in/timgeniebernhard/)
