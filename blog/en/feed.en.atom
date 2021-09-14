@@ -3,12 +3,27 @@
     <title>genieblog.ch</title>
     <link href="https://genietim.github.io/genieblog.ch/" />
     <link type="application/atom+xml" rel="self" href="https://genietim.github.io/genieblog.ch/blog/en/feed.en.atom" />
-    <updated>2021-09-12T09:51:38+00:00</updated>
+    <updated>2021-09-14T10:00:16+00:00</updated>
     <id>https://genietim.github.io/genieblog.ch/blog/en/feed.en.atom</id>
     <author>
         <name>Tim Bernhard</name>
     </author>
                 <entry>
+    <id>https://genietim.github.io/genieblog.ch/blog/en/2021/my-first-public-svelte-component</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/en/2021/my-first-public-svelte-component" />
+    <title>My first (public) Svelte Component</title>
+    <published>2021-09-14T11:51:40+00:00</published>
+    <updated>2021-09-14T11:51:40+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">I just published my first public Svelte component.
+The component represents a virtual, sortable table and is aptly named &lt;code&gt;svelte-virtual-table&lt;/code&gt;.
+
+The general idea of a virtual list or table is, that instead of rendering all data, just the bits......</summary>
+    
+</entry>
+            <entry>
     <id>https://genietim.github.io/genieblog.ch/blog/en/2021/ikea-cart-to-csv</id>
     <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/en/2021/ikea-cart-to-csv" />
     <title>Ikea Cart to CSV</title>

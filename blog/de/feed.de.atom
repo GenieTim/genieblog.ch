@@ -3,12 +3,27 @@
     <title>genieblog.ch</title>
     <link href="https://genietim.github.io/genieblog.ch/" />
     <link type="application/atom+xml" rel="self" href="https://genietim.github.io/genieblog.ch/blog/de/feed.de.atom" />
-    <updated>2021-09-12T09:51:38+00:00</updated>
+    <updated>2021-09-14T10:00:16+00:00</updated>
     <id>https://genietim.github.io/genieblog.ch/blog/de/feed.de.atom</id>
     <author>
         <name>Tim Bernhard</name>
     </author>
                 <entry>
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2021/meine-erste-offentliche-svelte-komponente</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2021/meine-erste-offentliche-svelte-komponente" />
+    <title>Meine erste (öffentliche) Svelte Komponente</title>
+    <published>2021-09-14T11:51:40+00:00</published>
+    <updated>2021-09-14T11:51:40+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">Ich habe gerade meine erste öffentliche Svelte-Komponente veröffentlicht.
+Die Komponente stellt eine virtuelle, sortierbare Tabelle dar und trägt den passenden Namen &lt;code&gt;svelte-virtual-table&lt;/code&gt;.
+
+Die allgemeine Idee einer virtuellen Liste oder......</summary>
+    
+</entry>
+            <entry>
     <id>https://genietim.github.io/genieblog.ch/blog/de/2021/ikea-warenkorb-zu-csv</id>
     <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2021/ikea-warenkorb-zu-csv" />
     <title>Ikea Warenkorb zu CSV</title>
