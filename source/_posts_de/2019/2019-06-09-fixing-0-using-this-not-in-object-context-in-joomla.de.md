@@ -28,5 +28,5 @@ Im  Allgemeinen weist die Fehlermeldung auf das zugrunde liegende Problem hin: I
 In dem oben erwähnten Fall zum Beispiel wurde die Klasse statisch initialisiert.
 Dies, weil das anscheinend im älteren Joomla! Versionen eine gängige und mögliche Art war.
 
-Um die Ursache Ihres Problems zu finden, empfehle ich, [Joomla!   Debugging](https://docs.joomla.org/How_to_debug_your_code#Joomla_Logging) sowie [PHP-Protokollierung](https://stackoverflow.com/questions/845021/how-can-i-get-useful-error-messages-in-php) zu aktivieren, um den vollständigen Stack-Trace abzurufen und damit den Ursprung der falsch instanziierten Klasse zu ermitteln.
+Um die Ursache Ihres Problems zu finden, empfehle ich, [Joomla! Debugging](http://web.archive.org/web/20210506152905/https://docs.joomla.org/How_to_debug_your_code) sowie [PHP-Protokollierung](https://stackoverflow.com/questions/845021/how-can-i-get-useful-error-messages-in-php) zu aktivieren, um den vollständigen Stack-Trace abzurufen und damit den Ursprung der falsch instanziierten Klasse zu ermitteln.
 
