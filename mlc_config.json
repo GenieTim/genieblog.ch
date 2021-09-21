@@ -11,6 +11,9 @@
     },
     {
       "pattern": "^https://www.g2.com/products/"
+    },
+    {
+      "pattern": "^https://www.linkedin.com/in/timgeniebernhard/"
     }
   ],
   "httpHeaders": [
