@@ -28,5 +28,5 @@ Generally, the errormessage indicates the underlying problem: somewhere in Jooml
 In the case mentioned above, the class is initialized statically.
 This, because that was valid apparently in elder Joomla! versions. 
 
-To find the source of your problem, I recommend to enable [Joomla! debugging](https://docs.joomla.org/How_to_debug_your_code#Joomla_Logging) as well as [PHP logging](https://stackoverflow.com/questions/845021/how-can-i-get-useful-error-messages-in-php) in order to get the full stack trace and find the origin of the wrongly instantiated class. 
+To find the source of your problem, I recommend to enable [Joomla! debugging](http://web.archive.org/web/20210506152905/https://docs.joomla.org/How_to_debug_your_code) as well as [PHP logging](https://stackoverflow.com/questions/845021/how-can-i-get-useful-error-messages-in-php) in order to get the full stack trace and find the origin of the wrongly instantiated class. 
 
