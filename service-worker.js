@@ -81,7 +81,7 @@ if (!self.define) {
     });
   };
 }
-define("./service-worker.js",['./workbox-718aa5be'], function (workbox) { 'use strict';
+define("./service-worker.js",['./workbox-718aa5be'], (function (workbox) { 'use strict';
 
   /**
   * Welcome to your Workbox-powered service worker!
@@ -105,7 +105,7 @@ define("./service-worker.js",['./workbox-718aa5be'], function (workbox) { 'use s
 
   workbox.precacheAndRoute([{
     "url": "//js/main.js",
-    "revision": "7d07bfd17e6d72b30d31d7b7595978ea"
+    "revision": "12b16af188d2bee38a6f22a9e57829d9"
   }, {
     "url": "/images/2014/DSC_5126-150.jpg",
     "revision": "46fc058cdd75e897069ac748fc16e077"
@@ -234,5 +234,5 @@ define("./service-worker.js",['./workbox-718aa5be'], function (workbox) { 'use s
     "revision": "7df05426d0e103b72a399353a24450a5"
   }], {});
 
-});
+}));
 //# sourceMappingURL=service-worker.js.map

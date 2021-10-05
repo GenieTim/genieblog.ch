@@ -1,4 +1,4 @@
-define("./workbox-718aa5be.js",['exports'], function (exports) { 'use strict';
+define("./workbox-718aa5be.js",['exports'], (function (exports) { 'use strict';
 
     try {
       self['workbox:core:6.2.4'] && _();
@@ -3550,5 +3550,5 @@ define("./workbox-718aa5be.js",['exports'], function (exports) { 'use strict';
     exports.clientsClaim = clientsClaim;
     exports.precacheAndRoute = precacheAndRoute;
 
-});
+}));
 //# sourceMappingURL=workbox-718aa5be.js.map
