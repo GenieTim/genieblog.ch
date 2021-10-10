@@ -1,6 +1,7 @@
 ---
 author: Tim Bernhard
 categories:
+  - Windows
 cover_image: false
 canonical_url: https://www.genieblog.ch/blog/de/2021/mein-weg-um-meinen-pc-fur-windows-11-bereit-zu-machen
 date: 2021-10-10 13:10:40

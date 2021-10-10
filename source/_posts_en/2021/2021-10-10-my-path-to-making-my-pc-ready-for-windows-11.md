@@ -1,9 +1,10 @@
 ---
 author: Tim Bernhard
 categories:
+  - Windows
 cover_image: false
 canonical_url: https://www.genieblog.ch/blog/en/2021/my-path-to-making-my-pc-ready-for-windows-11
-date: 2021/10/10 13:10:40
+date: 2021-10-10 13:10:40
 description: false
 draft: false
 extends: _layouts.post
