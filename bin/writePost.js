@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const formatDate = require('dateformat');
+const dateTime = require('date-and-time');
 const fs = require("fs");
 const inquirer = require('inquirer');
 const markdownTranslate = require('markdown-translator')
@@ -99,7 +99,7 @@ function getSubscriptionKey() {
  * @param {string} slug The slug of the post
  */
 function getFileName(language, date, slug) {
-  return __dirname + '/../source/_posts_' + language + "/" + date.getFullYear() + "/" + formatDate(date, 'yyyy-mm-dd') + "-" + slug + ".md"
+  return __dirname + '/../source/_posts_' + language + "/" + date.getFullYear() + "/" + dateTime.format(date, 'YYYY-MM-DD') + "-" + slug + ".md"
 }
 
 /**
@@ -156,8 +156,8 @@ function getFileContent(author, date, language, posts) {
 author: ${author}
 categories:
 cover_image: false
-canonical_url: https://www.genieblog.ch/blog/${language}/${formatDate(date, 'yyyy')}/${posts[language].slug}
-date: ${formatDate(date, 'yyyy-mm-dd HH:MM:ss')}
+canonical_url: https://www.genieblog.ch/blog/${language}/${dateTime.format(date, 'YYYY')}/${posts[language].slug}
+date: ${dateTime.format(date, 'YYYY-MM-DD HH:mm:ss')}
 description: false
 draft: false
 extends: _layouts.post
@@ -174,8 +174,7 @@ translations:
     fileContent += "  " + otherLanguage + ": " + posts[otherLanguage].slug + "\n";
   }
 
-  fileContent += `
----
+  fileContent += `---
 
 ${posts[language].content}
 `;
