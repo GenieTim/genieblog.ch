@@ -3,12 +3,25 @@
     <title>genieblog.ch</title>
     <link href="https://genietim.github.io/genieblog.ch/" />
     <link type="application/atom+xml" rel="self" href="https://genietim.github.io/genieblog.ch/blog/de/feed.de.atom" />
-    <updated>2021-10-05T07:54:39+00:00</updated>
+    <updated>2021-10-10T11:28:16+00:00</updated>
     <id>https://genietim.github.io/genieblog.ch/blog/de/feed.de.atom</id>
     <author>
         <name>Tim Bernhard</name>
     </author>
                 <entry>
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2021/mein-weg-um-meinen-pc-fur-windows-11-bereit-zu-machen</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2021/mein-weg-um-meinen-pc-fur-windows-11-bereit-zu-machen" />
+    <title>Mein Weg, um meinen PC für Windows 11 bereit zu machen</title>
+    <published>2021-10-10T13:10:40+00:00</published>
+    <updated>2021-10-10T13:10:40+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">Während mein selbstgebaute PC (meine Belohnung für mich selbst für das Bestehen der Basisprüfungen an der ETHZ) über recht leistungsfähige Komponenten verfügt, war er laut PC Integrity Checking Tool noch nicht bereit für Windows 11.
+Was fehlte,......</summary>
+    
+</entry>
+            <entry>
     <id>https://genietim.github.io/genieblog.ch/blog/de/2021/meine-erste-offentliche-svelte-komponente</id>
     <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2021/meine-erste-offentliche-svelte-komponente" />
     <title>Meine erste (öffentliche) Svelte Komponente</title>

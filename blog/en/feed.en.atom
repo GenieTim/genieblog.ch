@@ -3,12 +3,25 @@
     <title>genieblog.ch</title>
     <link href="https://genietim.github.io/genieblog.ch/" />
     <link type="application/atom+xml" rel="self" href="https://genietim.github.io/genieblog.ch/blog/en/feed.en.atom" />
-    <updated>2021-10-05T07:54:39+00:00</updated>
+    <updated>2021-10-10T11:28:16+00:00</updated>
     <id>https://genietim.github.io/genieblog.ch/blog/en/feed.en.atom</id>
     <author>
         <name>Tim Bernhard</name>
     </author>
                 <entry>
+    <id>https://genietim.github.io/genieblog.ch/blog/en/2021/my-path-to-making-my-pc-ready-for-windows-11</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/en/2021/my-path-to-making-my-pc-ready-for-windows-11" />
+    <title>My Path to Making My PC Ready for Windows 11</title>
+    <published>2021-10-10T13:10:40+00:00</published>
+    <updated>2021-10-10T13:10:40+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">While my self-built PC (my self-reward after passing the basis exams at ETHZ) has quite powerful components, it was not yet ready for Windows 11 according to the PC Integrity Checking Tool.
+What was missing was (a) the activation of TPM 2.0, and (b) the......</summary>
+    
+</entry>
+            <entry>
     <id>https://genietim.github.io/genieblog.ch/blog/en/2021/my-first-public-svelte-component</id>
     <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/en/2021/my-first-public-svelte-component" />
     <title>My first (public) Svelte Component</title>
