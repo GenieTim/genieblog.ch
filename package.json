@@ -16,7 +16,6 @@
         "browser-sync-webpack-plugin": "^2.3.0",
         "copy-webpack-plugin": "^9.0.1",
         "cross-env": "^7.0.3",
-        "dateformat": "^5.0.1",
         "deepl-translator": "^1.2.1",
         "extra-watch-webpack-plugin": "^1.0.3",
         "fuse.js": "^6.4.6",
@@ -46,5 +45,7 @@
         "yaml": "^1.10.2",
         "yargs": "^17.2.1"
     },
-    "dependencies": {}
+    "dependencies": {
+        "date-and-time": "^2.0.1"
+    }
 }
