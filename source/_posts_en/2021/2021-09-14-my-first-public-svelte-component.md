@@ -14,7 +14,7 @@ layout: post
 slug: my-first-public-svelte-component
 social_image: false
 template: post
-title: "My first (public) Svelte Component"
+title: "svelte-virtual-table: my first (public) Svelte Component"
 translations:
   en: my-first-public-svelte-component
   de: meine-erste-offentliche-svelte-komponente

@@ -26,7 +26,7 @@ That's when you want another way to go.
 To be precise, you need a program which does it for you.
 What is has to do in general is to solve a system of equations, with the same number of equations as reactions. 
 This can generally be done by using a matrix; here, the matrix will have as many rows as reactions and as many columns as substances which are involved in the reaction stochiometry. 
-Apart from the valus in the matrix, this is equivalent to a stochiometric matrix.
+Apart from the values in the matrix, this is equivalent to a stochiometric matrix.
 For the following calculations, we will start with a stochiometric matrix.
 
 The most important step now is to determine the values of the matrix cells. 
