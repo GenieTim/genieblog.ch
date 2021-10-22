@@ -1,6 +1,7 @@
 ---
 author: Tim Bernhard
 categories:
+  - JavaScript
 cover_image: false
 canonical_url: https://www.genieblog.ch/blog/en/2021/ikea-cart-to-csv
 date: 2021-09-08 17:22:48

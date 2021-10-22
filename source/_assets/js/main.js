@@ -53,7 +53,17 @@ InstantClick.on("change", function() {
     console.log(e);
   }
   // (re)-initialize search
-  initializeVue();
+  try {
+    initializeVue();
+  } catch (e) {
+    console.log(e);
+  }
+  // (re)-initialize mathjax
+  try {
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+  } catch (e) {
+    console.log(e);
+  }
 });
 // finally, initialize
 InstantClick.init();
