@@ -10,7 +10,7 @@
         "production": "NODE_ENV=production mix --production"
     },
     "devDependencies": {
-        "@vue/compiler-sfc": "^3.2.22",
+        "@vue/compiler-sfc": "^3.2.23",
         "axios": "^0.24.0",
         "browser-sync": "^2.27.7",
         "browser-sync-webpack-plugin": "^2.3.0",
@@ -30,11 +30,11 @@
         "markdown-translator": "^0.4.5",
         "mathjax": "^3.2.0",
         "node-cmd": "^5.0.0",
-        "postcss": "^8.4.0",
+        "postcss": "^8.4.4",
         "postcss-css-variables": "^0.18.0",
         "resolve-url-loader": "^4.0.0",
         "responsive-loader": "^2.3.0",
-        "sass": "^1.43.4",
+        "sass": "^1.44.0",
         "sass-loader": "^12.3.0",
         "tailwindcss": "^2.2.19",
         "tmp": "^0.2.1",
