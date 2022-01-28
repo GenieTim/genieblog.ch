@@ -667,16 +667,16 @@
         },
         {
             "name": "mockery/mockery",
-            "version": "1.4.4",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mockery/mockery.git",
-                "reference": "e01123a0e847d52d186c5eb4b9bf58b0c6d00346"
+                "reference": "c10a5f6e06fc2470ab1822fa13fa2a7380f8fbac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mockery/mockery/zipball/e01123a0e847d52d186c5eb4b9bf58b0c6d00346",
-                "reference": "e01123a0e847d52d186c5eb4b9bf58b0c6d00346",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/c10a5f6e06fc2470ab1822fa13fa2a7380f8fbac",
+                "reference": "c10a5f6e06fc2470ab1822fa13fa2a7380f8fbac",
                 "shasum": ""
             },
             "require": {
@@ -733,22 +733,22 @@
             ],
             "support": {
                 "issues": "https://github.com/mockery/mockery/issues",
-                "source": "https://github.com/mockery/mockery/tree/1.4.4"
+                "source": "https://github.com/mockery/mockery/tree/1.5.0"
             },
-            "time": "2021-09-13T15:28:59+00:00"
+            "time": "2022-01-20T13:18:17+00:00"
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.55.2",
+            "version": "2.56.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "8c2a18ce3e67c34efc1b29f64fe61304368259a2"
+                "reference": "626ec8cbb724cd3c3400c3ed8f730545b744e3f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/8c2a18ce3e67c34efc1b29f64fe61304368259a2",
-                "reference": "8c2a18ce3e67c34efc1b29f64fe61304368259a2",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/626ec8cbb724cd3c3400c3ed8f730545b744e3f4",
+                "reference": "626ec8cbb724cd3c3400c3ed8f730545b744e3f4",
                 "shasum": ""
             },
             "require": {
@@ -765,7 +765,7 @@
                 "kylekatarnls/multi-tester": "^2.0",
                 "phpmd/phpmd": "^2.9",
                 "phpstan/extension-installer": "^1.0",
-                "phpstan/phpstan": "^0.12.54",
+                "phpstan/phpstan": "^0.12.54 || ^1.0",
                 "phpunit/phpunit": "^7.5.20 || ^8.5.14",
                 "squizlabs/php_codesniffer": "^3.4"
             },
@@ -831,7 +831,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-12-03T14:59:52+00:00"
+            "time": "2022-01-21T17:08:38+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -2429,16 +2429,16 @@
         },
         {
             "name": "tightenco/jigsaw",
-            "version": "v1.3.38",
+            "version": "v1.3.39",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tighten/jigsaw.git",
-                "reference": "1456ec0ebe4bfaeba5b8c27110f8c60a0754b043"
+                "reference": "9ab86b1ed18262e3ed5dddd2e8f5e2b4b7885bfe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tighten/jigsaw/zipball/1456ec0ebe4bfaeba5b8c27110f8c60a0754b043",
-                "reference": "1456ec0ebe4bfaeba5b8c27110f8c60a0754b043",
+                "url": "https://api.github.com/repos/tighten/jigsaw/zipball/9ab86b1ed18262e3ed5dddd2e8f5e2b4b7885bfe",
+                "reference": "9ab86b1ed18262e3ed5dddd2e8f5e2b4b7885bfe",
                 "shasum": ""
             },
             "require": {
@@ -2496,22 +2496,22 @@
             ],
             "support": {
                 "issues": "https://github.com/tighten/jigsaw/issues",
-                "source": "https://github.com/tighten/jigsaw/tree/v1.3.38"
+                "source": "https://github.com/tighten/jigsaw/tree/v1.3.39"
             },
-            "time": "2021-09-02T15:36:18+00:00"
+            "time": "2022-01-14T15:34:39+00:00"
         },
         {
             "name": "tightenco/jigsaw-blog-template",
-            "version": "v1.2.2",
+            "version": "v1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tighten/jigsaw-blog-template.git",
-                "reference": "883235ff4fa0f442525b75d65d5166f648656726"
+                "reference": "6ff7f921c12fee8000061474cbf3e3d07f4e1aa5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tighten/jigsaw-blog-template/zipball/883235ff4fa0f442525b75d65d5166f648656726",
-                "reference": "883235ff4fa0f442525b75d65d5166f648656726",
+                "url": "https://api.github.com/repos/tighten/jigsaw-blog-template/zipball/6ff7f921c12fee8000061474cbf3e3d07f4e1aa5",
+                "reference": "6ff7f921c12fee8000061474cbf3e3d07f4e1aa5",
                 "shasum": ""
             },
             "require": {
@@ -2554,9 +2554,9 @@
             ],
             "support": {
                 "issues": "https://github.com/tighten/jigsaw-blog-template/issues",
-                "source": "https://github.com/tighten/jigsaw-blog-template/tree/v1.2.2"
+                "source": "https://github.com/tighten/jigsaw-blog-template/tree/v1.2.3"
             },
-            "time": "2021-02-12T18:24:19+00:00"
+            "time": "2022-01-13T16:22:28+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -2638,16 +2638,16 @@
         },
         {
             "name": "voku/portable-ascii",
-            "version": "1.5.6",
+            "version": "1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/portable-ascii.git",
-                "reference": "80953678b19901e5165c56752d087fc11526017c"
+                "reference": "87337c91b9dfacee02452244ee14ab3c43bc485a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/80953678b19901e5165c56752d087fc11526017c",
-                "reference": "80953678b19901e5165c56752d087fc11526017c",
+                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/87337c91b9dfacee02452244ee14ab3c43bc485a",
+                "reference": "87337c91b9dfacee02452244ee14ab3c43bc485a",
                 "shasum": ""
             },
             "require": {
@@ -2684,7 +2684,7 @@
             ],
             "support": {
                 "issues": "https://github.com/voku/portable-ascii/issues",
-                "source": "https://github.com/voku/portable-ascii/tree/1.5.6"
+                "source": "https://github.com/voku/portable-ascii/tree/1.6.1"
             },
             "funding": [
                 {
@@ -2708,7 +2708,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-11-12T00:07:28+00:00"
+            "time": "2022-01-24T18:55:24+00:00"
         }
     ],
     "packages-dev": [],
