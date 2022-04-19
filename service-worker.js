@@ -67,7 +67,7 @@ if (!self.define) {
     });
   };
 }
-define(['./workbox-5b5db1c1'], (function (workbox) { 'use strict';
+define(['./workbox-36b4d269'], (function (workbox) { 'use strict';
 
   /**
   * Welcome to your Workbox-powered service worker!
@@ -91,7 +91,7 @@ define(['./workbox-5b5db1c1'], (function (workbox) { 'use strict';
 
   workbox.precacheAndRoute([{
     "url": "/css/main.css",
-    "revision": "e6b06edd86741a0218e70ac8385a3996"
+    "revision": "6f21be87d7f60e3f8003d6e4aad28efb"
   }, {
     "url": "/images/2014/DSC_5126-150.jpg",
     "revision": "46fc058cdd75e897069ac748fc16e077"

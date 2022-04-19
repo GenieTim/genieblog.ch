@@ -99,7 +99,7 @@
 }
 
 /*
-! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
+! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com
 */
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -624,68 +624,30 @@ p{
 @media (max-width: 1024px) {
   .nav-menu{
     position: absolute;
-  }
-  .nav-menu{
     background-color: var(--color-primary-complement-shade);
-  }
-  .nav-menu{
     left: 0px;
     right: 0px;
-  }
-  .nav-menu{
     padding-bottom: 0.5rem;
-  }
-  .nav-menu{
     padding-top: 1.5rem;
-  }
-  .nav-menu{
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-  }
-  .nav-menu{
     --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
     --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  }
-  .nav-menu{
     width: auto;
-  }
-  .nav-menu {
     top: 6rem;
-  }
-  .nav-menu{
     border-bottom-width: 2px;
-  }
-  .nav-menu{
     border-color: var(--color-primary);
   }
 
   .nav-menu__item{
     display: block;
-  }
-
-  .nav-menu__item{
     -webkit-text-decoration-line: none;
             text-decoration-line: none;
-  }
-
-  .nav-menu__item{
     margin-bottom: 1rem;
-  }
-
-  .nav-menu__item{
     margin-top: 0px;
-  }
-
-  .nav-menu__item{
     color: var(--color-primary-shade);
-  }
-
-  .nav-menu__item{
     border-bottom-width: 1px;
-  }
-
-  .nav-menu__item{
     border-color: var(--color-primary);
   }
 }
@@ -935,16 +897,10 @@ button#menu-toggle:active div:nth-child(3) {
 @media (min-width: 768px) {
   .mc-field-group input{
     margin-bottom: 0.75rem;
-  }
-  .mc-field-group input{
     border-top-left-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem;
-  }
-  .mc-field-group input{
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
-  }
-  .mc-field-group input{
     width: 75%;
   }
 }
