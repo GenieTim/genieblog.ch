@@ -1,9 +1,9 @@
 ---
 author: Tim Bernhard
 categories:
-- Balkon
-- Natur
-- Garten
+  - Balkon
+  - Natur
+  - Garten
 cover_image: 2021/mustard_balcony_pot.jpg
 canonical_url: https://www.genieblog.ch/blog/de/2021/bewertung-von-my-city-balcon-garden
 date: 2021-09-07 10:40:47
@@ -38,7 +38,7 @@ Während ich noch keinen Senf aus den Samen zubereitet habe, kann ich es als Erl
 
 Eine andere Sache, die ich gepflanzt habe, war Salat.
 Der Grund dafür war, dass der Ort, von dem ich meine Senfkörner bekam, einen Mindestwert hatte, für den ich bestellen musste.
-Die beiden Salate, die ich gewählt habe, waren Ruccola und [Black Hawk](https://www.zollinger.bio/de/products/300-schnittsalat-pflucksalat-black-hawk).
+Die beiden Salate, die ich gewählt habe, waren Ruccola und [Black Hawk](https://www.zollinger.bio/de/shop/32060-black-hawk-1182#attr=1745).
 Salat war meine Wahl, da ich dachte, sie hätten kein Problem, in einer Balkonkiste zu wachsen.
 Nun, ich habe mich teilweise geirrt: Der Ruccola war eine Enttäuschung in der Größe, ich konnte kein einziges Blatt ernten.
 Der Black Hawk Salat hingegen wuchs sehr gut.

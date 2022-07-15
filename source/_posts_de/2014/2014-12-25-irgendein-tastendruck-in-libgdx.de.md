@@ -47,7 +47,7 @@ if (Gdx.input.isKeyPressed(Input.Keys.ENTER)) {
 		}`
 
 Damit sind wir schon ziemlich nah am Ziel - wir müssen nur Input.Keys.??? anpassen, so dass die Tastatur nach der von uns gewählte Taste gefragt wird.
-Eine Liste mit den verschiedenen Input.Keys.* findest Du hier: [http://libgdx.badlogicgames.com/nightlies/docs/api/com/badlogic/gdx/Input.Keys.html](http://libgdx.badlogicgames.com/nightlies/docs/api/com/badlogic/gdx/Input.Keys.html)
+Eine Liste mit den verschiedenen Input.Keys.* findest Du hier: [https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/Input.Keys.html](http://web.archive.org/web/20210506154912/https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/Input.Keys.html)
 
 ### Die Lösung
 
