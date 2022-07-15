@@ -8,6 +8,9 @@ const ImageBuildPlugin = require("./tasks/ImageBuildPlugin");
 
 mix.disableSuccessNotifications();
 mix.setPublicPath("source/assets/build/");
+mix.options({
+    production: process.env.WEBPACK_ENV === "production"
+})
 mix.webpackConfig({
   plugins: [
     new ImageBuildPlugin({
@@ -27,24 +30,10 @@ mix.webpackConfig({
   ],
 });
 
-mix.extend("set_jigsaw_env", () => {
-  if (process.env.JIGSAW_ENV) {
-    process.env.NODE_ENV_TMP = process.env.NODE_ENV;
-    process.env.NODE_ENV = process.env.JIGSAW_ENV;
-  }
-});
-
-mix.extend("reset_node_env", () => {
-  if (process.env.NODE_ENV_TMP) {
-    process.env.NODE_ENV = process.env.NODE_ENV_TMP;
-  }
-});
-
 mix
   .js("source/_assets/js/main.js", "js")
   .vue()
   .sass("source/_assets/sass/main.scss", "css/main.css")
-  .set_jigsaw_env()
   .jigsaw({
     watch: [
       "config.php",
@@ -53,7 +42,6 @@ mix
       "source/**/*.scss",
     ],
   })
-  .reset_node_env()
   .options({
     processCssUrls: false,
     postCss: [
