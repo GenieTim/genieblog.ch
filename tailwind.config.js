@@ -79,5 +79,9 @@ module.exports = {
       }
       addUtilities(newUtilities)
     }
+  ], 
+  content: [
+    './source/**/*.{html,md,js,vue,php}',
+    './*.php'
   ]
 }
