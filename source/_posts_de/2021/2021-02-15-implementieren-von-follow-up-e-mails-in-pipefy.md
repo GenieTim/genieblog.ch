@@ -39,7 +39,7 @@ wird die Warnung ausgelöst.
 Der Nachteil ist, dass Sie das Fälligkeitsdatumsfeld nicht für etwas anderes verwenden können und dass die Metrik, wann die Karte fertig ist, nutzlos wird. 
 Beide Nachteile können durch die Verwendung einer Proxy-Pipe für die Folgemaßnahmen beseitigt werden (d.h. eine Pipe, in der Sie (automatisch?) eine Karte für jedes Follow-up erstellen, das Sie senden möchten, ausgestattet mit einem Fälligkeitsdatum, einer E-Mail-Adresse des Adressaten und möglicherweise einem Textfeld mit dem Inhalt des E-Mails). 
 
-Der Weg, eine Karte auszulösen, um zu spät zu werden, ist das [Hinzufügen einer SLA](https://help.pipefy.com/en/articles/614604-late-alert) zu einer Phase.
+Der Weg, eine Karte auszulösen, um zu spät zu werden, ist das [Hinzufügen eines Zeitmaximums (SLA)](https://help.pipefy.com/en/articles/625596-set-up-alerts-in-cards#h_a70efccdb4) zu einer Phase.
 Das hat den Vorteil, dass das Fälligkeitsdatum nicht von etwas anderem genutzt wird.
 Der Nachteil ist, dass jede Karte die Phase erreichen muss (und sie möglicherweise nicht verlässt), bis die Warnung ausgelöst wird, da sonst der Countdown gestoppt wird.
 Auch das lässt sich mit einer Proxy-Pipe vermeiden.

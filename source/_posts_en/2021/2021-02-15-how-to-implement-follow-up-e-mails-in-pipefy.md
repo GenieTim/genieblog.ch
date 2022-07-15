@@ -35,7 +35,7 @@ The way to trigger a card to become _expired_ is to **set a due date**. As soon 
 The disadvantage is that you cannot use the due date field for something else. Another disadvantage is, that the metric of when the card finished is rendered useless.  
 Both of these disadvantages can be eliminated by using a by-me-called proxy-pipe for the follow-ups. With proxy-pipe, I mean a connected pipe e.g. called “Follow-Up”, which has nothing else to do then managing follow-ups. There, you (automatically?) create a card for each follow-up you want to send, equipped with a due-date [or have an initial phase with an SLA, as seen next], an E-Mail [the recipient] and possibly a text field [the content or a field to decide in a condition which E-Mail to send, in case you have multiple Follow-Up templates].
 
-The way to trigger a card to become _late_ is to **[add a SLA](https://help.pipefy.com/en/articles/614604-late-alert)** to a phase.  
+The way to trigger a card to become _late_ is to **[add a SLA](https://help.pipefy.com/en/articles/625596-set-up-alerts-in-cards#h_a70efccdb4)** to a phase.  
 This has the benefit, that the due date is not used by something else.
 
 The disadvantage is, that each card has to reach the phase (and may not leave it) untill the alert is triggered, as otherwise, the countdown is stopped. This means, also hear the metrics of when a card is finished are not very useful. This disadvantage too can be mitigated thanks to the proxy-pipe.

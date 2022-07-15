@@ -37,7 +37,7 @@ While I did not yet prepare any mustard from the seeds, I can highly recommend i
 
 Another thing I planted was some salad.
 The reason herefore was, that the place where I got my mustard seeds from, had a minimum value I had to order for.
-The two salads I chose where Rocket, and [Black Hawk](https://www.zollinger.bio/de/products/300-schnittsalat-pflucksalat-black-hawk).
+The two salads I chose where Rocket, and [Black Hawk](https://www.zollinger.bio/de/shop/32060-black-hawk-1182#attr=1745).
 Salad was my choice as I thought they would not have any problem to grow in a balcony box.
 Well, I was partially wrong: the Rocket was a disappointment in size, I could not harvest any one leaf.
 The Black Hawk salad on the other hand grew very well.

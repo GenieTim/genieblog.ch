@@ -47,7 +47,7 @@ How does this way work now? The keyboard input is provided by the method com.bad
 		}
 
 So we are pretty close to the goal - we need Input.Keys.??? adjust so that the keyboard asks for the key we selected. 
-A list with the different Input.Keys.* can be found here: [http://libgdx.badlogicgames.com/nightlies/docs/api/com/badlogic/gdx/Input.Keys.html](http://libgdx.badlogicgames.com/nightlies/docs/api/com/badlogic/gdx/Input.Keys.html)
+A list with the different Input.Keys.* can be found here: [https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/Input.Keys.html](http://web.archive.org/web/20210506154912/https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/Input.Keys.html)
 
 ### The solution
 
