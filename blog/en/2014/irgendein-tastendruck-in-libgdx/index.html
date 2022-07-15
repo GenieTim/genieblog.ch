@@ -43,7 +43,7 @@ But which ones?</p><h2>Keyboard input in libGDX</h2><p>In general, keyboard inpu
                 <span class="hljs-comment">// do what you want – enter was pressed</span>
     }
 </code></pre><p>So we are pretty close to the goal - we need Input.Keys.??? adjust so that the keyboard asks for the key we selected. 
-A list with the different Input.Keys.* can be found here: <a href="http://libgdx.badlogicgames.com/nightlies/docs/api/com/badlogic/gdx/Input.Keys.html">http://libgdx.badlogicgames.com/nightlies/docs/api/com/badlogic/gdx/Input.Keys.html</a></p><h3>The solution</h3><p>But which key do we want to use now? Exactly, everyone! It doesn't matter which key the user presses, they just want to start the game.
+A list with the different Input.Keys.* can be found here: <a href="http://web.archive.org/web/20210506154912/https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/Input.Keys.html">https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/Input.Keys.html</a></p><h3>The solution</h3><p>But which key do we want to use now? Exactly, everyone! It doesn't matter which key the user presses, they just want to start the game.
 Luckily, since we definitely don't want to have an eternally long switch à la <code>if (right or left or bla or bla ...)</code>, there is the <strong>Any Key</strong>! ;)</p><p>This looks as follows and solves our problem extremely elegantly:</p><p><code>if (Gdx.input.isKeyPressed(Input.Keys.ANY_KEY)) {
             // YAY, a key was pressed
 }</code></p><p>And accordingly with the query for input of mobile devices:</p><p><code>if (Gdx.input.justTouched() || Gdx.input.isKeyPressed(Input.Keys.ANY_KEY)) {
