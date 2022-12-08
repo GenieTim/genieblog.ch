@@ -5,6 +5,7 @@ categories:
 cover_image: false
 canonical_url: https://www.genieblog.ch/blog/de/2021/ikea-warenkorb-zu-csv
 date: 2021-09-08 17:22:48
+updated: 2022-12-08 21:51:26
 description: false
 draft: false
 extends: _layouts.post
@@ -27,17 +28,19 @@ Dank etwas JavaScript und Developer-Console-Magie ist dies glücklicherweise lei
 Falls Sie dasselbe tun möchten und zu faul sind, den Code selbst einzutippen, hier ist er zum Kopieren und Einfügen:
 
 ```javascript
-var products = document.querySelectorAll(".product")
+var productList = document.querySelector("[class*='productList_productlist']")
+var products = productList.querySelectorAll("[class*='product_product']")
 
 var csv = "";
 for (var i = 0; i < products.length; ++i) {
   try {
-    let productName = products[i].querySelector(".product__name");
-    let productDescription = products[i].querySelector(".product_description-type");
-    let productArticleNr = products[i].querySelector(".product_description-article-number");
-    let productLink = productName.querySelector("a").href;
-    let productPrice = products[i].querySelector(".product__price-regular");
-    let productPriceTotal = products[i].querySelector(".product__total");
+    let productName = products[i].querySelector("[itemprop='name']");
+    let productDescription = products[i].querySelector("[itemprop='description']");
+    let productArticleNr = products[i].querySelector(".cart-ingka-product-identifier__value");
+    let productLink = products[i].querySelector("a").href;
+    let productDescriptionList = products[i].querySelector("ul[class*='product_descriptionList']")
+    let productPrice = productDescriptionList.children[productDescriptionList.children.length - 2];
+    let productPriceTotal = products[i].querySelector("[class*='price_total']");
     csv += productName.innerText + "; " + productDescription.innerText + "; " + productArticleNr.innerText + "; " + (productPrice ? productPrice.innerText : "") + "; " + productPriceTotal.innerText + "; " + productArticleNr.innerText + "; " + productLink + "\n";
   } catch (e) {
     console.error(e);
