@@ -31,17 +31,19 @@
         • <time datetime="2021-09-08T17:22:48+00:00" title="Date Published"
             class="dt-published">September 8, 2021</time></p><a href="https://genietim.github.io/genieblog.ch//blog/en/categories/javascript"
         title="View posts in JavaScript" class="category-tag p-category">JavaScript</a><div class="border-b border-secondary text-base e-content" v-pre><p>Some time ago, I ordered online in Ikea. As some of the stuff was not to be paid by me, I wanted a list of everything I bought, preferrably immediately available in Excel.
-Thanks to some JavaScript and Developer Console magic, this is thankfully easily possible.</p><p>In case you want to do the same and are too lazy to type the code yourself, here it is for copy-pasting:</p><pre><code class="language-javascript"><span class="hljs-keyword">var</span> products = <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">".product"</span>)
+Thanks to some JavaScript and Developer Console magic, this is thankfully easily possible.</p><p>In case you want to do the same and are too lazy to type the code yourself, here it is for copy-pasting:</p><pre><code class="language-javascript"><span class="hljs-keyword">var</span> productList = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">"[class*='productList_productlist']"</span>)
+<span class="hljs-keyword">var</span> products = productList.querySelectorAll(<span class="hljs-string">"[class*='product_product']"</span>)
 
 <span class="hljs-keyword">var</span> csv = <span class="hljs-string">""</span>;
 <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; products.length; ++i) {
   <span class="hljs-keyword">try</span> {
-    <span class="hljs-keyword">let</span> productName = products[i].querySelector(<span class="hljs-string">".product__name"</span>);
-    <span class="hljs-keyword">let</span> productDescription = products[i].querySelector(<span class="hljs-string">".product_description-type"</span>);
-    <span class="hljs-keyword">let</span> productArticleNr = products[i].querySelector(<span class="hljs-string">".product_description-article-number"</span>);
-    <span class="hljs-keyword">let</span> productLink = productName.querySelector(<span class="hljs-string">"a"</span>).href;
-    <span class="hljs-keyword">let</span> productPrice = products[i].querySelector(<span class="hljs-string">".product__price-regular"</span>);
-    <span class="hljs-keyword">let</span> productPriceTotal = products[i].querySelector(<span class="hljs-string">".product__total"</span>);
+    <span class="hljs-keyword">let</span> productName = products[i].querySelector(<span class="hljs-string">"[itemprop='name']"</span>);
+    <span class="hljs-keyword">let</span> productDescription = products[i].querySelector(<span class="hljs-string">"[itemprop='description']"</span>);
+    <span class="hljs-keyword">let</span> productArticleNr = products[i].querySelector(<span class="hljs-string">".cart-ingka-product-identifier__value"</span>);
+    <span class="hljs-keyword">let</span> productLink = products[i].querySelector(<span class="hljs-string">"a"</span>).href;
+    <span class="hljs-keyword">let</span> productDescriptionList = products[i].querySelector(<span class="hljs-string">"ul[class*='product_descriptionList']"</span>)
+    <span class="hljs-keyword">let</span> productPrice = productDescriptionList.children[productDescriptionList.children.length - <span class="hljs-number">2</span>];
+    <span class="hljs-keyword">let</span> productPriceTotal = products[i].querySelector(<span class="hljs-string">"[class*='price_total']"</span>);
     csv += productName.innerText + <span class="hljs-string">"; "</span> + productDescription.innerText + <span class="hljs-string">"; "</span> + productArticleNr.innerText + <span class="hljs-string">"; "</span> + (productPrice ? productPrice.innerText : <span class="hljs-string">""</span>) + <span class="hljs-string">"; "</span> + productPriceTotal.innerText + <span class="hljs-string">"; "</span> + productArticleNr.innerText + <span class="hljs-string">"; "</span> + productLink + <span class="hljs-string">"\n"</span>;
   } <span class="hljs-keyword">catch</span> (e) {
     <span class="hljs-built_in">console</span>.error(e);
