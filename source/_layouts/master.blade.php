@@ -54,15 +54,14 @@
 
     @if ($page->production)
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55658858-3"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55658858-3"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'UA-55658858-3');
-    </script>
-
+    </script> -->
     @endif
 
     <link rel="stylesheet" href="{{$page->baseUrl}}{{ mix('css/main.css', 'assets/build') }}">

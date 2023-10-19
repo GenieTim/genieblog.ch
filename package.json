@@ -11,7 +11,7 @@
     },
     "devDependencies": {
         "@vue/compiler-sfc": "^3.3.4",
-        "axios": "^1.4.0",
+        "axios": "^1.5.1",
         "browser-sync": "^2.29.3",
         "browser-sync-webpack-plugin": "^2.3.0",
         "copy-webpack-plugin": "^11.0.0",
@@ -20,9 +20,9 @@
         "extra-watch-webpack-plugin": "^1.0.3",
         "fuse.js": "^6.6.2",
         "hasbin": "^1.2.3",
-        "inquirer": "^9.2.7",
+        "inquirer": "^9.2.11",
         "instantclick": "^3.1.0-2",
-        "jimp": "^0.22.8",
+        "jimp": "^0.22.10",
         "js-yaml": "^4.1.0",
         "laravel-mix": "^6.0.49",
         "laravel-mix-jigsaw": "^2.1.1",
@@ -34,18 +34,18 @@
         "postcss-css-variables": "^0.19.0",
         "resolve-url-loader": "^5.0.0",
         "responsive-loader": "^3.1.2",
-        "sass": "^1.63.6",
+        "sass": "^1.69.4",
         "sass-loader": "^13.3.2",
-        "tailwindcss": "^3.3.2",
+        "tailwindcss": "^3.3.3",
         "tmp": "^0.2.1",
         "vue": "^3.3.4",
-        "vue-loader": "^17.2.2",
+        "vue-loader": "^15.11.1",
         "vue-template-compiler": "^2.7.14",
         "workbox-webpack-plugin": "^7.0.0",
-        "yaml": "^2.3.1",
+        "yaml": "^2.3.3",
         "yargs": "^17.7.2"
     },
     "dependencies": {
-        "date-and-time": "^3.0.2"
+        "date-and-time": "^3.0.3"
     }
 }
