@@ -3,12 +3,26 @@
     <title>genieblog.ch</title>
     <link href="https://genietim.github.io/genieblog.ch/" />
     <link type="application/atom+xml" rel="self" href="https://genietim.github.io/genieblog.ch/blog/en/feed.en.atom" />
-    <updated>2023-11-10T13:57:53+00:00</updated>
+    <updated>2023-11-28T06:14:51+00:00</updated>
     <id>https://genietim.github.io/genieblog.ch/blog/en/feed.en.atom</id>
     <author>
         <name>Tim Bernhard</name>
     </author>
                 <entry>
+    <id>https://genietim.github.io/genieblog.ch/blog/en/2023/a-working-netatalk-setup-on-debian-12</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/en/2023/a-working-netatalk-setup-on-debian-12" />
+    <title>A working Netatalk Setup on Debian 12</title>
+    <published>2023-11-28T07:12:24+00:00</published>
+    <updated>2023-11-28T07:12:24+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">This is one more of the &quot;notes for my future self&quot; posts.
+
+This weekend, I invested time (apart from baking christmas cookies) to migrate my backup server away from Samba to Netatalk. I had particular problems with the setup of the configuration such......</summary>
+    
+</entry>
+            <entry>
     <id>https://genietim.github.io/genieblog.ch/blog/en/2021/my-path-to-making-my-pc-ready-for-windows-11</id>
     <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/en/2021/my-path-to-making-my-pc-ready-for-windows-11" />
     <title>My Path to Making My PC Ready for Windows 11</title>
