@@ -20,7 +20,6 @@
         "extra-watch-webpack-plugin": "^1.0.3",
         "fuse.js": "^7.0.0",
         "hasbin": "^1.2.3",
-        "inquirer": "^9.2.12",
         "instantclick": "^3.1.0-2",
         "jimp": "^0.22.10",
         "js-yaml": "^4.1.0",
@@ -46,6 +45,7 @@
         "yargs": "^17.7.2"
     },
     "dependencies": {
+        "@inquirer/prompts": "^3.3.0",
         "date-and-time": "^3.0.3"
     }
 }
