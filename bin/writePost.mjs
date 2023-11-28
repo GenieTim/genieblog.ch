@@ -1,34 +1,36 @@
 #!/usr/bin/env node
 
-const dateTime = require('date-and-time');
-const fs = require("fs");
-const inquirer = require('inquirer');
-const markdownTranslate = require('markdown-translator')
-const path = require("path");
-const tmp = require('tmp');
-const yaml = require('js-yaml');
+import dateTime from 'date-and-time';
+import fs from 'fs';
+import { input, rawlist, editor } from '@inquirer/prompts';
+import markdownTranslate from "markdown-translator";
+import path from "path";
+import tmp from "tmp";
+import yaml from 'js-yaml';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+
+const __dirname = path.dirname(__filename);
+
 const subscriptionKey = getSubscriptionKey();
 
 (async () => {
-  const languages = getLanguages();
-  inquirer.prompt([
-    {
-      type: "list",
-      name: "language",
+  try {
+    const languages = getLanguages();
+    let answers = {}
+    answers.language = await rawlist({
       message: "Which language will you write in?",
-      choices: languages
-    }, {
-      type: "input",
-      name: "title",
+      choices: languages.map(language => { return { name: language, value: language } })
+    })
+    answers.title = await input({
       message: "What is the title of the post?"
-    },
-    {
-      type: "editor",
-      name: "content",
+    })
+    answers.content = await editor({
       message: "Enter the content of the post in the editor",
       postfix: ".md"
-    }
-  ]).then(async answers => {
+    })
+
     // potential improvement: read from e.g. git config in case I get an extra author one day
     const author = "Tim Bernhard";
     const date = new Date();
@@ -55,7 +57,7 @@ const subscriptionKey = getSubscriptionKey();
     }
 
     // finally, save results
-    for (language in posts) {
+    for (let language in posts) {
       let fileTarget = getFileName(language, date, posts[language].slug)
       try {
         fs.mkdirSync(path.dirname(fileTarget), { recursive: true });
@@ -64,12 +66,12 @@ const subscriptionKey = getSubscriptionKey();
       }
       fs.writeFileSync(fileTarget, getFileContent(author, date, language, posts), { encoding: "utf8" });
     }
-  }).catch(error => {
+  } catch (error) {
     // on error, log everything to prevent work loss
     console.error(error);
     console.log(posts);
     console.log(answers);
-  });
+  }
 })()
 
 // -- MARK: Helper functions
@@ -79,6 +81,7 @@ const subscriptionKey = getSubscriptionKey();
 function getLanguages() {
   let fileContents = fs.readFileSync(__dirname + '/../global-config.yaml', 'utf8');
   let data = yaml.load(fileContents);
+  console.log(data);
   return data.languages;
 }
 
