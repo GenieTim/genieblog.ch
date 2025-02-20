@@ -3,7 +3,7 @@
 module.exports = {
   postcssOptions: {
     plugins: [
-      require('tailwindcss'),
+      require('@tailwindcss/postcss'),
       require('postcss-css-variables')({
         preserve: true
       })

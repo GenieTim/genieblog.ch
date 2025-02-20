@@ -9,8 +9,8 @@ const ImageBuildPlugin = require("./tasks/ImageBuildPlugin");
 mix.disableSuccessNotifications();
 mix.setPublicPath("source/assets/build/");
 mix.options({
-    production: process.env.WEBPACK_ENV === "production"
-})
+  production: process.env.WEBPACK_ENV === "production",
+});
 mix.webpackConfig({
   plugins: [
     new ImageBuildPlugin({
@@ -31,25 +31,13 @@ mix.webpackConfig({
 });
 
 mix
+  .jigsaw()
   .js("source/_assets/js/main.js", "js")
-  .vue()
-  .sass("source/_assets/sass/main.scss", "css/main.css")
-  .jigsaw({
-    watch: [
-      "config.php",
-      "source/**/*.md",
-      "source/**/*.php",
-      "source/**/*.scss",
-    ],
-  })
+  .sass("source/_assets/sass/main.scss", "css/main.css", {}, [
+    require("@tailwindcss/postcss"),
+  ])
   .options({
     processCssUrls: false,
-    postCss: [
-      require("tailwindcss"),
-      // require('postcss-css-variables')({
-      //     preserve: true
-      // })
-    ],
   })
   .purgeCss({
     content: [
@@ -60,6 +48,10 @@ mix
       "source/**/*.vue",
     ],
     safelist: { deep: [/language/, /hljs/, /mce/, /^hljs-.*/] },
+  })
+  .browserSync({
+    server: "build_local",
+    files: ["build_local/**"],
   })
   .sourceMaps()
   .version();

@@ -3,7 +3,7 @@
 @media (max-width: theme('screens.lg')) {
   .nav-menu {
     @apply absolute;
-    @apply bg-primary-complement-shade;
+    background-color: var(--color-primary-complement-shade);
     @apply inset-x-0;
     @apply pb-2;
     @apply pt-6;
@@ -12,7 +12,7 @@
     @apply w-auto;
     top: theme('spacing.24');
     @apply border-b-2;
-    @apply border-primary;
+    border-color: var(--color-primary);
   }
 
   .nav-menu__item {
@@ -20,15 +20,15 @@
     @apply no-underline;
     @apply mb-4;
     @apply mt-0;
-    @apply text-primary-shade;
+    color: var(--color-primary-shade);
     @apply border-b;
-    @apply border-primary;
+    border-color: var(--color-primary);
   }
 }
 
 .turbolinks-progress-bar,
 #instantclick-bar {
-  @apply bg-primary;
+  background-color: var(--color-primary);
 }
 
 .sr-only {
@@ -48,7 +48,7 @@ button#menu-toggle {
 
   div {
     @apply rounded;
-    @apply bg-primary-complement;
+    background-color: var(--color-primary-complement);
     border: $border_size solid var(--color-primary-complement);
     display: block;
     height: 0px;

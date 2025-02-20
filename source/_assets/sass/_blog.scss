@@ -1,4 +1,5 @@
 // Your custom blog styles here
+@import "tailwindcss";
 
 // CSS Vars
 :root {
@@ -56,11 +57,11 @@
 }
 
 .alert {
-  @apply bg-primary;
+  background-color: var(--color-primary);
   @apply my-4;
   @apply p-3;
   @apply rounded;
-  @apply text-primary-complement-shade;
+  color: var(--color-primary-complement-shade);
 
   &::before {
     content: 'Note: ';
@@ -69,13 +70,13 @@
   }
 
   a {
-    @apply text-primary-complement;
+    color: var(--color-primary-complement);
     @apply underline;
   }
 }
 
 .category-tag {
-  @apply bg-secondary-complement;
+  background-color: var(--color-secondary-complement);
   @apply font-semibold;
   @apply inline-block;
   @apply leading-loose;
@@ -83,14 +84,14 @@
   @apply pt-px;
   @apply px-3;
   @apply rounded;
-  @apply text-secondary-shade;
+  color: var(--color-secondary-shade);
   @apply text-xs;
   @apply tracking-wide;
   @apply uppercase;
 
   &:hover {
-    @apply bg-secondary;
-    @apply text-secondary-complement;
+    background-color: var(--color-secondary);
+    color: var(--color-secondary-complement);
   }
 }
 
@@ -125,8 +126,8 @@
   }
 
   .circuit {
-    @apply bg-primary-complement;
-    @apply text-primary-shade;
+    background-color: var(--color-primary-complement);
+    color: var(--color-primary-shade);
     text-shadow: var(--color-primary-complement) 2px 2px;
     background-image: url('/assets/img/circuit-board.svg');
     text-align: left;
@@ -141,8 +142,8 @@
   }
 
   .split {
-    @apply bg-primary-shade;
-    @apply text-primary-complement;
+    background-color: var(--color-primary-shade);
+    color: var(--color-primary-complement);
     text-shadow: var(--color-primary) 2px 2px;
     text-align: center;
     z-index: 2;
@@ -159,8 +160,8 @@
   }
 
   .graphene {
-    @apply bg-primary-complement;
-    @apply text-primary-shade;
+    background-color: var(--color-primary-complement);
+    color: var(--color-primary-shade);
     text-shadow: var(--color-primary-complement) 2px 2px;
     background-image: url('/assets/img/graphene.svg');
     text-align: right;

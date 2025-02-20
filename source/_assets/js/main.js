@@ -23,24 +23,13 @@ const InstantClick = require("instantclick");
  * Search functionality
  */
 window.axios = require("axios");
-// import { createApp } from 'vue';
-import Vue from "vue";
-Vue.config.productionTip = false;
-import Search from "./components/Search.vue";
+import Alpine from "alpinejs";
+import Fuse from "fuse.js";
 
-function initializeVue() {
-  // console.log(Vue);
-  // createApp({
-  //     components: {
-  //         Search,
-  //     },
-  // }).mount('#vue-search');
-  new Vue({
-    components: {
-      Search,
-    },
-  }).$mount("#vue-search");
-}
+window.Fuse = Fuse;
+window.Alpine = Alpine;
+
+Alpine.start();
 
 /**
  * Register events of InstantClick
@@ -55,7 +44,7 @@ InstantClick.on("change", function() {
   }
   // (re)-initialize search
   try {
-    initializeVue();
+    Alpine.start();
   } catch (e) {
     console.log(e);
   }

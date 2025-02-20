@@ -3,7 +3,7 @@ title: Blog posts
 pagination:
   collection: posts_en
   perPage: 16
-extends: _layouts.master
+extends: _layouts.main
 ---
 
 @push('meta')
