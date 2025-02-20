@@ -1,5 +1,5 @@
 ---
-extends: _layouts.master
+extends: _layouts.main
 language: en
 ---
 

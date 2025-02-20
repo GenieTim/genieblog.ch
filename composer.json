@@ -1,11 +1,11 @@
 {
     "require": {
-        "tightenco/jigsaw": "^v1.3.27",
-        "tightenco/jigsaw-blog-template": "^v1.0.14",
+        "tightenco/jigsaw": "^v1.7.4",
+        "tightenco/jigsaw-blog-template": "^v1.4.0",
         "samdark/sitemap": "^2.2.1",
-        "illuminate/translation": "^v7.0.0",
+        "illuminate/translation": "^11.43.2",
         "scrivo/highlight.php": "^v9.18.1.1",
-        "symfony/yaml": "^v5.1.0"
+        "symfony/yaml": "^v7.2.3"
     },
     "autoload": {
         "psr-4": {

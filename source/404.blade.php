@@ -1,4 +1,4 @@
-@extends('_layouts.master')
+@extends('_layouts.main')
 
 @section('body')
     <div class="flex flex-col items-center text-primary-shade bg-primary-complement mt-32">

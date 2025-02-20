@@ -1,4 +1,4 @@
-@extends('_layouts.master')
+@extends('_layouts.main')
 
 @section('body')
 <script>
@@ -7,18 +7,18 @@
   }
 
   var language = window.navigator.userLanguage || window.navigator.language;
-    var languages = [
-      @foreach ($page->languages as $lang)
-        "{{$lang}}",
-      @endforeach
-    ];
-    languages.forEach(lanTest => {
-      if (language.includes(lanTest)) {
-        window.location.replace(getUrl(lanTest));
-      }
-    });
-    // language is not a supported one – use the default:
-    window.location.replace(getUrl("{{$page->language}}"));
+  var languages = [
+    @foreach($page->languages as $lang)
+    "{{$lang}}",
+    @endforeach
+  ];
+  languages.forEach(lanTest => {
+    if (language.includes(lanTest)) {
+      window.location.replace(getUrl(lanTest));
+    }
+  });
+  // language is not a supported one – use the default:
+  window.location.replace(getUrl("{{$page->language}}"));
 </script>
 
 <p>Wenn Sie nicht automatisch weitergeleitet werden, wählen Sie hier Ihre Sprache:</p>

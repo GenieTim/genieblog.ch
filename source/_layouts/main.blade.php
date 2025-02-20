@@ -13,9 +13,10 @@
     <meta property="og:url" content="{{ $page->getUrl() }}" />
     <meta property="og:description" content="{{ $page->siteDescription }}" />
 
-    {{-- <base href="{{$page->baseUrl}}" /> --}}
+    {{--
+    <base href="{{$page->baseUrl}}" /> --}}
 
-    <title>{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}</title>
+    <title>{{ $page->title ? $page->title . ' | ' : '' }}{{ $page->siteName }}</title>
 
     <link rel="home" href="{{ $page->baseUrl }}">
 
@@ -90,7 +91,7 @@
             </div>
 
             <div id="vue-search" class="flex flex-1 justify-end items-center">
-                <search></search>
+                @include('_components.search')
             </div>
 
             <button
@@ -206,8 +207,8 @@
         <div class="container p-1 flex flex-wrap flex-col sm:flex-row width-100">
             <ul class="flex flex-col md:flex-row justify-center list-none md:justify-start md:w-auto mt-2 mb-2">
                 <li class="md:mr-2">
-                    <a href="{{$page->baseUrl}}/pages/{{$page->language}}/imprint"
-                        title="Read the imprint/impressum">{{ $page->translate('master.copyright.imprint') }}</a>.
+                    <a href="{{$page->baseUrl}}/pages/{{$page->language}}/imprint" title="Read the imprint/impressum">{{
+                        $page->translate('master.copyright.imprint') }}</a>.
                 </li>
 
                 <li class="md:mr-2 lang-selection">
