@@ -9,8 +9,8 @@ title: Spotlight and Bing
 wordpress_id: 187
 categories:
   - "Cortana vs. Siri"
-  - Bing 
-  - Cortana 
+  - Bing
+  - Cortana
   - Spotlight
 post_format: -Quote
 draft: false
@@ -25,4 +25,4 @@ cover_image: false
 <blockquote>Spotlight auf Mac funktioniert mit Bing, wie Cortana!</blockquote>
 
 Naja, nicht mehr wirklich, leider.
-Dieser witzige Trivia-Fakt gilt seit dem [25.9.2017](http://www.maclife.de/news/apple-wirft-bing-siri-spotlight-10096137.html) leider nicht mehr.
+Dieser witzige Trivia-Fakt gilt seit dem [25.9.2017](https://techcrunch.com/2017/09/25/apple-switches-from-bing-to-google-for-siri-web-search-results-on-ios-and-spotlight-on-mac/) leider nicht mehr.

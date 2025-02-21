@@ -35,7 +35,7 @@ Der Preis von CHF 1.- ist jedoch vergleichsweise sehr tief, so dass diese Kosten
 
 Wie viele Punkte haben Sie erreicht? Schreiben Sie die Antwort in die Kommentare!
 
-[![Get it in the App Store](https://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg)](https://web.archive.org/web/20190119012147/https://itunes.apple.com/us/app/ispacemaster/id993483077?mt=8&ign-mpt=uo%3D4)
+[![Get it in the App Store](https://genieblog.ch/assets/images/download-on-the-app-store/de/Download_on_the_App_Store_Badge_DE_RGB_blk_092917.svg)](https://web.archive.org/web/20190119012147/https://itunes.apple.com/us/app/ispacemaster/id993483077?mt=8&ign-mpt=uo%3D4)
 
 [![Get it on Google Play](https://developer.android.com/images/brand/de_generic_rgb_wo_45.png)](https://web.archive.org/web/20160130020950/https://play.google.com/store/apps/details?id=ch.genieblog.android)
 

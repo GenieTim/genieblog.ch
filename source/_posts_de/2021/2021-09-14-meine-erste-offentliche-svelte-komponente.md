@@ -172,4 +172,4 @@ let end; // the index of the last visible item
 Achten Sie auf die `role` Attribute: Diese werden dringend empfohlen, wenn Sie möchten, dass sich die Tabelle auch in Kontexten der Barrierefreiheit als eine solche verhält.
 Während dies für gewöhnliche Tabellen nicht unbedingt erforderlich ist, ist dies hier leider erforderlich, weil `display: block` auf das table-Element angewendet wird ([siehe Development Notes](https://github.com/BernhardWebstudio/svelte-virtual-table#development-notes)).
 
-Eine Beispiel-App finden Sie in der [GitHub-Repo](https://github.com/BernhardWebstudio/svelte-virtual-table/tree/main/example-app).
+Eine Beispiel-App finden Sie im [GitHub-Repo](https://github.com/BernhardWebstudio/svelte-virtual-table/).
