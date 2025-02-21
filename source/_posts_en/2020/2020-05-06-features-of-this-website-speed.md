@@ -109,6 +109,6 @@ This is due to the premature loading of the targets of any links: even before vi
 
 ## Sources
 
-Inspiration for the serverside code-formatting was [Stefan Zweifel](https://stefanzweifel.io/posts/server-side-syntax-highlighting-with-jigsaw/).
+Inspiration for the serverside code-formatting was [Stefan Zweifel](https://stefanzweifel.dev/posts/2019/03/10/server-side-syntax-highlighting-with-jigsaw/).
 
 Photo by [Christian Englmeier](https://unsplash.com/@christianem?utm_source=unsplash&utm_medium=referral&utm_content=credit) on [Unsplash](https://unsplash.com/s/photos/speed?utm_source=unsplash&utm_medium=referral&utm_content=credit)

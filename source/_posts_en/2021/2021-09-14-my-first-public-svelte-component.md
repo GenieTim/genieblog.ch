@@ -172,4 +172,4 @@ let end; // the index of the last visible item
 Pay attention to the `role` attributes: those are highly recommended if you want to have the table behave as such also in accessibility contexts.
 While this is not necessarily needed for ordinary tables, this one is required to use `display: block` on the table element ([see Development Notes](https://github.com/BernhardWebstudio/svelte-virtual-table#development-notes)), which in turn makes these role attributes necessary, still.
 
-You can find an example-app in the [GitHub Repo](https://github.com/BernhardWebstudio/svelte-virtual-table/tree/main/example-app).
+You can find an example-app in the [GitHub Repo](https://github.com/BernhardWebstudio/svelte-virtual-table/).

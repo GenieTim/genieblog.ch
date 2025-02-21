@@ -26,7 +26,7 @@ class HighlightCodeSyntax
 
   /**
    * Apply Syntax Highlighting on a string
-   * Adabted from https://stefanzweifel.io/posts/server-side-syntax-highlighting-with-jigsaw/ 
+   * Adabted from https://stefanzweifel.dev/posts/2019/03/10/server-side-syntax-highlighting-with-jigsaw/ 
    * Adapted from https://github.com/S1SYPHOS/kirby-highlight/blob/master/core/syntax_highlight.php
    * @param  string $value
    * @return string

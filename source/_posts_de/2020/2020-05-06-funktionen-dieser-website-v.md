@@ -108,6 +108,6 @@ Dies durch verfrühtes Laden der Ziele jeglicher Links: noch bevor Besuchende di
 
 ## Quellen
 
-Inspiration für die serverseitige Code-Formatierung kam von [Stefan Zweifel](https://stefanzweifel.io/posts/server-side-syntax-highlighting-with-jigsaw/).
+Inspiration für die serverseitige Code-Formatierung kam von [Stefan Zweifel](https://stefanzweifel.dev/posts/2019/03/10/server-side-syntax-highlighting-with-jigsaw/).
 
 Foto von [Christian Englmeier](https://unsplash.com/@christianem?utm_source=unsplash&utm_medium=referral&utm_content=credit) auf [Unsplash](https://unsplash.com/s/photos/speed?utm_source=unsplash&utm_medium=referral&utm_content=credit).
