@@ -26,6 +26,9 @@ window.axios = require("axios");
 import Alpine from "alpinejs";
 import Fuse from "fuse.js";
 
+import highlight from "./highlight_search";
+window.highlight_search = highlight;
+
 window.Fuse = Fuse;
 window.Alpine = Alpine;
 
@@ -35,7 +38,7 @@ Alpine.start();
  * Register events of InstantClick
  */
 
-InstantClick.on("change", function() {
+InstantClick.on("change", function () {
   try {
     ga("send", "pageview", location.pathname + location.search);
   } catch (e) {
