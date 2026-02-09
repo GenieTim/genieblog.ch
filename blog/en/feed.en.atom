@@ -3,12 +3,58 @@
     <title>genieblog.ch</title>
     <link href="https://genietim.github.io/genieblog.ch/" />
     <link type="application/atom+xml" rel="self" href="https://genietim.github.io/genieblog.ch/blog/en/feed.en.atom" />
-    <updated>2024-03-28T16:32:09+00:00</updated>
+    <updated>2026-02-09T13:55:47+00:00</updated>
     <id>https://genietim.github.io/genieblog.ch/blog/en/feed.en.atom</id>
     <author>
         <name>Tim Bernhard</name>
     </author>
                 <entry>
+    <id>https://genietim.github.io/genieblog.ch/blog/en/2026/citeauthors-of-multiple-publications-in-latex</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/en/2026/citeauthors-of-multiple-publications-in-latex" />
+    <title>Citeauthors of Multiple Publications in LaTeX</title>
+    <published>2026-02-09T14:45:20+00:00</published>
+    <updated>2026-02-09T14:45:20+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">Here&#039;s a code snippet from my Ph.D. thesis LaTeX document.
+It&#039;s intention is to use &lt;code&gt;\citeauthor{}&lt;/code&gt; but with multiple publications, which &lt;code&gt;\citeauthor{}&lt;/code&gt; does not support.
+Additionally, if one author was part of multiple......</summary>
+    
+</entry>
+            <entry>
+    <id>https://genietim.github.io/genieblog.ch/blog/en/2026/some-latex-tipps-tricks-from-my-thesis</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/en/2026/some-latex-tipps-tricks-from-my-thesis" />
+    <title>Some LaTeX Tipps &amp; Tricks from my thesis</title>
+    <published>2026-02-09T14:37:23+00:00</published>
+    <updated>2026-02-09T14:37:23+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">In the following, I will discuss some LaTeX tips and tools that I found useful while writing my Ph.D. thesis. Most of these are small quality-of-life improvements that add up over the course of a long project.
+
+
+Use version control early: I used Git to......</summary>
+    
+</entry>
+            <entry>
+    <id>https://genietim.github.io/genieblog.ch/blog/en/2026/tools-i-wanted-to-investigate-during-my-phd-but-did-not</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/en/2026/tools-i-wanted-to-investigate-during-my-phd-but-did-not" />
+    <title>Tools I wanted to investigate during my PhD (but did not)</title>
+    <published>2026-02-09T13:39:45+00:00</published>
+    <updated>2026-02-09T13:39:45+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">I recently finished my Ph.D. in the Materials Department at ETH Zürich.
+My research focused on predicting macroscopic polymer properties from network structure and synthesis procedures.
+Most of my time was spent on
+
+
+molecular dynamics (MD) simulations......</summary>
+    
+</entry>
+            <entry>
     <id>https://genietim.github.io/genieblog.ch/blog/en/2023/a-working-netatalk-setup-on-debian-12</id>
     <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/en/2023/a-working-netatalk-setup-on-debian-12" />
     <title>A working Netatalk Setup on Debian 12</title>

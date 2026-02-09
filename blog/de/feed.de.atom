@@ -3,12 +3,52 @@
     <title>genieblog.ch</title>
     <link href="https://genietim.github.io/genieblog.ch/" />
     <link type="application/atom+xml" rel="self" href="https://genietim.github.io/genieblog.ch/blog/de/feed.de.atom" />
-    <updated>2024-03-28T16:32:09+00:00</updated>
+    <updated>2026-02-09T13:55:47+00:00</updated>
     <id>https://genietim.github.io/genieblog.ch/blog/de/feed.de.atom</id>
     <author>
         <name>Tim Bernhard</name>
     </author>
                 <entry>
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2026/zitatautoren-mehrerer-publikationen-in-latex</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2026/zitatautoren-mehrerer-publikationen-in-latex" />
+    <title>Zitatautoren mehrerer Publikationen in LaTeX</title>
+    <published>2026-02-09T14:45:20+00:00</published>
+    <updated>2026-02-09T14:45:20+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">Hier ist ein Code-Ausschnitt aus meinem LaTeX-Dokument meiner Doktorarbeit.
+Die Absicht ist es, &lt;code&gt;\citeauthor{}&lt;/code&gt; zu verwenden, aber mit mehreren Publikationen. Das ist etwas, das &lt;code&gt;\citeauthor{}&lt;/code&gt; nicht unterstützt.
+Außerdem sollten......</summary>
+    
+</entry>
+            <entry>
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2026/einige-latex-tipps-und-tricks-aus-meiner-dissertation</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2026/einige-latex-tipps-und-tricks-aus-meiner-dissertation" />
+    <title>Einige LaTeX-Tipps und Tricks aus meiner Dissertation</title>
+    <published>2026-02-09T14:37:23+00:00</published>
+    <updated>2026-02-09T14:37:23+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">Im Folgenden werde ich einige LaTeX-Tipps und Werkzeuge besprechen, die ich beim Schreiben meiner Doktorarbeit nützlich fand. Die meisten davon sind kleine Verbesserungen der Lebensqualität, die sich im Laufe eines langen Projekts summieren.......</summary>
+    
+</entry>
+            <entry>
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2026/werkzeuge-die-ich-wahrend-meiner-promotion-untersuchen-wollte-aber-nicht-getan-habe</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2026/werkzeuge-die-ich-wahrend-meiner-promotion-untersuchen-wollte-aber-nicht-getan-habe" />
+    <title>Werkzeuge, die ich während meiner Promotion untersuchen wollte (aber nicht getan habe)</title>
+    <published>2026-02-09T13:39:45+00:00</published>
+    <updated>2026-02-09T13:39:45+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">Ich habe kürzlich meine Promotion im Fachbereich Materialwesen an der ETH Zürich abgeschlossen.
+Meine Forschung konzentrierte sich auf die Vorhersage makroskopischer Polymereigenschaften anhand von Netzwerkstrukturen und Syntheseverfahren.
+Die meiste......</summary>
+    
+</entry>
+            <entry>
     <id>https://genietim.github.io/genieblog.ch/blog/de/2023/ein-funktionierendes-netatalk-setup-unter-debian-12</id>
     <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2023/ein-funktionierendes-netatalk-setup-unter-debian-12" />
     <title>Ein funktionierendes Netatalk-Setup unter Debian 12</title>
