@@ -1,6 +1,8 @@
 ---
 author: Tim Bernhard
-categories: LaTeX, Python
+categories: 
+  - LaTeX
+  - Python
 cover_image: false
 canonical_url: https://www.genieblog.ch/blog/en/2026/citeauthors-of-multiple-publications-in-latex
 date: 2026-02-09 14:45:20

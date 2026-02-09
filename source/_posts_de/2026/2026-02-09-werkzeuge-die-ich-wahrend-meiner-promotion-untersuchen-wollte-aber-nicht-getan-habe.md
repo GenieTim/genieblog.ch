@@ -1,6 +1,9 @@
 ---
 author: Tim Bernhard
-categories: Studies, Tools, Idea
+categories:
+  - Studium
+  - Tools
+  - Idee
 cover_image: false
 canonical_url: https://www.genieblog.ch/blog/de/2026/werkzeuge-die-ich-wahrend-meiner-promotion-untersuchen-wollte-aber-nicht-getan-habe
 date: 2026-02-09 13:39:45

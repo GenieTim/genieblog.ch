@@ -1,6 +1,9 @@
 ---
 author: Tim Bernhard
-categories: Studium, LaTeX, Python
+categories: 
+  - Studium
+  - LaTeX
+  - Python
 cover_image: false
 canonical_url: https://www.genieblog.ch/blog/de/2026/einige-latex-tipps-und-tricks-aus-meiner-dissertation
 date: 2026-02-09 14:37:23
