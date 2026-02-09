@@ -10,6 +10,7 @@ mix.disableSuccessNotifications();
 mix.setPublicPath("source/assets/build/");
 mix.options({
   production: process.env.WEBPACK_ENV === "production",
+  cssNano: false,
 });
 mix.webpackConfig({
   plugins: [

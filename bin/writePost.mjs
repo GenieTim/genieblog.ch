@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import dateTime from 'date-and-time';
+import * as dateTime from 'date-and-time';
 import fs from 'fs';
 import { input, rawlist, editor } from '@inquirer/prompts';
 import markdownTranslate from "markdown-translator";

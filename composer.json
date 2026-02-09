@@ -3,7 +3,7 @@
         "tightenco/jigsaw": "^v1.7.4",
         "tightenco/jigsaw-blog-template": "^v1.4.0",
         "samdark/sitemap": "^2.2.1",
-        "illuminate/translation": "^11.43.2",
+        "illuminate/translation": "^12.50",
         "scrivo/highlight.php": "^v9.18.1.1",
         "symfony/yaml": "^v7.2.3"
     },

@@ -20,13 +20,12 @@ Mein Name ist Tim Bernhard, geboren bin ich am 2. August 1996.
 Ich besuchte die Kantonsschule in Wiedikon und schloss diese im Frühling 2015 ab.
 Als Maturaarbeit habe ich meine Leidenschaft für programmiertechnische Projekte mit Hoffnungen für die Zukunft verbunden und das Unternehmen [_Bernhard Webstudio_](http://bernhard-webstudio.ch) gegründet.	 	
 
-Seitdem habe ich einen Bachelor in Chemieingenieurwesen an der 
-ETH Zürich abgeschlossen
-und verfolge derzeit weitere Abschlüsse in Rechnergestützten Wissenschaften, 
-ebenfalls an der ETH Zürich.
+Seitdem habe ich einen Bachelor in Chemieingenieurwesen an der ETH Zürich,
+dann einen Master in Rechnergestützten Wissenschaften an der ETH Zürich,
+und kürzlich meine Promotion im Fachbereich Materialwesen an der ETH Zürich abgeschlossen.
 
 Zögern Sie nicht mich zu kontaktieren, bei Fragen, Stellenangeboten 
-oder einfach nur eine lustige Sache, die Sie im Internet gefunden haben:
+oder einfach nur einer lustigen Sache, die Sie im Internet gefunden haben:
 
 - [E-Mail](mailto:tim@bernhard-webstudio.ch)
 - [0763655579](tel:+41763655579)
