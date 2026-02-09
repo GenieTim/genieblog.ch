@@ -1,6 +1,9 @@
 ---
 author: Tim Bernhard
-categories: Studies, Tools, Idea
+categories: 
+  - Studies
+  - Tools
+  - Idea
 cover_image: false
 canonical_url: https://www.genieblog.ch/blog/en/2026/tools-i-wanted-to-investigate-during-my-phd-but-did-not
 date: 2026-02-09 13:39:45
