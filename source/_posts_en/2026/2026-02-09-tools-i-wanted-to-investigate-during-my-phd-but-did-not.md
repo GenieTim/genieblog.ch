@@ -1,6 +1,6 @@
 ---
 author: Tim Bernhard
-categories:
+categories: Studies, Tools, Idea
 cover_image: false
 canonical_url: https://www.genieblog.ch/blog/en/2026/tools-i-wanted-to-investigate-during-my-phd-but-did-not
 date: 2026-02-09 13:39:45
@@ -37,5 +37,5 @@ Software I never investigated but was interested in
 - [TEPPP](https://www.elenipanagiotou.com/about-4): I encountered the Topological Entanglement in Polymers, Proteins and Periodic systems (TEPPP) software early in my Ph.D. I was very interested in it as a tool to analyze entanglement in polymer networks, a key factor affecting their properties. I did not explore it in depth and am still curious about its capabilities and applications—especially whether its detected entanglements are as useful as those detected by the Z1 code, and whether both could be applied as alternatives to the random entanglement sampling method I used for the MEHP Force Balance procedure and the Normal Mode Analysis.
 - [Custodian](https://materialsproject.github.io/custodian/): When running jobs such as MD simulations on Euler, I had to write scripts to generate inputs, check job status manually, and resubmit failures. I heard about Custodian, which seems like a more robust and user-friendly tool for this purpose.
 - [Ginkgo](https://github.com/ginkgo-project/ginkgo): Both the Normal Mode Analysis and the MEHP Force Balance procedure use sparse matrices to represent polymer networks. While I already apply sparse solvers where appropriate, I have not explored Ginkgo, a high-performance library for sparse linear algebra. It could improve performance for large systems.
-- Next to Ginkgo, there are many other sparse linear algebra libraries, such as [Trilinos](https://trilinos.github.io/index.html) and [Eigen](https://eigen.tuxfamily.org/). Eigen is what I used for [pylimer-tools](https://github.com/GenieTim/pylimer-tools/). I have not explored the others in depth, but they could also be worth investigating for potential performance improvements in my codes.
+- Next to Ginkgo, there are many other linear algebra libraries, such as [Armadillo](http://arma.sourceforge.net/), [Eigen](https://eigen.tuxfamily.org/), or a project from [Trilinos](https://trilinos.github.io/index.html). Eigen is what I used for [pylimer-tools](https://github.com/GenieTim/pylimer-tools/). I have not explored the others in depth, but they could also be worth investigating for potential performance improvements in my codes.
 
