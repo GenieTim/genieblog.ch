@@ -204,8 +204,8 @@
     </div>
 
     <footer class="shadow bg-primary-complement border-t mt-12 py-4 text-base" role="contentinfo">
-        <div class="container p-1 flex flex-wrap flex-col sm:flex-row width-100">
-            <ul class="flex flex-col md:flex-row justify-center list-none md:justify-start md:w-auto mt-2 mb-2">
+        <div class="container p-1 flex flex-wrap flex-col sm:flex-row width-100 m-auto">
+            <ul class="flex flex-col md:flex-row justify-center list-none md:justify-start md:w-auto mt-2 mb-2 list-none">
                 <li class="md:mr-2">
                     <a href="{{$page->baseUrl}}/pages/{{$page->language}}/imprint" title="Read the imprint/impressum">{{
                         $page->translate('master.copyright.imprint') }}</a>.
@@ -228,7 +228,7 @@
             </ul>
         </div>
         <div class="container p-1 flex flex-wrap flex-col sm:flex-row width-100">
-            <ul class="flex flex-col md:flex-row justify-center list-none md:justify-start md:w-auto mt-2 mb-2">
+            <ul class="flex flex-col md:flex-row justify-center list-none md:justify-start md:w-auto mt-2 mb-2 list-none">
                 <li class="md:mr-2">
                     &copy; <a href="{{ $page->baseUrl }}/pages/{{ $page->language }}/about#Tim+Bernhard">Tim
                         Bernhard</a>.

@@ -17,12 +17,12 @@ template: post
 title: "Citeauthors of Multiple Publications in LaTeX"
 translations:
   en: citeauthors-of-multiple-publications-in-latex
-  de: zitatautoren-mehrerer-publications-in-latex
+    de: zitatautoren-mehrerer-publikationen-in-latex
 ---
 
 Here's a code snippet from my Ph.D. thesis LaTeX document.
-It's intention is to use `\citeauthor{}` but with multiple publications, which `\citeauthor{}` does not support.
-Additionally, if one author was part of multiple publications, it should not be repeated multiple times.
+Its intention is to use `\citeauthor{}` with multiple publications, which `\citeauthor{}` does not support.
+Additionally, authors who appear in multiple publications should only be listed once.
 To achieve this, I wrote a custom command `\citeauthors` that takes a list of citation keys, extracts the unique authors, and formats them in a readable way.
 
 This is the implementation of the `\citeauthors` command (requires `python` and `lualatex`):
