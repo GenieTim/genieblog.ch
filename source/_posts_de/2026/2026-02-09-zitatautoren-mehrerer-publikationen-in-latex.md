@@ -1,6 +1,6 @@
 ---
 author: Tim Bernhard
-categories: 
+categories:
   - LaTeX
   - Python
 cover_image: false
@@ -21,9 +21,9 @@ translations:
 ---
 
 Hier ist ein Code-Ausschnitt aus meinem LaTeX-Dokument meiner Doktorarbeit.
-Die Absicht ist es, `\citeauthor{}` zu verwenden, aber mit mehreren Publikationen. Das ist etwas, das `\citeauthor{}` nicht unterstützt.
-Außerdem sollten Autoren nicht mehrfach wiederholt werden, die an mehreren Publikationen beteiligt waren.
-Um das zu erreichen, habe ich einen benutzerdefinierten Befehl geschrieben, `\citeauthors`, der eine Liste von Zitationsschlüsseln nimmt, die einzigartigen Autoren extrahiert und sie lesbar formatiert.
+Ziel ist es, `\citeauthor{}` zu verwenden, aber mit mehreren Publikationen. Das unterstützt `\citeauthor{}` nicht.
+Außerdem sollen Autoren, die an mehreren Publikationen beteiligt sind, nicht mehrfach erscheinen.
+Um das zu erreichen, habe ich einen benutzerdefinierten Befehl geschrieben: `\citeauthors`. Dieser nimmt eine Liste von Zitationsschlüsseln entgegen, extrahiert die eindeutigen Autoren und formatiert sie lesbar.
 
 Dies ist die Implementierung des `\citeauthors` Kommandos (erfordert `python` und `lualatex`):
 
@@ -53,7 +53,7 @@ end
 }
 ```
 
-Und das entsprechende `citeauthors.py` Skript, das die Zitierschlüssel verarbeitet und eindeutige Autoren extrahiert:
+Und das entsprechende `citeauthors.py` Skript, das die Zitationsschlüssel verarbeitet und eindeutige Autoren extrahiert:
 
 ```python
 #!/usr/bin/env python
