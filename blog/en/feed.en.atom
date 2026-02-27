@@ -3,12 +3,41 @@
     <title>genieblog.ch</title>
     <link href="https://genietim.github.io/genieblog.ch/" />
     <link type="application/atom+xml" rel="self" href="https://genietim.github.io/genieblog.ch/blog/en/feed.en.atom" />
-    <updated>2026-02-09T13:55:47+00:00</updated>
+    <updated>2026-02-27T06:14:21+00:00</updated>
     <id>https://genietim.github.io/genieblog.ch/blog/en/feed.en.atom</id>
     <author>
         <name>Tim Bernhard</name>
     </author>
                 <entry>
+    <id>https://genietim.github.io/genieblog.ch/blog/en/2026/some-ideas-for-papers-i-never-wrote</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/en/2026/some-ideas-for-papers-i-never-wrote" />
+    <title>Some ideas for papers I never wrote</title>
+    <published>2026-02-12T15:15:06+00:00</published>
+    <updated>2026-02-12T15:15:06+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">I fear my academic career is over, now that I have finished my Ph.D. and am no longer in a research environment.
+
+Nonetheless, there were many ideas that are worth investigating, or, for which I now have the tools but not the time to do so.
+In the......</summary>
+    
+</entry>
+            <entry>
+    <id>https://genietim.github.io/genieblog.ch/blog/en/2026/bead-spring-polymer-illustrations-in-2d</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/en/2026/bead-spring-polymer-illustrations-in-2d" />
+    <title>Bead-Spring Polymer Illustrations in 2D</title>
+    <published>2026-02-12T15:01:03+00:00</published>
+    <updated>2026-02-12T15:01:03+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">During my Ph.D., I frequently used a bead-spring model for polymer networks, which is a coarse-grained representation that captures the essential physics while being computationally efficient.
+
+Over time, we invented new methods to analyze the structure......</summary>
+    
+</entry>
+            <entry>
     <id>https://genietim.github.io/genieblog.ch/blog/en/2026/citeauthors-of-multiple-publications-in-latex</id>
     <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/en/2026/citeauthors-of-multiple-publications-in-latex" />
     <title>Citeauthors of Multiple Publications in LaTeX</title>
@@ -18,14 +47,14 @@
         <name>Tim Bernhard</name>
     </author>
     <summary type="html">Here&#039;s a code snippet from my Ph.D. thesis LaTeX document.
-It&#039;s intention is to use &lt;code&gt;\citeauthor{}&lt;/code&gt; but with multiple publications, which &lt;code&gt;\citeauthor{}&lt;/code&gt; does not support.
-Additionally, if one author was part of multiple......</summary>
+Its intention is to use &lt;code&gt;\citeauthor{}&lt;/code&gt; with multiple publications, which &lt;code&gt;\citeauthor{}&lt;/code&gt; does not support.
+Additionally, authors who appear in multiple publications should......</summary>
     
 </entry>
             <entry>
     <id>https://genietim.github.io/genieblog.ch/blog/en/2026/some-latex-tipps-tricks-from-my-thesis</id>
     <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/en/2026/some-latex-tipps-tricks-from-my-thesis" />
-    <title>Some LaTeX Tipps &amp; Tricks from my thesis</title>
+    <title>Some LaTeX Tips &amp; Tricks from my thesis</title>
     <published>2026-02-09T14:37:23+00:00</published>
     <updated>2026-02-09T14:37:23+00:00</updated>
     <author>

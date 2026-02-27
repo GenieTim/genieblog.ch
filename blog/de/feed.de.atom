@@ -3,12 +3,40 @@
     <title>genieblog.ch</title>
     <link href="https://genietim.github.io/genieblog.ch/" />
     <link type="application/atom+xml" rel="self" href="https://genietim.github.io/genieblog.ch/blog/de/feed.de.atom" />
-    <updated>2026-02-09T13:55:47+00:00</updated>
+    <updated>2026-02-27T06:14:21+00:00</updated>
     <id>https://genietim.github.io/genieblog.ch/blog/de/feed.de.atom</id>
     <author>
         <name>Tim Bernhard</name>
     </author>
                 <entry>
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2026/einige-ideen-fur-arbeiten-die-ich-nie-geschrieben-habe</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2026/einige-ideen-fur-arbeiten-die-ich-nie-geschrieben-habe" />
+    <title>Einige Ideen für Arbeiten, die ich nie geschrieben habe</title>
+    <published>2026-02-12T15:15:06+00:00</published>
+    <updated>2026-02-12T15:15:06+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">Ich fürchte, meine akademische Laufbahn ist vorbei, jetzt, wo ich meine Promotion abgeschlossen habe und nicht mehr in einer Forschungsumgebung arbeite.
+
+Dennoch gab es viele Ideen, die es wert sind, untersucht zu werden, oder für die ich jetzt die......</summary>
+    
+</entry>
+            <entry>
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2026/perlenfeder-polymer-illustrationen-in-2d</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2026/perlenfeder-polymer-illustrationen-in-2d" />
+    <title>Perlenfeder-Polymer-Illustrationen in 2D</title>
+    <published>2026-02-12T15:01:03+00:00</published>
+    <updated>2026-02-12T15:01:03+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">Während meiner Promotion habe ich häufig ein Perlenfedermodell für Polymernetzwerke verwendet, eine grobkörnige Darstellung, die die wesentliche Physik erfasst und gleichzeitig rechnerisch effizient ist.
+
+Im Laufe der Zeit erfanden wir neue Methoden......</summary>
+    
+</entry>
+            <entry>
     <id>https://genietim.github.io/genieblog.ch/blog/de/2026/zitatautoren-mehrerer-publikationen-in-latex</id>
     <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2026/zitatautoren-mehrerer-publikationen-in-latex" />
     <title>Zitatautoren mehrerer Publikationen in LaTeX</title>
@@ -18,8 +46,8 @@
         <name>Tim Bernhard</name>
     </author>
     <summary type="html">Hier ist ein Code-Ausschnitt aus meinem LaTeX-Dokument meiner Doktorarbeit.
-Die Absicht ist es, &lt;code&gt;\citeauthor{}&lt;/code&gt; zu verwenden, aber mit mehreren Publikationen. Das ist etwas, das &lt;code&gt;\citeauthor{}&lt;/code&gt; nicht unterstützt.
-Außerdem sollten......</summary>
+Ziel ist es, &lt;code&gt;\citeauthor{}&lt;/code&gt; zu verwenden, aber mit mehreren Publikationen. Das unterstützt &lt;code&gt;\citeauthor{}&lt;/code&gt; nicht.
+Außerdem sollen Autoren, die an......</summary>
     
 </entry>
             <entry>
@@ -31,7 +59,7 @@ Außerdem sollten......</summary>
     <author>
         <name>Tim Bernhard</name>
     </author>
-    <summary type="html">Im Folgenden werde ich einige LaTeX-Tipps und Werkzeuge besprechen, die ich beim Schreiben meiner Doktorarbeit nützlich fand. Die meisten davon sind kleine Verbesserungen der Lebensqualität, die sich im Laufe eines langen Projekts summieren.......</summary>
+    <summary type="html">Im Folgenden bespreche ich einige LaTeX-Tipps und Werkzeuge, die ich beim Schreiben meiner Doktorarbeit nützlich fand. Die meisten davon sind kleine Verbesserungen der Lebensqualität, die sich über ein langes Projekt hinweg summieren.......</summary>
     
 </entry>
             <entry>
@@ -43,9 +71,43 @@ Außerdem sollten......</summary>
     <author>
         <name>Tim Bernhard</name>
     </author>
-    <summary type="html">Ich habe kürzlich meine Promotion im Fachbereich Materialwesen an der ETH Zürich abgeschlossen.
+    <summary type="html">Ich habe kürzlich meine Promotion im Fachbereich Materialwissenschaften an der ETH Zürich abgeschlossen.
 Meine Forschung konzentrierte sich auf die Vorhersage makroskopischer Polymereigenschaften anhand von Netzwerkstrukturen und Syntheseverfahren.
-Die meiste......</summary>
+Die......</summary>
+    
+</entry>
+            <entry>
+    <id>https://genietim.github.io/genieblog.ch/blog/de/2026/starkstrombefehl-loesungen</id>
+    <link type="text/html" rel="alternate" href="https://genietim.github.io/genieblog.ch/blog/de/2026/starkstrombefehl-loesungen" />
+    <title>Starkstrombefehl Lösungen</title>
+    <published>2026-01-01T00:00:00+00:00</published>
+    <updated>2026-01-01T00:00:00+00:00</updated>
+    <author>
+        <name>Tim Bernhard</name>
+    </author>
+    <summary type="html">Die Lösungen zum Test des Starkstrombefehls des Schweizer Militärs:
+
+
+1: c
+2: a
+3: a
+4: b
+5: b
+6: b
+7: c
+8: b
+9: c
+10: b
+11: a
+12: a
+13: c
+14: b
+15: c
+16: b
+17: b
+18: c
+19: c
+20: a...</summary>
     
 </entry>
             <entry>
