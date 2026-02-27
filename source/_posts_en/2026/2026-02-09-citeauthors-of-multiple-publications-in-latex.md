@@ -17,7 +17,7 @@ template: post
 title: "Citeauthors of Multiple Publications in LaTeX"
 translations:
   en: citeauthors-of-multiple-publications-in-latex
-    de: zitatautoren-mehrerer-publikationen-in-latex
+  de: zitatautoren-mehrerer-publikationen-in-latex
 ---
 
 Here's a code snippet from my Ph.D. thesis LaTeX document.
