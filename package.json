@@ -32,7 +32,7 @@
         "mathjax": "^4.1.1",
         "node-cmd": "^5.0.0",
         "node-gyp": "^12.2.0",
-        "postcss": "^8.5.8",
+        "postcss": "^8.5.10",
         "postcss-css-variables": "^0.19.0",
         "resolve-url-loader": "^5.0.0",
         "responsive-loader": "^3.1.2",
