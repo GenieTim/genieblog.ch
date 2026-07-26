@@ -42,7 +42,7 @@
         "tmp": "^0.2.7",
         "workbox-webpack-plugin": "^7.4.1",
         "yaml": "^2.9.0",
-        "yargs": "^18.0.0"
+        "yargs": "^18.1.0"
     },
     "dependencies": {}
 }
