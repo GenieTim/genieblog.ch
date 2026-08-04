@@ -1,3 +1,30 @@
+const WebpackBar = require("webpackbar");
+Object.defineProperty(WebpackBar.prototype, "options", {
+  get() {
+    return this._wb_options;
+  },
+  set(options) {
+    if (options && typeof options === "object") {
+      const safeOptions = { activeModules: true };
+      for (const [key, val] of Object.entries(options)) {
+        if (key === "activeModules" || key === "profile") {
+          safeOptions[key] = val;
+        } else {
+          Object.defineProperty(safeOptions, key, {
+            value: val,
+            writable: true,
+            configurable: true,
+            enumerable: false,
+          });
+        }
+      }
+      this._wb_options = safeOptions;
+    } else {
+      this._wb_options = options;
+    }
+  },
+  configurable: true,
+});
 const mix = require("laravel-mix");
 require("laravel-mix-purgecss");
 require("laravel-mix-jigsaw");
