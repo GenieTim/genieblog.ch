@@ -6,7 +6,7 @@ const categoryGenerator = require("./tasks/generateCategories.js");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const ImageBuildPlugin = require("./tasks/ImageBuildPlugin");
 
-mix.disableSuccessNotifications();
+mix.disableNotifications();
 mix.setPublicPath("source/assets/build/");
 mix.options({
   production: process.env.WEBPACK_ENV === "production",
