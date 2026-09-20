@@ -44,5 +44,8 @@
         "yaml": "^2.9.1",
         "yargs": "^18.1.0"
     },
+    "resolutions": {
+        "webpack": "5.106.2"
+    },
     "dependencies": {}
 }
